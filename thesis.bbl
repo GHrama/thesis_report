@@ -1,0 +1,76 @@
+\begin{thebibliography}{10}
+
+\bibitem{battintro}
+Battery manager android.
+\newblock
+  \url{http://developer.android.com/reference/android/os/BatteryManager.html}.
+\newblock Last Accessed: 2016-04-9.
+
+\bibitem{corporationdict}
+Corporation meaning.
+\newblock \url{http://www.dictionary.com/browse/corporation}.
+\newblock Last Accessed: 2016-04-10.
+
+\bibitem{lightintro}
+Did you know how many different kinds of sensors go inside a smartphone?
+\newblock
+  \url{http://www.phonearena.com/news/Did-you-know-how-many-different-kinds-of-sensors-go-inside-a-smartphone_id57885}.
+\newblock Last Accessed: 2016-04-9.
+
+\bibitem{employerdict}
+Employer meaning.
+\newblock \url{http://www.dictionary.com/browse/employer}.
+\newblock Last Accessed: 2016-04-10.
+
+\bibitem{gpsintro1}
+How does gps in a mobile phone work exactly?
+\newblock
+  \url{http://stackoverflow.com/questions/33637/how-does-gps-in-a-mobile-phone-work-exactly}.
+\newblock Last Accessed: 2016-04-9.
+
+\bibitem{gpsintro}
+What is a gps? how does it work?
+\newblock \url{http://www.loc.gov/rr/scitech/mysteries/global.html}.
+\newblock Last Accessed: 2016-04-9.
+
+\bibitem{wifilocationintro}
+Y.~Chen and H.~Kobayashi.
+\newblock Signal strength based indoor geolocation.
+\newblock {\em Proceedings of the IEEE International Conference on
+  Communications}, 1:436--439, 2002.
+
+\bibitem{accintro}
+PNishkam Raviand~Nikhil Dandekar, Preetham Mysore, and Michael~L. Littman.
+\newblock Activity recognition from accelerometer data.
+\newblock {\em IAAI'05 Proceedings of the 17th conference on Innovative
+  applications of artificial intelligence}, 3:1541--1546, 2005.
+
+\bibitem{triangulationintro}
+Fredrik Gustafsson and Fredrik Gunnarsson.
+\newblock Mobile positioning using wireless networks.
+\newblock {\em IEEE SIGNAL PROCESSING MAGAZINE}, 2005.
+
+\bibitem{magneintro}
+Ming Liu.
+\newblock A study of mobile sensing using smartphones.
+\newblock {\em Hindawi Publishing Corporation International Journal of
+  Distributed Sensor Networks}, 2013(272916), 2013.
+
+\bibitem{accappl2}
+Pushpendra Singh, Nikita Juneja, and Shruti Kapoor.
+\newblock Using mobile phone sensors to detect driving behavior.
+\newblock {\em ACM DEV '13 Proceedings of the 3rd ACM Symposium on Computing
+  for Development}, (53), 2011.
+
+\bibitem{ngointro}
+Anna~C. Vakil.
+\newblock Confronting the classification problem: Toward a taxonomy of ngos.
+\newblock {\em World Development}, 25(12), 1997.
+
+\bibitem{accappl1}
+Shuangquan Wang, Canfeng Chen, and Jian Ma.
+\newblock Accelerometer based transportation mode recognition on mobile phones.
+\newblock {\em Wearable Computing Systems, Asia-Pacific Conference on, Wearable
+  Computing Systems, Asia-Pacific Conference}, pages 44--46, 2010.
+
+\end{thebibliography}
