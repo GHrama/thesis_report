@@ -187,7 +187,7 @@ There can be more than one context assigned to one category.
 
 \subsection{Forming the questions}
 
-The questions for the survey are formed using the all the different unique combinations of sensors, buyers and contexts. The template of the questions for the survey is:\\
+The questions for the survey are formed using the all the different and unique combinations of sensors, buyers and contexts. The template of the questions for the survey is:\\
 {\it " Buyer B would like to obtain your S sensor data for the purpose of C "}\\
 where:
 \begin{itemize}
@@ -196,19 +196,31 @@ where:
 \item {\it "C"} - stands for the context, which is the purpose for the data collection
 \end{itemize}
 
-$n_s$ can be the number of sensors, $n_b$ can be the number of buyers and $n_c$ can be the number of contexts, then: $$NQ = n_s*n_b*n_c$$ unique questions.
+Let $n_s$ be the number of sensors, $n_b$ can be the number of buyers and $n_c$ can be the number of contexts. From this we
+can obtain that there can be a maximum of:
+$$NQ = n_s*n_b*n_c$$ 
+unique questions.
 
 \subsection{Formulating the Weight Matrix}
 
-Now that the user profiling has been done, the weight matrix $wq$ can be formulated. The experiment has a budget $B$, this can be an hourly budget or a budget for the whole experiment.
-Irrespective of the budget details, the weight matrix is one that holds the amount of money each questions  get with respect to the other. The method to assign money to each question varies according to the
-way the budget distribution and the number of questions asked in a period of time are chosen, the details will be discussed later. In this personalized survey, it is attempted to give each question a different
-weight so that questions that the user is not comfortable answering weigh more. Doing so helps us see if this can attract users to give data to questions they would normally not so readily give.
+Now that the user profiling has been done, the weight matrix can be formulated. Let $wq$ be the representation of the weight matrix. The experiment has a budget $B$, this can be the budget for each time period $T$.
+The weight matrix $wq$ is the one that holds the amount of money each questions gets with respect to the other. The weight matrix is
+designed such that:
+%% sum of the elements of wq < NQ
+%% reason each element cannot be more than one
+$$\sum^{n_s,n_b,n_c}_{j,k,l} wq_{j,k,l} < NQ$$ 
+The above equation represents that each element of the matrix $wq$ cannot be more than one. The reason being
+weights can be one only for questions that get maximum share of the budget and in this model
+not all questions can get a maximum share. Hence the inequality.\\
+In this personalized survey, it is attempted to give each question a different
+weight so that questions that the user is not comfortable giving data for can earn him more money. Doing so helps us see if this can attract users to give data to questions they would normally not so readily give.\\
+The method to assign money to each question will be discussed in the later section. For the following sections, the focus
+will be on the formulation of the weight matrix. 
 
 \subsection{Calculating Weights for Parameters}
-In the above section, the users were asked to rank sensors and buyers and contexts. The highest rank one is the most comfortable option for the user
-and the lowest rank, is the least comfortable. In addition before this ranking, the user was asked to rank the parameters themselves {\it i.e.. sensors,buyers and contexts}. 
-Parameter ranking can be used to give a certain weightage to each parameter according to the user's choice. In this case the higher the rank, the more this parameter affects data sharing {\it i.e.. higher the rank, the more
+In the above section, the users were asked to rank the features Sensors and Buyers and Contexts themselves before ranking the options of the features. For the features, a higher rank {\it i.e. one}, means that this feature can carry a lot of
+importance when it comes to the data sharing decision. Similarly, a lower rank can signify that this feature contributes the least compared to the other available features to the data sharing decision. 
+Ranking of the parameter can be used to give a certain weighting to each parameter according to the user's choice. In this case the higher the rank, the more this parameter affects data sharing {\it i.e.. higher the rank, the more
 weight that category carries, in other words it helps to decide the most whether the user will or will not share data}.\\
  In general terms if there are $p$ parameters where $p=3$ here, a variable $x$ is found using the following:
  $$\sum^{p}_{i=1} i*x = 1$$
@@ -261,7 +273,7 @@ of all the 3 sub-parameters gives us the number of questions $NQ$. Each cell of 
 and each questions has a unique combination of sensor $s_j$, buyer $b_k$ and context $c_l$. The way to calculate the value of a cell of the weight matrix $wq_{j,k,l}$, where $j$, $k$, $l$
 represents the index of the sub-parameters
 is using the following expression:
-$$wq_{j,k,l} = w_{s_{i}} + w_{b_{k}} + w_{c_{l}}$$
+$$wq_{j,k,l} = w_{s_{j}} + w_{b_{k}} + w_{c_{l}}$$
 The current question number $CQ$ can be obtained by the following expression:
  $$CQ = j*k*l$$
 Some questions get weighted higher than some others, which means that there is a potential

@@ -3,11 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: thesis.bib
-I was expecting a `,' or a `}'---line 59 of file thesis.bib
- :   
- :   pages = {2057–2070}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in battintro
 Warning--to sort, need author or key in lightintro
 Warning--to sort, need author or key in gpsintro
@@ -17,24 +12,24 @@ Warning--to sort, need author or key in corporationdict
 Warning--there's a number but no volume in accappl2
 You've used 13 entries,
             2118 wiz_defined-function locations,
-            557 strings with 5961 characters,
-and the built_in function-call counts, 3072 in all, are:
-= -- 302
+            558 strings with 5972 characters,
+and the built_in function-call counts, 3179 in all, are:
+= -- 313
 > -- 100
 < -- 1
 + -- 44
 - -- 30
-* -- 166
-:= -- 481
+* -- 179
+:= -- 493
 add.period$ -- 39
 call.type$ -- 13
 change.case$ -- 54
 chr.to.int$ -- 0
 cite$ -- 20
-duplicate$ -- 122
-empty$ -- 293
+duplicate$ -- 123
+empty$ -- 306
 format.name$ -- 30
-if$ -- 677
+if$ -- 701
 int.to.chr$ -- 0
 int.to.str$ -- 13
 missing$ -- 7
@@ -44,16 +39,16 @@ pop$ -- 87
 preamble$ -- 1
 purify$ -- 41
 quote$ -- 0
-skip$ -- 90
+skip$ -- 89
 stack$ -- 0
-substring$ -- 134
+substring$ -- 167
 swap$ -- 20
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 52
 warning$ -- 7
-while$ -- 18
+while$ -- 19
 width$ -- 15
 write$ -- 132
-(There was 1 error message)
+(There were 7 warnings)
