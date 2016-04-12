@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {1.2.2}Formulating the Weight Matrix}{7}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Calculating Weights for Parameters}{7}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Calculating Weights of various Sensors}{8}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Calculating Weights of various Buyers}{8}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.5}Calculating Weights of various Buyers}{9}{subsection.1.2.5}
 \contentsline {subsection}{\numberline {1.2.6}Calculating Weights of various Contexts}{9}{subsection.1.2.6}
 \contentsline {subsection}{\numberline {1.2.7}Calculating the Weights of each questions}{10}{subsection.1.2.7}
 \contentsline {section}{\numberline {1.3}Methods of the Personalized survey}{10}{section.1.3}

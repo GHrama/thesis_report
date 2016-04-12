@@ -203,7 +203,9 @@ unique questions.
 
 \subsection{Formulating the Weight Matrix}
 
-Now that the user profiling has been done, the weight matrix can be formulated. Let $wq$ be the representation of the weight matrix. The experiment has a budget $B$, this can be the budget for each time period $T$.
+Now that the user profiling has been done, the weight matrix can be formulated. Let $wq$ be the representation of the weight matrix. The experiment has a budget $TB$, each time period of duration $T$ can
+have a budget $B$. Let $NT$ be the number of such time periods. Hence we infer:
+$$TB = B*NT$$
 The weight matrix $wq$ is the one that holds the amount of money each questions gets with respect to the other. The weight matrix is
 designed such that:
 %% sum of the elements of wq < NQ
@@ -214,20 +216,22 @@ weights can be one only for questions that get maximum share of the budget and i
 not all questions can get a maximum share. Hence the inequality.\\
 In this personalized survey, it is attempted to give each question a different
 weight so that questions that the user is not comfortable giving data for can earn him more money. Doing so helps us see if this can attract users to give data to questions they would normally not so readily give.\\
-The method to assign money to each question will be discussed in the later section. For the following sections, the focus
+The method to assign money to each question will be discussed in the later sections. For the following sections, the focus
 will be on the formulation of the weight matrix. 
 
 \subsection{Calculating Weights for Parameters}
 In the above section, the users were asked to rank the features Sensors and Buyers and Contexts themselves before ranking the options of the features. For the features, a higher rank {\it i.e. one}, means that this feature can carry a lot of
 importance when it comes to the data sharing decision. Similarly, a lower rank can signify that this feature contributes the least compared to the other available features to the data sharing decision. 
-Ranking of the parameter can be used to give a certain weighting to each parameter according to the user's choice. In this case the higher the rank, the more this parameter affects data sharing {\it i.e.. higher the rank, the more
-weight that category carries, in other words it helps to decide the most whether the user will or will not share data}.\\
- In general terms if there are $p$ parameters where $p=3$ here, a variable $x$ is found using the following:
- $$\sum^{p}_{i=1} i*x = 1$$
-After finding this $x$, the weight of the individual parameters $w_{p_{i}}$ can be found using :
-$$w_{p_{i}} = x* (p - r_{p_{i}} + 1)$$
-Where $p_{i}$ is the individual parameters, and $r_{p_{i}}$ is the rank assigned to each of these parameters.
-So from the above: $$\sum^{p}_{i=1} w_{p_{i}} = 1$$ can be obtained {\it i.e. the weight of all the individual parameters adds up to 1}.
+Ranking of the parameter can be used to give a certain weighting to each feature in the model. Instead of having a fixed a model, the model's parameters are themselves variable.\\
+To begin, each rank assigned to the features needs to be converted into a weight parameter in the model. Let $f$ be the number of features available. In this case $f=3$. Then, it is tried to obtain the 
+weights corresponding to each rank. To do that the following equation should be solved:
+$$\sum^{p}_{i=1} i*x = 1$$
+After finding the variable $x$ ({\it NOTE :$x$ is just a variable that can help solve the equation, it has no special meaning in this context}), the weight of the individual features $w_{f_{i}}$ can be found using :
+$$w_{f_{i}} = x* (f - r_{f_{i}} + 1)$$
+Where $p_{i}$ can represent the individual features, and $r_{p_{i}}$ can represent the rank assigned to each of the features. The equation intuitively says that
+as the rank is lower, that feature contributes lesser to the data sharing decision. Hence, such a feature should weighted less than another ranked higher.
+In addition, from the above: $$\sum^{f}_{i=1} w_{f_{i}} = 1$$ can be obtained {\it i.e. the weight of all the individual parameters adds up to one}. This is because
+the maximum weight that a question can carry is one.
 
 \subsection{Calculating Weights of various Sensors}
 Users ranked sensors from the most comfortable to share the data to the least comfortable to share data.
