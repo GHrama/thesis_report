@@ -223,52 +223,63 @@ will be on the formulation of the weight matrix.
 In the above section, the users were asked to rank the features Sensors and Buyers and Contexts themselves before ranking the options of the features. For the features, a higher rank {\it i.e. one}, means that this feature can carry a lot of
 importance when it comes to the data sharing decision. Similarly, a lower rank can signify that this feature contributes the least compared to the other available features to the data sharing decision. 
 Ranking of the parameter can be used to give a certain weighting to each feature in the model. Instead of having a fixed a model, the model's parameters are themselves variable.\\
-To begin, each rank assigned to the features needs to be converted into a weight parameter in the model. Let $f$ be the number of features available. In this case $f=3$. Then, it is tried to obtain the 
-weights corresponding to each rank. To do that the following equation should be solved:
+To begin, each rank assigned to the features needs to be converted into a weight parameter in the model. Let $f$ be the number of features available. In this case $f=3$, because there are three features involved. Then, it is tried to obtain the 
+weights corresponding to each rank. To do that the following equation can be solved:
 $$\sum^{p}_{i=1} i*x = 1$$
+%% minimum weight factor -> helps us weight feature multiplicatively
+%% confirm tough!
 After finding the variable $x$ ({\it NOTE :$x$ is just a variable that can help solve the equation, it has no special meaning in this context}), the weight of the individual features $w_{f_{i}}$ can be found using :
 $$w_{f_{i}} = x* (f - r_{f_{i}} + 1)$$
 Where $p_{i}$ can represent the individual features, and $r_{p_{i}}$ can represent the rank assigned to each of the features. The equation intuitively says that
 as the rank is lower, that feature contributes lesser to the data sharing decision. Hence, such a feature should weighted less than another ranked higher.
-In addition, from the above: $$\sum^{f}_{i=1} w_{f_{i}} = 1$$ can be obtained {\it i.e. the weight of all the individual parameters adds up to one}. This is because
+In addition, from the above: $$\sum^{f}_{i=1} w_{f_{i}} = 1$$ can be obtained {\it i.e. the weight of all the individual features adds up to one}. This is because
+
 the maximum weight that a question can carry is one.
 
 \subsection{Calculating Weights of various Sensors}
-Users ranked sensors from the most comfortable to share the data to the least comfortable to share data.
-Let $w_{p_{s}}$ be the weight assigned to the parameter Sensors, $w_{s_{j}}$ be the weight of the individual sensor $s_j$ and let $n_s$ be the number of sensors. In this parameter Sensors  {\it i.e.. which is a group}, there are individual sensors {\it i.e.. sub-parameters}.
-For each of these sensors, their rank is denoted by $r_{s_{j}}$ where $s_j$ is the individual sensors. The way the individual sensor weights are to be 
-calculated depends on the rank assigned to them.The sensor that the user is most comfortable sharing its data gets least weight, whereas the sensor's
+As a part of profiling, users were asked to rank the various sensors available according to their preferences. The sensors ranked high are less sensitive
+to the users, whereas sensors that are ranked low are the ones that are the most sensitive to the user.\\
+
+Let $w_{f_{s}}$ be the weight assigned to the feature Sensors, $w_{s_{j}}$ be the weight of the individual sensor $s_j$ and let $n_s$ be the number of sensors. In this feature Sensors {\it i.e.. which is a group}, there are individual sensors {\it i.e.. feature options}.
+For each of these sensors, their rank is denoted by $r_{s_{j}}$ where $s_j$ is an individual sensor. The way the individual sensor weights are to be 
+calculated depends on the rank assigned to them. The sensor that the user is most comfortable sharing its data gets least weight, whereas the sensor's
 data the user is least comfortable sharing get all the weight out of $w_{p_{s}}$.\\
 To calculate the weight of individual sensors the following expression can be used :
-$$w_{s_{j}} = (w_{p_{s}}/n_s)*r_{s_{j}}$$
-In the above way, individual sensor weights are calculated . For this experiment, $n_s$ = 6
+$$w_{s_{j}} = (w_{f_{s}}/n_s)*r_{s_{j}}$$
+%% explian the intuition behind the equation
+In the above way, individual sensor weights are calculated . For this experiment, $n_s$ = 6 because there are 6 different feature options involved.
 
 \subsection{Calculating Weights of various Buyers}
-After ranking the various sensors, the users are asked to rank the buyers from the one to which they are most comfortable sharing their data,
+In previous section the users were asked to rank the buyers from the one to which they are most comfortable sharing their data,
 to the one they are least comfortable sharing their data to. Let $w_{p_{b}}$ be the weight of the parameter Buyers {\it i.e.. which is a group}, $w_{b_{k}}$ be the weight of
 the individual buyer k {\it i.e.. which are sub-parameters} and $n_b$ be the number of buyers available. For each buyer in the Parameter Buyers, each buyers is a sub-parameter.
-Each of their ranks is denoted by $r_{b_{k}}$ where $b_k$ is the individual buyers.  If a buyer is ranked high,{\it i.e.. the user is most comfortable sharing to this buyer}, intuitively this buyer can be assigned a lower weight,
-since we know that the user will most likely anyway share the data with this buyer. Similarly, if a buyer is ranked low by the user, the weight of this buyer is high.
+Each of their ranks is denoted by $r_{b_{k}}$ where $b_k$ is the individual buyers.  If a buyer is ranked high{\it i.e. the user is most comfortable sharing to data to the buyer}, intuitively this buyer can be assigned a lower weight.
+This is due to the fact that it is known that the user will most likely anyway share the data with this buyer. Similarly, if a buyer is ranked lower by the user, the weight of this buyer is higher. Again,
+this is because it is known that the user is less comfortable sharing the data with this buyer.
 Each buyer is assigned a weight, where the weight of the individual
-buyer is a maximum of $w_{p_{b}}$. To calculate the weight of the individual buyers the following expression can be used :
-$$w_{b_{k}} = (w_{p_{b}}/n_b)*r_{b_{k}}$$
-In the above way, the individual buyer weights are calculated. For this experiment, $n_b$ = 4.
+buyer is a maximum of $w_{f_{b}}$. To calculate the weight of the individual buyers the following expression can be used:
+$$w_{b_{k}} = (w_{f_{b}}/n_b)*r_{b_{k}}$$
+%% explian the intuition behind the equation
+In the above way, the individual buyer weights are calculated. For this experiment, $n_b$ = 4 because the different possible buyers of data is 4.
 
 
 
 
 \subsection{Calculating Weights of various Contexts}
-After ranking the buyers, the users are asked to categorize the available contexts. Categorizing is similar to ranking, but instead of ranking, the users
+The next step after ranking the Buyers is the ranking of the contexts. Users are asked to categorize the available contexts. Categorizing is similar to ranking, but instead of ranking, the users
 place the existing contexts in predefined slots, which are ranked by us. More than one context can fall in one slot. The total amount of weight that can be 
-obtained by any context is $w_{p_{c}}$, the individual weights of each context is $w_{c_{l}}$  where $c_l$ is any context and the number of contexts is $n_c$. Let the number of Categories be $n_{cat}$, $r_{cat_{k}}$ be the rank assigned by us to
+obtained by any context is $w_{f_{c}}$, which is the weight assigned to the feature Context. Let the individual weights of each context be $w_{c_{l}}$ where $c_l$ is any context and the number of contexts is $n_c$. In addition, let the number of Categories be $n_{cat}$, $r_{cat_{k}}$ be the rank assigned by us to
 each category and the weight
 of the the individual categories to be $w_{cat_{z}}$, where $cat_z$ is the individual categories into which contexts can be placed {\it i.e.. the Categories are the slots}. In this experiment, there are $n_{cat}$ = 3 Categories
 and $n_c$ = 6 contexts.\\
-Each Category is assigned a rank by us before, that rank is $r_{cat_{z}}$. The user can place the contexts into these categories and the contexts will take the weight of that category.
-Hence the weights of the categories is calculated, contexts assigned to that category get that weight. In our case we have Categories: {\it 1. Very Useful, 2. Useful, 3. Not useful}, assigned the respective ranks shown.
-The higher ranked Categories get a lower weightage, and lower ranked categories are assigned a higher weightage. The weights of the categories can be calculated using the following expression:
-$$w_{cat_{z}} = (w_{p_{c}}/n_{cat})*r_{cat_{k}}$$
-Once each context is placed in each category, it takes the weight of that category. For example, if the context $c_y$ was placed in category $cat_g$, then:
+Each Category is assigned a rank by us beforehand. That rank assigned to each category is referred to as $r_{cat_{z}}$. The user can therefore place the contexts into these categories. The contexts can take the weight of the
+category it is assigned to.
+Hence the weights of the categories are calculated, contexts assigned to that category get that exact same weight. In our case we have the Categories: {\it 1. Very Useful, 2. Useful, 3. Not useful} assigned the respective ranks one, two and three.
+The higher ranked Categories get a lower weighting, and lower ranked categories are assigned a higher weighting. Intuitively, it can be taken as the contexts ranked higher are the ones the user will give his data for
+more easily. Similarly, the contexts ranked lower are the contexts the user will be more reluctant to give his data for. The weights of the categories can be calculated using the following expression:
+$$w_{cat_{z}} = (w_{f_{c}}/n_{cat})*r_{cat_{k}}$$
+%% explian the intuition behind the equation
+Once each context is placed in a category, it takes the weight of that category. For example, if the context $c_y$ was placed in category $cat_g$, then:
 $$w_{c_{y}} = w_{cat_{g}}$$.
 
 \subsection{Calculating the Weights of each questions}
@@ -284,3 +295,17 @@ Some questions get weighted higher than some others, which means that there is a
 to obtain more credit {\it i.e.. it can be money or vouchers etc...} by answering such questions. The whole $wq$ matrix is generated this way.
 
 \section{Methods of the Personalized survey}
+The weight matrix $wq$ is now filled with weight values, which are all lesser than one.
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{}

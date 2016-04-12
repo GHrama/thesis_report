@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  12 APR 2016 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  12 APR 2016 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,21 +1142,21 @@ LaTeX Warning: Unused global option(s):
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 92.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
@@ -1191,201 +1191,201 @@ e
 \AtBeginShipoutBox=\box36
 \c@lstlisting=\count288
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 92.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfcprot/pplmnOT1.cpa)
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 92.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 92.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 90.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 92.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 90.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 92.
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 90.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 92.
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 90.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 92.
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 90
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 92
 .
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 90.
-Package hyperref Info: Link coloring ON on input line 90.
+(pdfcprot)             you intended to use. on input line 92.
+Package hyperref Info: Link coloring ON on input line 92.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1397,20 +1397,20 @@ LaTeX Info: Redefining \Ref on input line 513.
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 90.
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
+LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-LaTeX Info: Redefining \Ref on input line 90.
+LaTeX Info: Redefining \Ref on input line 92.
  <ETHlogo.pdf, id=76, 179.67125pt x 45.16875pt>
 File: ETHlogo.pdf Graphic file (type pdf)
 
 <use ETHlogo.pdf>
-Package pdftex.def Info: ETHlogo.pdf used on input line 100.
+Package pdftex.def Info: ETHlogo.pdf used on input line 102.
 (pdftex.def)             Requested size: 179.67079pt x 45.16862pt.
  [1
 
@@ -1464,14 +1464,14 @@ File: uesvect.fd
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 
+l.112 
        [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 
+l.112 
        [2
 
 ] (./sections.tex
@@ -1497,7 +1497,12 @@ Class memoir Warning: The \it font command is deprecated.
 Underfull \vbox (badness 1953) has occurred while \output is active []
 
  [4]
-[5] [6] [7] [8] [9]) [10] (./thesis.bbl
+[5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+[8] [9]) [10] (./thesis.bbl
 bibitemlist
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
@@ -1559,11 +1564,11 @@ $[][]\OT1/pplx/m/n/10.95 .  Last Ac-cessed:
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf used on input line 126.
+Package pdftex.def Info: declaration-originality.pdf used on input line 128.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: declaration-originality.pdf Graphic file (type pdf)
  <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf used on input line 126.
+Package pdftex.def Info: declaration-originality.pdf used on input line 128.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <declaration-originality.pdf, id=228, page=1, 597.55246pt x 845.07718pt>
@@ -1571,32 +1576,32 @@ File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-126.
+128.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-126.
+128.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-126.
+128.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-126.
+128.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [12]
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-126.
+128.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [13 <./declaration-originality.pdf>]
 \tf@thm=\write5
@@ -1605,12 +1610,12 @@ Package pdftex.def Info: declaration-originality.pdf, page1 used on input line
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
 
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 827EA2A98238D836A51ACA56C2DF83A0;1430.
 
@@ -1639,7 +1644,7 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (17 pages, 310759 bytes).
+Output written on thesis.pdf (17 pages, 311782 bytes).
 PDF statistics:
  333 PDF objects out of 1000 (max. 8388607)
  285 compressed objects within 3 object streams
