@@ -339,5 +339,56 @@ the interaction of the user with credits as well as the privacy can be observed.
 $ro + 2$ days. This is because of the first day of briefing people and because the data is sold for the next day, one more day is required to collect the data from
 the last day of data sales.
 
-\subsection{Details on Question Options}
-In section \ref{question_format}, the template of the questions for the survey was discussed. 
+\subsection{Some Definitions}
+Before diving into the mechanism behind the options of the questions, some definitions need to be introduced.
+\begin{enumerate}
+\item {\it Privacy Level} - Privacy in this context refers to the frequency with which the user decides to share his data. The higher the frequency, the lesser the privacy.
+\item {\it Privacy Percentage} - The different frequencies with which the user can share his data can be converted into a set of levels which represent
+the amount of data that is masked out of a 100. This is referred to as the privacy percentage.
+\item {\it Data Sharing} - Data Sharing can be regarded as the opposite of privacy. Privacy can refer to the amount of data that is been hidden. Data sharing can refer to
+the amount of data being shared.
+\item {\it Data Sharing Percentage} - The different frequencies or the privacy percentage can be converted into the amount of data being shared by the user. Scaling
+this amount on a 100 can give the data sharing percentage.
+\item {\it Total Credits} - This can refer to the total amount of money, tokens or any other form of reward obtained by the user over the course of the experiment.
+\item {\it Total Privacy Percentage} - During the experiment, the user can decide how much data to share or not to share. Total privacy percentage shows the percentage of data that
+is being concealed by the user over the course of the experiment.
+
+\end{enumerate}
+
+\subsection{Details on Question's Options}
+In section \ref{question_format}, the template of the questions for the survey was discussed. Once a question is displayed, users can choose among a few options.
+The options are the different privacy levels of the sensor's data to be shared. That means, data that is highly private is difficult to understand or make patterns out of. Also, data that is not private at all is raw and 
+patterns are more clear. Hence, for each question displayed the user can decide with what privacy his data should be shared if he chooses to share the data. The user can
+also choose not to share the data.\\
+It needs to be noted that there is no fixed definition of privacy (add reference). In this context, privacy is measured as the frequency with which the data is retrieved from the phone.
+Each privacy percentage level is assigned a specific frequency of collecting data. For the users sake instead of talking about the privacy levels themselves, privacy levels
+can be shaped into their opposite meaning. That is, instead of privacy percentage of data we can talk about how much data is being shared. If the data is a 100\% private it can mean that 0\% of the data is being shared.
+Similarly, if the data is 0\% private then it can mean that the data is being shared a 100\%.\\
+For now, we can go back to the definition of data sharing in terms of privacy rather than data sharing for the sake of calculation.
+Let 100\% privacy mean that the user shares none of his data which corresponds to $freq_{min}$, which is the minimum frequency of sharing data. In addition, let $freq_{max}$ be the maximum frequency
+of data sharing. This means that the data is 0\% private and it is shared most often among all other options.\\ To start off, $freq_{max}$ needs to be chosen. In addition, the number of options for each question $no$ needs to be decided upon.
+For each of these $no$ options, there can be an associated frequency attached called $freq_{o}$ where $o$ can be one of the options. To find the percentage privacy denoted as $pp_o$ for the option $o$ given that the chosen
+frequency for this option is $freq_{o}$ can be done the following way:
+$$pp_o = \frac{100*freq_o}{freq_{max}}$$
+In the above way, the $pp_o$ for each option $o$ can be obtained. As discussed above, from the users perspective of privacy is referred to as how much data is being shared. The opposite of privacy percentage
+is the data sharing percentage referred to as $dsp_o$ for each option $o$. The relation between $pp_o$ and $dsp_o$ is:
+$$pp_o = 100 - dsp_o$$
+Intuitively, if data is 40\% private it can mean that 60\% of the data is being shared.\\
+Since many features are being explored in this survey, the number of options of each of these features are kept to a minimum so as to have a stronger
+sample size for each options of the features. Now that the design behind the options has been explained, the following are the options displayed to the user for each question:
+\begin{itemize}
+\item Share 100\% of data
+\item Share 50\% of data
+\item Share 25\% of data
+\item Do not share data
+
+\end{itemize}
+
+Unfortunately there cannot be the same $freq_o$ in option number $o$ involving the different sensors. The reason being privacy of the GPS sensor and Accelerometer are very different. If the frequency is set to  once in every 20 seconds, that is a very long time gap for the Accelerometer sensor, but a very short gap for the GPS sensor. The location of a person does not vary drastically every 20 seconds whereas, taking accelerometer every 20 is a quite a high privacy level since it will be hard to make sense of such sporadic data from this kind of sensor. Hence, the frequency $freq_o$ for questions involving different sensors might be different. It not only depends on how battery
+draining the data sending can be, but also on how useful it is to collect this data so often.
+
+
+\subsection{Option Incentives}
+In the preliminary round, not incentives are offered to the users for each question.
+
+\subsection{How Total Credits and Total Privacy Percentage Works}

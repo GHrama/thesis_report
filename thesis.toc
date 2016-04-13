@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {1.1}User Profiling}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Personal Information}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Ranking the parameters that affect data sharing}{2}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Ranking the various Sensors }{3}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.3}Ranking the various Sensors}{3}{subsection.1.1.3}
 \contentsline {subsection}{\numberline {1.1.4}Ranking the various Buyers }{5}{subsection.1.1.4}
 \contentsline {subsection}{\numberline {1.1.5}Categorize the various Contexts}{5}{subsection.1.1.5}
 \contentsline {section}{\numberline {1.2}Characterization of the model}{6}{section.1.2}
@@ -20,4 +20,8 @@
 \contentsline {subsection}{\numberline {1.3.1}Profiling Questioning}{11}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}The Preliminary Questioning}{11}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}The Actual Questioning}{11}{subsection.1.3.3}
-\contentsline {chapter}{Bibliography}{13}{section*.3}
+\contentsline {subsection}{\numberline {1.3.4}Some Definitions}{12}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Details on Question's Options}{12}{subsection.1.3.5}
+\contentsline {subsection}{\numberline {1.3.6}Option Incentives}{14}{subsection.1.3.6}
+\contentsline {subsection}{\numberline {1.3.7}How Total Credits and Total Privacy Percentage Works}{14}{subsection.1.3.7}
+\contentsline {chapter}{Bibliography}{15}{section*.3}
