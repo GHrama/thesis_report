@@ -388,7 +388,19 @@ Unfortunately there cannot be the same $freq_o$ in option number $o$ involving t
 draining the data sending can be, but also on how useful it is to collect this data so often.
 
 
+\subsection{Question Incentives}
+In the preliminary round, incentives are not offered to the users to answer questions. In the actual questioning round, each option for a question is accompanied
+by the amount of credit the user can obtain by clicking the option. The amount of credit that the user can obtain along with the context for which the data can be used.
+Before the incentive for each option is calculated, the maximum incentive for each question should be calculated. Let matrix $mq_{j,k,l}$ represent the maximum amount of
+credit that can be obtained for each question involving a sensor $j$, a buyer $k$ and a context $l$. Let the budget be $B$ for day 2. This $B$ can be split
+to all the questions according to the assigned weights in matrix $wq$. Before each sales period starts the matrix $mq$ needs to be calculated. For a question
+involving a sensor $j$, a buyer $k$ and a context $l$, the maximum incentive for that question is calculated as:
+$$mq_{j,k,l} = \frac{wq_{j,k,l}}{\sum^{n_s}_a \sum^{n_b}_b \sum^{n_c}_c wq_{a,b,c}}*B$$
+In the way above, the whole matrix $mq$ is filled up and he maximum budget for one question is obtained.
+
 \subsection{Option Incentives}
-In the preliminary round, not incentives are offered to the users for each question.
+The matrix $mq$ represents the maximum amount of incentives a user can obtain for each question according to the budget $B$
+assigned for that sales period. Every question has got options that allow users to share data to the extent they are comfortable.
+From the $dsp_o$ assigned to each option of a question involving the sensor $j$, a buyer $k$ and a context $l$
 
 \subsection{How Total Credits and Total Privacy Percentage Works}
