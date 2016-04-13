@@ -4,7 +4,7 @@ In this Chapter, details behind how the Personalized Survey is performed with th
 reasoning behind it is presented. Here, the data of interest are the choices that users make
 , given certain factors with respect to privacy of their data. More than a survey, this is more like a game.
 
-\section{User Profiling}
+\section{User Profiling}    \label{profiling_questions}
 
 This part of the survey consists of drawing a profile of the user from some non intrusive
 personal details to personal choices about the factors that can affect their choice with respect to the privacy of their data.
@@ -14,7 +14,7 @@ to the user.
 
 %------------------------------------------------
 
-\subsection{Personal Information}
+\subsection{Personal Information}    \label{personal_info} 
 
 Personal Information refers to basic information about the user such as age, country and so on...This personal information is collected 
 so as to be able to make inferences on a group of users with similar information. Before the survey starts, each user
@@ -67,7 +67,7 @@ They are :
 
 %------------------------------------------------
 
-\subsection{Ranking the parameters that affect data sharing}
+\subsection{Ranking the parameters that affect data sharing}     \label{ranking_questions}
 
 The users are asked to rank which parameters affect the sharing their data the most. That is,
 the ranking goes from the feature that affects data sharing the most, to the parameter that doesn't affect the data sharing decision much. An example could be that if the user feels that sharing of his data sharing can be affected the most by which sensor the user is sharing, then that feature
@@ -201,7 +201,7 @@ can obtain that there can be a maximum of:
 $$NQ = n_s*n_b*n_c$$ 
 unique questions.
 
-\subsection{Formulating the Weight Matrix}
+\subsection{Formulating the Weight Matrix}  \label{weight_matrix_formulation}
 
 Now that the user profiling has been done, the weight matrix can be formulated. Let $wq$ be the representation of the weight matrix. The experiment has a budget $TB$, each time period of duration $T$ can
 have a budget $B$. Let $NT$ be the number of such time periods. Hence we infer:
@@ -294,18 +294,21 @@ The current question number $CQ$ can be obtained by the following expression:
 Some questions get weighted higher than some others, which means that there is a potential
 to obtain more credit {\it i.e.. it can be money or vouchers etc...} by answering such questions. The whole $wq$ matrix is generated this way.
 
-\section{Methods of the Personalized survey}
-The weight matrix $wq$ is now filled with weight values, which are all lesser than one.
+\section{Personalized Survey Explained}
+The previous section \ref{weight_matrix_formulation} explained how the weight matrix is formulated in detail. In this section, the whole picture of the personalized survey
+along with how the users are assigned credits and privacy percentage is explained.
 
 
+\subsection{Profiling and Preliminary Questioning}
+To be able to create the weight matrix which explains which questions can get more credit than others, profiling questions are
+asked to the users. As explained in section \ref{profiling_questions}, there are two kinds of profiling questions. One is explained in
+section 	\ref{personal_info}. These are the questions which can be asked to the users for grouping users according to their traits
+during post processing of user choices. The second kind of profiling is explained in section \ref{ranking_questions}. This is done
+to obtain the matrix $wq$.\\
+Users were briefed about the details of the experiment. Terms and Conditions of participation can be found here (needs work still).
+%% WIll need to write how the experiment was conducted.
+%% details of the experiment, was was mentioned what was not
+%% what kind of questions were asked by the users.
+%% what can be improved.
 
 
-
-
-
-
-
-
-
-
-\subsection{}
