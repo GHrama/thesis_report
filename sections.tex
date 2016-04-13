@@ -85,7 +85,7 @@ entertainment.
 
 %------------------------------------------------
 
-\subsection{Ranking the various Sensors }
+\subsection{Ranking the various Sensors}
 
 In this part of the user profiling, users are asked to rank the various sensors available on the mobile phone. Here, the ranking can be done from the sensor's data which the user is most comfortable sharing to the sensor's data which the user is least comfortable sharing. An example could be that 
 if the user feels that data from Accelerometer sensor is least sensitive to him, it can be placed first. Again, if the user feels that the data from the Battery sensor is more sensitive than that of the Accelerometer sensor, yet less sensitive than the others it can be placed second. In a similar way, this can be done for all the other sensors. The sensor ranked last in the list is the sensor's data that the user feels is most sensitive of all.\\
@@ -140,7 +140,7 @@ specific research and grant degrees.
 \item {\it Non Governmental Organization (NGO) (or) Charitable Organization} - A Non Governmental Organization is one that performs activities that might include human rights, environmental, improving health, or development work. An NGO's level of operation indicates the scale at which an organization works, such as local, regional, national, or international ~\cite{ngointro}.
 \item {\it A friend} - A friend represents a friend in your circle whom you know.
 \item {\it A person in your Family} - A person in you Family can be anybody from your grand-parents to you nephew.
-\item {\it Another user (or) An individual Person} - This can be anybody from you friend, family member to a random person in the world.
+\item {\it Another user (or) An individual Person} - This can be anybody from your friend, family member to a random person in the world.
 
 \end{itemize}
 
@@ -185,7 +185,7 @@ There can be more than one context assigned to one category.
 
 %------------------------------------------------
 
-\subsection{Forming the questions}
+\subsection{Forming the questions}   \label{question_format}
 
 The questions for the survey are formed using the all the different and unique combinations of sensors, buyers and contexts. The template of the questions for the survey is:\\
 {\it " Buyer B would like to obtain your S sensor data for the purpose of C "}\\
@@ -299,16 +299,45 @@ The previous section \ref{weight_matrix_formulation} explained how the weight ma
 along with how the users are assigned credits and privacy percentage is explained.
 
 
-\subsection{Profiling and Preliminary Questioning}
+\subsection{Profiling Questioning} \label{in_action_profiling}
 To be able to create the weight matrix which explains which questions can get more credit than others, profiling questions are
 asked to the users. As explained in section \ref{profiling_questions}, there are two kinds of profiling questions. One is explained in
 section 	\ref{personal_info}. These are the questions which can be asked to the users for grouping users according to their traits
-during post processing of user choices. The second kind of profiling is explained in section \ref{ranking_questions}. This is done
-to obtain the matrix $wq$.\\
-Users were briefed about the details of the experiment. Terms and Conditions of participation can be found here (needs work still).
+during post processing of user choices. The second kind of profiling is explained in section \ref{ranking_questions}. This can be done
+to obtain the weight matrix $wq$.\\
+%%Users were briefed about the details of the experiment. Terms and Conditions of participation can be found here (needs work still).
 %% WIll need to write how the experiment was conducted.
 %% details of the experiment, was was mentioned what was not
 %% what kind of questions were asked by the users.
 %% what can be improved.
 
+Users who live in Zurich (Switzerland) are briefed at ETH Zurich. Users who do not live in Zurich
+can be briefed on the phone or via Skype. Users are to be briefed all on the same day. This marks the first day of the experiment.
+After explaining the rules, terms and conditions of the experiment users start answering all the profiling questions. Making sure that the users do this
+step in front of us can make sure that the matrix $wq$ is not formed wrongly. In other words, users can directly ask questions if anything is unclear and the basis of the experiment
+being wrong can be avoided.
 
+
+\subsection{The Preliminary Questioning}
+As mentioned before, there is a maximum of $NQ$ questions that can be asked in this survey. From the questions asked in section \ref{in_action_profiling}, the matrix $wq$ is formed.
+Now, users are asked to answer all the $NQ$ questions present in the survey all at once. No incentives, total credit or total privacy percentages are indicated. Users answer questions
+without any details, which can help analyse how users answer questions without any incentives or information. In addition, another angle from which this
+step is important is to clear the doubts of users. While we may not be able to help them during the experiment phase, since the questions
+are repeated users can clear their doubts while filling out the preliminary round of questions with us. This can make sure that users are clear about what they are filling out.
+\\
+Once the questions are answered, this marks the end of the first day of the experiment. Users can return to their schedule.
+
+\subsection{The Actual Questioning}
+Once the preliminary questioning round is done, the actual questioning round starts. From this time on, the whole experiment is
+split into sales periods. Each sales period lasts for time duration $T$ and has a budget $B$. In this case, one sales period
+is equal to one day, but this could be fixed to something else. When the user sells data on day 2 of the experiment for example, the data is collected on day 3 {\it i.e. data is collected after the sales period is over}.
+ The user can choose the data he/she
+wishes to sell for the next day. All the questions asked in the preliminary round are asked again in every sales period {\it .i.e. user have already seen the questions before}. 
+This time instead of having just the question along with the possible answers, the user is presented with
+the credit that can be earned associated with each of the possible answers that can be chosen for a question. Additionally the total credit and total privacy percentage is also displayed. From this round,
+the interaction of the user with credits as well as the privacy can be observed. The round can be repeated $ro$ number of time, which makes the duration of the experiment
+$ro + 2$ days. This is because of the first day of briefing people and because the data is sold for the next day, one more day is required to collect the data from
+the last day of data sales.
+
+\subsection{Details on Question Options}
+In section \ref{question_format}, the template of the questions for the survey was discussed. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  13 APR 2016 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  13 APR 2016 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1502,9 +1502,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
-[8] [9]) [10] [11] [12
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 303--313
 
-] (./thesis.bbl
+ []
+
+[10]
+
+LaTeX Warning: Reference `in_action_profiling' on page 11 undefined on input li
+ne 322.
+
+) [11] [12] (./thesis.bbl
 bibitemlist
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
@@ -1561,7 +1569,8 @@ $[][]\OT1/pplx/m/n/10.95 .  Last Ac-cessed:
 
 [13
 
-]) <declaration-originality.pdf, id=242, 597.55246pt x 845.07718pt>
+
+]) <declaration-originality.pdf, id=244, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -1572,7 +1581,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 128.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=245, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=247, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -1617,18 +1626,30 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
 (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7D66D3D6C768E517618F578A7C305DE8;1516.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 7D66D3D6C768E517618F578A7C305DE8;1516
+(rerunfilecheck)             After:  BC3DC87B43A3E45EFE1D1F2B6F8E3759;1657.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15691 strings out of 493089
- 223617 string characters out of 6134841
+ 15694 strings out of 493089
+ 223670 string characters out of 6134841
  400262 words of memory out of 5000000
- 18785 multiletter control sequences out of 15000+600000
+ 18786 multiletter control sequences out of 15000+600000
  36447 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,122p,1010b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1645,10 +1666,10 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (19 pages, 314371 bytes).
+Output written on thesis.pdf (19 pages, 317907 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 304 compressed objects within 4 object streams
+ 67 named destinations out of 1000 (max. 500000)
  12466 words of extra memory for PDF output out of 14400 (max. 10000000)
 
