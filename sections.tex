@@ -172,9 +172,9 @@ Above the various available contexts were described. Next, the user can place th
 are:
 
 \begin{itemize}
-\item Very Useful {\it i.e.. Contexts users find useful, or for which they would be most likely to give their data}
-\item Useful {\it i.e.. Contexts which users might or might not give their data}
-\item Not Useful {\it (or)} Charitable Organization {\it i.e.. Contexts for which the user most likely will not give their data}
+\item Not Privacy Intrusive {\it i.e.. Contexts users find useful, or for which they would be more likely to give their data}
+\item Slightly Privacy Intrusive {\it i.e.. Contexts which users might or might not give their data}
+\item Very Privacy Intrusive {\it i.e.. Contexts for which the user most likely will not give their data}
 
 \end{itemize}
 
@@ -188,7 +188,8 @@ There can be more than one context assigned to one category.
 \subsection{Forming the questions}   \label{question_format}
 
 The questions for the survey are formed using the all the different and unique combinations of sensors, buyers and contexts. The template of the questions for the survey is:\\
-{\it " Buyer B would like to obtain your S sensor data for the purpose of C "}\\
+\\
+{\it " Buyer B would like to obtain your S sensor data for the purpose of C "}\\\\
 where:
 \begin{itemize}
 \item {\it "B"} - stands for the Buyer who wants to buy the user's data
@@ -206,11 +207,11 @@ unique questions.
 Now that the user profiling has been done, the weight matrix can be formulated. Let $wq$ be the representation of the weight matrix. The experiment has a budget $TB$, each time period of duration $T$ can
 have a budget $B$. Let $NT$ be the number of such time periods. Hence we infer:
 $$TB = B*NT$$
-The weight matrix $wq$ is the one that holds the amount of money each questions gets with respect to the other. The weight matrix is
+The weight matrix $wq$ is the one that holds the amount of credit each questions gets with respect to the other. The weight matrix is
 designed such that:
 %% sum of the elements of wq < NQ
 %% reason each element cannot be more than one
-$$\sum^{n_s,n_b,n_c}_{j,k,l} wq_{j,k,l} < NQ$$ 
+$$\sum^{n_s}_{j}\sum^{n_b}_{k}\sum^{n_c}_{l} wq_{j,k,l} < NQ$$ 
 The above equation represents that each element of the matrix $wq$ cannot be more than one. The reason being
 weights can be one only for questions that get maximum share of the budget and in this model
 not all questions can get a maximum share. Hence the inequality.\\
@@ -228,18 +229,15 @@ weights corresponding to each rank. To do that the following equation can be sol
 $$\sum^{p}_{i=1} i*x = 1$$
 %% minimum weight factor -> helps us weight feature multiplicatively
 %% confirm tough!
-After finding the variable $x$ ({\it NOTE :$x$ is just a variable that can help solve the equation, it has no special meaning in this context}), the weight of the individual features $w_{f_{i}}$ can be found using :
+After finding the variable $x$, which is the weight-parameter of the linear function, the weight of the individual features $w_{f_{i}}$ can be found using :
 $$w_{f_{i}} = x* (f - r_{f_{i}} + 1)$$
 Where $p_{i}$ can represent the individual features, and $r_{p_{i}}$ can represent the rank assigned to each of the features. The equation intuitively says that
 as the rank is lower, that feature contributes lesser to the data sharing decision. Hence, such a feature should weighted less than another ranked higher.
-In addition, from the above: $$\sum^{f}_{i=1} w_{f_{i}} = 1$$ can be obtained {\it i.e. the weight of all the individual features adds up to one}. This is because
-
-the maximum weight that a question can carry is one.
+In addition, from the above: $$\sum^{f}_{i=1} w_{f_{i}} = 1$$ can be obtained {\it i.e. the weight of all the individual features adds up to one}. This is because the maximum weight that a question can carry is one.
 
 \subsection{Calculating Weights of various Sensors}
 As a part of profiling, users were asked to rank the various sensors available according to their preferences. The sensors ranked high are less sensitive
-to the users, whereas sensors that are ranked low are the ones that are the most sensitive to the user.\\
-
+to the users, whereas sensors that are ranked low are the ones that are the most sensitive to the user.
 Let $w_{f_{s}}$ be the weight assigned to the feature Sensors, $w_{s_{j}}$ be the weight of the individual sensor $s_j$ and let $n_s$ be the number of sensors. In this feature Sensors {\it i.e.. which is a group}, there are individual sensors {\it i.e.. feature options}.
 For each of these sensors, their rank is denoted by $r_{s_{j}}$ where $s_j$ is an individual sensor. The way the individual sensor weights are to be 
 calculated depends on the rank assigned to them. The sensor that the user is most comfortable sharing its data gets least weight, whereas the sensor's
@@ -253,7 +251,7 @@ In the above way, individual sensor weights are calculated . For this experiment
 In previous section the users were asked to rank the buyers from the one to which they are most comfortable sharing their data,
 to the one they are least comfortable sharing their data to. Let $w_{p_{b}}$ be the weight of the parameter Buyers {\it i.e.. which is a group}, $w_{b_{k}}$ be the weight of
 the individual buyer k {\it i.e.. which are sub-parameters} and $n_b$ be the number of buyers available. For each buyer in the Parameter Buyers, each buyers is a sub-parameter.
-Each of their ranks is denoted by $r_{b_{k}}$ where $b_k$ is the individual buyers.  If a buyer is ranked high{\it i.e. the user is most comfortable sharing to data to the buyer}, intuitively this buyer can be assigned a lower weight.
+Each of their ranks is denoted by $r_{b_{k}}$ where $b_k$ is the individual buyers.  If a buyer is ranked high {\it i.e. the user is most comfortable sharing to data to the buyer}, intuitively this buyer can be assigned a lower weight.
 This is due to the fact that it is known that the user will most likely anyway share the data with this buyer. Similarly, if a buyer is ranked lower by the user, the weight of this buyer is higher. Again,
 this is because it is known that the user is less comfortable sharing the data with this buyer.
 Each buyer is assigned a weight, where the weight of the individual
@@ -274,7 +272,8 @@ of the the individual categories to be $w_{cat_{z}}$, where $cat_z$ is the indiv
 and $n_c$ = 6 contexts.\\
 Each Category is assigned a rank by us beforehand. That rank assigned to each category is referred to as $r_{cat_{z}}$. The user can therefore place the contexts into these categories. The contexts can take the weight of the
 category it is assigned to.
-Hence the weights of the categories are calculated, contexts assigned to that category get that exact same weight. In our case we have the Categories: {\it 1. Very Useful, 2. Useful, 3. Not useful} assigned the respective ranks one, two and three.
+Hence the weights of the categories are calculated, contexts assigned to that category get that exact same weight. In our case we have the Categories: {\it 1. Not Privacy Intrusive, 2. Slightly Privacy Intrusive, 3. Very
+Privacy Intrusive} assigned the respective ranks one, two and three.
 The higher ranked Categories get a lower weighting, and lower ranked categories are assigned a higher weighting. Intuitively, it can be taken as the contexts ranked higher are the ones the user will give his data for
 more easily. Similarly, the contexts ranked lower are the contexts the user will be more reluctant to give his data for. The weights of the categories can be calculated using the following expression:
 $$w_{cat_{z}} = (w_{f_{c}}/n_{cat})*r_{cat_{k}}$$
@@ -296,7 +295,7 @@ to obtain more credit {\it i.e.. it can be money or vouchers etc...} by answerin
 
 \section{Personalized Survey Explained}
 The previous section \ref{weight_matrix_formulation} explained how the weight matrix is formulated in detail. In this section, the whole picture of the personalized survey
-along with how the users are assigned credits and privacy percentage is explained.
+along with how the users are assigned total credits and total privacy percentage is explained.
 
 
 \subsection{Profiling Questioning} \label{in_action_profiling}
@@ -323,8 +322,7 @@ As mentioned before, there is a maximum of $NQ$ questions that can be asked in t
 Now, users are asked to answer all the $NQ$ questions present in the survey all at once. No incentives, total credit or total privacy percentages are indicated. Users answer questions
 without any details, which can help analyse how users answer questions without any incentives or information. In addition, another angle from which this
 step is important is to clear the doubts of users. While we may not be able to help them during the experiment phase, since the questions
-are repeated users can clear their doubts while filling out the preliminary round of questions with us. This can make sure that users are clear about what they are filling out.
-\\
+are repeated users can clear their doubts while filling out the preliminary round of questions with us. This can make sure that users are clear about what they are filling out.\\
 Once the questions are answered, this marks the end of the first day of the experiment. Users can return to their schedule.
 
 \subsection{The Actual Questioning}
@@ -332,7 +330,7 @@ Once the preliminary questioning round is done, the actual questioning round sta
 split into sales periods. Each sales period lasts for time duration $T$ and has a budget $B$. In this case, one sales period
 is equal to one day, but this could be fixed to something else. When the user sells data on day 2 of the experiment for example, the data is collected on day 3 {\it i.e. data is collected after the sales period is over}.
  The user can choose the data he/she
-wishes to sell for the next day. All the questions asked in the preliminary round are asked again in every sales period {\it .i.e. user have already seen the questions before}. 
+wishes to sell for the next day. All the questions asked in the preliminary round are asked again in every sales period {\it i.e. user have already seen the questions before}. 
 This time instead of having just the question along with the possible answers, the user is presented with
 the credit that can be earned associated with each of the possible answers that can be chosen for a question. Additionally the total credit and total privacy percentage is also displayed. From this round,
 the interaction of the user with credits as well as the privacy can be observed. The round can be repeated $ro$ number of time, which makes the duration of the experiment
@@ -340,6 +338,7 @@ $ro + 2$ days. This is because of the first day of briefing people and because t
 the last day of data sales.
 
 \subsection{Some Definitions}
+(REMOVE-------------------------- REMOVE SECTION)
 Before diving into the mechanism behind the options of the questions, some definitions need to be introduced.
 \begin{enumerate}
 \item {\it Privacy Level} - Privacy in this context refers to the frequency with which the user decides to share his data. The higher the frequency, the lesser the privacy.
@@ -352,7 +351,7 @@ this amount on a 100 can give the data sharing percentage.
 \item {\it Total Credits} - This can refer to the total amount of money, tokens or any other form of reward obtained by the user over the course of the experiment.
 \item {\it Total Privacy Percentage} - During the experiment, the user can decide how much data to share or not to share. Total privacy percentage shows the percentage of data that
 is being concealed by the user over the course of the experiment.
-
+(REMOVE-------------------------- REMOVE SECTION)
 \end{enumerate}
 
 \subsection{Details on Question's Options}
@@ -361,46 +360,48 @@ The options are the different privacy levels of the sensor's data to be shared. 
 patterns are more clear. Hence, for each question displayed the user can decide with what privacy his data should be shared if he chooses to share the data. The user can
 also choose not to share the data.\\
 It needs to be noted that there is no fixed definition of privacy (add reference). In this context, privacy is measured as the frequency with which the data is retrieved from the phone.
-Each privacy percentage level is assigned a specific frequency of collecting data. For the users sake instead of talking about the privacy levels themselves, privacy levels
-can be shaped into their opposite meaning. That is, instead of privacy percentage of data we can talk about how much data is being shared. If the data is a 100\% private it can mean that 0\% of the data is being shared.
-Similarly, if the data is 0\% private then it can mean that the data is being shared a 100\%.\\
-For now, we can go back to the definition of data sharing in terms of privacy rather than data sharing for the sake of calculation.
-Let 100\% privacy mean that the user shares none of his data which corresponds to $freq_{min}$, which is the minimum frequency of sharing data. In addition, let $freq_{max}$ be the maximum frequency
-of data sharing. This means that the data is 0\% private and it is shared most often among all other options.\\ To start off, $freq_{max}$ needs to be chosen. In addition, the number of options for each question $no$ needs to be decided upon.
-For each of these $no$ options, there can be an associated frequency attached called $freq_{o}$ where $o$ can be one of the options. To find the percentage privacy denoted as $pp_o$ for the option $o$ given that the chosen
-frequency for this option is $freq_{o}$ can be done the following way:
-$$pp_o = \frac{100*freq_o}{freq_{max}}$$
-In the above way, the $pp_o$ for each option $o$ can be obtained. As discussed above, from the users perspective of privacy is referred to as how much data is being shared. The opposite of privacy percentage
-is the data sharing percentage referred to as $dsp_o$ for each option $o$. The relation between $pp_o$ and $dsp_o$ is:
-$$pp_o = 100 - dsp_o$$
-Intuitively, if data is 40\% private it can mean that 60\% of the data is being shared.\\
-Since many features are being explored in this survey, the number of options of each of these features are kept to a minimum so as to have a stronger
-sample size for each options of the features. Now that the design behind the options has been explained, the following are the options displayed to the user for each question:
+Privacy can also be shaped into the level of data sharing, which indicates how much data is being shared rather than how much is being concealed. Each option for a question is assigned an abstract level such as none,low, medium and high data privacy. Behind these option these options can be scaled from $0-1$. The highest level of data privacy which is no data sharing is 1, the lowest privacy setting option can get a value of 0. Let there be $no + 1$ options for
+each question in total. $no$ options are the options that include some form of data sharing, {\it i.e. every option except the maximum data sharing option}. Then let $v$ to be the weight-parameter of a linear function and $o$ represent individual options
+of a question. To find $v$ the following needs to be solved:
+$$ no*v = 1$$
+Once $v$ is found, the weight assigned to each option $w_o$ can be found by:
+$$w_o = v*o$$
+where $o$ is the option number. This can work in the condition that the options are in increasing order of data sharing, {\it i.e. decreasing order of privacy}.
+In other words, it should be in decreasing order of privacy. Below are the options that can be presented for each question:
 \begin{itemize}
-\item Share 100\% of data
-\item Share 50\% of data
-\item Share 25\% of data
+\item Low Data Privacy
+\item Medium Data Privacy
 \item Do not share data
 
 \end{itemize}
 
-Unfortunately there cannot be the same $freq_o$ in option number $o$ involving the different sensors. The reason being privacy of the GPS sensor and Accelerometer are very different. If the frequency is set to  once in every 20 seconds, that is a very long time gap for the Accelerometer sensor, but a very short gap for the GPS sensor. The location of a person does not vary drastically every 20 seconds whereas, taking accelerometer every 20 is a quite a high privacy level since it will be hard to make sense of such sporadic data from this kind of sensor. Hence, the frequency $freq_o$ for questions involving different sensors might be different. It not only depends on how battery
-draining the data sending can be, but also on how useful it is to collect this data so often.
+%%It can be noted that there cannot be the same $freq_o$ in option number $o$ involving the different sensors. The reason being privacy of the GPS sensor and Accelerometer are very different. If the frequency is set to  once in %%%every 20 seconds, that is a very long time gap for the Accelerometer sensor, but a very short gap for the GPS sensor. The location of a person does not vary drastically every 20 seconds whereas, taking accelerometer every 20 is %%a quite a high privacy level since it will be hard to make sense of such sporadic data from this kind of sensor. Hence, the frequency $freq_o$ for questions involving different sensors might be different. It not only depends on %%how battery
+%%draining the data sending can be, but also on how useful it is to collect this data so often.
 
 
 \subsection{Question Incentives}
 In the preliminary round, incentives are not offered to the users to answer questions. In the actual questioning round, each option for a question is accompanied
-by the amount of credit the user can obtain by clicking the option. The amount of credit that the user can obtain along with the context for which the data can be used.
+by the amount of credit the user can obtain by clicking the option. The amount of credit that the user can obtain along with the context for which the data can be used is the incentive together.
 Before the incentive for each option is calculated, the maximum incentive for each question should be calculated. Let matrix $mq_{j,k,l}$ represent the maximum amount of
-credit that can be obtained for each question involving a sensor $j$, a buyer $k$ and a context $l$. Let the budget be $B$ for day 2. This $B$ can be split
-to all the questions according to the assigned weights in matrix $wq$. Before each sales period starts the matrix $mq$ needs to be calculated. For a question
+credit that can be obtained for each question involving a sensor $j$, a buyer $k$ and a context $l$. Let the budget be $B$ for day 2 as an example. This $B$ can be split
+to all the questions according to the assigned weights in matrix $wq$. Before each sales period starts, the matrix $mq$ needs to be calculated. For a question
 involving a sensor $j$, a buyer $k$ and a context $l$, the maximum incentive for that question is calculated as:
 $$mq_{j,k,l} = \frac{wq_{j,k,l}}{\sum^{n_s}_a \sum^{n_b}_b \sum^{n_c}_c wq_{a,b,c}}*B$$
-In the way above, the whole matrix $mq$ is filled up and he maximum budget for one question is obtained.
+In the way above, the whole matrix $mq$ is filled up and he maximum budget for each question is obtained.
 
 \subsection{Option Incentives}
 The matrix $mq$ represents the maximum amount of incentives a user can obtain for each question according to the budget $B$
 assigned for that sales period. Every question has got options that allow users to share data to the extent they are comfortable.
-From the $dsp_o$ assigned to each option of a question involving the sensor $j$, a buyer $k$ and a context $l$
+First to make it easy, we can convert the data privacy metric into the data sharing metric the following way:
+$$dsw_o = 1 - w_o$$
+Where $dsw_o$ refers to the weights assigned to each option in terms of data sharing rather than data privacy. Each option is assigned an incentive as below:
+$$i_{o,j,k,l} = mq_{j,k,l} * dsw_o$$
+where $i_{o,j,k,l}$ refers to the incentive for option $o$ involving  sensor $s_j$, buyer $b_k$ and context $c_l$.
 
 \subsection{How Total Credits and Total Privacy Percentage Works}
+Total credits is the total amount of credit obtained over the course of the experiment. It indicates how much money has been received. The way this is done
+is by keeping track of all the credit obtained by the user when the sales period is over. The user is not alerted of how much money he has obtained until the sales period is done.
+But the user can see how much credit can be obtained from each option from round 2 of the experiment.\\
+Privacy Percentage is the percentage of privateness the user has chosen while sharing his data. This can give the user an idea as to
+how much of the raw data has been revealed openly. The total privacy percentage is the cumulative privacy percentage over the whole experiment and it is updated after each sales period.
+The total privacy percentage and the total credits are inversely proportional entities. As the credits increase, the privacy the users data decreases and vice-versa.
