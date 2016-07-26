@@ -49,6 +49,9 @@
 %% LaTeX' own graphics handling
 \usepackage{graphicx}
 
+%% appendix
+%%\usepackage[toc,page]{appendix}
+
 %% We unfortunately need this for the Rules chapter.  Remove it
 %% afterwards; or at least NEVER use its underlining features.
 \usepackage{soul}
@@ -82,12 +85,12 @@
 %% Document information
 %% ====================
 
-\title{Title of Thesis}
+\title{Data Sharing in Participatory Social Sensing}
 \author{Ramapriya Sridharan}
 \thesistype{Master Thesis}
 \advisors{Advisors: Prof.\ Dr.\ Dirk Helbing, Dr.\ Pournaras Evangelos}
 \department{Department of Computational Social Sciences }
-\date{April 28, 2016}
+\date{September 3, 2016}
 
 \begin{document}
 
@@ -114,16 +117,25 @@
 %%\input{introduction}
 %%\input{rules}
 %%\input{typography}
-\input{sections}
+\input{abstract}
+\input{introduction}
+\input{related_work}
+\input{model}
+\input{experiment_methodology}
+\input{mobile_application}
+\input{pre_survey_results}
+\input{experiment_graphs}
+\input{conclusion}
+%%\input{appendix}
 
 \appendix
 
-%%\input{appendix}
+\input{appendix}
 
 \backmatter
 
 \bibliographystyle{plain}
-\bibliography{thesis}
+%%\bibliography{thesis}
 
 \includepdf[pages={-}]{declaration-originality.pdf}
 
