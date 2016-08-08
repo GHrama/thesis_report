@@ -1,4 +1,4 @@
-\chapter{Explanation of the System}
+\chapter{Explanation of the Mobile Application}
 
 \section{The Building Blocks}
 
@@ -9,7 +9,9 @@ explain with diagram what interacts with what
 \subsection{Local Storage}
 
 \subsection{Alarms}
+
 \subsubsection{Going to the Next Data Sharing Day}
+
 \subsubsection{Notifications}
 
 \subsection{Privacy and Credit Improvement}
@@ -30,13 +32,38 @@ how privacy credit is imporved
 
 \subsection{Kinvey Data Storage}
 
+Kinvey is a mobile backend as a service which provides a platform for mobile phones to link applications at a backend cloud storage. This backend has been used to store data and for some business logic implementations.
 \subsubsection{Security}
 
 \subsubsection{Table Store}
+All the data collected form the user's phones is stored in Kinvey Data Store's collections. Data is segregated in to the appropriate collections. Data is stored in the collections is done so in the following form :
 
-\subsubsection{Bussiness Logic}
+\begin{enumerate}
+    \item Data collected in the form of radio buttons on the phone are stored as integers.
+    \item Data collected as check-box entries on the phone each have a column in the collection with entries zero or one.
+    \item Data collected as drop down lists on the phone are stored either by integer position in the list or by the entry name in the list itself.
+\end{enumerate}
+
+This way of storing data applies to all the collections explained below. Each record of every collection is with the unique user identifier and with the timestamps whenever necessary.
+The first collection is the GetUserInformation collection and is used to store all the basic non intrusive user information 
+collected in the entry phase. The collection is shown in figure \ref{}. Next, is the UserResponse collection which is used to store all
+the responses of the users to data requests in the entry phase and the core phase. The collection is shown in figure \ref{}. Collection AccelerometerStore, LightStore, NoiseStore and LocationStore are used to store the mobile sensor data collected from the user at the end of a bidding day after local summarization on the mobile phone. Theses collections are shown in figures \ref{} \ref{} \ref{} \ref{}. The StorePoints collection is used to store the privacy and credit metrics obtained at the end of each bidding day  for each user and is shown in figure \ref{}.
+
+\subsubsection{Bussiness Logic} \ref{bl}
+Most of the bussiness logic used in the FairDataShare portal is present on Kinvey. Two things are done here:
+\begin{enumerate}
+    \item Finding privacy for a user
+    \item Summarization
+\end{enumerate}
+Data collected from the user consists of mobile sensor data with the least amount of summarization. This prevents for repeatedly
+collecting data from users and saves space and mobile data. Therefore, this mobile sensor data needs to be further summarized before being given to the stakeholder. To do this, we first have to find the most recent privacy setting from the UserResponseCollection. This is done due to the fact users can answer a data request more than once, hence we need to fish out the latest response for a particular sensor. Once this is done, using the recorded privacy level, we feed this input into another script that performs the summarization which has been explained in chapter \ref{model}.
 
 \subsection{FairDataShare Web Portal}
+The FairDataShare portal makes use of a server other Kinvey to safely store the usernames, passwords of users and the stakeholders. The database
+technology used is MongoDB. The username and passwords are both stored in a collection. The language used to interact with Kinvey is Express.js, which is based on Node.js. Most of the data portal business logic is on Kinvey described in section \ref{bl}. The webpage was constructed using Html and css. Screenshots of the portal are provided in chapter \ref{exp}.
+
+
+
 
 
 
