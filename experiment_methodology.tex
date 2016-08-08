@@ -3,46 +3,233 @@
 \section{Preparatory Phase}
 
 \subsection{Pre-Survey}
+(For each sensor,dc and context show graphs from the pre-survey why each of them was chosen)
+
+The pre-survey is the survey created that runs before the deployment of the actual social experiment. This
+survey was made in order to study the perception of users on the three features to be studied:
+
+\begin{enumerate}
+    \item Sensors - The mobile mobile sensor data shared
+    \item Stakeholders - The entity to whom mobile sensor data is shared
+    \item Context - The purpose for which mobile sensor data is shared
+\end{enumerate}
+
+From the above meantioned features, there were a lot of sub-features to choose from.
+Increasing the number of sub-features in the experiment in turn increases the number of data requests posed to the user. In addition,
+we wanted to gain insight into the perception of users on the three features. Hence the survey
+was prepared to understand the above(link to appendix). Additionally, it can help us redesign some of the aspect of the experiment based on the
+ambiguities. Participants pool consist of both people who are aware and unaware of data privacy and sensors. Participants were not paid for filling out the survey.
 
 \subsection{Sub-Features}
-For each sensor,dc and context show graphs from the presurvey why each of them was chosen
+194 pre-survey entries have been filled out by participants. Using this data, a fewer number of sub-features were chosen.
 
-\subsection{Privacy Options}
-what privacy option are chosen
+\subsection{Privacy Options} \label{options}
+Each data request accompagnied with privacy options ranging from $1$ to $5$. Option $1$ indicates that the user would like to
+share his raw data without any sort of summarization. $5$ indicated that the user would not like to share his data for this data request.
+The options in between have linearly scaled summarization levels assigned to them. For more information refer to \ref{summa}.
 
 \subsection{Question Structure}
-structure of the question
+
+A data request is when a stakeholder asks a user for mobile sensor data for a particular context or purpose. Each data request to the user is posed in the form of a question with the following template :
+$$"Please choose the amount of X sensor type data shared with Y stakeholder for use in a Z context app"$$
+where Sensors X can be :
+\begin{enumerate}
+    \item Accelerometer
+    \item Noise
+    \item Location
+    \item Light
+\end{enumerate}
+where Stakeholders Y can be:
+\begin{enumerate}
+    \item Corporation
+    \item Educational Institution
+    \item Non Governmental Organization
+    \item Government
+\end{enumerate}
+and where Context Z can be:
+\begin{enumerate}
+    \item Environment
+    \item Health/Fitness
+    \item Navigation
+    \item Social Networking
+\end{enumerate}
+
+In total this makes 64 data requests to the user.
 
 \subsection{Budget and Experiment Duration}
-budget and experiment duration
+The experiment is set to run for a total of two days, excluding the time taken for the entry phase and exit phase.
+The budget set for the core phase of the experiment is $B=35$ Chf and is excluding the cost of participation
+in the entry and exit phase. Participants are paid 10 Chf for coming to the Entry Phase, and 15 Chf for
+participating in it. Similarly for the Exit Phase, participants are given 10 Chf for showing up, and 5 Chf for participating in it.
+Out of the budget $B$, $\frac{1}{7}$ is given away for the participation of the users.
 
 
 \section{Entry Phase}
 explanation of screen shots
 
 \subsection{Collecting General User Information}
+As the figure \ref{} shows, the user is asked to answer some personal non-intrusive questions. The following is asked from the user: 
+\begin{enumerate}
+    \item Gender
+    \item Employment Status
+    \item Education Level
+    \item Year of birth
+    \item Country where user has lived most of his life
+    \item How many time a day do you check your Mobile phone per day.
+    \item Kind of applications the user has in the mobile phone.
+\end{enumerate}
 
-\subsection{Categorization of Features}
+The user may go back and re-answer the questions, but once the last questions answer is confirmed the data is sent to the server
+and hence cannot be changed. Users cannot navigate to the next page without filling out all the questions.
+
+\subsection{Categorization of Features} \label{cat_feature}
+
+As described in chapter \ref{model}, the users need to categorize the features Sensors, Stakeholders and Contexts. As shown in figure 
+\ref{}, the features are indicated followed by 5 options of privacy ranging from "very low privacy intrusion" to "very privacy high privacy intrusion". the option "very low privacy intrusion" means that the feature does not affect your mobile sensor data sharing decision, whereas 
+"very privacy high privacy intrusion" refers to a feature that really affect the sharing of mobile sensor data. Users need to click on the
+drop down menu to choose one of the privacy intrusion options. All options are compulsory, a no default option is provided. Users cannot navigate 
+to the next page without filling out all the questions.
 
 \subsection{Categorization of Sub-Features}
+For each of the features categorized in the previous sub-section, each of the sub-features need to be categorized in a similar fashion. Again,
+the privacy options range from very low privacy intrusion" to "very privacy high privacy intrusion" like in section \ref{cat_feature} . The user is first presented with
+the categorization of Sensors sub-features. Below each sensor is a drop down menu where the user can choose how much each of the sensors
+would affect the mobile sensor data sharing. Once all the sensors have been associated with a intrusion level, the user can click the green submit button and is directed to
+the next page where the sub-features of stakeholders need to be in turn categorized in a similar fashion. Each stakeholder type has a drop
+down menu each where the user can again classify how much each of them affect data sharing.
+Once the user has finished filling up the intrusion level for stakeholders, the user can click the green submit button and is directed to the next page.
+In this page, the user will need to categorize how much each of the Context's sub-features affect mobile sensor data sharing. Each context has a drop down menu below where the user can rate each context from low privacy intrusion" to "very privacy high privacy intrusion". Once this has been done the user can click on the submit button.
 
-\subsection{Answering Questions with No Incentives}
+The user will be redirected to the next page only if all the drop down boxes have been filled out. All questions are compulsory there is not default choice.
 
+\subsection{Answering Questions with No Incentives}  \label{quest_wi}
+After the categorization questions are answered and recorded, the user will be presented with 64 questions. Each question is a data request
+to the user. The user can choose from the available 5 privacy options mentioned in section \ref{options}. The higher the privacy, the less data is given away for that request. Users can change the answers to the data request until the green submit button on top of the options is clicked. After that the answer is locked. No indications of credit gain or privacy improvements are indicated in this round. The "i" button at the bottom of the screen is click-able. This takes the user to the FairDataShare portal. The user needs to then click on the data generator section of the website where the user can signup with his:
 
-\section{Core Phase}
+\begin{enumerate}
+    \item Username
+    \item Password
+    \item Email
+    \item Unique Identifier
+\end{enumerate}
+
+The unique identifier can be located at the bottom of the page. If it is clicked the user can select it and then copy and paste it on the website.
+The users can use this website to see all the data collected from them for all the mobile sensors. More details about the FairDataShare portal
+refer section \ref{fds}.
+
+In the task-bar, the user can see the bidding day number and how many questions have been answered from the total available.
+Once all the questions have been answered, the user goes to the core phase of the experiment.
+
+\section{Core Phase} \label{core}
+
+Once the entry phase is done, the user is presented with the screen shown in figure \ref{}. The first presented screen after the entry phase is over is what is called the "improvement screen". The button numbered 1
+represents "improve privacy" and the button numbered 2 represents "improve credit" respectively. The items numbered 3 and 4 represent the privacy  and credit obtained by the user respectively. Privacy is measured in terms of the percentage of mobile sensor data not traded to the stakeholders. Credit is measured in terms of the currency Swiss Francs. The button numbered 5 is the button that takes the user to the FairDataShare portal. The user can  login into the portal after a minimum of 24 hours after the start of the core phase to see the data that has been collected and shared with the stakeholders. The item numbered 6 is the unique identifier of the user. This can be selected and copied by long pressing the unique identifier for one second. The item numbered 7 is the round number which indicates the number of times the user has answered all the data requests. The item numbered 8 is the number of questions the user has answered in the current round.
+
+There are a total of 64 data requests, hence when all the 64 have been answered, the number of questions answered is reset and the number of round answered increases by one. This indicates all the data requests that have been answered and how many are left unanswered. 
+
+Each question will have 5 options to choose from ranging from maximum data sharing to least data sharing.
+
+From the starting time of the core phase till 24 hours later marks one bidding day. Once 24 hours is over, another bidding day starts where the privacy and credit metrics are reset. The day number in the task bar is incremented by one. The user has to answer all the data requests again for this new bidding day. Previous responses to data requests are not carried over to the next day. If a data requests is not answered, it is considered that the user does not want to trade mobile sensor data for that request. Additionally, each data request carries a participation fee, this is irrespective of the amount of mobile sensor data shared, by not participating in a data request the user foregoes this credit gain.
+
+The core phase goes on for a period of 48 hours. 
+
 
 \subsection{Improve Privacy or Credit}
 
+The improvement screen is where the user can choose whether he would like to improve the privacy or the credit that has been obtained. The elements of this screen  have been explained in the previous section \ref{core}.
+The improve credit button
+should be chosen if the user is interested in maximizing the credit already obtained further. This uses algorithm that uses the previous user answers to
+put forth a data request that can increase the credit to the maximum. The credit improvement button is represented by the number 4 in figure \ref{}. Similarly, the improve privacy button is used to further improve the privacy that has been obtained. This puts forth a data request that can further increase the user privacy. Then again, the ultimate change in the privacy or credit metrics depends on
+the option chosen by the user for the data request. The privacy improvement button is represented by the number 3 in figure \ref{}.
+
+For example, if a user chooses to improve the privacy, then clicks on improve privacy button and gets a data request, but still chooses option 1 for that data request, this may not improve his privacy but decrease it. This is because option 1 indicates that the user trades all the data for this request. Trading all data gives the user more credit, but decreases the privacy metric.
+
+Similarly, if a user chooses to improve the credit, then clicks on the improve credit button and gets a data request. If the user then chooses the option
+5 which indicates that no data is traded for this request, this is counters the initial desire to improve the credit obtained. Trading no data increases one's privacy, but does not increase the credit to the maximum.
+
+An actual improvement in the chosen metric depends on the chosen improvement button chosen and the choice of the appropriate option for that data request.
+
+
 \subsection{Answering Questions with Incentives}
 
+After choosing a metric to improve, the a screen is presented as shown in figure \ref{}.
+This screen is called the "bidding screen". This screen is very similar to the screen presented in the entry phase, except that the user
+is aware of the amount of privacy and credit obtained. Additionally, the user can see information about how the privacy and credit will increase or decrease for each data request, according to the chosen option.
+
+The items numbered 9 are the improvement in privacy for each possible option of the current data request. The items numbered 10 are the improvements in credit for each possible options of the current question. Once the user decides on which options to choose according to how much data wants to be traded, the user can click on the radio option as explained in section \ref{option} and then click again on the green submit button to confirm the answer. Once the green button has been clicked on, answers cannot be changed. The user has the possibility to go back to the improve screen from the bidding screen using the back button. Using the back button in the improve screen leads the user out of the application.
+
+Additionally, for every question there is an orange recommendation box that appears around the radio button options showcased at item numbered 12.
+This gives an indication to the user as to which options can improve the privacy or the credit compared to the previous time the user has
+answered this data request. For example, if the user has previously answered option 3 to a data request and has clicked on improve credit, the system
+puts an orange box around options 1,2 and 3. Similarly, if the user clicked on improve privacy button, the system would recommend the options 3,4 and 5. Two examples of this are provided in figures \ref{}.
+
+
+
 \section{Exit Phase}
-link to appendix exit survey
 
-\section{FairDataShare Web Portal}
+After the end of the core phase, the participants are asked to fill up a survey on their experience of the experiment. Some questions are
+about the rewards received, the privacy and credit metrics, design of the application, how the experiment was conducted, etc. The survey is linked to the user using the unique identifier assigned in the application. Once the survey is filled, the users receive their money for the entry phase, core phase and exit phase together, but only if they did not have their phones switched off throughout the experiment and participated in the core phase. This is done by checking the data collected on the server.
 
-Screen shots and explanations of the portal how to use and all
+\section{FairDataShare Web Portal} \label{fds}
+
+The FairDataShare portal is a website where users can view the data collected from them during the core phase of the experiment. Below is an explanation of how users ans stakeholders can view mobile sensor data.
 
 \subsection{Data Generator's Portal}
 
+Users first register as data generators as indicated in section \ref{quest_wi}.
+Once the users are registered, they can come back to the portal after 24 hours period or later to view their mobile sensor data collected in the server. The data portal login page is shown in figure \ref{}. Since the users are already registered from the mobile phone in the entry phase, they can go to the portal from their computers and this time login instead of register. Users should enter their: 
+
+\begin{enumerate}
+    \item Username
+    \item Password
+\end{enumerate}
+
+Once the users do that, they will be redirected to the data collection page shown in figure \ref{} with the following options in the task-bar :
+
+\begin{enumerate}
+    \item Accelerometer
+    \item Light
+    \item Noise
+    \item Location
+\end{enumerate}
+
+Users can choose the sensor from the task-bar whose data they want to see by clicking on it. An example is given in figure \ref{} of what
+kind of data can be seen. The data is displayed in the following fashion :
+
+\begin{enumerate}
+    \item Timestamp
+    \item Bidding day
+    \item Sensor Values
+\end{enumerate}
+
+In the experiment, day number one is the entry phase, the core phase is day number two and three.
+
 \subsection{Stakeholder's Portal}
+
+For a stakeholder to view data, they need to register in the portal shown in figure \ref{} by clicking register. Once that is done,
+the page shown in figure \ref{} is shown asking for :
+
+\begin{enumerate}
+    \item Company Name
+    \item Email
+    \item Stakeholder Category
+    \item Company Website
+\end{enumerate}
+
+Stakeholder category is the type the stakeholder comes under such as :
+
+\begin{enumerate}
+    \item Corporation
+    \item Educational Institution
+    \item Government
+    \item Non-Governmental Organization
+\end{enumerate}
+
+After this, the stakeholder can click on the register button. He then gets access to data that is being collected according to the user's wishes.
+The stakeholder can then choose the bidding day, an anonymous user and a sensor and get data he is permitted to see. Figure \ref{} shows screenshots 
+where the stakeholder can choose what data he wants and the page with the user data. 
+
+
+
+
 

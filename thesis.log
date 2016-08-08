@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  26 JUL 2016 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  8 AUG 2016 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,13 +700,64 @@ Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
 \thm@amstmpdepth=\dimen161
 \tagwidth=\dimen162
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2012/09/05 v1.0 SVG inclusion and extraction
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks47
+\XKV@tempa@toks=\toks48
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count153
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use t
+he caption package interfaces in order to configure your captions. .
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen163
+\captionmargin@=\dimen164
+\captionwidth=\dimen165
+\caption@tempdima=\dimen166
+\caption@indent=\dimen167
+\caption@parindent=\dimen168
+\caption@hangindent=\dimen169
+)
+\c@ContinuedFloat=\count154
+)
+\c@KVtest=\count155
+\sf@farskip=\skip197
+\sf@captopadj=\dimen170
+\sf@capskip=\skip198
+\sf@nearskip=\skip199
+\c@subfigure=\count156
+\c@subfigure@save=\count157
+\c@subtable=\count158
+\c@subtable@save=\count159
+\sf@top=\skip200
+\sf@bottom=\skip201
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks47
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
@@ -727,45 +778,18 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count153
+\Gread@gobject=\count160
 ))
-\Gin@req@height=\dimen163
-\Gin@req@width=\dimen164
+\Gin@req@height=\dimen171
+\Gin@req@width=\dimen172
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/soul/soul.sty
-Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks48
-\SOUL@lasttoken=\toks49
-\SOUL@cmds=\toks50
-\SOUL@buffer=\toks51
-\SOUL@token=\toks52
-\SOUL@spaceskip=\skip197
-\SOUL@ttwidth=\dimen165
-\SOUL@uldp=\dimen166
-\SOUL@ulht=\dimen167
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/transparent.sty
+Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count154
-\calc@Bcount=\count155
-\calc@Adimen=\dimen168
-\calc@Bdimen=\dimen169
-\calc@Askip=\skip198
-\calc@Bskip=\skip199
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count156
-\calc@Cskip=\skip200
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
@@ -782,64 +806,91 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+\SVG@out@width=\skip202
+\SVG@out@height=\skip203
+\c@svgfigure=\count161
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks49
+\SOUL@lasttoken=\toks50
+\SOUL@cmds=\toks51
+\SOUL@buffer=\toks52
+\SOUL@token=\toks53
+\SOUL@spaceskip=\skip204
+\SOUL@ttwidth=\dimen173
+\SOUL@uldp=\dimen174
+\SOUL@ulht=\dimen175
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count162
+\calc@Bcount=\count163
+\calc@Adimen=\dimen176
+\calc@Bdimen=\dimen177
+\calc@Askip=\skip205
+\calc@Bskip=\skip206
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count164
+\calc@Cskip=\skip207
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 ))
-\AM@pagewidth=\dimen170
-\AM@pageheight=\dimen171
+\AM@pagewidth=\dimen178
+\AM@pageheight=\dimen179
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box31
-\AM@toc@title=\toks53
-\c@AM@survey=\count157
+\AM@toc@title=\toks54
+\c@AM@survey=\count165
 \AM@templatesizebox=\box32
 )
 (./extrapackages.tex
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/varioref.sty
 Package: varioref 2014/10/28 v1.5a package for extended references (FMi)
-\c@vrcnt=\count158
+\c@vrcnt=\count166
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count159
+\etb@tempcnta=\count167
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fmtcount/fmtcount.sty
 Package: fmtcount 2015/05/05 v3.01
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks54
-\XKV@tempa@toks=\toks55
-)
-\XKV@depth=\count160
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count161
+\fc@digit@counter=\count168
 ))
-\c@padzeroesN=\count162
-\fc@tmpcatcode=\count163
+\c@padzeroesN=\count169
+\fc@tmpcatcode=\count170
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2013/08/17
 )
-\@DT@modctr=\count164
-\@ordinalctr=\count165
-\@orgargctr=\count166
-\@strctr=\count167
-\@tmpstrctr=\count168
-\@DT@loopN=\count169
-\@DT@X=\count170
+\@DT@modctr=\count171
+\@ordinalctr=\count172
+\@orgargctr=\count173
+\@strctr=\count174
+\@tmpstrctr=\count175
+\@DT@loopN=\count176
+\@DT@X=\count177
 
 
 Package fmtcount Warning: \ordinal already defined use \FCordinal instead. on i
@@ -848,26 +899,26 @@ nput line 516.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count171
-\@month=\count172
-\@year=\count173
-\c@HOUR=\count174
-\c@HOURXII=\count175
-\c@MINUTE=\count176
-\c@TOHOUR=\count177
-\c@TOMINUTE=\count178
-\c@SECOND=\count179
-\currenthour=\count180
-\currentminute=\count181
-\currentsecond=\count182
+\@day=\count178
+\@month=\count179
+\@year=\count180
+\c@HOUR=\count181
+\c@HOURXII=\count182
+\c@MINUTE=\count183
+\c@TOHOUR=\count184
+\c@TOMINUTE=\count185
+\c@SECOND=\count186
+\currenthour=\count187
+\currentminute=\count188
+\currentsecond=\count189
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count183
-\dayofyear=\count184
-\dayofweek=\count185
+\@dtctr=\count190
+\dayofyear=\count191
+\dayofweek=\count192
 LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks56
-\dt@b=\toks57
+\dt@a=\toks55
+\dt@b=\toks56
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/05/11 v1.16 mathematical typesetting tools
 
@@ -878,15 +929,15 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count186
-\l_MT_multwidth_dim=\dimen172
-\origjot=\skip201
-\l_MT_shortvdotswithinadjustabove_dim=\dimen173
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen174
-\l_MT_above_intertext_sep=\dimen175
-\l_MT_below_intertext_sep=\dimen176
-\l_MT_above_shortintertext_sep=\dimen177
-\l_MT_below_shortintertext_sep=\dimen178
+\g_MT_multlinerow_int=\count193
+\l_MT_multwidth_dim=\dimen180
+\origjot=\skip208
+\l_MT_shortvdotswithinadjustabove_dim=\dimen181
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen182
+\l_MT_above_intertext_sep=\dimen183
+\l_MT_below_intertext_sep=\dimen184
+\l_MT_above_shortintertext_sep=\dimen185
+\l_MT_below_shortintertext_sep=\dimen186
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/esvect/esvect.sty
 Package: esvect 
@@ -894,23 +945,23 @@ Package: esvect
 LaTeX Font Info:    Redeclaring math symbol \fldr on input line 38.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count187
+\lst@mode=\count194
 \lst@gtempboxa=\box33
-\lst@token=\toks58
-\lst@length=\count188
-\lst@currlwidth=\dimen179
-\lst@column=\count189
-\lst@pos=\count190
-\lst@lostspace=\dimen180
-\lst@width=\dimen181
-\lst@newlines=\count191
-\lst@lineno=\count192
-\lst@maxwidth=\dimen182
+\lst@token=\toks57
+\lst@length=\count195
+\lst@currlwidth=\dimen187
+\lst@column=\count196
+\lst@pos=\count197
+\lst@lostspace=\dimen188
+\lst@width=\dimen189
+\lst@newlines=\count198
+\lst@lineno=\count199
+\lst@maxwidth=\dimen190
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count193
-\lst@skipnumbers=\count194
+\c@lstnumber=\count200
+\lst@skipnumbers=\count201
 \lst@framebox=\box34
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
@@ -950,15 +1001,15 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfcprot/pdfcprot.sty
 Package: pdfcprot 2002/02/27 v1.5 character protruding using pdflatex (cs)
-\c@CPROT@family=\count195
-\c@CPROT@family@temp=\count196
-\c@CPROT@series=\count197
-\c@CPROT@series@temp=\count198
-\c@CPROT@shape=\count199
-\c@CPROT@shape@temp=\count200
-\c@CPROT@size=\count201
-\c@CPROT@size@temp=\count202
-\c@CPROT@temp@chars=\count203
+\c@CPROT@family=\count202
+\c@CPROT@family@temp=\count203
+\c@CPROT@series=\count204
+\c@CPROT@series@temp=\count205
+\c@CPROT@shape=\count206
+\c@CPROT@shape@temp=\count207
+\c@CPROT@size=\count208
+\c@CPROT@size@temp=\count209
+\c@CPROT@temp@chars=\count210
 Package pdfcprot Info: You've requested char protruding for TS1 encoding
 (pdfcprot)             but TS1 encoding doesn't seem to be loaded.
 (pdfcprot)             Maybe you forgot a '\usepackage{textcomp}'. on input lin
@@ -996,25 +1047,25 @@ Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
 ) (./theoremsetup.tex
-\c@currtheoremctr=\count204
-\c@endtheoremctr=\count205
-\c@theorem=\count206
-\c@currexamplectr=\count207
-\c@endexamplectr=\count208
-\c@currremarkctr=\count209
-\c@endremarkctr=\count210
-\c@currcorollaryctr=\count211
-\c@endcorollaryctr=\count212
-\c@currdefinitionctr=\count213
-\c@enddefinitionctr=\count214
-\c@currlemmactr=\count215
-\c@endlemmactr=\count216
-\c@currpropositionctr=\count217
-\c@endpropositionctr=\count218
-\c@currproofctr=\count219
-\c@endproofctr=\count220
+\c@currtheoremctr=\count211
+\c@endtheoremctr=\count212
+\c@theorem=\count213
+\c@currexamplectr=\count214
+\c@endexamplectr=\count215
+\c@currremarkctr=\count216
+\c@endremarkctr=\count217
+\c@currcorollaryctr=\count218
+\c@endcorollaryctr=\count219
+\c@currdefinitionctr=\count220
+\c@enddefinitionctr=\count221
+\c@currlemmactr=\count222
+\c@endlemmactr=\count223
+\c@currpropositionctr=\count224
+\c@endpropositionctr=\count225
+\c@currproofctr=\count226
+\c@endproofctr=\count227
 )
-\c@proof=\count221
+\c@proof=\count228
  (./macrosetup.tex)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -1061,22 +1112,20 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen183
-\Hy@linkcounter=\count222
-\Hy@pagecounter=\count223
+\@linkdim=\dimen191
+Normal \count register pool exhausted, switching to extended pool.
+\Hy@linkcounter=\count277
+\Hy@pagecounter=\count278
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count224
+\Hy@SavedSpaceFactor=\count279
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1089,17 +1138,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count225
+\c@Hy@tempcnt=\count280
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen184
-\Fld@menulength=\count226
-\Field@Width=\dimen185
-\Fld@charsize=\dimen186
+\XeTeXLinkMargin=\dimen192
+\Fld@menulength=\count281
+\Field@Width=\dimen193
+\Fld@charsize=\dimen194
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1109,31 +1158,30 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count227
-\c@Item=\count228
-Normal \count register pool exhausted, switching to extended pool.
-\c@Hfootnote=\count277
+\Hy@abspage=\count282
+\c@Item=\count283
+\c@Hfootnote=\count284
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count278
-\c@Hpagenote=\count279
+\c@memhycontfloat=\count285
+\c@Hpagenote=\count286
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count280
-\c@bookmark@seq@number=\count281
+\Fld@listcount=\count287
+\c@bookmark@seq@number=\count288
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip202
+\Hy@SectionHShift=\skip209
 )
 
 LaTeX Warning: Unused global option(s):
@@ -1142,37 +1190,43 @@ LaTeX Warning: Unused global option(s):
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 95.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 110
+.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
-) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen187
+\scratchcounter=\count289
+\scratchdimen=\dimen195
 \scratchbox=\box35
-\nofMPsegments=\count283
-\nofMParguments=\count284
-\everyMPshowfont=\toks59
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen188
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks60
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen196
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks59
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1189,228 +1243,232 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box36
-\c@lstlisting=\count288
+\c@lstlisting=\count295
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 110.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 110.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfcprot/pplmnOT1.cpa)
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 110.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 110.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 95.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 110.
+
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 95.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 110.
+
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 95.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 110.
+
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 95.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 110.
+
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 95
-.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
+0.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 95.
-Package hyperref Info: Link coloring ON on input line 95.
+(pdfcprot)             you intended to use. on input line 110.
+Package hyperref Info: Link coloring ON on input line 110.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count289
+\c@section@level=\count296
 LaTeX Info: Redefining \Ref on input line 513.
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 95.
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \nameref on input line 110.
+LaTeX Info: Redefining \ref on input line 110.
+LaTeX Info: Redefining \pageref on input line 110.
+LaTeX Info: Redefining \nameref on input line 110.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-LaTeX Info: Redefining \Ref on input line 95.
- <ETHlogo.pdf, id=225, 179.67125pt x 45.16875pt>
+LaTeX Info: Redefining \Ref on input line 110.
+ <ETHlogo.pdf, id=229, 179.67125pt x 45.16875pt>
 File: ETHlogo.pdf Graphic file (type pdf)
 
 <use ETHlogo.pdf>
-Package pdftex.def Info: ETHlogo.pdf used on input line 105.
+Package pdftex.def Info: ETHlogo.pdf used on input line 122.
 (pdftex.def)             Requested size: 179.67079pt x 45.16862pt.
  [1
 
@@ -1464,14 +1522,14 @@ File: uesvect.fd
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ... with No Incentives}{10}{subsection.4.2.4}
+l.30 ...ion of Sub-Features}{18}{subsection.4.2.3}
                                                    [1
 
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.115 
+l.132 
        [2] (./abstract.tex) (./introduction.tex [1
 
 ] [2
@@ -1483,108 +1541,218 @@ l.115
 
 ]
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 3.
-) (./experiment_methodology.tex [7] [8]
-Underfull \vbox (badness 5050) has occurred while \output is active []
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 10.
 
- [9
+<./images/model_building_blocks.png, id=335, 719.68875pt x 489.83pt>
+File: ./images/model_building_blocks.png Graphic file (type png)
 
-])
-(./mobile_application.tex [10]) (./pre_survey_results.tex
+<use ./images/model_building_blocks.png>
+Package pdftex.def Info: ./images/model_building_blocks.png used on input line 
+24.
+(pdftex.def)             Requested size: 369.0pt x 251.15535pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [7]
+Underfull \vbox (badness 3884) has occurred while \output is active []
+
+ [8 <./images/model_building_blocks.png>]
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 62.
+
+LaTeX Font Info:    No file OMSpplx.fd. on input line 62.
+
+
+LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 62.
+
+<./images/categorize_sub.png, id=349, 669.50125pt x 388.45125pt>
+File: ./images/categorize_sub.png Graphic file (type png)
+
+<use ./images/categorize_sub.png>
+Package pdftex.def Info: ./images/categorize_sub.png used on input line 69.
+(pdftex.def)             Requested size: 369.0pt x 214.10524pt.
+ [9]
+Overfull \hbox (71.1436pt too wide) in paragraph at lines 93--98
+[]\OT1/pplx/m/n/10.95 Let $\OML/zplm/m/it/10.95 WM$ \OT1/pplx/m/n/10.95 be a ma
+-trix with di-men-sions $\OML/zplm/m/it/10.95 count\OT1/zplm/m/n/10.95 (\OML/zp
+lm/m/it/10.95 Sensors\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 xcount\OT1/zplm/
+m/n/10.95 (\OML/zplm/m/it/10.95 Stakeholders\OT1/zplm/m/n/10.95 )\OML/zplm/m/it
+/10.95 xcount\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 Contexts\OT1/zplm/m/n/10
+.95 )$\OT1/pplx/m/n/10.95 .
+ []
+
+[10 <./images/categorize_sub.png>]
+Overfull \hbox (99.0771pt too wide) in paragraph at lines 107--112
+\OT1/pplx/m/n/10.95 Let $\OML/zplm/m/it/10.95 CM$ \OT1/pplx/m/n/10.95 be the co
+st ma-trix with di-men-sions $\OML/zplm/m/it/10.95 count\OT1/zplm/m/n/10.95 (\O
+ML/zplm/m/it/10.95 Sensors\OT1/zplm/m/n/10.95 )\OML/zplm/m/it/10.95 xcount\OT1/
+zplm/m/n/10.95 (\OML/zplm/m/it/10.95 Stakeholders\OT1/zplm/m/n/10.95 )\OML/zplm
+/m/it/10.95 xcount\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 Contexts\OT1/zplm/m
+/n/10.95 )$\OT1/pplx/m/n/10.95 .
+ []
+
+[11] [12] [13]) (./experiment_methodology.tex [14] [15
 
 ]
-[12]) (./experiment_graphs.tex [13
+Overfull \hbox (61.56131pt too wide) detected at line 34
+\OT1/pplx/m/n/10.95 "\OML/zplm/m/it/10.95 PleasechoosetheamountofXsensortypedat
+asharedwithYstakeholderforuseinaZcontextapp\OT1/pplx/m/n/10.95 "
+ []
 
-] [14
+[16]
 
-]) (./conclusion.tex [15] [16
+LaTeX Warning: Reference `' on page 17 undefined on input line 71.
+
+
+LaTeX Warning: Reference `' on page 17 undefined on input line 88.
+
+[17] [18]
+
+LaTeX Warning: Reference `' on page 19 undefined on input line 125.
+
+
+LaTeX Warning: Reference `' on page 19 undefined on input line 142.
+
+
+LaTeX Warning: Reference `' on page 19 undefined on input line 143.
+
+[19]
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 155.
+
+
+LaTeX Warning: Reference `option' on page 20 undefined on input line 159.
+
+[20]
+
+LaTeX Warning: Reference `' on page 21 undefined on input line 164.
+
+
+LaTeX Warning: Reference `' on page 21 undefined on input line 180.
+
+[21]
+
+LaTeX Warning: Reference `' on page 22 undefined on input line 187.
+
+
+LaTeX Warning: Reference `' on page 22 undefined on input line 196.
+
+
+LaTeX Warning: Reference `' on page 22 undefined on input line 209.
+
+
+LaTeX Warning: Reference `' on page 22 undefined on input line 210.
+
+
+LaTeX Warning: Reference `' on page 22 undefined on input line 229.
+
+) (./mobile_application.tex [22]) (./pre_survey_results.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23
+
+]
+[24]) (./experiment_graphs.tex [25
+
+] [26
+
+]) (./conclusion.tex [27] [28
 
 ])
-(./appendix.tex [17] [18
+(./appendix.tex [29] [30
 
-]) [19] [20
+]) [31] [32
 
 ]
-<declaration-originality.pdf, id=393, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=537, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf used on input line 140.
+Package pdftex.def Info: declaration-originality.pdf used on input line 157.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: declaration-originality.pdf Graphic file (type pdf)
  <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf used on input line 140.
+Package pdftex.def Info: declaration-originality.pdf used on input line 157.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=396, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=540, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-140.
+157.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-140.
+157.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-140.
+157.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-140.
+157.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-140.
+157.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [21 <./declaration-originality.pdf>]
+ [33 <./declaration-originality.pdf>]
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
 
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F5500593EFEB59182EA0600BA543F478;3786.
+(rerunfilecheck)             Checksum: 45462996C9CF7AB4DA7DCF49CAE4962B;3846.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 15729 strings out of 493089
- 224566 string characters out of 6134841
- 399521 words of memory out of 5000000
- 18800 multiletter control sequences out of 15000+600000
- 30560 words of font info for 87 fonts, out of 8000000 for 9000
+ 17155 strings out of 493089
+ 249187 string characters out of 6134841
+ 422601 words of memory out of 5000000
+ 20099 multiletter control sequences out of 15000+600000
+ 39088 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,18n,122p,1010b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,18n,122p,1010b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on thesis.pdf (25 pages, 239067 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (37 pages, 448792 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 84 named destinations out of 1000 (max. 500000)
- 12754 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 585 compressed objects within 6 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 12772 words of extra memory for PDF output out of 14400 (max. 10000000)
 

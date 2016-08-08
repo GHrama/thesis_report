@@ -46,6 +46,19 @@
 %% break
 \usepackage[amsmath,thmmarks]{ntheorem}
 
+
+\usepackage{ifluatex}
+\ifluatex
+  \usepackage{pdftexcmds}
+  \makeatletter
+  \let\pdfstrcmp\pdf@strcmp
+  \let\pdffilemoddate\pdf@filemoddate
+  \makeatother
+\fi
+
+\usepackage{svg}
+\usepackage{amsmath}
+
 %% LaTeX' own graphics handling
 \usepackage{graphicx}
 
@@ -92,7 +105,11 @@
 \department{Department of Computational Social Sciences }
 \date{September 3, 2016}
 
+
+
 \begin{document}
+
+
 
 \frontmatter
 
