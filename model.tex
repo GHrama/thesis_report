@@ -7,6 +7,10 @@
 \newcommand{\numcontexts}[0]{$N_C$ }
 \newcommand{\numquestions}[0]{$N_{DR}$ } 
 
+
+\let\subcaption\relax
+\let\subfloat\relax
+
 \section{Introduction}
 Why the model is needed, add some previous paper about incentives and what we do differently
 Our aim is to create a computational model that is able to collect useful data about the influence of incentives on mobile
@@ -182,7 +186,7 @@ Data is collected for the whole day, and at the end of the day according to the 
 be linearly assigned to each option starting with the highest privacy corresponding to highest summarization level , that is no data sharing to
 the lowest summarization level, that is no summarization at all. An example of assigning the summatization level $summ_{h}$ for option h can be the following :
 \begin{equation}
-summ_{h} = y*h where h \neq m
+summ_{h} = y*h \text{where} h \neq m
 \end{equation}
 
 This gives the frequency of sensor data collection for every option of a data request.
@@ -193,40 +197,52 @@ on how the model varies the weights to questions according to the user input.
 
 \subsection{Setup}
 the sensors, stakeholders, and contexts and other special parameters such as number of options and all
-In this model we take into consideration the following sub-features for each feature:
+To explain the model using examples, we take into consideration the following sub-features for each feature:
 
 \begin{enumerate}
     \item Sensors
     \begin{enumerate}
-    \item Accelerometer
-    \item Noise
+    \item Accelerometer -1
+    \item Noise -2
+    \item Location -3
    \end{enumerate}
-    \item Stakeholders
+    \item Stakeholders 
     \begin{enumerate}
-    \item Corporation
-    \item Government
+    \item Corporation -1
+    \item Government -2
+    \item education -3
    \end{enumerate}
    \item Contexts
     \begin{enumerate}
-    \item Navigation
-    \item Environment
+    \item Navigation -1
+    \item Environment -2
+    \item Social Media -3
    \end{enumerate}
  \end{enumerate}
  
-Given the above, each user will receive 8 data requests in total. Each data request has 5 privacy options ranging from one to five. One indicates the user would like to to give all his data, and option five indicates the user refuses to share data for this request. In addition, let us
-assume a Budget $B=20$ credits per day.
- 
-\subsection{Input} 
-Input to the data is the user information, the user categorization of features and respective sub-features.
-The options chosen by the user are depicted in the figure. The user information part is skipped due to the fact that it does not contribute
-to assignment of weights to data requests, but more to the data post processing.
+The numbers indicated next to the sub-features is the sub-feature identifier. This uniquely identifies a sub-feature within a feature category.
+Each user will receive an amount of $$count(Sensors)*count(Stakeholders)*count(Contexts)=27$$ data requests in total. Each data request has five privacy options ranging from one to five. the option one indicates the users would like to to trade all their data, and option five indicates the users refuse to share data their for this data request. Additionally, it is assumed that the core phase has a Budget $B=100$ per day. 
+The input to the model are the user choices during the categorization of the features and sub-features.
 
 \subsection{Results}
 
+In this section, five user scenarios will be introduced and explained in order to explore the properties of the weight and cost matrices.
+First, we will begin by introducing the way the user has categorized the features and sub-features. This will be followed by an explanation
+of the generated matrices.
 
+\subsubsection{Scenario 1 and 2}
 
-
-
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/weight_1_1}
+\caption{Values of the Weight Matrix\label{weight11}}
+\end{figure}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/cost_1_1}
+\caption{Values of the Cost Matrix \label{cost11}}
+\end{figure}
+   
 
 
 

@@ -25,9 +25,6 @@ how privacy credit is imporved
 
 \subsection{Server Synchronization}
 
-
-
-
 \section{The Server}
 
 \subsection{Kinvey Data Storage}
@@ -44,7 +41,8 @@ All the data collected form the user's phones is stored in Kinvey Data Store's c
     \item Data collected as drop down lists on the phone are stored either by integer position in the list or by the entry name in the list itself.
 \end{enumerate}
 
-This way of storing data applies to all the collections explained below. Each record of every collection is with the unique user identifier and with the timestamps whenever necessary.
+This way of storing data applies to all the collections explained below. Each record of every collection is with a unique user identifier and with the timestamp whenever necessary. This is done to identify data that belongs to the same user accross different collections. The timestamp
+is collected in order to examine temporal relationships.
 The first collection is the GetUserInformation collection and is used to store all the basic non intrusive user information 
 collected in the entry phase. The collection is shown in figure \ref{}. Next, is the UserResponse collection which is used to store all
 the responses of the users to data requests in the entry phase and the core phase. The collection is shown in figure \ref{}. Collection AccelerometerStore, LightStore, NoiseStore and LocationStore are used to store the mobile sensor data collected from the user at the end of a bidding day after local summarization on the mobile phone. Theses collections are shown in figures \ref{} \ref{} \ref{} \ref{}. The StorePoints collection is used to store the privacy and credit metrics obtained at the end of each bidding day  for each user and is shown in figure \ref{}.

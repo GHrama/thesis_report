@@ -15,49 +15,49 @@
 \contentsline {subsection}{\numberline {3.2.7}Summarization of Collected Data}{13}{subsection.3.2.7}
 \contentsline {section}{\numberline {3.3}Analysis of the Model}{14}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Setup}{14}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Input}{14}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Results}{14}{subsection.3.3.3}
-\contentsline {chapter}{\chapternumberline {4}Experiment Methodology}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Preparatory Phase}{15}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Pre-Survey}{15}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Sub-Features}{15}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Privacy Options}{16}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Question Structure}{16}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Budget and Experiment Duration}{16}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Entry Phase}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Collecting General User Information}{17}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Categorization of Features}{17}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Categorization of Sub-Features}{18}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Answering Questions with No Incentives}{18}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Core Phase}{19}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Improve Privacy or Credit}{20}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Answering Questions with Incentives}{20}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Exit Phase}{21}{section.4.4}
-\contentsline {section}{\numberline {4.5}FairDataShare Web Portal}{21}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Data Generator's Portal}{21}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Stakeholder's Portal}{22}{subsection.4.5.2}
-\contentsline {chapter}{\chapternumberline {5}Explanation of the System}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}The Building Blocks}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}The Mobile Application}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Local Storage}{23}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Alarms}{23}{subsection.5.2.2}
-\contentsline {subsubsection}{Going to the Next Data Sharing Day}{23}{section*.4}
-\contentsline {subsubsection}{Notifications}{23}{section*.5}
-\contentsline {subsection}{\numberline {5.2.3}Privacy and Credit Improvement}{23}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Recommendations}{23}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Recording User Choices}{24}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Sensor Data Collection and Summarization}{24}{subsection.5.2.6}
-\contentsline {subsection}{\numberline {5.2.7}Server Synchronization}{24}{subsection.5.2.7}
-\contentsline {section}{\numberline {5.3}The Server}{24}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{24}{subsection.5.3.1}
-\contentsline {subsubsection}{Security}{24}{section*.6}
-\contentsline {subsubsection}{Table Store}{24}{section*.7}
-\contentsline {subsubsection}{Bussiness Logic}{24}{section*.8}
-\contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{24}{subsection.5.3.2}
-\contentsline {chapter}{\chapternumberline {6}The Pre-Survey}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Motivation}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}Introduction to the Survey Data}{25}{section.6.2}
-\contentsline {section}{\numberline {6.3}Methodology and Findings}{25}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Analysis of the Experiment}{27}{chapter.7}
-\contentsline {chapter}{\chapternumberline {8}Conclusion}{29}{chapter.8}
-\contentsline {appendix}{\chapternumberline {A}Appendix}{31}{appendix.A}
+\contentsline {subsection}{\numberline {3.3.2}Results}{15}{subsection.3.3.2}
+\contentsline {subsubsection}{Scenario 1 and 2}{15}{section*.4}
+\contentsline {chapter}{\chapternumberline {4}Experiment Methodology}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Preparatory Phase}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Pre-Survey}{17}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Sub-Features}{17}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Privacy Options}{18}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Question Structure}{18}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Budget and Experiment Duration}{18}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Entry Phase}{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Collecting General User Information}{19}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Categorization of Features}{19}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Categorization of Sub-Features}{20}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Answering Questions with No Incentives}{20}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Core Phase}{21}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Improve Privacy or Credit}{22}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Answering Questions with Incentives}{22}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Exit Phase}{23}{section.4.4}
+\contentsline {section}{\numberline {4.5}FairDataShare Web Portal}{23}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Data Generator's Portal}{23}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Stakeholder's Portal}{24}{subsection.4.5.2}
+\contentsline {chapter}{\chapternumberline {5}Explanation of the Mobile Application}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}The Building Blocks}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}The Mobile Application}{25}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Local Storage}{25}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Alarms}{25}{subsection.5.2.2}
+\contentsline {subsubsection}{Going to the Next Data Sharing Day}{25}{section*.8}
+\contentsline {subsubsection}{Notifications}{25}{section*.9}
+\contentsline {subsection}{\numberline {5.2.3}Privacy and Credit Improvement}{25}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Recommendations}{25}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Recording User Choices}{25}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Sensor Data Collection and Summarization}{25}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Server Synchronization}{25}{subsection.5.2.7}
+\contentsline {section}{\numberline {5.3}The Server}{25}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{25}{subsection.5.3.1}
+\contentsline {subsubsection}{Security}{26}{section*.10}
+\contentsline {subsubsection}{Table Store}{26}{section*.11}
+\contentsline {subsubsection}{Bussiness Logic}{26}{section*.12}
+\contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{27}{subsection.5.3.2}
+\contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{29}{section.6.2}
+\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{29}{section.6.3}
+\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{29}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{31}{chapter.7}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{33}{appendix.A}
