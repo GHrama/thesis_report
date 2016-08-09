@@ -229,9 +229,12 @@ In this section, five user scenarios will be introduced and explained in order t
 First, we will begin by introducing the way the user has categorized the features and sub-features. This will be followed by an explanation
 of the generated matrices.
 
-\subsubsection{Scenario 1 and 2}
+\subsubsection{Scenario One and Two}
 
-In this scenario we assume that the user has entered the f
+In scenario one, the users choose categories for the Features and sub-features as shown in the table \ref{tab:scenario11}. As it can be seen in the table, each Feature receive
+category 1, and all their sub-features are categorized as 3. In short, all the features have the same categorization and their respective
+sub-features all have the same categorization as well. From this input, the formulation of the weight matrix can be seen in figure \ref{weight11}, and the cost matrix can be seen in figure \ref{cost11}.
+As we expected, for each data request indicated as a tuple of (sensors, stakeholders, contexts) in the x-axis of figures \ref{fig:scenatio11} have identical weights and costs. This is due to the fact that the user finds all the Features and sub-features equally intrusive so all the data requests are weighted equally.
 
 \begin{table}[h!]
   \centering
@@ -258,6 +261,9 @@ In this scenario we assume that the user has entered the f
   \label{fig:scenatio11}
 \end{figure}
 
+The theory that equally intrusive Features and sub-features should have data requests with equal weights and costs forms the basis of the computational model. Hence, it becomes essential to view another similar scenario to confirm that this indeed works. The table \ref{tab:scenario12} is the input to the next scenario. Similar to scenario 1 but with different inputs, the Features and sub-features categorized
+are viewed to all be equally intrusive by the user. Hence as shown in figures \ref{weight12} and \ref{cost12}, data requests are again weighted equally.
+
 \begin{table}[h!]
   \centering
   \caption{Categorization for Scenario 2}
@@ -283,39 +289,16 @@ In this scenario we assume that the user has entered the f
   \label{fig:scenatio12}
 \end{figure}
 
-\subsubsection{Scenario 3}
 
+\subsubsection{Scenario 3}
+Table \ref{tab:scenario3} is the input to scenario 3. Here, it can be seen that all Features have equal categorizations, and
+all sub-features have the categorization of 3 except the sub-features of the Sensors Feature. The Sensors sub-features with identifiers 1,2 and 3 have respectively categories 1,3 and 5. This means that requests requests with Sensors sub-feature 1 will have the least weight. Similarly, the data requests
+with Sensors sub-feature 2 will have a higher weightage than sub-feature 1. Lastly, data requests with Sensor sub-feature 3 will have the highest weight, due to the categorization of 5. The weight and cost matrices can be seen in figures \ref{weight3} and \ref{cost3} respectively.
 
 \begin{table}[h!]
   \centering
   \caption{Categorization for Scenario 3}
-  \label{tab:scenario12}
-  \begin{tabular}{cccc}
-    \toprule
-    Feature & Sub-Feature ID = 1 & Sub-Feature ID = 2 & Sub-Feature ID = 3\\
-    \midrule
-    Sensors & Accelerometer & Noise & Location\\
-     5 & 3 & 3 & 3\\ \hhline{====}
-     Stakeholders & Corporation & Government & Educational Institution\\
-     2 & 3 & 3 & 3\\ \hhline{====}
-     Contexts & Navigation & Environment & Social Media\\
-     2 & 3 & 3 & 3\\ 
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\begin{figure}[htp]
-  \subtop[Values of the Weight Matrix\label{weight2}]{\includegraphics[width=0.5\linewidth]{./images/weight_2}}%
-  \subtop[Values of the Cost Matrix \label{cost2}]{\includegraphics[width=0.5\linewidth]{./images/cost_2}}%
-  \caption{Examining Scenario 3}
-  \label{fig:scenatio2}
-\end{figure}
-\subsubsection{Scenario 4}
-
-\begin{table}[h!]
-  \centering
-  \caption{Categorization for Scenario 4}
-  \label{tab:scenario12}
+  \label{tab:scenario3}
   \begin{tabular}{cccc}
     \toprule
     Feature & Sub-Feature ID = 1 & Sub-Feature ID = 2 & Sub-Feature ID = 3\\
@@ -333,16 +316,25 @@ In this scenario we assume that the user has entered the f
 \begin{figure}[htp]
   \subtop[Values of the Weight Matrix\label{weight3}]{\includegraphics[width=0.5\linewidth]{./images/weight_3}}%
   \subtop[Values of the Cost Matrix \label{cost3}]{\includegraphics[width=0.5\linewidth]{./images/cost_3}}%
-  \caption{Examining Scenario 4}
+  \caption{Examining Scenario 3}
   \label{fig:scenatio3}
 \end{figure}
 
-\subsubsection{Scenario 5}
+\subsubsection{Scenario 4}
+In the previous sections, the available feature and sub-features were varied one at a time. Below, an attempt is made to vary two of them at a time, to show how varying the categories of Features and sub-features together affects the values of the matrices. Table \ref{tab:scenario4} is the input to the scenario 4. Here, all the Feature have different categories from 3 to 5. Additionally, the first sub-features of each feature has a category 5, higher than the rest which are categorized as 1 each. The weight and cost matrices of this scenario can be seen in figures \ref{weight4} and \ref{cost4} respectively. 
+
+As it is observed for both figures, the data request with the highest weight is the one with tuple (1,1,1). This indicates that the data request involves all the first sub-features of each feature. This is because all of the sub-features have a category of 5. The feature Sensors and its sub-feature 1 are categorized as 5, so all the data requests
+with tuple (1,*,*), where * is all the other possible sub-features, are all above average as seen in figures \ref{fig:scenatio4} irrespective of
+the categories of the other Feature's sub-features. In general due to sub-features categorized as 5, those data request receive a higher weight. In some cases, the data requests still receive a lower weight such as tuple (2,2,1),
+(2,3,1),(3,2,1) and (3,3,1) even tough Context feature's sub-feature 1 has a category of 5. This is due to the fact that Sensor's feature and Stakeholders feature have a higher categories of 5 and 4 respectively. Since their sub-features are assigned a lower privacy intrusion categories, the weight of the data requests is pulled
+down. 
+
+Additionally, it can be noted that data requests with at least two sub-features with identifier 1 are all above average. We can witness the property of the model, which puts more emphasis on the perception of the Features than the sub-features themselves. As seen in the figure, all the features with higher intrusion categorizations have weights and costs that are well above average.
 
 \begin{table}[h!]
   \centering
-  \caption{Categorization for Scenario 5}
-  \label{tab:scenario12}
+  \caption{Categorization for Scenario 4}
+  \label{tab:scenario4}
   \begin{tabular}{cccc}
     \toprule
     Feature & Sub-Feature ID = 1 & Sub-Feature ID = 2 & Sub-Feature ID = 3\\
@@ -360,7 +352,7 @@ In this scenario we assume that the user has entered the f
 \begin{figure}[htp]
   \subtop[Values of the Weight Matrix\label{weight4}]{\includegraphics[width=0.5\linewidth]{./images/weight_4}}%
   \subtop[Values of the Cost Matrix \label{cost4}]{\includegraphics[width=0.5\linewidth]{./images/cost_4}}%
-  \caption{Examining Scenario 5}
+  \caption{Examining Scenario 4}
   \label{fig:scenatio4}
 \end{figure}
 
