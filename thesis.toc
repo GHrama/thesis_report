@@ -17,6 +17,9 @@
 \contentsline {subsection}{\numberline {3.3.1}Setup}{14}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Results}{15}{subsection.3.3.2}
 \contentsline {subsubsection}{Scenario 1 and 2}{15}{section*.4}
+\contentsline {subsubsection}{Scenario 3}{15}{section*.9}
+\contentsline {subsubsection}{Scenario 4}{15}{section*.12}
+\contentsline {subsubsection}{Scenario 5}{15}{section*.15}
 \contentsline {chapter}{\chapternumberline {4}Experiment Methodology}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Preparatory Phase}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Pre-Survey}{19}{subsection.4.1.1}
@@ -41,8 +44,8 @@
 \contentsline {section}{\numberline {5.2}The Mobile Application}{27}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Local Storage}{27}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Alarms}{27}{subsection.5.2.2}
-\contentsline {subsubsection}{Going to the Next Data Sharing Day}{27}{section*.10}
-\contentsline {subsubsection}{Notifications}{27}{section*.11}
+\contentsline {subsubsection}{Going to the Next Data Sharing Day}{27}{section*.18}
+\contentsline {subsubsection}{Notifications}{27}{section*.19}
 \contentsline {subsection}{\numberline {5.2.3}Privacy and Credit Improvement}{27}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Recommendations}{27}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Recording User Choices}{27}{subsection.5.2.5}
@@ -50,9 +53,9 @@
 \contentsline {subsection}{\numberline {5.2.7}Server Synchronization}{27}{subsection.5.2.7}
 \contentsline {section}{\numberline {5.3}The Server}{27}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{27}{subsection.5.3.1}
-\contentsline {subsubsection}{Security}{28}{section*.12}
-\contentsline {subsubsection}{Table Store}{28}{section*.13}
-\contentsline {subsubsection}{Bussiness Logic}{28}{section*.14}
+\contentsline {subsubsection}{Security}{28}{section*.20}
+\contentsline {subsubsection}{Table Store}{28}{section*.21}
+\contentsline {subsubsection}{Bussiness Logic}{28}{section*.22}
 \contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{29}{subsection.5.3.2}
 \contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{31}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{31}{section.6.1}

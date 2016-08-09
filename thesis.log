@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  9 AUG 2016 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  9 AUG 2016 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,6 +1183,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip209
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+)
 
 Package subfig Warning: The subfigure type is already defined. on input line 10
 2.
@@ -1193,10 +1196,13 @@ LaTeX Warning: Unused global option(s):
 
 (./thesis.aux
 
-LaTeX Warning: Label `weight11' multiply defined.
+LaTeX Warning: Label `tab:scenario12' multiply defined.
 
 
-LaTeX Warning: Label `cost11' multiply defined.
+LaTeX Warning: Label `tab:scenario12' multiply defined.
+
+
+LaTeX Warning: Label `tab:scenario12' multiply defined.
 
 )
 \openout1 = `thesis.aux'.
@@ -1534,7 +1540,7 @@ File: uesvect.fd
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 ... with No Incentives}{20}{subsection.4.2.4}
+l.34 ... with No Incentives}{22}{subsection.4.2.4}
                                                    [1
 
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) h
@@ -1605,89 +1611,117 @@ zplm/m/n/10.95 (\OML/zplm/m/it/10.95 Stakeholders\OT1/zplm/m/n/10.95 )\OML/zplm
  []
 
 [11] [12] [13] [14]
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 240--252
+ [][] 
+ []
+
 <./images/weight_1_1.pdf, id=403, 385.2173pt x 295.85794pt>
 File: ./images/weight_1_1.pdf Graphic file (type pdf)
 
 <use ./images/weight_1_1.pdf>
-Package pdftex.def Info: ./images/weight_1_1.pdf used on input line 238.
+Package pdftex.def Info: ./images/weight_1_1.pdf used on input line 255.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
 <./images/cost_1_1.pdf, id=404, 385.2173pt x 295.85794pt>
 File: ./images/cost_1_1.pdf Graphic file (type pdf)
 
 <use ./images/cost_1_1.pdf>
-Package pdftex.def Info: ./images/cost_1_1.pdf used on input line 239.
+Package pdftex.def Info: ./images/cost_1_1.pdf used on input line 256.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
+
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 265--277
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <./images/weight_1_2.pdf, id=405, 391.60052pt x 295.85794pt>
 File: ./images/weight_1_2.pdf Graphic file (type pdf)
 
 <use ./images/weight_1_2.pdf>
-Package pdftex.def Info: ./images/weight_1_2.pdf used on input line 245.
+Package pdftex.def Info: ./images/weight_1_2.pdf used on input line 280.
 (pdftex.def)             Requested size: 184.5pt x 139.39183pt.
 
 <./images/cost_1_2.pdf, id=406, 385.2173pt x 295.85794pt>
 File: ./images/cost_1_2.pdf Graphic file (type pdf)
 
 <use ./images/cost_1_2.pdf>
-Package pdftex.def Info: ./images/cost_1_2.pdf used on input line 246.
+Package pdftex.def Info: ./images/cost_1_2.pdf used on input line 281.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
+
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 293--305
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <./images/weight_2.pdf, id=407, 385.2173pt x 295.85794pt>
 File: ./images/weight_2.pdf Graphic file (type pdf)
 
 <use ./images/weight_2.pdf>
-Package pdftex.def Info: ./images/weight_2.pdf used on input line 252.
+Package pdftex.def Info: ./images/weight_2.pdf used on input line 308.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
 <./images/cost_2.pdf, id=408, 375.63463pt x 295.85794pt>
 File: ./images/cost_2.pdf Graphic file (type pdf)
 
 <use ./images/cost_2.pdf>
-Package pdftex.def Info: ./images/cost_2.pdf used on input line 253.
+Package pdftex.def Info: ./images/cost_2.pdf used on input line 309.
 (pdftex.def)             Requested size: 184.5pt x 145.31926pt.
+
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 319--331
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <./images/weight_3.pdf, id=409, 385.2173pt x 295.85794pt>
 File: ./images/weight_3.pdf Graphic file (type pdf)
 
 <use ./images/weight_3.pdf>
-Package pdftex.def Info: ./images/weight_3.pdf used on input line 259.
+Package pdftex.def Info: ./images/weight_3.pdf used on input line 334.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
 <./images/cost_3.pdf, id=410, 375.63463pt x 295.85794pt>
 File: ./images/cost_3.pdf Graphic file (type pdf)
 
 <use ./images/cost_3.pdf>
-Package pdftex.def Info: ./images/cost_3.pdf used on input line 260.
+Package pdftex.def Info: ./images/cost_3.pdf used on input line 335.
 (pdftex.def)             Requested size: 184.5pt x 145.31926pt.
+
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 346--358
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <./images/weight_4.pdf, id=411, 385.2173pt x 295.85794pt>
 File: ./images/weight_4.pdf Graphic file (type pdf)
 
 <use ./images/weight_4.pdf>
-Package pdftex.def Info: ./images/weight_4.pdf used on input line 266.
+Package pdftex.def Info: ./images/weight_4.pdf used on input line 361.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
 <./images/cost_4.pdf, id=412, 375.63463pt x 295.85794pt>
 File: ./images/cost_4.pdf Graphic file (type pdf)
 
 <use ./images/cost_4.pdf>
-Package pdftex.def Info: ./images/cost_4.pdf used on input line 267.
+Package pdftex.def Info: ./images/cost_4.pdf used on input line 362.
 (pdftex.def)             Requested size: 184.5pt x 145.31926pt.
 ) (./experiment_methodology.tex [15 <./images/weight_1_1.pdf> <./images/cost_1_
 1.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_1_1.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
-> <./images/weight_1_2.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/weight_1_2.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
-> <./images/cost_1_2.pdf
+>] [16 <./images/weight_1_2.pdf> <./images/cost_1_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_1_2.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
->] [16 <./images/weight_2.pdf> <./images/cost_2.pdf
+>] [17 <./images/weight_2.pdf> <./images/cost_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_2.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
@@ -1699,13 +1733,13 @@ inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_3.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] [17 <./images/weight_4.pdf> <./images/cost_4.pdf
+>] [18 <./images/weight_4.pdf> <./images/cost_4.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_4.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] [18
+>] [19
 
-] [19]
+]
 Overfull \hbox (61.56131pt too wide) detected at line 34
 \OT1/pplx/m/n/10.95 "\OML/zplm/m/it/10.95 PleasechoosetheamountofXsensortypedat
 asharedwithYstakeholderforuseinaZcontextapp\OT1/pplx/m/n/10.95 "
@@ -1799,7 +1833,7 @@ LaTeX Warning: Reference `bl' on page 29 undefined on input line 61.
 ]) [35] [36
 
 ]
-<declaration-originality.pdf, id=1039, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1048, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -1810,7 +1844,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 163.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1042, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1051, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -1868,10 +1902,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17260 strings out of 493089
- 250916 string characters out of 6134841
- 421601 words of memory out of 5000000
- 20168 multiletter control sequences out of 15000+600000
+ 17289 strings out of 493089
+ 251362 string characters out of 6134841
+ 435789 words of memory out of 5000000
+ 20186 multiletter control sequences out of 15000+600000
  40004 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1010b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1886,10 +1920,10 @@ ve/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
 -dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (41 pages, 583641 bytes).
+Output written on thesis.pdf (41 pages, 602423 bytes).
 PDF statistics:
- 1164 PDF objects out of 1200 (max. 8388607)
- 676 compressed objects within 7 object streams
- 190 named destinations out of 1000 (max. 500000)
+ 1174 PDF objects out of 1200 (max. 8388607)
+ 686 compressed objects within 7 object streams
+ 198 named destinations out of 1000 (max. 500000)
  12814 words of extra memory for PDF output out of 14400 (max. 10000000)
 
