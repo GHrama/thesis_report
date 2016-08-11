@@ -2,28 +2,93 @@
 
 \section{The Building Blocks}
 
-explain with diagram what interacts with what
+
+
+The following sections will explain integral parts of the server and client part of the mobile application. A gist of the architecture is shown
+in figure \ref{fig:bb}. As it can be seen, the mobile app represents the user participating in the experiment. As the experiment goes on,
+mobile sensor data and responses to the data requests which are collected are periodically sent to the Kinvey Data Store. 
+The users can choose to login into the FairDataShare Portal from their computer or the mobile app. Once the user is authenticated, the user request
+is sent from the FairDataShare server to the Kinvey Data Store. Kinvey in turn fetches the appropriate data and gives it to the FairDataShare Server. This in turn structures the data so it can be easily readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile app.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/blocks_app}
+\caption{Conceptual Diagram of Mobile Application Architecture}
+\label{fig:bb}
+\end{figure}
+
 
 \section{The Mobile Application}
 
-\subsection{Local Storage}
 
-\subsection{Alarms}
+
+
+
+\subsection{Local Storage}
+the various db, schemas introduced, and why they are there
+
+
+\begin{figure}[htp]
+\subtop[Table Schema of QUESTIONSTORE\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
+\subtop[Table Schema of WHICHANSWERS\label{fig:db_which}]{\includegraphics[width=0.4\linewidth]{./images/db_which_1}}
+\caption{Table Schemas}
+\label{fig:ts1}
+\end{figure}
+
+
+\begin{figure}[htp]
+\subtop[Table Schema of STOREANSWERS\label{fig:db_ans}]{\includegraphics[width=0.4\linewidth]{./images/db_ans}} \hspace{1em}
+\subtop[Table Schema of STOREANSWERS\label{fig:db_points}]{\includegraphics[width=0.4\linewidth]{./images/db_points}}
+\caption{Table Schemas}
+\label{fig:ts11}
+\end{figure}
+
+
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.4\linewidth]{./images/db_ur}
+\caption{Table USERRESPONSECACHE Schema}
+\label{fig:db_ur}
+\end{figure}
+
+\begin{figure}[htp]
+\subtop[Table Schema of STOREACCELEROMETER\label{fig:db_acc}]{\includegraphics[width=0.4\linewidth]{./images/db_acc}}\hspace{1em}
+\subtop[Table Schema of STORENOISE \label{fig:db_noise}]{\includegraphics[width=0.4\linewidth]{./images/db_noise}}%
+\caption{Table Schemas for Sensor Data}
+\label{fig:ts2}
+\end{figure}
+
+\begin{figure}[htp]
+
+
+\subtop[Table Schema of STORELOCATION\label{fig:db_loc}]{\includegraphics[width=0.4\linewidth]{./images/db_loc}}\hspace{1em}
+\subtop[Table Schema of STORELIGHT \label{fig:db_light}]{\includegraphics[width=0.4\linewidth]{./images/db_light}}%
+
+\caption{Table Schemas for Sensor Data}
+\label{fig:ts22}
+\end{figure}
+
+\subsection{Alarms and Notifications}
+
+coping the alarms during rebooting, if alarms missing or not
 
 \subsubsection{Going to the Next Data Sharing Day}
+events thatt ake place when going to the next day
 
-\subsubsection{Notifications}
 
-\subsection{Privacy and Credit Improvement}
+\subsection{Fetching Data Requests}
 
-\subsection{Recommendations}
-how privacy credit is imporved
+
+
 
 \subsection{Recording User Choices}
 
 \subsection{Sensor Data Collection and Summarization}
 
 \subsection{Server Synchronization}
+
 
 \section{The Server}
 
@@ -33,6 +98,105 @@ Kinvey is a mobile backend as a service which provides a platform for mobile pho
 \subsubsection{Security}
 
 \subsubsection{Table Store}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio, height=0.6\textwidth]{./images/collection_ur_1}
+\caption{Screenshot of Collection UserResponse Part 1}
+\label{fig:col_ur_1}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ur_2}
+\caption{Screenshot of Collection UserResponse Part 2}
+\label{fig:col_ur_2}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ui_1}
+\caption{Screenshot of Collection UserInformation Part 1}
+\label{fig:col_ui_1}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ui_2}
+\caption{Screenshot of Collection UserInformation Part 2}
+\label{fig:col_ui_2}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_loc}
+\caption{Screenshot of Collection Location}
+\label{fig:col_loc}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_acc}
+\caption{Screenshot of Collection Accelerometer}
+\label{fig:col_acc}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_noise}
+\caption{Screenshot of Collection Noise}
+\label{fig:col_noise}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_light}
+\caption{Screenshot of Collection Light}
+\label{fig:col_light}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_users}
+\caption{Screenshot of Collection Users}
+\label{fig:col_users}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_score}
+\caption{Screenshot of Collection Score}
+\label{fig:col_score}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_feature_cat}
+\caption{Screenshot of Collection Features}
+\label{fig:col_f}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_sensors_cat}
+\caption{Screenshot of Collection Sensors}
+\label{fig:col_s}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_dc_cat}
+\caption{Screenshot of Collection Stakeholders}
+\label{fig:col_ss}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_context_cat}
+\caption{Screenshot of Collection Contexts}
+\label{fig:col_c}
+\end{figure}
+
 All the data collected form the user's phones is stored in Kinvey Data Store's collections. Data is segregated in to the appropriate collections. Data is stored in the collections is done so in the following form :
 
 \begin{enumerate}

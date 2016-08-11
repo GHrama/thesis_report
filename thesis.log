@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  11 AUG 2016 09:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  11 AUG 2016 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,7 +1482,7 @@ LaTeX Info: Redefining \nameref on input line 117.
 \openout4 = `thesis.out'.
 
 LaTeX Info: Redefining \Ref on input line 117.
- <ETHlogo.pdf, id=225, 179.67125pt x 45.16875pt>
+ <ETHlogo.pdf, id=221, 179.67125pt x 45.16875pt>
 File: ETHlogo.pdf Graphic file (type pdf)
 
 <use ETHlogo.pdf>
@@ -1561,7 +1561,7 @@ l.139
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/pplx/b/n' tried instead on input line 13.
 
-<./images/model_building_blocks.png, id=329, 719.68875pt x 489.83pt>
+<./images/model_building_blocks.png, id=324, 719.68875pt x 489.83pt>
 File: ./images/model_building_blocks.png Graphic file (type png)
 
 <use ./images/model_building_blocks.png>
@@ -1584,7 +1584,7 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 65.
 
-<./images/categorize_sub.png, id=344, 669.50125pt x 388.45125pt>
+<./images/categorize_sub.png, id=339, 669.50125pt x 388.45125pt>
 File: ./images/categorize_sub.png Graphic file (type png)
 
 <use ./images/categorize_sub.png>
@@ -1615,14 +1615,14 @@ Overfull \hbox (38.35649pt too wide) in paragraph at lines 249--261
  [][] 
  []
 
-<./images/weight_1_1.pdf, id=407, 385.2173pt x 295.85794pt>
+<./images/weight_1_1.pdf, id=402, 385.2173pt x 295.85794pt>
 File: ./images/weight_1_1.pdf Graphic file (type pdf)
 
 <use ./images/weight_1_1.pdf>
 Package pdftex.def Info: ./images/weight_1_1.pdf used on input line 264.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
-<./images/cost_1_1.pdf, id=408, 385.2173pt x 295.85794pt>
+<./images/cost_1_1.pdf, id=403, 385.2173pt x 295.85794pt>
 File: ./images/cost_1_1.pdf Graphic file (type pdf)
 
 <use ./images/cost_1_1.pdf>
@@ -1633,14 +1633,14 @@ Overfull \hbox (38.35649pt too wide) in paragraph at lines 277--289
  [][] 
  []
 
-<./images/weight_1_2.pdf, id=425, 391.60052pt x 295.85794pt>
+<./images/weight_1_2.pdf, id=420, 391.60052pt x 295.85794pt>
 File: ./images/weight_1_2.pdf Graphic file (type pdf)
 
 <use ./images/weight_1_2.pdf>
 Package pdftex.def Info: ./images/weight_1_2.pdf used on input line 292.
 (pdftex.def)             Requested size: 184.5pt x 139.39183pt.
 
-<./images/cost_1_2.pdf, id=426, 385.2173pt x 295.85794pt>
+<./images/cost_1_2.pdf, id=421, 385.2173pt x 295.85794pt>
 File: ./images/cost_1_2.pdf Graphic file (type pdf)
 
 <use ./images/cost_1_2.pdf>
@@ -1655,14 +1655,14 @@ Overfull \hbox (38.35649pt too wide) in paragraph at lines 310--322
  [][] 
  []
 
-<./images/weight_3.pdf, id=531, 385.2173pt x 295.85794pt>
+<./images/weight_3.pdf, id=526, 385.2173pt x 295.85794pt>
 File: ./images/weight_3.pdf Graphic file (type pdf)
 
 <use ./images/weight_3.pdf>
 Package pdftex.def Info: ./images/weight_3.pdf used on input line 325.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
-<./images/cost_3.pdf, id=532, 375.63463pt x 295.85794pt>
+<./images/cost_3.pdf, id=527, 375.63463pt x 295.85794pt>
 File: ./images/cost_3.pdf Graphic file (type pdf)
 
 <use ./images/cost_3.pdf>
@@ -1681,14 +1681,14 @@ Overfull \hbox (38.35649pt too wide) in paragraph at lines 352--364
  [][] 
  []
 
-<./images/weight_4.pdf, id=733, 385.2173pt x 295.85794pt>
+<./images/weight_4.pdf, id=728, 385.2173pt x 295.85794pt>
 File: ./images/weight_4.pdf Graphic file (type pdf)
 
 <use ./images/weight_4.pdf>
 Package pdftex.def Info: ./images/weight_4.pdf used on input line 367.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
-<./images/cost_4.pdf, id=734, 375.63463pt x 295.85794pt>
+<./images/cost_4.pdf, id=729, 375.63463pt x 295.85794pt>
 File: ./images/cost_4.pdf Graphic file (type pdf)
 
 <use ./images/cost_4.pdf>
@@ -1718,13 +1718,13 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 Underfull \vbox (badness 3029) has occurred while \output is active []
 
  [21]
-[22] <./images/ui_1_3.png, id=864, 361.35pt x 642.4pt>
+[22] <./images/ui_1_3.png, id=859, 361.35pt x 642.4pt>
 File: ./images/ui_1_3.png Graphic file (type png)
 
 <use ./images/ui_1_3.png>
 Package pdftex.def Info: ./images/ui_1_3.png used on input line 87.
 (pdftex.def)             Requested size: 73.79887pt x 131.19293pt.
- <./images/ui_2_3.png, id=865, 722.7pt x 2569.6pt>
+ <./images/ui_2_3.png, id=860, 722.7pt x 2569.6pt>
 File: ./images/ui_2_3.png Graphic file (type png)
 
 <use ./images/ui_2_3.png>
@@ -1735,7 +1735,7 @@ Underfull \hbox (badness 2698) in paragraph at lines 88--88
 []\OT1/pplx/m/n/9 (b) |User In-for-ma-tion
  []
 
-<./images/ui_checkboxes.png, id=866, 722.7pt x 1284.8pt>
+<./images/ui_checkboxes.png, id=861, 722.7pt x 1284.8pt>
 File: ./images/ui_checkboxes.png Graphic file (type png)
 
 <use ./images/ui_checkboxes.png>
@@ -1746,14 +1746,14 @@ Underfull \hbox (badness 3635) in paragraph at lines 89--89
 []\OT1/pplx/m/n/9 (c) |User In-for-ma-tion
  []
 
-[23] <./images/cat_features.png, id=886, 722.7pt x 1284.8pt>
+[23] <./images/cat_features.png, id=881, 722.7pt x 1284.8pt>
 File: ./images/cat_features.png Graphic file (type png)
 
 <use ./images/cat_features.png>
 Package pdftex.def Info: ./images/cat_features.png used on input line 106.
 (pdftex.def)             Requested size: 184.5011pt x 284.5193pt.
 
-<./images/resize_cat_sensors_1.png, id=887, 361.35pt x 642.4pt>
+<./images/resize_cat_sensors_1.png, id=882, 361.35pt x 642.4pt>
 File: ./images/resize_cat_sensors_1.png Graphic file (type png)
 
 <use ./images/resize_cat_sensors_1.png>
@@ -1761,7 +1761,7 @@ Package pdftex.def Info: ./images/resize_cat_sensors_1.png used on input line 1
 07.
 (pdftex.def)             Requested size: 184.5011pt x 284.5291pt.
 
-<./images/resize_cat_stakeholders_1.png, id=891, 361.35pt x 642.4pt>
+<./images/resize_cat_stakeholders_1.png, id=886, 361.35pt x 642.4pt>
 File: ./images/resize_cat_stakeholders_1.png Graphic file (type png)
 
 <use ./images/resize_cat_stakeholders_1.png>
@@ -1769,7 +1769,7 @@ Package pdftex.def Info: ./images/resize_cat_stakeholders_1.png used on input l
 ine 120.
 (pdftex.def)             Requested size: 184.5011pt x 284.5291pt.
 
-<./images/resize_cat_contexts_1.png, id=892, 361.35pt x 642.4pt>
+<./images/resize_cat_contexts_1.png, id=887, 361.35pt x 642.4pt>
 File: ./images/resize_cat_contexts_1.png Graphic file (type png)
 
 <use ./images/resize_cat_contexts_1.png>
@@ -1778,14 +1778,14 @@ Package pdftex.def Info: ./images/resize_cat_contexts_1.png used on input line
 (pdftex.def)             Requested size: 184.5011pt x 284.5291pt.
  [24 <./images/ui_1_3.png> <./images/ui_2_3.png> <./images/ui_checkboxes.png>] 
 [25 <./images/cat_features.png> <./images/resize_cat_sensors_1.png>]
-<./images/first_day_1.png, id=914, 722.7pt x 1284.8pt>
+<./images/first_day_1.png, id=909, 722.7pt x 1284.8pt>
 File: ./images/first_day_1.png Graphic file (type png)
 
 <use ./images/first_day_1.png>
 Package pdftex.def Info: ./images/first_day_1.png used on input line 138.
 (pdftex.def)             Requested size: 184.5pt x 328.00195pt.
 
-<./images/first_day_2.png, id=915, 722.7pt x 1284.8pt>
+<./images/first_day_2.png, id=910, 722.7pt x 1284.8pt>
 File: ./images/first_day_2.png Graphic file (type png)
 
 <use ./images/first_day_2.png>
@@ -1807,13 +1807,13 @@ Underfull \vbox (badness 1087) has occurred while \output is active []
  [26 <./images/resize_cat_stakeholders_1.png> <./images/resize_cat_contexts_1.p
 ng>]
 [27 <./images/first_day_1.png> <./images/first_day_2.png>]
-<./images/fds.png, id=939, 1268.74pt x 667.49374pt>
+<./images/fds.png, id=934, 1268.74pt x 667.49374pt>
 File: ./images/fds.png Graphic file (type png)
  <use ./images/fds.png>
 Package pdftex.def Info: ./images/fds.png used on input line 158.
 (pdftex.def)             Requested size: 147.59775pt x 77.65135pt.
 
-<./images/fds_user_login.png, id=940, 1270.7475pt x 716.6775pt>
+<./images/fds_user_login.png, id=935, 1270.7475pt x 716.6775pt>
 File: ./images/fds_user_login.png Graphic file (type png)
 
 <use ./images/fds_user_login.png>
@@ -1824,7 +1824,7 @@ Underfull \hbox (badness 5119) in paragraph at lines 159--159
 []\OT1/pplx/m/n/9 (b) |Data Gen-er-a-tors Reg-is-tra-tion
  []
 
-<./images/improve.png, id=941, 722.7pt x 1284.8pt>
+<./images/improve.png, id=936, 722.7pt x 1284.8pt>
 File: ./images/improve.png Graphic file (type png)
  <use ./images/improve.png>
 Package pdftex.def Info: ./images/improve.png used on input line 172.
@@ -1836,14 +1836,14 @@ LaTeX Warning: Float too large for page by 84.80365pt on input line 175.
 
 LaTeX Warning: Reference `imp' on page 28 undefined on input line 177.
 
-<./images/bid_layout_1.png, id=942, 722.7pt x 1284.8pt>
+<./images/bid_layout_1.png, id=937, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_1.png Graphic file (type png)
 
 <use ./images/bid_layout_1.png>
 Package pdftex.def Info: ./images/bid_layout_1.png used on input line 184.
 (pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
 
-<./images/bid_layout_2.png, id=943, 722.7pt x 1284.8pt>
+<./images/bid_layout_2.png, id=938, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_2.png Graphic file (type png)
 
 <use ./images/bid_layout_2.png>
@@ -1853,14 +1853,14 @@ Package pdftex.def Info: ./images/bid_layout_2.png used on input line 185.
 
 LaTeX Warning: Reference `option' on page 30 undefined on input line 220.
 
-<./images/bid_layout_3.png, id=962, 722.7pt x 1284.8pt>
+<./images/bid_layout_3.png, id=957, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_3.png Graphic file (type png)
 
 <use ./images/bid_layout_3.png>
 Package pdftex.def Info: ./images/bid_layout_3.png used on input line 224.
 (pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
 
-<./images/bid_layout_5.png, id=963, 722.7pt x 1284.8pt>
+<./images/bid_layout_5.png, id=958, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_5.png Graphic file (type png)
 
 <use ./images/bid_layout_5.png>
@@ -1872,14 +1872,14 @@ File: ./images/fds_user_login.png Graphic file (type png)
 Package pdftex.def Info: ./images/fds_user_login.png used on input line 249.
 (pdftex.def)             Requested size: 147.59775pt x 83.2418pt.
 
-<./images/fds_user_welcome.png, id=978, 833.1125pt x 258.9675pt>
+<./images/fds_user_welcome.png, id=973, 833.1125pt x 258.9675pt>
 File: ./images/fds_user_welcome.png Graphic file (type png)
 
 <use ./images/fds_user_welcome.png>
 Package pdftex.def Info: ./images/fds_user_welcome.png used on input line 250.
 (pdftex.def)             Requested size: 147.59775pt x 45.87715pt.
 
-<./images/fds_user_gps_full.png, id=980, 1256.695pt x 730.73pt>
+<./images/fds_user_gps_full.png, id=975, 1256.695pt x 730.73pt>
 File: ./images/fds_user_gps_full.png Graphic file (type png)
 
 <use ./images/fds_user_gps_full.png>
@@ -1887,7 +1887,7 @@ Package pdftex.def Info: ./images/fds_user_gps_full.png used on input line 257.
 
 (pdftex.def)             Requested size: 147.59775pt x 85.82176pt.
 
-<./images/fds_user_light_full.png, id=981, 1246.6575pt x 728.7225pt>
+<./images/fds_user_light_full.png, id=976, 1246.6575pt x 728.7225pt>
 File: ./images/fds_user_light_full.png Graphic file (type png)
 
 <use ./images/fds_user_light_full.png>
@@ -1895,7 +1895,7 @@ Package pdftex.def Info: ./images/fds_user_light_full.png used on input line 25
 8.
 (pdftex.def)             Requested size: 147.59775pt x 86.27539pt.
 
-<./images/fds_user_acc_full.png, id=982, 1264.725pt x 728.7225pt>
+<./images/fds_user_acc_full.png, id=977, 1264.725pt x 728.7225pt>
 File: ./images/fds_user_acc_full.png Graphic file (type png)
 
 <use ./images/fds_user_acc_full.png>
@@ -1903,7 +1903,7 @@ Package pdftex.def Info: ./images/fds_user_acc_full.png used on input line 264.
 
 (pdftex.def)             Requested size: 147.59775pt x 85.04114pt.
 
-<./images/fds_user_noise_full.png, id=983, 1221.56375pt x 727.71875pt>
+<./images/fds_user_noise_full.png, id=978, 1221.56375pt x 727.71875pt>
 File: ./images/fds_user_noise_full.png Graphic file (type png)
 
 <use ./images/fds_user_noise_full.png>
@@ -1915,21 +1915,21 @@ Package pdftex.def Info: ./images/fds_user_noise_full.png used on input line 26
 LaTeX Warning: Reference `fig:fdsregister' on page 32 undefined on input line 3
 02.
 
-<./images/fds_dc_register.png, id=1009, 1274.7625pt x 722.7pt>
+<./images/fds_dc_register.png, id=1003, 1274.7625pt x 722.7pt>
 File: ./images/fds_dc_register.png Graphic file (type png)
 
 <use ./images/fds_dc_register.png>
 Package pdftex.def Info: ./images/fds_dc_register.png used on input line 305.
 (pdftex.def)             Requested size: 147.59775pt x 83.67667pt.
 
-<./images/fds_dc_login.png, id=1010, 1269.74374pt x 715.67375pt>
+<./images/fds_dc_login.png, id=1004, 1269.74374pt x 715.67375pt>
 File: ./images/fds_dc_login.png Graphic file (type png)
 
 <use ./images/fds_dc_login.png>
 Package pdftex.def Info: ./images/fds_dc_login.png used on input line 306.
 (pdftex.def)             Requested size: 147.59775pt x 83.19075pt.
 
-<./images/fds_dc_welcome.png, id=1011, 1284.8pt x 726.715pt>
+<./images/fds_dc_welcome.png, id=1005, 1284.8pt x 726.715pt>
 File: ./images/fds_dc_welcome.png Graphic file (type png)
 
 <use ./images/fds_dc_welcome.png>
@@ -1941,27 +1941,237 @@ layout_1.png> <./images/bid_layout_2.png>]
 welcome.png> <./images/fds_user_gps_full.png> <./images/fds_user_light_full.png
 >] [36 <./images/fds_user_acc_full.png> <./images/fds_user_noise_full.png> <./i
 mages/fds_dc_register.png> <./images/fds_dc_login.png> <./images/fds_dc_welcome
-.png>] [37
+.png>] <./images/blocks_app.png, id=1069, 1284.8pt x 641.39626pt>
+File: ./images/blocks_app.png Graphic file (type png)
+
+<use ./images/blocks_app.png>
+Package pdftex.def Info: ./images/blocks_app.png used on input line 15.
+(pdftex.def)             Requested size: 369.0pt x 184.20914pt.
+
+<./images/db_quest.png, id=1070, 173.64874pt x 165.61874pt>
+File: ./images/db_quest.png Graphic file (type png)
+
+<use ./images/db_quest.png>
+Package pdftex.def Info: ./images/db_quest.png used on input line 32.
+(pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
+
+Underfull \hbox (badness 2469) in paragraph at lines 32--32
+[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of QUES-TION-
+ []
+
+<./images/db_which_1.png, id=1071, 173.64874pt x 165.61874pt>
+File: ./images/db_which_1.png Graphic file (type png)
+
+<use ./images/db_which_1.png>
+Package pdftex.def Info: ./images/db_which_1.png used on input line 33.
+(pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
+
+Underfull \hbox (badness 2111) in paragraph at lines 33--33
+[]\OT1/pplx/m/n/9 (b) |Ta-ble Schema of WHICHAN-
+ []
+
+<./images/db_ans.png, id=1072, 188.705pt x 162.6075pt>
+File: ./images/db_ans.png Graphic file (type png)
+
+<use ./images/db_ans.png>
+Package pdftex.def Info: ./images/db_ans.png used on input line 40.
+(pdftex.def)             Requested size: 147.59775pt x 127.18567pt.
+
+Underfull \hbox (badness 4621) in paragraph at lines 40--40
+[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of STORE-AN-
+ []
+
+<./images/db_points.png, id=1073, 388.45125pt x 332.24126pt>
+File: ./images/db_points.png Graphic file (type png)
+
+<use ./images/db_points.png>
+Package pdftex.def Info: ./images/db_points.png used on input line 41.
+(pdftex.def)             Requested size: 147.59775pt x 126.24284pt.
+
+Underfull \hbox (badness 4341) in paragraph at lines 41--41
+[]\OT1/pplx/m/n/9 (b) |Ta-ble Schema of STORE-AN-
+ []
+
+<./images/db_ur.png, id=1074, 305.14pt x 301.125pt>
+File: ./images/db_ur.png Graphic file (type png)
+ <use ./images/db_ur.png>
+Package pdftex.def Info: ./images/db_ur.png used on input line 51.
+(pdftex.def)             Requested size: 147.59775pt x 145.65947pt.
+
+<./images/db_acc.png, id=1075, 376.40625pt x 331.2375pt>
+File: ./images/db_acc.png Graphic file (type png)
+
+<use ./images/db_acc.png>
+Package pdftex.def Info: ./images/db_acc.png used on input line 57.
+(pdftex.def)             Requested size: 147.59775pt x 129.8897pt.
+
+Underfull \hbox (badness 5331) in paragraph at lines 57--57
+[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of STORE-AC-
+ []
+
+<./images/db_noise.png, id=1076, 370.38374pt x 325.215pt>
+File: ./images/db_noise.png Graphic file (type png)
+
+<use ./images/db_noise.png>
+Package pdftex.def Info: ./images/db_noise.png used on input line 58.
+(pdftex.def)             Requested size: 147.59775pt x 129.59738pt.
+
+<./images/db_loc.png, id=1077, 368.37625pt x 317.185pt>
+File: ./images/db_loc.png Graphic file (type png)
+
+<use ./images/db_loc.png>
+Package pdftex.def Info: ./images/db_loc.png used on input line 66.
+(pdftex.def)             Requested size: 147.59775pt x 127.08469pt.
+
+<./images/db_light.png, id=1078, 379.4175pt x 324.21124pt>
+File: ./images/db_light.png Graphic file (type png)
+
+<use ./images/db_light.png>
+Package pdftex.def Info: ./images/db_light.png used on input line 67.
+(pdftex.def)             Requested size: 147.59775pt x 126.12526pt.
+ [37
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `bl' on page 38 undefined on input line 50.
+ [38 <./images/blocks_app.png> <./images/db_quest.png> <./images/db_which_1.png
+>]
+<./images/collection_ur_1.png, id=1095, 1045.9075pt x 546.04pt>
+File: ./images/collection_ur_1.png Graphic file (type png)
 
-[38]
+<use ./images/collection_ur_1.png>
+Package pdftex.def Info: ./images/collection_ur_1.png used on input line 104.
+(pdftex.def)             Requested size: 369.00961pt x 192.64993pt.
 
-LaTeX Warning: Reference `bl' on page 39 undefined on input line 61.
+Underfull \vbox (badness 3872) has occurred while \output is active []
 
-) (./pre_survey_results.tex [39] [40
+ [39 <./images/db_ans.png> <./images/db_points.png> <./images/db_ur.png>]
+<./images/collection_ur_2.png, id=1108, 883.3pt x 545.03625pt>
+File: ./images/collection_ur_2.png Graphic file (type png)
 
-]) (./conclusion.tex [41] [42
+<use ./images/collection_ur_2.png>
+Package pdftex.def Info: ./images/collection_ur_2.png used on input line 111.
+(pdftex.def)             Requested size: 358.79932pt x 221.39548pt.
 
-])
-(./appendix.tex [43] [44
+<./images/collection_ui_1.png, id=1109, 1024.82875pt x 541.02126pt>
+File: ./images/collection_ui_1.png Graphic file (type png)
 
-]) [45] [46
+<use ./images/collection_ui_1.png>
+Package pdftex.def Info: ./images/collection_ui_1.png used on input line 118.
+(pdftex.def)             Requested size: 369.00061pt x 194.80052pt.
+
+<./images/collection_ui_2.png, id=1110, 1049.9225pt x 564.1075pt>
+File: ./images/collection_ui_2.png Graphic file (type png)
+
+<use ./images/collection_ui_2.png>
+Package pdftex.def Info: ./images/collection_ui_2.png used on input line 125.
+(pdftex.def)             Requested size: 369.00032pt x 198.2583pt.
+
+<./images/collection_loc.png, id=1111, 882.29625pt x 545.03625pt>
+File: ./images/collection_loc.png Graphic file (type png)
+
+<use ./images/collection_loc.png>
+Package pdftex.def Info: ./images/collection_loc.png used on input line 132.
+(pdftex.def)             Requested size: 358.39159pt x 221.39548pt.
+
+<./images/collection_acc.png, id=1112, 1045.9075pt x 543.02875pt>
+File: ./images/collection_acc.png Graphic file (type png)
+
+<use ./images/collection_acc.png>
+Package pdftex.def Info: ./images/collection_acc.png used on input line 139.
+(pdftex.def)             Requested size: 369.00961pt x 191.58751pt.
+
+<./images/collection_noise.png, id=1113, 974.64125pt x 543.02875pt>
+File: ./images/collection_noise.png Graphic file (type png)
+
+<use ./images/collection_noise.png>
+Package pdftex.def Info: ./images/collection_noise.png used on input line 146.
+(pdftex.def)             Requested size: 368.99931pt x 205.59074pt.
+
+<./images/collection_light.png, id=1114, 672.5125pt x 517.935pt>
+File: ./images/collection_light.png Graphic file (type png)
+
+<use ./images/collection_light.png>
+Package pdftex.def Info: ./images/collection_light.png used on input line 153.
+(pdftex.def)             Requested size: 287.48155pt x 221.4037pt.
+
+<./images/collection_users.png, id=1115, 218.8175pt x 543.02875pt>
+File: ./images/collection_users.png Graphic file (type png)
+
+<use ./images/collection_users.png>
+Package pdftex.def Info: ./images/collection_users.png used on input line 160.
+(pdftex.def)             Requested size: 89.21492pt x 221.40033pt.
+
+<./images/collection_score.png, id=1116, 853.1875pt x 508.90125pt>
+File: ./images/collection_score.png Graphic file (type png)
+
+<use ./images/collection_score.png>
+Package pdftex.def Info: ./images/collection_score.png used on input line 167.
+(pdftex.def)             Requested size: 369.01154pt x 220.10452pt.
+
+<./images/collection_feature_cat.png, id=1117, 599.23875pt x 544.0325pt>
+File: ./images/collection_feature_cat.png Graphic file (type png)
+
+<use ./images/collection_feature_cat.png>
+Package pdftex.def Info: ./images/collection_feature_cat.png used on input line
+ 174.
+(pdftex.def)             Requested size: 243.86989pt x 221.40282pt.
+
+<./images/collection_sensors_cat.png, id=1118, 761.84625pt x 544.0325pt>
+File: ./images/collection_sensors_cat.png Graphic file (type png)
+
+<use ./images/collection_sensors_cat.png>
+Package pdftex.def Info: ./images/collection_sensors_cat.png used on input line
+ 181.
+(pdftex.def)             Requested size: 310.04564pt x 221.40282pt.
+
+<./images/collection_dc_cat.png, id=1119, 721.69624pt x 544.0325pt>
+File: ./images/collection_dc_cat.png Graphic file (type png)
+
+<use ./images/collection_dc_cat.png>
+Package pdftex.def Info: ./images/collection_dc_cat.png used on input line 188.
+
+(pdftex.def)             Requested size: 293.70595pt x 221.40282pt.
+
+<./images/collection_context_cat.png, id=1120, 816.04875pt x 542.025pt>
+File: ./images/collection_context_cat.png Graphic file (type png)
+
+<use ./images/collection_context_cat.png>
+Package pdftex.def Info: ./images/collection_context_cat.png used on input line
+ 195.
+(pdftex.def)             Requested size: 333.33696pt x 221.40462pt.
+ [40 <./images/db_acc.png> <./images/db_noise.png> <./images/db_loc.png> <./ima
+ges/db_light.png>] [41 <./images/collection_ur_1.png> <./images/collection_ur_2
+.png>]
+
+LaTeX Warning: Reference `bl' on page 42 undefined on input line 214.
+
+[42 <./images/collection_ui_1.png> <./images/collection_ui_2.png>] [43 <./image
+s/collection_loc.png> <./images/collection_acc.png>] [44 <./images/collection_n
+oise.png> <./images/collection_light.png>]
+
+LaTeX Warning: Reference `bl' on page 45 undefined on input line 225.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45 <./images/collection_users.png> <./images/collection_score.png>]
+Underfull \vbox (badness 1783) has occurred while \output is active []
+
+ [46 <./images/collection_feature_cat.png> <./images/collection_sensors_cat.png
+>])
+(./pre_survey_results.tex [47 <./images/collection_dc_cat.png> <./images/collec
+tion_context_cat.png>] [48
+
+]) (./conclusion.tex [49] [50
+
+]) (./appendix.tex
+[51] [52
+
+]) [53] [54
 
 ]
-<declaration-originality.pdf, id=1135, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1239, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -1972,7 +2182,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 163.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1138, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1242, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2003,7 +2213,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
 163.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [47 <./declaration-originality.pdf>]
+ [55 <./declaration-originality.pdf>]
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
@@ -2017,7 +2227,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AF7EE928DB261A541F71F6D2D1AF3C01;3869.
+(rerunfilecheck)             Checksum: 8AF813D2B1D501BB0721D09DE85072B9;3810.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2030,10 +2240,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17540 strings out of 493089
- 256405 string characters out of 6134841
- 430523 words of memory out of 5000000
- 20357 multiletter control sequences out of 15000+600000
+ 17729 strings out of 493089
+ 260721 string characters out of 6134841
+ 433624 words of memory out of 5000000
+ 20488 multiletter control sequences out of 15000+600000
  48544 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1060b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2049,10 +2259,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (51 pages, 4689036 bytes).
+Output written on thesis.pdf (59 pages, 7208439 bytes).
 PDF statistics:
- 1277 PDF objects out of 1440 (max. 8388607)
- 818 compressed objects within 9 object streams
- 249 named destinations out of 1000 (max. 500000)
- 12924 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 1388 PDF objects out of 1440 (max. 8388607)
+ 873 compressed objects within 9 object streams
+ 283 named destinations out of 1000 (max. 500000)
+ 13036 words of extra memory for PDF output out of 14400 (max. 10000000)
 

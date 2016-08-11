@@ -37,19 +37,18 @@
 \BOOKMARK [1][-]{section.5.1}{The Building Blocks}{chapter.5}% 37
 \BOOKMARK [1][-]{section.5.2}{The Mobile Application}{chapter.5}% 38
 \BOOKMARK [2][-]{subsection.5.2.1}{Local Storage}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.2}{Alarms}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.3}{Privacy and Credit Improvement}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.4}{Recommendations}{section.5.2}% 42
-\BOOKMARK [2][-]{subsection.5.2.5}{Recording User Choices}{section.5.2}% 43
-\BOOKMARK [2][-]{subsection.5.2.6}{Sensor Data Collection and Summarization}{section.5.2}% 44
-\BOOKMARK [2][-]{subsection.5.2.7}{Server Synchronization}{section.5.2}% 45
-\BOOKMARK [1][-]{section.5.3}{The Server}{chapter.5}% 46
-\BOOKMARK [2][-]{subsection.5.3.1}{Kinvey Data Storage}{section.5.3}% 47
-\BOOKMARK [2][-]{subsection.5.3.2}{FairDataShare Web Portal}{section.5.3}% 48
-\BOOKMARK [0][-]{chapter.6}{Pre-Survey and Experiment Findings}{}% 49
-\BOOKMARK [1][-]{section.6.1}{Overview of the Pre-Survey Data}{chapter.6}% 50
-\BOOKMARK [1][-]{section.6.2}{Pre-Survey Methodology and Findings}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.3}{Overview of the Experiment Data}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.4}{Findings from the Experiment Data}{chapter.6}% 53
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 54
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 55
+\BOOKMARK [2][-]{subsection.5.2.2}{Alarms and Notifications}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.3}{Fetching Data Requests}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.4}{Recording User Choices}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.5}{Sensor Data Collection and Summarization}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.6}{Server Synchronization}{section.5.2}% 44
+\BOOKMARK [1][-]{section.5.3}{The Server}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.3.1}{Kinvey Data Storage}{section.5.3}% 46
+\BOOKMARK [2][-]{subsection.5.3.2}{FairDataShare Web Portal}{section.5.3}% 47
+\BOOKMARK [0][-]{chapter.6}{Pre-Survey and Experiment Findings}{}% 48
+\BOOKMARK [1][-]{section.6.1}{Overview of the Pre-Survey Data}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.2}{Pre-Survey Methodology and Findings}{chapter.6}% 50
+\BOOKMARK [1][-]{section.6.3}{Overview of the Experiment Data}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.4}{Findings from the Experiment Data}{chapter.6}% 52
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 53
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 54
