@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  9 AUG 2016 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  11 AUG 2016 09:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,10 +1196,13 @@ LaTeX Warning: Unused global option(s):
 
 (./thesis.aux
 
-LaTeX Warning: Label `tab:scenario12' multiply defined.
+LaTeX Warning: Label `' multiply defined.
 
 
-LaTeX Warning: Label `tab:scenario12' multiply defined.
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `fig:first' multiply defined.
 
 )
 \openout1 = `thesis.aux'.
@@ -1537,7 +1540,7 @@ File: uesvect.fd
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ... with No Incentives}{22}{subsection.4.2.4}
+l.33 ... with No Incentives}{26}{subsection.4.2.4}
                                                    [1
 
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) h
@@ -1608,7 +1611,7 @@ zplm/m/n/10.95 (\OML/zplm/m/it/10.95 Stakeholders\OT1/zplm/m/n/10.95 )\OML/zplm
  []
 
 [11] [12] [13] [14]
-Overfull \hbox (38.35649pt too wide) in paragraph at lines 243--255
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 249--261
  [][] 
  []
 
@@ -1616,226 +1619,349 @@ Overfull \hbox (38.35649pt too wide) in paragraph at lines 243--255
 File: ./images/weight_1_1.pdf Graphic file (type pdf)
 
 <use ./images/weight_1_1.pdf>
-Package pdftex.def Info: ./images/weight_1_1.pdf used on input line 258.
+Package pdftex.def Info: ./images/weight_1_1.pdf used on input line 264.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
 <./images/cost_1_1.pdf, id=408, 385.2173pt x 295.85794pt>
 File: ./images/cost_1_1.pdf Graphic file (type pdf)
 
 <use ./images/cost_1_1.pdf>
-Package pdftex.def Info: ./images/cost_1_1.pdf used on input line 259.
+Package pdftex.def Info: ./images/cost_1_1.pdf used on input line 265.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
-
-Overfull \hbox (38.35649pt too wide) in paragraph at lines 271--283
+ [15]
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 277--289
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./images/weight_1_2.pdf, id=412, 391.60052pt x 295.85794pt>
+<./images/weight_1_2.pdf, id=425, 391.60052pt x 295.85794pt>
 File: ./images/weight_1_2.pdf Graphic file (type pdf)
 
 <use ./images/weight_1_2.pdf>
-Package pdftex.def Info: ./images/weight_1_2.pdf used on input line 286.
+Package pdftex.def Info: ./images/weight_1_2.pdf used on input line 292.
 (pdftex.def)             Requested size: 184.5pt x 139.39183pt.
 
-<./images/cost_1_2.pdf, id=413, 385.2173pt x 295.85794pt>
+<./images/cost_1_2.pdf, id=426, 385.2173pt x 295.85794pt>
 File: ./images/cost_1_2.pdf Graphic file (type pdf)
 
 <use ./images/cost_1_2.pdf>
-Package pdftex.def Info: ./images/cost_1_2.pdf used on input line 287.
+Package pdftex.def Info: ./images/cost_1_2.pdf used on input line 293.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
- [15]
-Overfull \hbox (38.35649pt too wide) in paragraph at lines 300--312
- [][] 
- []
-
-<./images/weight_2.pdf, id=432, 385.2173pt x 295.85794pt>
-File: ./images/weight_2.pdf Graphic file (type pdf)
-
-<use ./images/weight_2.pdf>
-Package pdftex.def Info: ./images/weight_2.pdf used on input line 315.
-(pdftex.def)             Requested size: 184.5pt x 141.7032pt.
-
-<./images/cost_2.pdf, id=433, 375.63463pt x 295.85794pt>
-File: ./images/cost_2.pdf Graphic file (type pdf)
-
-<use ./images/cost_2.pdf>
-Package pdftex.def Info: ./images/cost_2.pdf used on input line 316.
-(pdftex.def)             Requested size: 184.5pt x 145.31926pt.
-
-Overfull \hbox (38.35649pt too wide) in paragraph at lines 326--338
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./images/weight_3.pdf, id=434, 385.2173pt x 295.85794pt>
-File: ./images/weight_3.pdf Graphic file (type pdf)
-
-<use ./images/weight_3.pdf>
-Package pdftex.def Info: ./images/weight_3.pdf used on input line 341.
-(pdftex.def)             Requested size: 184.5pt x 141.7032pt.
-
-<./images/cost_3.pdf, id=435, 375.63463pt x 295.85794pt>
-File: ./images/cost_3.pdf Graphic file (type pdf)
-
-<use ./images/cost_3.pdf>
-Package pdftex.def Info: ./images/cost_3.pdf used on input line 342.
-(pdftex.def)             Requested size: 184.5pt x 145.31926pt.
-
-Overfull \hbox (38.35649pt too wide) in paragraph at lines 353--365
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [16 <./images/weight_1_1.pdf> <./images/cost_1_1.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_1_1.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 310--322
+ [][] 
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<./images/weight_3.pdf, id=531, 385.2173pt x 295.85794pt>
+File: ./images/weight_3.pdf Graphic file (type pdf)
 
-<./images/weight_4.pdf, id=535, 385.2173pt x 295.85794pt>
-File: ./images/weight_4.pdf Graphic file (type pdf)
-
-<use ./images/weight_4.pdf>
-Package pdftex.def Info: ./images/weight_4.pdf used on input line 368.
+<use ./images/weight_3.pdf>
+Package pdftex.def Info: ./images/weight_3.pdf used on input line 325.
 (pdftex.def)             Requested size: 184.5pt x 141.7032pt.
 
-<./images/cost_4.pdf, id=536, 375.63463pt x 295.85794pt>
-File: ./images/cost_4.pdf Graphic file (type pdf)
+<./images/cost_3.pdf, id=532, 375.63463pt x 295.85794pt>
+File: ./images/cost_3.pdf Graphic file (type pdf)
 
-<use ./images/cost_4.pdf>
-Package pdftex.def Info: ./images/cost_4.pdf used on input line 369.
+<use ./images/cost_3.pdf>
+Package pdftex.def Info: ./images/cost_3.pdf used on input line 326.
 (pdftex.def)             Requested size: 184.5pt x 145.31926pt.
-) (./experiment_methodology.tex [17 <./images/weight_1_2.pdf> <./images/cost_1_
-2.pdf
+ [17 <./images/weight_1_2.pdf> <./images/cost_1_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_1_2.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
-> <./images/weight_2.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/weight_2.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
-> <./images/cost_2.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_2.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
 >] [18 <./images/weight_3.pdf> <./images/cost_3.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_3.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
-> <./images/weight_4.pdf
+>]
+Overfull \hbox (38.35649pt too wide) in paragraph at lines 352--364
+ [][] 
+ []
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/weight_4.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
-> <./images/cost_4.pdf
+<./images/weight_4.pdf, id=733, 385.2173pt x 295.85794pt>
+File: ./images/weight_4.pdf Graphic file (type pdf)
+
+<use ./images/weight_4.pdf>
+Package pdftex.def Info: ./images/weight_4.pdf used on input line 367.
+(pdftex.def)             Requested size: 184.5pt x 141.7032pt.
+
+<./images/cost_4.pdf, id=734, 375.63463pt x 295.85794pt>
+File: ./images/cost_4.pdf Graphic file (type pdf)
+
+<use ./images/cost_4.pdf>
+Package pdftex.def Info: ./images/cost_4.pdf used on input line 368.
+(pdftex.def)             Requested size: 184.5pt x 145.31926pt.
+) (./experiment_methodology.tex [19 <./images/weight_4.pdf> <./images/cost_4.pd
+f
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_4.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] [19
+>] [20
 
 ]
-Overfull \hbox (61.56131pt too wide) detected at line 34
-\OT1/pplx/m/n/10.95 "\OML/zplm/m/it/10.95 PleasechoosetheamountofXsensortypedat
-asharedwithYstakeholderforuseinaZcontextapp\OT1/pplx/m/n/10.95 "
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 8.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 8.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 8.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 8.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 8.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 8.
+
+Underfull \vbox (badness 3029) has occurred while \output is active []
+
+ [21]
+[22] <./images/ui_1_3.png, id=864, 361.35pt x 642.4pt>
+File: ./images/ui_1_3.png Graphic file (type png)
+
+<use ./images/ui_1_3.png>
+Package pdftex.def Info: ./images/ui_1_3.png used on input line 87.
+(pdftex.def)             Requested size: 73.79887pt x 131.19293pt.
+ <./images/ui_2_3.png, id=865, 722.7pt x 2569.6pt>
+File: ./images/ui_2_3.png Graphic file (type png)
+
+<use ./images/ui_2_3.png>
+Package pdftex.def Info: ./images/ui_2_3.png used on input line 88.
+(pdftex.def)             Requested size: 92.25pt x 327.98235pt.
+
+Underfull \hbox (badness 2698) in paragraph at lines 88--88
+[]\OT1/pplx/m/n/9 (b) |User In-for-ma-tion
  []
 
-[20]
+<./images/ui_checkboxes.png, id=866, 722.7pt x 1284.8pt>
+File: ./images/ui_checkboxes.png Graphic file (type png)
 
-LaTeX Warning: Reference `' on page 21 undefined on input line 71.
+<use ./images/ui_checkboxes.png>
+Package pdftex.def Info: ./images/ui_checkboxes.png used on input line 89.
+(pdftex.def)             Requested size: 92.25pt x 163.99117pt.
+
+Underfull \hbox (badness 3635) in paragraph at lines 89--89
+[]\OT1/pplx/m/n/9 (c) |User In-for-ma-tion
+ []
+
+[23] <./images/cat_features.png, id=886, 722.7pt x 1284.8pt>
+File: ./images/cat_features.png Graphic file (type png)
+
+<use ./images/cat_features.png>
+Package pdftex.def Info: ./images/cat_features.png used on input line 106.
+(pdftex.def)             Requested size: 184.5011pt x 284.5193pt.
+
+<./images/resize_cat_sensors_1.png, id=887, 361.35pt x 642.4pt>
+File: ./images/resize_cat_sensors_1.png Graphic file (type png)
+
+<use ./images/resize_cat_sensors_1.png>
+Package pdftex.def Info: ./images/resize_cat_sensors_1.png used on input line 1
+07.
+(pdftex.def)             Requested size: 184.5011pt x 284.5291pt.
+
+<./images/resize_cat_stakeholders_1.png, id=891, 361.35pt x 642.4pt>
+File: ./images/resize_cat_stakeholders_1.png Graphic file (type png)
+
+<use ./images/resize_cat_stakeholders_1.png>
+Package pdftex.def Info: ./images/resize_cat_stakeholders_1.png used on input l
+ine 120.
+(pdftex.def)             Requested size: 184.5011pt x 284.5291pt.
+
+<./images/resize_cat_contexts_1.png, id=892, 361.35pt x 642.4pt>
+File: ./images/resize_cat_contexts_1.png Graphic file (type png)
+
+<use ./images/resize_cat_contexts_1.png>
+Package pdftex.def Info: ./images/resize_cat_contexts_1.png used on input line 
+121.
+(pdftex.def)             Requested size: 184.5011pt x 284.5291pt.
+ [24 <./images/ui_1_3.png> <./images/ui_2_3.png> <./images/ui_checkboxes.png>] 
+[25 <./images/cat_features.png> <./images/resize_cat_sensors_1.png>]
+<./images/first_day_1.png, id=914, 722.7pt x 1284.8pt>
+File: ./images/first_day_1.png Graphic file (type png)
+
+<use ./images/first_day_1.png>
+Package pdftex.def Info: ./images/first_day_1.png used on input line 138.
+(pdftex.def)             Requested size: 184.5pt x 328.00195pt.
+
+<./images/first_day_2.png, id=915, 722.7pt x 1284.8pt>
+File: ./images/first_day_2.png Graphic file (type png)
+
+<use ./images/first_day_2.png>
+Package pdftex.def Info: ./images/first_day_2.png used on input line 139.
+(pdftex.def)             Requested size: 184.5pt x 328.00195pt.
+
+Overfull \hbox (35.26994pt too wide) in paragraph at lines 138--140
+[][]  [][] 
+ []
 
 
-LaTeX Warning: Reference `' on page 21 undefined on input line 88.
-
-[21] [22]
-
-LaTeX Warning: Reference `' on page 23 undefined on input line 125.
+Class memoir Warning: The \it font command is deprecated. 
+(memoir)              Use \textit{...} or {\itshape... } instead on input line 
+144.
 
 
-LaTeX Warning: Reference `' on page 23 undefined on input line 142.
+Underfull \vbox (badness 1087) has occurred while \output is active []
+
+ [26 <./images/resize_cat_stakeholders_1.png> <./images/resize_cat_contexts_1.p
+ng>]
+[27 <./images/first_day_1.png> <./images/first_day_2.png>]
+<./images/fds.png, id=939, 1268.74pt x 667.49374pt>
+File: ./images/fds.png Graphic file (type png)
+ <use ./images/fds.png>
+Package pdftex.def Info: ./images/fds.png used on input line 158.
+(pdftex.def)             Requested size: 147.59775pt x 77.65135pt.
+
+<./images/fds_user_login.png, id=940, 1270.7475pt x 716.6775pt>
+File: ./images/fds_user_login.png Graphic file (type png)
+
+<use ./images/fds_user_login.png>
+Package pdftex.def Info: ./images/fds_user_login.png used on input line 159.
+(pdftex.def)             Requested size: 147.59775pt x 83.2418pt.
+
+Underfull \hbox (badness 5119) in paragraph at lines 159--159
+[]\OT1/pplx/m/n/9 (b) |Data Gen-er-a-tors Reg-is-tra-tion
+ []
+
+<./images/improve.png, id=941, 722.7pt x 1284.8pt>
+File: ./images/improve.png Graphic file (type png)
+ <use ./images/improve.png>
+Package pdftex.def Info: ./images/improve.png used on input line 172.
+(pdftex.def)             Requested size: 369.0pt x 656.00392pt.
 
 
-LaTeX Warning: Reference `' on page 23 undefined on input line 143.
-
-[23]
-
-LaTeX Warning: Reference `' on page 24 undefined on input line 155.
+LaTeX Warning: Float too large for page by 84.80365pt on input line 175.
 
 
-LaTeX Warning: Reference `option' on page 24 undefined on input line 159.
+LaTeX Warning: Reference `imp' on page 28 undefined on input line 177.
 
-[24]
+<./images/bid_layout_1.png, id=942, 722.7pt x 1284.8pt>
+File: ./images/bid_layout_1.png Graphic file (type png)
 
-LaTeX Warning: Reference `' on page 25 undefined on input line 164.
+<use ./images/bid_layout_1.png>
+Package pdftex.def Info: ./images/bid_layout_1.png used on input line 184.
+(pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
 
+<./images/bid_layout_2.png, id=943, 722.7pt x 1284.8pt>
+File: ./images/bid_layout_2.png Graphic file (type png)
 
-LaTeX Warning: Reference `' on page 25 undefined on input line 180.
+<use ./images/bid_layout_2.png>
+Package pdftex.def Info: ./images/bid_layout_2.png used on input line 185.
+(pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
+ [28 <./images/fds.png> <./images/fds_user_login.png>] [29]
 
-[25]
+LaTeX Warning: Reference `option' on page 30 undefined on input line 220.
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 187.
+<./images/bid_layout_3.png, id=962, 722.7pt x 1284.8pt>
+File: ./images/bid_layout_3.png Graphic file (type png)
 
+<use ./images/bid_layout_3.png>
+Package pdftex.def Info: ./images/bid_layout_3.png used on input line 224.
+(pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 196.
+<./images/bid_layout_5.png, id=963, 722.7pt x 1284.8pt>
+File: ./images/bid_layout_5.png Graphic file (type png)
 
+<use ./images/bid_layout_5.png>
+Package pdftex.def Info: ./images/bid_layout_5.png used on input line 225.
+(pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
+ [30]
+File: ./images/fds_user_login.png Graphic file (type png)
+ <use ./images/fds_user_login.png>
+Package pdftex.def Info: ./images/fds_user_login.png used on input line 249.
+(pdftex.def)             Requested size: 147.59775pt x 83.2418pt.
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 209.
+<./images/fds_user_welcome.png, id=978, 833.1125pt x 258.9675pt>
+File: ./images/fds_user_welcome.png Graphic file (type png)
 
+<use ./images/fds_user_welcome.png>
+Package pdftex.def Info: ./images/fds_user_welcome.png used on input line 250.
+(pdftex.def)             Requested size: 147.59775pt x 45.87715pt.
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 210.
+<./images/fds_user_gps_full.png, id=980, 1256.695pt x 730.73pt>
+File: ./images/fds_user_gps_full.png Graphic file (type png)
 
+<use ./images/fds_user_gps_full.png>
+Package pdftex.def Info: ./images/fds_user_gps_full.png used on input line 257.
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 229.
+(pdftex.def)             Requested size: 147.59775pt x 85.82176pt.
 
-) (./mobile_application.tex [26] [27
+<./images/fds_user_light_full.png, id=981, 1246.6575pt x 728.7225pt>
+File: ./images/fds_user_light_full.png Graphic file (type png)
+
+<use ./images/fds_user_light_full.png>
+Package pdftex.def Info: ./images/fds_user_light_full.png used on input line 25
+8.
+(pdftex.def)             Requested size: 147.59775pt x 86.27539pt.
+
+<./images/fds_user_acc_full.png, id=982, 1264.725pt x 728.7225pt>
+File: ./images/fds_user_acc_full.png Graphic file (type png)
+
+<use ./images/fds_user_acc_full.png>
+Package pdftex.def Info: ./images/fds_user_acc_full.png used on input line 264.
+
+(pdftex.def)             Requested size: 147.59775pt x 85.04114pt.
+
+<./images/fds_user_noise_full.png, id=983, 1221.56375pt x 727.71875pt>
+File: ./images/fds_user_noise_full.png Graphic file (type png)
+
+<use ./images/fds_user_noise_full.png>
+Package pdftex.def Info: ./images/fds_user_noise_full.png used on input line 26
+5.
+(pdftex.def)             Requested size: 147.59775pt x 87.92209pt.
+ [31]
+
+LaTeX Warning: Reference `fig:fdsregister' on page 32 undefined on input line 3
+02.
+
+<./images/fds_dc_register.png, id=1009, 1274.7625pt x 722.7pt>
+File: ./images/fds_dc_register.png Graphic file (type png)
+
+<use ./images/fds_dc_register.png>
+Package pdftex.def Info: ./images/fds_dc_register.png used on input line 305.
+(pdftex.def)             Requested size: 147.59775pt x 83.67667pt.
+
+<./images/fds_dc_login.png, id=1010, 1269.74374pt x 715.67375pt>
+File: ./images/fds_dc_login.png Graphic file (type png)
+
+<use ./images/fds_dc_login.png>
+Package pdftex.def Info: ./images/fds_dc_login.png used on input line 306.
+(pdftex.def)             Requested size: 147.59775pt x 83.19075pt.
+
+<./images/fds_dc_welcome.png, id=1011, 1284.8pt x 726.715pt>
+File: ./images/fds_dc_welcome.png Graphic file (type png)
+
+<use ./images/fds_dc_welcome.png>
+Package pdftex.def Info: ./images/fds_dc_welcome.png used on input line 313.
+(pdftex.def)             Requested size: 369.0pt x 208.7127pt.
+) (./mobile_application.tex [32] [33 <./images/improve.png>] [34 <./images/bid_
+layout_1.png> <./images/bid_layout_2.png>]
+[35 <./images/bid_layout_3.png> <./images/bid_layout_5.png> <./images/fds_user_
+welcome.png> <./images/fds_user_gps_full.png> <./images/fds_user_light_full.png
+>] [36 <./images/fds_user_acc_full.png> <./images/fds_user_noise_full.png> <./i
+mages/fds_dc_register.png> <./images/fds_dc_login.png> <./images/fds_dc_welcome
+.png>] [37
 
 ]
 
-LaTeX Warning: Reference `' on page 28 undefined on input line 47.
+LaTeX Warning: Reference `bl' on page 38 undefined on input line 50.
 
+[38]
 
-LaTeX Warning: Reference `' on page 28 undefined on input line 48.
+LaTeX Warning: Reference `bl' on page 39 undefined on input line 61.
 
+) (./pre_survey_results.tex [39] [40
 
-LaTeX Warning: Reference `' on page 28 undefined on input line 48.
-
-
-LaTeX Warning: Reference `' on page 28 undefined on input line 48.
-
-
-LaTeX Warning: Reference `' on page 28 undefined on input line 48.
-
-
-LaTeX Warning: Reference `' on page 28 undefined on input line 48.
-
-
-LaTeX Warning: Reference `' on page 28 undefined on input line 48.
-
-
-LaTeX Warning: Reference `bl' on page 28 undefined on input line 50.
-
-[28]
-
-LaTeX Warning: Reference `bl' on page 29 undefined on input line 61.
-
-) (./pre_survey_results.tex [29] [30
-
-]) (./conclusion.tex [31] [32
+]) (./conclusion.tex [41] [42
 
 ])
-(./appendix.tex [33] [34
+(./appendix.tex [43] [44
 
-]) [35] [36
+]) [45] [46
 
 ]
-<declaration-originality.pdf, id=1057, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1135, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -1846,7 +1972,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 163.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1060, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1138, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -1877,7 +2003,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
 163.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [37 <./declaration-originality.pdf>]
+ [47 <./declaration-originality.pdf>]
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
@@ -1904,28 +2030,29 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17290 strings out of 493089
- 251377 string characters out of 6134841
- 430903 words of memory out of 5000000
- 20187 multiletter control sequences out of 15000+600000
- 40004 words of font info for 113 fonts, out of 8000000 for 9000
+ 17540 strings out of 493089
+ 256405 string characters out of 6134841
+ 430523 words of memory out of 5000000
+ 20357 multiletter control sequences out of 15000+600000
+ 48544 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,18n,122p,1010b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,18n,122p,1060b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (41 pages, 604177 bytes).
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (51 pages, 4689036 bytes).
 PDF statistics:
- 1183 PDF objects out of 1200 (max. 8388607)
- 695 compressed objects within 7 object streams
- 198 named destinations out of 1000 (max. 500000)
- 12814 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 1277 PDF objects out of 1440 (max. 8388607)
+ 818 compressed objects within 9 object streams
+ 249 named destinations out of 1000 (max. 500000)
+ 12924 words of extra memory for PDF output out of 14400 (max. 10000000)
 
