@@ -44,21 +44,20 @@
 \contentsline {subsection}{\numberline {5.2.1}Local Storage}{37}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Alarms and Notifications}{40}{subsection.5.2.2}
 \contentsline {subsubsection}{Going to the Next Data Sharing Day}{42}{section*.34}
-\contentsline {subsection}{\numberline {5.2.3}Fetching Data Requests}{44}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Fetching Data Requests}{43}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Recording User Choices}{44}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Sensor Data Collection and Summarization}{44}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Server Synchronization}{44}{subsection.5.2.6}
-\contentsline {subsubsection}{Going to the Next Data Sharing Day}{44}{section*.35}
-\contentsline {section}{\numberline {5.3}The Server}{44}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{44}{subsection.5.3.1}
-\contentsline {subsubsection}{Security}{44}{section*.36}
-\contentsline {subsubsection}{Table Store}{44}{section*.37}
-\contentsline {subsubsection}{Bussiness Logic}{47}{section*.52}
-\contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{51}{subsection.5.3.2}
-\contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{53}{chapter.6}
-\contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{53}{section.6.1}
-\contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{53}{section.6.2}
-\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{53}{section.6.3}
-\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{53}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{55}{chapter.7}
-\contentsline {appendix}{\chapternumberline {A}Appendix}{57}{appendix.A}
+\contentsline {subsection}{\numberline {5.2.6}Server Synchronization}{45}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}The Server}{46}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{46}{subsection.5.3.1}
+\contentsline {subsubsection}{Security}{46}{section*.35}
+\contentsline {subsubsection}{Collection Store}{46}{section*.36}
+\contentsline {subsubsection}{Bussiness Logic}{49}{section*.51}
+\contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{53}{subsection.5.3.2}
+\contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{55}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{55}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{55}{section.6.2}
+\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{55}{section.6.3}
+\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{55}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{57}{chapter.7}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{59}{appendix.A}

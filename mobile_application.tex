@@ -2,8 +2,6 @@
 
 \section{The Building Blocks}
 
-
-
 The following sections will explain integral parts of the server and client part of the mobile application. A gist of the architecture is shown
 in figure \ref{fig:bb}. As it can be seen, the mobile app represents the user participating in the experiment. As the experiment goes on,
 mobile sensor data and responses to the data requests which are collected are periodically sent to the Kinvey Data Store. 
@@ -17,14 +15,9 @@ is sent from the FairDataShare server to the Kinvey Data Store. Kinvey in turn f
 \label{fig:bb}
 \end{figure}
 
-
 \section{The Mobile Application}
 
-
-
-
-
-\subsection{Local Storage}
+\subsection{Local Storage} \label{loc}
 The local storage is an integral part of the application. The database used is SQLite and is the default database
 for the Android environment. Small sized unrelated data is stored in preferences files, whereas larger related
 data is stored in the database. The following paragraphs will explain each database present in this application followed with 
@@ -119,9 +112,11 @@ The general schema for all the sensors is the following :
 \subsection{Alarms and Notifications}
 
 Every bidding day where the user can answer data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely to perform some application critical functions. The function performed are explained in detail in section \ref{next}. 
-To inform the system of such an event Android provides the functionality in the form of alarms. Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions, in the sense that they are triggered around that time set but not exactly to optimize the battery. Hence, we decided to set the repeating alarms manually. The first time the alarm is set to ring in exactly 24 hours, but things change when the phone is switched off.
+To inform the system of such an event Android provides the functionality in the form of alarms. 
 
+Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions, in the sense that they are triggered around that time set but not exactly to optimize the battery. Hence, we decided to set the repeating alarms manually. 
 
+The first time the alarm is set to ring in exactly 24 hours, but things change when the phone is switched off.
 One of the conditions of the experiment is not to have the phone switched off at any time. Neverthless, we take into account the scenario where
 the phone is kept switched off for a period of time. There are various things that can happen:
 
@@ -149,7 +144,7 @@ BootReceiver service of the application is triggered with pseudocode \ref{boot}.
 \end{algorithmic}
 \end{algorithm}
 
-
+This checks whether an alarm has been missed, if it has 200 seconds is given for the phone to stabilize before triggering it. Otherwise, a new alarm is set using pseudocode \ref{setalarm}. To set an alarm we need the time difference between now and when the alarm should ring. After that is calculated, the alarm is set.
 
 \begin{algorithm}
 \caption{Alarm Algorithm}\label{setalarm}
@@ -165,7 +160,9 @@ BootReceiver service of the application is triggered with pseudocode \ref{boot}.
 \end{algorithm}
 
 \subsubsection{Going to the Next Data Sharing Day} \label{next}
-When the alarm notifies the system that one bidding day is over, 
+Once the alarm rings, it marks the end of a bidding day. Once a bidding day ends a number of tasks need to be executed
+and for this the NextDayService is triggered, which is described in pseudocode \ref{nextday}. To start with the the privacy and credit is sent to
+the sent to the server and stored locally in the STOREPOINTS table. $Privacy$ which is the total privacy obtained, $Credit$ is the total credit obtained, $Round$ which is the number of time the user answered all the questions and $CurrentQuestion$ which is the current question the user is answering is all reset to zero. The $Day$ corresponds to the current day number is incremented by one to denote the next bidding day.
 
 \begin{algorithm}
 \caption{NextDayService Algorithm}\label{nextday}
@@ -186,15 +183,63 @@ When the alarm notifies the system that one bidding day is over,
 \end{algorithmic}
 \end{algorithm}
 
+The current time of executing the alarm is saved in case the phone is rebooted or switched off. After that, the sensor data which is saved locally
+needs to be summarized, the corresponding method is called and is explained in pseudocode \ref{sum}. Finally we need to check if the experiment is over or not and update the user interface accordingly. This means either we update the various metrics on the improvement and bidding screens, or we 
+show the end of experiment screen.
 
 \subsection{Fetching Data Requests}
+A data request needs to be fetched in two scenarios :
 
+\begin{enumerate}
+	\item After a question has been answered in the first bidding day.
+	\item After the privacy or credit improvement button has been clicked.
+\end{enumerate}
 
+In the first bidding day, once a data request has been answered the next one is fetched sequentially from the database. This just requires knowing the current data request number and fetching the next data request from table QUESTIONSTORE. 
 
+For the other bidding days, fetching of the data requests depends on the improvement button chosen. According to the choice, the following is done:
+
+\begin{enumerate}
+	\item Improve Privacy - Obtain question from table STOREANSWERS where user has answered with lowest privacy
+	\item Improve Credit - Obtain question from table STOREANSWERS where user has answered with highest privacy
+\end{enumerate}
+
+In addition to sending the data request to the user interface, we need to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, we output $last-possible$, where $last$ stands for the credit obtained the last time the data request was answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer \ref{}.
+
+Each option of a data request has an associated percentage of data that is given away as described in \ref{}. According to the percentage of data given away, the total privacy is calculated for each possible option. The difference between the current privacy and each possible total privacy is calculated and indicated under each option. This gives an indication to the user as to what each option will do to the metrics.
 
 \subsection{Recording User Choices}
 
-\subsection{Sensor Data Collection and Summarization}
+\ref{fig:db_ur} describes the table USERRESPONSECACHE. Each time a user enters a response to a data request, all the fields mentioned in section
+\ref{loc} are recorded and store in a class object. This object is transformed into a byte array so as to be stored easily in the table as is.
+When the JobNetworkService described in \ref{job} is called, the class object is sent as is to the server.
+
+
+\subsection{Sensor Data Collection and Summarization} 
+
+Sensor data is collected from the following sensors :
+
+\begin{enumerate}
+	\item Accelerometer sensor
+	\item Noise sensor
+    \item Location sensor
+    \item Light sensor
+\end{enumerate}
+
+A sensor service is triggered when the application is installed and is stopped when the experiment is over. This collects data from every sensor
+every 30 seconds and stores it in the appropriate tables mentioned in section \ref{loc}.
+At the end of a bidding day, sensor data needs to be summarized according to the wishes of the user. This starts by first finding out the lowest privacy level for each sensor. Privacy levels range from one to five, that is from the lowest to highest privacy levels. Using this level
+summarization is done as shown in pseudocode \ref{sum}. Each privacy level corresponds to an action:
+
+\begin{enumerate}
+	\item 1- All data is sent to the server
+	\item 2- Send 75\% of the data
+    \item 3- Send 50\% of the data
+    \item 4- Send 25\% of the data
+    \item 5- Do not send any data
+\end{enumerate}
+
+Initially all the sensor data has a field $ISSENT$ with value of zero. Data that should be sent to the server is set with $ISSENT=1$, and all that have value $ISSENT=0$ are ignored.
 
 \begin{algorithm}
 \caption{Summarization Algorithm}\label{sum}
@@ -225,17 +270,21 @@ When the alarm notifies the system that one bidding day is over,
 \end{algorithmic}
 \end{algorithm}
 
-\subsection{Server Synchronization}
+\subsection{Server Synchronization} \label{job}
+
+User responses and sensor data need to be sent to the server. This is done periodically every 5000 seconds in order to free up space on the phone when the internet is available. This is triggered first when the application is started. Data is fetched from the tables in the database. Data with fields marked as $ISSENT=1$ is data that is ready and that has not been sent yet to the server. Such data is sent, and when an acknowledgement is received, this data is deleted from the table.
+
 \begin{algorithm}
-\caption{NetworkService Algorithm}\label{nextday}
+\caption{JobNetworkService Algorithm}\label{nextday}
 \begin{algorithmic}[1]
 \Procedure{NetworkService}{}
 \State $ \text{Fecth data from } \textit{USERRESPONSECACHE}$
  \For{$\text{each record}$}
  	 \If {$\textit{ISSENT} == \textit{1}$}
   \State $\text{Send record to Server}$
-\Else
-  \State $\text{Delete record}$ 
+  \If {$\text{SUCCESS}$}
+  \State $\text{Delete record}$  
+  \EndIf
   \EndIf
  	\EndFor
 
@@ -244,8 +293,9 @@ When the alarm notifies the system that one bidding day is over,
  	  \For{$\text{each record}$}
  	 \If {$\textit{ISSENT} == \textit{1}$}
   \State $\text{Send record to Server}$
-	\Else
-  \State $\text{Delete record}$
+  \If {$\text{SUCCESS}$}
+  \State $\text{Delete record}$  
+  \EndIf
   \EndIf
  	\EndFor
 	
@@ -256,32 +306,22 @@ When the alarm notifies the system that one bidding day is over,
 
 
 
-\subsubsection{Going to the Next Data Sharing Day} \label{next}
-
-
-
 \section{The Server}
 
 \subsection{Kinvey Data Storage}
 
-Kinvey is a mobile backend as a service which provides a platform for mobile phones to link applications at a backend cloud storage. This backend has been used to store data and for some business logic implementations.
+Kinvey \footnote{\url{http://kinvey.com/}} is a mobile backend as a service which provides a platform for mobile phones to link applications to a backend cloud storage. For the purpose of this application the backend has been used to store data for some business logic implementations.
 \subsubsection{Security}
+All communication from the application to the server is encrypted using TLS/SSL encryption \footnote{Kinvey white paper : KINVEY CLOUD
+SERVICE: SECURITY
+OVERVIEW 2014}to communicate with the backend service. This is automatically provided by the Kinvey SDK.
 
-\subsubsection{Table Store}
+\subsubsection{Collection Store}
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio, height=0.6\textwidth]{./images/collection_ur_1}
-\caption{Screenshot of Collection UserResponse Part 1}
-\label{fig:col_ur_1}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ur_2}
-\caption{Screenshot of Collection UserResponse Part 2}
-\label{fig:col_ur_2}
-\end{figure}
+Locally, all information is store in SQLite which is a relational database. The database used in Kinvey is MongoDB so instead we have collections 
+on the server.
+When the user starts the application, general personal information is entered as explained in \ref{}. This data is stored in the
+collection UserInformation with the schema shown in the screen shots \ref{fig:col_ui_1} and \ref{fig:col_ui_2}.
 
 \begin{figure}[ht!]
 \centering
@@ -297,47 +337,7 @@ Kinvey is a mobile backend as a service which provides a platform for mobile pho
 \label{fig:col_ui_2}
 \end{figure}
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_loc}
-\caption{Screenshot of Collection Location}
-\label{fig:col_loc}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_acc}
-\caption{Screenshot of Collection Accelerometer}
-\label{fig:col_acc}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_noise}
-\caption{Screenshot of Collection Noise}
-\label{fig:col_noise}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_light}
-\caption{Screenshot of Collection Light}
-\label{fig:col_light}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_users}
-\caption{Screenshot of Collection Users}
-\label{fig:col_users}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_score}
-\caption{Screenshot of Collection Score}
-\label{fig:col_score}
-\end{figure}
+Once this is done, users have to categorize the various Features, Sensors, Stakeholders and then the various Contexts. This information is sent to the server in collections named Features, Sensors, Stakeholders and Contexts. This is shown in \ref{fig:col_f}, \ref{fig:col_s}, \ref{fig:col_ss} and \ref{fig:col_c} respectively.
 
 \begin{figure}[ht!]
 \centering
@@ -367,32 +367,117 @@ Kinvey is a mobile backend as a service which provides a platform for mobile pho
 \label{fig:col_c}
 \end{figure}
 
-All the data collected form the user's phones is stored in Kinvey Data Store's collections. Data is segregated in to the appropriate collections. Data is stored in the collections is done so in the following form :
+All the data stored locally on the mobile phone which is sent by the JobNetworkService explained in section \ref{job} is received by Kinvey.
+User responses are store in collection USERRESPONSE shown in \ref{fig:col_ur_1} and \ref{fig:col_ur_2}.
 
-\begin{enumerate}
-    \item Data collected in the form of radio buttons on the phone are stored as integers.
-    \item Data collected as check-box entries on the phone each have a column in the collection with entries zero or one.
-    \item Data collected as drop down lists on the phone are stored either by integer position in the list or by the entry name in the list itself.
-\end{enumerate}
 
-This way of storing data applies to all the collections explained below. Each record of every collection is with a unique user identifier and with the timestamp whenever necessary. This is done to identify data that belongs to the same user accross different collections. The timestamp
-is collected in order to examine temporal relationships.
-The first collection is the GetUserInformation collection and is used to store all the basic non intrusive user information 
-collected in the entry phase. The collection is shown in figure \ref{}. Next, is the UserResponse collection which is used to store all
-the responses of the users to data requests in the entry phase and the core phase. The collection is shown in figure \ref{}. Collection AccelerometerStore, LightStore, NoiseStore and LocationStore are used to store the mobile sensor data collected from the user at the end of a bidding day after local summarization on the mobile phone. Theses collections are shown in figures \ref{} \ref{} \ref{} \ref{}. The StorePoints collection is used to store the privacy and credit metrics obtained at the end of each bidding day  for each user and is shown in figure \ref{}.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio, height=0.6\textwidth]{./images/collection_ur_1}
+\caption{Screenshot of Collection UserResponse Part 1}
+\label{fig:col_ur_1}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ur_2}
+\caption{Screenshot of Collection UserResponse Part 2}
+\label{fig:col_ur_2}
+\end{figure}
+
+The sensor data sent by the JobNetworkService is stored in collections named after the sensors themselves. The schema of the tables
+is shown in figures \ref{fig:col_loc}, \ref{fig:col_acc}, \ref{fig:col_light} and \ref{fig:col_noise}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_loc}
+\caption{Screenshot of Collection Location}
+\label{fig:col_loc}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_acc}
+\caption{Screenshot of Collection Accelerometer}
+\label{fig:col_acc}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_noise}
+\caption{Screenshot of Collection Noise}
+\label{fig:col_noise}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_light}
+\caption{Screenshot of Collection Light}
+\label{fig:col_light}
+\end{figure}
+
+To keep track of all the existing users in the experiment, the collection Users stores all unique user identification strings.
+This is shown in \ref{fig:col_users}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_users}
+\caption{Screenshot of Collection Users}
+\label{fig:col_users}
+\end{figure}
+
+Finally, the collection Score shown in \ref{fig:col_score} stores the total privacy, total credit obtained by the user for each bidding day.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_score}
+\caption{Screenshot of Collection Score}
+\label{fig:col_score}
+\end{figure}
+
 
 \subsubsection{Bussiness Logic} \ref{bl}
-Most of the bussiness logic used in the FairDataShare portal is present on Kinvey. Two things are done here:
+Most of the bussiness logic used for the FairDataShare portal is present on Kinvey. There are two main scripts stored in Kinvey:
 \begin{enumerate}
-    \item Finding privacy for a user
-    \item Summarization
+    \item Script to find the privacy preference
+    \item Script for summarization
 \end{enumerate}
-Data collected from the user consists of mobile sensor data with the least amount of summarization. This prevents for repeatedly
-collecting data from users and saves space and mobile data. Therefore, this mobile sensor data needs to be further summarized before being given to the stakeholder. To do this, we first have to find the most recent privacy setting from the UserResponseCollection. This is done due to the fact users can answer a data request more than once, hence we need to fish out the latest response for a particular sensor. Once this is done, using the recorded privacy level, we feed this input into another script that performs the summarization which has been explained in chapter \ref{model}.
+
+The stakeholder make a request for data giving the following details:
+\begin{enumerate}
+    \item Bidding day number
+    \item Anonymous user
+    \item Sensor
+    \item Context
+\end{enumerate}
+
+Given this input plus the category of the stakeholder, we look into the UserResponse Collection trying to find the most recent record that
+fit this criteria and extract the records privacy level.
+
+Once we know the privacy level, summarization can be done. Data has been taken from the user with a certain summarization, and if the summarization level is lower than the privacy level extracted, further summarization needs to be done. The pseudocode is shown in \ref{sum1}.
+
+\begin{algorithm}
+\caption{Server Summarization Algorithm}\label{sum1}
+\begin{algorithmic}[1]
+\Procedure{Summarization}{}
+\State $\textit{data} \gets \text{sensor data from collection}$
+\If {$\textit{summarizationlevel} == \textit{privacylevel}$}
+	\State $\textbf{Return }\textit{data}$
+\Else
+	\State $\textit{skip} \gets \textit{summarizationlevel}-\textit{privacylevel}+1$
+	 \For{$\text{every }\textit{skip} \text{number records out of 4}$}
+ 	 \State $\text{Delete record from}\textit{ data}$
+ 	 \EndFor
+\EndIf
+\State $\text{Return data to portal}$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
 
 \subsection{FairDataShare Web Portal}
-The FairDataShare portal makes use of a server other Kinvey to safely store the usernames, passwords of users and the stakeholders. The database
-technology used is MongoDB. The username and passwords are both stored in a collection. The language used to interact with Kinvey is Express.js, which is based on Node.js. Most of the data portal business logic is on Kinvey described in section \ref{bl}. The webpage was constructed using Html and css. Screenshots of the portal are provided in chapter \ref{exp}.
+The FairDataShare portal makes use of a server at ETH Zurich other Kinvey to safely store the usernames, passwords of users and the stakeholders in a collection. The database technology used is MongoDB. The language used to interact with Kinvey is Express.js, which is based on Node.js. Most of the data portal business logic is on Kinvey described in section \ref{bl}. The webpage was constructed using Html and css. All screenshots of the portal including detailed information is provided in chapter \ref{exp}.
 
 
 
