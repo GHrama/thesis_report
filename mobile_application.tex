@@ -25,8 +25,10 @@ is sent from the FairDataShare server to the Kinvey Data Store. Kinvey in turn f
 
 
 \subsection{Local Storage}
-the various db, schemas introduced, and why they are there
-
+The local storage is an integral part of the application. The database used is SQLite and is the default database
+for the Android environment. Small sized unrelated data is stored in preferences files, whereas larger related
+data is stored in the database. The following paragraphs will explain each database present in this application followed with 
+their function. All tables explained here are pertaining to the user using the mobile application.
 
 \begin{figure}[htp]
 \subtop[Table Schema of QUESTIONSTORE\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
@@ -36,15 +38,25 @@ the various db, schemas introduced, and why they are there
 \end{figure}
 
 
+Figure \ref{fig:db_quest} shows the QUESTIONSTORE's table schema. This table stores each possible data request with its sensor $SENSOR$, stakeholder  $STAKEHOLDER$ and context $CONTEXT$. Each of these are represented by an integer, for example sensor 0 stands for Accelerometer sensor. Each data request is accompanied by
+an unique question identifier $QID$, weight assigned $WEIGHT$ and the cost $COST$. This data is not sent to 
+the server.
+
+Figure \ref{fig:db_which} depicts the table WHICHANSWERS's table schema. This stores the questions identifier $QID$ of each data request that has
+been answered by the user for each round. This is helpful while fetching data requests, so as not to fetch the request twice in the same round. This makes sure that all questions are answered before answering them for a second time. This data is not sent to the server.
+
 \begin{figure}[htp]
 \subtop[Table Schema of STOREANSWERS\label{fig:db_ans}]{\includegraphics[width=0.4\linewidth]{./images/db_ans}} \hspace{1em}
-\subtop[Table Schema of STOREANSWERS\label{fig:db_points}]{\includegraphics[width=0.4\linewidth]{./images/db_points}}
+\subtop[Table Schema of STOREPOINTS\label{fig:db_points}]{\includegraphics[width=0.4\linewidth]{./images/db_points}}
 \caption{Table Schemas}
 \label{fig:ts11}
 \end{figure}
 
+Figure \ref{fig:db_ans} explains the schema of STOREANSWERS table. This table is used to store the data request identifier $QID$ with the corresponding
+user responses $LEVEL$, along with the increase or decrease in credit obtained $COST_OBT$. The total cost can be calculated by adding all the costs in this table. Similarly, the total privacy can be calculated by averaging all the user responses in this table. Only the most recent responses are stored in this table. This content is not sent over to the server.
 
-
+Figure \ref{fig:db_points} denotes the schema of STOREPOINTS table. This table is used to store the credit and privacy obtained for each bidding day.
+This information is sent to the server as soon one bidding day is over.
 
 \begin{figure}[ht!]
 \centering
@@ -53,6 +65,33 @@ the various db, schemas introduced, and why they are there
 \label{fig:db_ur}
 \end{figure}
 
+Figure \ref{fig:db_ur} depicts the USERRESPONSECACHE tables's schema. This table stores a unique key $KEY$ for each user response, followed by a flag $ISSENT$, which is 1 if the response is not sent to the server, and 0 if it is sent. The user response saved consists of the following entries :
+
+\begin{enumerate}
+	\item User Id
+	\item Timestamp of response
+    \item Sensor Id
+    \item Stakeholder Id
+    \item Context Id
+    \item Privacy Level answered for this data request
+    \item Cost obtained for this data request
+    \item Current Total Privacy of user
+    \item Current Total Credit of user
+    \item Maximum Obtainable Credit for this data request in this round
+    \item Metric Chosen to Improve  (Improve Privacy or Improve Credit)
+\end{enumerate}
+
+All of the above fields are packed into the field $ur$ shown in \ref{fig:db_ur}. The data in this table is sent to the server. Once the entry is sent to the server, the $ISSENT$ field is changed to 0 and deleted locally. The unique keys $KEY$ are useful for deleting sent entries.
+
+Figure \ref{fig:ts2} and \ref{fig:ts22} show the table schemas for data storage of the following sensors:
+
+\begin{enumerate}
+	\item Accelerometer in the STOREACCELEROMETER table
+	\item Noise in the STORENOISE
+    \item Location in the  STORELOCATION
+    \item Light in the  STORELIGHT
+\end{enumerate}
+
 \begin{figure}[htp]
 \subtop[Table Schema of STOREACCELEROMETER\label{fig:db_acc}]{\includegraphics[width=0.4\linewidth]{./images/db_acc}}\hspace{1em}
 \subtop[Table Schema of STORENOISE \label{fig:db_noise}]{\includegraphics[width=0.4\linewidth]{./images/db_noise}}%
@@ -60,22 +99,92 @@ the various db, schemas introduced, and why they are there
 \label{fig:ts2}
 \end{figure}
 
+The general schema for all the sensors is the following :
+
+\begin{enumerate}
+	\item $KEY$ - Uniquely identifies each sensor entry
+	\item $TIMESTAMP$ - The time the sensor value was collected
+    \item $ISSENT$ - Denotes whether the sensor entry has been sent to the server or not
+    \item The other columns are specific to each sensor and represent the actual sensor values of the user collected
+\end{enumerate}
+
 \begin{figure}[htp]
-
-
 \subtop[Table Schema of STORELOCATION\label{fig:db_loc}]{\includegraphics[width=0.4\linewidth]{./images/db_loc}}\hspace{1em}
 \subtop[Table Schema of STORELIGHT \label{fig:db_light}]{\includegraphics[width=0.4\linewidth]{./images/db_light}}%
-
 \caption{Table Schemas for Sensor Data}
 \label{fig:ts22}
 \end{figure}
 
+
 \subsection{Alarms and Notifications}
 
-coping the alarms during rebooting, if alarms missing or not
+Every bidding day where the user can answer data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely to perform some application critical functions. The function performed are explained in detail in section \ref{next}. 
+To inform the system of such an event Android provides the functionality in the form of alarms. Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions, in the sense that they are triggered around that time set but not exactly to optimize the battery. Hence, we decided to set the repeating alarms manually. The first time the alarm is set to ring in exactly 24 hours, but things change when the phone is switched off.
 
-\subsubsection{Going to the Next Data Sharing Day}
-events thatt ake place when going to the next day
+
+One of the conditions of the experiment is not to have the phone switched off at any time. Neverthless, we take into account the scenario where
+the phone is kept switched off for a period of time. There are various things that can happen:
+
+\begin{enumerate}
+	\item The phone is rebooted.
+	\item The phone is switched off, during this time an alarm is missed.
+    \item The phone is switched off for a period greater than 24 hours. One or more alarms can be missed.
+\end{enumerate}
+
+Once the phone is switched off, all alarms are erased. Alarms do not execute when the phone is switched off. Hence, when the phone switches on,
+BootReceiver service of the application is triggered with pseudocode \ref{boot}.
+
+\begin{algorithm}
+\caption{BootService Algorithm}\label{boot}
+\begin{algorithmic}[1]
+\Procedure{BootService}{}
+\State $\textit{now} \gets \text{current timestamp}$
+\State $i \gets \text{timestamp of last triggered alarm}$
+\If {$\textit{now}-i < 86400$}
+  \State $\text{Call }\textit{SetAlarmLater()}$
+\Else
+  \State $\text{Set alarm in 200 seconds}$
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\begin{algorithm}
+\caption{Alarm Algorithm}\label{setalarm}
+\begin{algorithmic}[1]
+\Procedure{SetAlarmLater}{}
+\State $\textit{now} \gets \text{current timestamp}$
+\State $i \gets \text{timestamp of last triggered alarm}$
+\State $\textit{latertime} \gets \textit{i}+\text{86400}$
+\State $\textit{latergap} \gets \textit{latertime}-\textit{now}$
+\State $\text{Set Alarm in latergap seconds}$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection{Going to the Next Data Sharing Day} \label{next}
+When the alarm notifies the system that one bidding day is over, 
+
+\begin{algorithm}
+\caption{NextDayService Algorithm}\label{nextday}
+\begin{algorithmic}[1]
+\Procedure{NextDayService}{}
+\State $\text{Store }\textit{Privacy, Credit, Day } \text{in } \textit{STOREPOINTS}$
+\State $\text{Send }\textit{Privacy, Credit, Day } \text{to Server}$
+\State $\textit{Privacy, Credit, Round, CurrentQuestion} \gets \text{0}$
+\State $\textit{Day} \gets \textit{Day}+1$
+\State $\text{Store current time}$
+\State $\text{Call }\textit{Summarization()}$
+\If {$\textit{Day} > \textit{End}$}
+  \State $\text{End experiment}$
+\Else
+  \State $\text{Update user interface elements}$ 
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
 
 
 \subsection{Fetching Data Requests}
@@ -87,7 +196,68 @@ events thatt ake place when going to the next day
 
 \subsection{Sensor Data Collection and Summarization}
 
+\begin{algorithm}
+\caption{Summarization Algorithm}\label{sum}
+\begin{algorithmic}[1]
+\Procedure{Summarization}{}
+\For{$\text{each sensor}$}
+\State $\text{Fetch sensor data from } \textit{sensor table}$
+\State $\textit{level} \gets \text{Fetch user privacy level}$
+\If {$\textit{level} \gets 1$}
+  \State $\text{Set all } \textit{ISSENT} \gets \text{1}$
+\ElsIf {$\textit{level} \gets 2$}
+	\For{$\text{3 out of every 4 records}$}
+ 	 \State $\textit{ISSENT} \gets \text{1}$
+ 	\EndFor 
+\ElsIf {$\textit{level} \gets 3$}
+  \For{$\text{1 out of every 2 records}$}
+ 	 \State $\textit{ISSENT} \gets \text{1}$
+ 	\EndFor
+\ElsIf {$\textit{level} \gets 4$}
+  \For{$\text{1 out of every 4 records}$}
+ 	 \State $\textit{ISSENT} \gets \text{1}$
+ 	\EndFor
+\EndIf
+\State $\text{Delete all entries with } \textit{ISSENT} \gets 0$
+\State $\text{Update Database}$
+\EndFor
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
 \subsection{Server Synchronization}
+\begin{algorithm}
+\caption{NetworkService Algorithm}\label{nextday}
+\begin{algorithmic}[1]
+\Procedure{NetworkService}{}
+\State $ \text{Fecth data from } \textit{USERRESPONSECACHE}$
+ \For{$\text{each record}$}
+ 	 \If {$\textit{ISSENT} == \textit{1}$}
+  \State $\text{Send record to Server}$
+\Else
+  \State $\text{Delete record}$ 
+  \EndIf
+ 	\EndFor
+
+\For{$\text{each sensor}$}
+ 	 \State $ \text{Fecth data from } \textit{sensor table}$
+ 	  \For{$\text{each record}$}
+ 	 \If {$\textit{ISSENT} == \textit{1}$}
+  \State $\text{Send record to Server}$
+	\Else
+  \State $\text{Delete record}$
+  \EndIf
+ 	\EndFor
+	
+ 	\EndFor
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\subsubsection{Going to the Next Data Sharing Day} \label{next}
+
 
 
 \section{The Server}

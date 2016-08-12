@@ -89,6 +89,11 @@
 %% Helpful macros.
 \input{macrosetup}
 
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+
 
 
 %% Make document internal hyperlinks wherever possible. (TOC, references)
@@ -116,7 +121,9 @@
 
 \begin{document}
 
-
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
 
 \frontmatter
 

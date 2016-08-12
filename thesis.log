@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  11 AUG 2016 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  12 AUG 2016 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1067,7 +1067,42 @@ Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 )
 \c@proof=\count228
  (./macrosetup.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+Normal \count register pool exhausted, switching to extended pool.
+\c@float@type=\count277
+\float@exts=\toks58
+\float@box=\box35
+\@float@everytoks=\toks59
+\@floatcapt=\box36
+)
+\@float@every@algorithm=\toks60
+\c@algorithm=\count278
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count279
+\c@ALG@rem=\count280
+\c@ALG@nested=\count281
+\ALG@tlm=\skip209
+\ALG@thistlm=\skip210
+\c@ALG@Lnr=\count282
+\c@ALG@blocknr=\count283
+\c@ALG@storecount=\count284
+\c@ALG@tmpcounter=\count285
+\ALG@tmplength=\skip211
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -1116,16 +1151,15 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen191
-Normal \count register pool exhausted, switching to extended pool.
-\Hy@linkcounter=\count277
-\Hy@pagecounter=\count278
+\Hy@linkcounter=\count286
+\Hy@pagecounter=\count287
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count279
+\Hy@SavedSpaceFactor=\count288
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1138,7 +1172,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count280
+\c@Hy@tempcnt=\count289
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -1146,7 +1180,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen192
-\Fld@menulength=\count281
+\Fld@menulength=\count290
 \Field@Width=\dimen193
 \Fld@charsize=\dimen194
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1158,37 +1192,37 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count282
-\c@Item=\count283
-\c@Hfootnote=\count284
+\Hy@abspage=\count291
+\c@Item=\count292
+\c@Hfootnote=\count293
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count285
-\c@Hpagenote=\count286
+\c@memhycontfloat=\count294
+\c@Hpagenote=\count295
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count287
-\c@bookmark@seq@number=\count288
+\Fld@listcount=\count296
+\c@bookmark@seq@number=\count297
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip209
+\Hy@SectionHShift=\skip212
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
 )
 
 Package subfig Warning: The subfigure type is already defined. on input line 10
-2.
+7.
 
 
 LaTeX Warning: Unused global option(s):
@@ -1204,47 +1238,54 @@ LaTeX Warning: Label `sub@' multiply defined.
 
 LaTeX Warning: Label `fig:first' multiply defined.
 
+
+LaTeX Warning: Label `nextday' multiply defined.
+
+
+LaTeX Warning: Label `next' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 117
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 122
 .
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
+\scratchcounter=\count298
 \scratchdimen=\dimen195
-\scratchbox=\box35
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count292
+\scratchbox=\box37
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count301
 \MPscratchDim=\dimen196
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks59
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks62
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1260,233 +1301,233 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box36
-\c@lstlisting=\count295
+\AtBeginShipoutBox=\box38
+\c@lstlisting=\count304
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 117.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 117.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 122.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfcprot/pplmnOT1.cpa)
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 117.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 122.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 117.
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 122.
 Package pdfcprot Info: I didn't find pplxbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssbxnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find pplxmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmnOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 117.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 122.
 
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 117.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 122.
 
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 117.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 122.
 
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 117.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 122.
 
 
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmitOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
 Package pdfcprot Info: I didn't find cmssmslOT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 11
-7.
+(pdfcprot)              As a fallback I will try pplmnOT1.cpa. on input line 12
+2.
 Package pdfcprot Info: File pplmnOT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 117.
-Package hyperref Info: Link coloring ON on input line 117.
+(pdfcprot)             you intended to use. on input line 122.
+Package hyperref Info: Link coloring ON on input line 122.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count296
+\c@section@level=\count305
 LaTeX Info: Redefining \Ref on input line 513.
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 117.
-LaTeX Info: Redefining \ref on input line 117.
-LaTeX Info: Redefining \pageref on input line 117.
-LaTeX Info: Redefining \nameref on input line 117.
+LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 122.
+LaTeX Info: Redefining \pageref on input line 122.
+LaTeX Info: Redefining \nameref on input line 122.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-LaTeX Info: Redefining \Ref on input line 117.
+LaTeX Info: Redefining \Ref on input line 122.
  <ETHlogo.pdf, id=221, 179.67125pt x 45.16875pt>
 File: ETHlogo.pdf Graphic file (type pdf)
 
 <use ETHlogo.pdf>
-Package pdftex.def Info: ETHlogo.pdf used on input line 129.
+Package pdftex.def Info: ETHlogo.pdf used on input line 136.
 (pdftex.def)             Requested size: 179.67079pt x 45.16862pt.
  [1
 
@@ -1547,7 +1588,7 @@ l.33 ... with No Incentives}{26}{subsection.4.2.4}
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.139 
+l.146 
        [2] (./abstract.tex) (./introduction.tex [1
 
 ] [2
@@ -1952,10 +1993,10 @@ Package pdftex.def Info: ./images/blocks_app.png used on input line 15.
 File: ./images/db_quest.png Graphic file (type png)
 
 <use ./images/db_quest.png>
-Package pdftex.def Info: ./images/db_quest.png used on input line 32.
+Package pdftex.def Info: ./images/db_quest.png used on input line 34.
 (pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
 
-Underfull \hbox (badness 2469) in paragraph at lines 32--32
+Underfull \hbox (badness 2469) in paragraph at lines 34--34
 []\OT1/pplx/m/n/9 (a) |Ta-ble Schema of QUES-TION-
  []
 
@@ -1963,269 +2004,272 @@ Underfull \hbox (badness 2469) in paragraph at lines 32--32
 File: ./images/db_which_1.png Graphic file (type png)
 
 <use ./images/db_which_1.png>
-Package pdftex.def Info: ./images/db_which_1.png used on input line 33.
+Package pdftex.def Info: ./images/db_which_1.png used on input line 35.
 (pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
 
-Underfull \hbox (badness 2111) in paragraph at lines 33--33
+Underfull \hbox (badness 2111) in paragraph at lines 35--35
 []\OT1/pplx/m/n/9 (b) |Ta-ble Schema of WHICHAN-
  []
 
-<./images/db_ans.png, id=1072, 188.705pt x 162.6075pt>
+
+Overfull \hbox (26.53445pt too wide) in paragraph at lines 41--44
+\OT1/pplx/m/n/10.95 each pos-si-ble data re-quest with its sen-sor $\OML/zplm/m
+/it/10.95 SENSOR$\OT1/pplx/m/n/10.95 , stake-holder $\OML/zplm/m/it/10.95 STAKE
+HOLDER$
+ []
+
+[37
+
+] <./images/db_ans.png, id=1080, 188.705pt x 162.6075pt>
 File: ./images/db_ans.png Graphic file (type png)
 
 <use ./images/db_ans.png>
-Package pdftex.def Info: ./images/db_ans.png used on input line 40.
+Package pdftex.def Info: ./images/db_ans.png used on input line 49.
 (pdftex.def)             Requested size: 147.59775pt x 127.18567pt.
 
-Underfull \hbox (badness 4621) in paragraph at lines 40--40
+Underfull \hbox (badness 4621) in paragraph at lines 49--49
 []\OT1/pplx/m/n/9 (a) |Ta-ble Schema of STORE-AN-
  []
 
-<./images/db_points.png, id=1073, 388.45125pt x 332.24126pt>
+<./images/db_points.png, id=1081, 388.45125pt x 332.24126pt>
 File: ./images/db_points.png Graphic file (type png)
 
 <use ./images/db_points.png>
-Package pdftex.def Info: ./images/db_points.png used on input line 41.
+Package pdftex.def Info: ./images/db_points.png used on input line 50.
 (pdftex.def)             Requested size: 147.59775pt x 126.24284pt.
-
-Underfull \hbox (badness 4341) in paragraph at lines 41--41
-[]\OT1/pplx/m/n/9 (b) |Ta-ble Schema of STORE-AN-
- []
-
-<./images/db_ur.png, id=1074, 305.14pt x 301.125pt>
+ [38 <./images/blocks_app.png> <./images/db_quest.png> <./images/db_which_1.png
+>]
+<./images/db_ur.png, id=1094, 305.14pt x 301.125pt>
 File: ./images/db_ur.png Graphic file (type png)
  <use ./images/db_ur.png>
-Package pdftex.def Info: ./images/db_ur.png used on input line 51.
+Package pdftex.def Info: ./images/db_ur.png used on input line 63.
 (pdftex.def)             Requested size: 147.59775pt x 145.65947pt.
 
-<./images/db_acc.png, id=1075, 376.40625pt x 331.2375pt>
+[39 <./images/db_ans.png> <./images/db_points.png> <./images/db_ur.png>]
+<./images/db_acc.png, id=1110, 376.40625pt x 331.2375pt>
 File: ./images/db_acc.png Graphic file (type png)
 
 <use ./images/db_acc.png>
-Package pdftex.def Info: ./images/db_acc.png used on input line 57.
+Package pdftex.def Info: ./images/db_acc.png used on input line 96.
 (pdftex.def)             Requested size: 147.59775pt x 129.8897pt.
 
-Underfull \hbox (badness 5331) in paragraph at lines 57--57
+Underfull \hbox (badness 5331) in paragraph at lines 96--96
 []\OT1/pplx/m/n/9 (a) |Ta-ble Schema of STORE-AC-
  []
 
-<./images/db_noise.png, id=1076, 370.38374pt x 325.215pt>
+<./images/db_noise.png, id=1111, 370.38374pt x 325.215pt>
 File: ./images/db_noise.png Graphic file (type png)
 
 <use ./images/db_noise.png>
-Package pdftex.def Info: ./images/db_noise.png used on input line 58.
+Package pdftex.def Info: ./images/db_noise.png used on input line 97.
 (pdftex.def)             Requested size: 147.59775pt x 129.59738pt.
 
-<./images/db_loc.png, id=1077, 368.37625pt x 317.185pt>
+<./images/db_loc.png, id=1112, 368.37625pt x 317.185pt>
 File: ./images/db_loc.png Graphic file (type png)
 
 <use ./images/db_loc.png>
-Package pdftex.def Info: ./images/db_loc.png used on input line 66.
+Package pdftex.def Info: ./images/db_loc.png used on input line 112.
 (pdftex.def)             Requested size: 147.59775pt x 127.08469pt.
 
-<./images/db_light.png, id=1078, 379.4175pt x 324.21124pt>
+<./images/db_light.png, id=1113, 379.4175pt x 324.21124pt>
 File: ./images/db_light.png Graphic file (type png)
 
 <use ./images/db_light.png>
-Package pdftex.def Info: ./images/db_light.png used on input line 67.
+Package pdftex.def Info: ./images/db_light.png used on input line 113.
 (pdftex.def)             Requested size: 147.59775pt x 126.12526pt.
- [37
+ [40] [41 <./images/db_acc.png> <./images/db_noise.png> <./images/db_loc.png> <
+./images/db_light.png>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 138.
 
-]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <./images/blocks_app.png> <./images/db_quest.png> <./images/db_which_1.png
->]
-<./images/collection_ur_1.png, id=1095, 1045.9075pt x 546.04pt>
+ [42]
+[43] <./images/collection_ur_1.png, id=1172, 1045.9075pt x 546.04pt>
 File: ./images/collection_ur_1.png Graphic file (type png)
 
 <use ./images/collection_ur_1.png>
-Package pdftex.def Info: ./images/collection_ur_1.png used on input line 104.
+Package pdftex.def Info: ./images/collection_ur_1.png used on input line 274.
 (pdftex.def)             Requested size: 369.00961pt x 192.64993pt.
 
-Underfull \vbox (badness 3872) has occurred while \output is active []
-
- [39 <./images/db_ans.png> <./images/db_points.png> <./images/db_ur.png>]
-<./images/collection_ur_2.png, id=1108, 883.3pt x 545.03625pt>
+<./images/collection_ur_2.png, id=1173, 883.3pt x 545.03625pt>
 File: ./images/collection_ur_2.png Graphic file (type png)
 
 <use ./images/collection_ur_2.png>
-Package pdftex.def Info: ./images/collection_ur_2.png used on input line 111.
+Package pdftex.def Info: ./images/collection_ur_2.png used on input line 281.
 (pdftex.def)             Requested size: 358.79932pt x 221.39548pt.
 
-<./images/collection_ui_1.png, id=1109, 1024.82875pt x 541.02126pt>
+<./images/collection_ui_1.png, id=1174, 1024.82875pt x 541.02126pt>
 File: ./images/collection_ui_1.png Graphic file (type png)
 
 <use ./images/collection_ui_1.png>
-Package pdftex.def Info: ./images/collection_ui_1.png used on input line 118.
+Package pdftex.def Info: ./images/collection_ui_1.png used on input line 288.
 (pdftex.def)             Requested size: 369.00061pt x 194.80052pt.
 
-<./images/collection_ui_2.png, id=1110, 1049.9225pt x 564.1075pt>
+<./images/collection_ui_2.png, id=1175, 1049.9225pt x 564.1075pt>
 File: ./images/collection_ui_2.png Graphic file (type png)
 
 <use ./images/collection_ui_2.png>
-Package pdftex.def Info: ./images/collection_ui_2.png used on input line 125.
+Package pdftex.def Info: ./images/collection_ui_2.png used on input line 295.
 (pdftex.def)             Requested size: 369.00032pt x 198.2583pt.
 
-<./images/collection_loc.png, id=1111, 882.29625pt x 545.03625pt>
+<./images/collection_loc.png, id=1176, 882.29625pt x 545.03625pt>
 File: ./images/collection_loc.png Graphic file (type png)
 
 <use ./images/collection_loc.png>
-Package pdftex.def Info: ./images/collection_loc.png used on input line 132.
+Package pdftex.def Info: ./images/collection_loc.png used on input line 302.
 (pdftex.def)             Requested size: 358.39159pt x 221.39548pt.
 
-<./images/collection_acc.png, id=1112, 1045.9075pt x 543.02875pt>
+<./images/collection_acc.png, id=1177, 1045.9075pt x 543.02875pt>
 File: ./images/collection_acc.png Graphic file (type png)
 
 <use ./images/collection_acc.png>
-Package pdftex.def Info: ./images/collection_acc.png used on input line 139.
+Package pdftex.def Info: ./images/collection_acc.png used on input line 309.
 (pdftex.def)             Requested size: 369.00961pt x 191.58751pt.
 
-<./images/collection_noise.png, id=1113, 974.64125pt x 543.02875pt>
+<./images/collection_noise.png, id=1178, 974.64125pt x 543.02875pt>
 File: ./images/collection_noise.png Graphic file (type png)
 
 <use ./images/collection_noise.png>
-Package pdftex.def Info: ./images/collection_noise.png used on input line 146.
+Package pdftex.def Info: ./images/collection_noise.png used on input line 316.
 (pdftex.def)             Requested size: 368.99931pt x 205.59074pt.
 
-<./images/collection_light.png, id=1114, 672.5125pt x 517.935pt>
+<./images/collection_light.png, id=1179, 672.5125pt x 517.935pt>
 File: ./images/collection_light.png Graphic file (type png)
 
 <use ./images/collection_light.png>
-Package pdftex.def Info: ./images/collection_light.png used on input line 153.
+Package pdftex.def Info: ./images/collection_light.png used on input line 323.
 (pdftex.def)             Requested size: 287.48155pt x 221.4037pt.
 
-<./images/collection_users.png, id=1115, 218.8175pt x 543.02875pt>
+<./images/collection_users.png, id=1180, 218.8175pt x 543.02875pt>
 File: ./images/collection_users.png Graphic file (type png)
 
 <use ./images/collection_users.png>
-Package pdftex.def Info: ./images/collection_users.png used on input line 160.
+Package pdftex.def Info: ./images/collection_users.png used on input line 330.
 (pdftex.def)             Requested size: 89.21492pt x 221.40033pt.
 
-<./images/collection_score.png, id=1116, 853.1875pt x 508.90125pt>
+<./images/collection_score.png, id=1181, 853.1875pt x 508.90125pt>
 File: ./images/collection_score.png Graphic file (type png)
 
 <use ./images/collection_score.png>
-Package pdftex.def Info: ./images/collection_score.png used on input line 167.
+Package pdftex.def Info: ./images/collection_score.png used on input line 337.
 (pdftex.def)             Requested size: 369.01154pt x 220.10452pt.
 
-<./images/collection_feature_cat.png, id=1117, 599.23875pt x 544.0325pt>
+<./images/collection_feature_cat.png, id=1182, 599.23875pt x 544.0325pt>
 File: ./images/collection_feature_cat.png Graphic file (type png)
 
 <use ./images/collection_feature_cat.png>
 Package pdftex.def Info: ./images/collection_feature_cat.png used on input line
- 174.
+ 344.
 (pdftex.def)             Requested size: 243.86989pt x 221.40282pt.
 
-<./images/collection_sensors_cat.png, id=1118, 761.84625pt x 544.0325pt>
+<./images/collection_sensors_cat.png, id=1183, 761.84625pt x 544.0325pt>
 File: ./images/collection_sensors_cat.png Graphic file (type png)
 
 <use ./images/collection_sensors_cat.png>
 Package pdftex.def Info: ./images/collection_sensors_cat.png used on input line
- 181.
+ 351.
 (pdftex.def)             Requested size: 310.04564pt x 221.40282pt.
 
-<./images/collection_dc_cat.png, id=1119, 721.69624pt x 544.0325pt>
+<./images/collection_dc_cat.png, id=1184, 721.69624pt x 544.0325pt>
 File: ./images/collection_dc_cat.png Graphic file (type png)
 
 <use ./images/collection_dc_cat.png>
-Package pdftex.def Info: ./images/collection_dc_cat.png used on input line 188.
+Package pdftex.def Info: ./images/collection_dc_cat.png used on input line 358.
 
 (pdftex.def)             Requested size: 293.70595pt x 221.40282pt.
 
-<./images/collection_context_cat.png, id=1120, 816.04875pt x 542.025pt>
+<./images/collection_context_cat.png, id=1185, 816.04875pt x 542.025pt>
 File: ./images/collection_context_cat.png Graphic file (type png)
 
 <use ./images/collection_context_cat.png>
 Package pdftex.def Info: ./images/collection_context_cat.png used on input line
- 195.
+ 365.
 (pdftex.def)             Requested size: 333.33696pt x 221.40462pt.
- [40 <./images/db_acc.png> <./images/db_noise.png> <./images/db_loc.png> <./ima
-ges/db_light.png>] [41 <./images/collection_ur_1.png> <./images/collection_ur_2
-.png>]
+ [44] [45 <./images/collection_ur_1.png> <./images/collection_ur_2.png>] [46 <.
+/images/collection_ui_1.png> <./images/collection_ui_2.png>]
 
-LaTeX Warning: Reference `bl' on page 42 undefined on input line 214.
+LaTeX Warning: Reference `bl' on page 47 undefined on input line 384.
 
-[42 <./images/collection_ui_1.png> <./images/collection_ui_2.png>] [43 <./image
-s/collection_loc.png> <./images/collection_acc.png>] [44 <./images/collection_n
-oise.png> <./images/collection_light.png>]
+[47 <./images/collection_loc.png> <./images/collection_acc.png>] [48 <./images/
+collection_noise.png> <./images/collection_light.png>] [49 <./images/collection
+_users.png> <./images/collection_score.png>]
 
-LaTeX Warning: Reference `bl' on page 45 undefined on input line 225.
+LaTeX Warning: Reference `bl' on page 50 undefined on input line 395.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45 <./images/collection_users.png> <./images/collection_score.png>]
+ [50 <./images/collection_feature_cat.png> <./images/collection_sensors_cat.png
+>]
 Underfull \vbox (badness 1783) has occurred while \output is active []
 
- [46 <./images/collection_feature_cat.png> <./images/collection_sensors_cat.png
->])
-(./pre_survey_results.tex [47 <./images/collection_dc_cat.png> <./images/collec
-tion_context_cat.png>] [48
+ [51 <./images/collection_dc_cat.png> <./images/collection_context_cat.png>])
+(./pre_survey_results.tex [52]) (./conclusion.tex [53
 
-]) (./conclusion.tex [49] [50
+] [54
 
 ]) (./appendix.tex
-[51] [52
+[55] [56
 
-]) [53] [54
+]) [57] [58
 
 ]
-<declaration-originality.pdf, id=1239, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1296, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf used on input line 163.
+Package pdftex.def Info: declaration-originality.pdf used on input line 170.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: declaration-originality.pdf Graphic file (type pdf)
  <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf used on input line 163.
+Package pdftex.def Info: declaration-originality.pdf used on input line 170.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1242, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1299, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-163.
+170.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-163.
+170.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-163.
+170.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-163.
+170.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
-163.
+170.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [55 <./declaration-originality.pdf>]
+ [59 <./declaration-originality.pdf>]
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
 
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 8AF813D2B1D501BB0721D09DE85072B9;3810.
 
@@ -2240,29 +2284,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17729 strings out of 493089
- 260721 string characters out of 6134841
- 433624 words of memory out of 5000000
- 20488 multiletter control sequences out of 15000+600000
- 48544 words of font info for 142 fonts, out of 8000000 for 9000
+ 18364 strings out of 493089
+ 269864 string characters out of 6134841
+ 449151 words of memory out of 5000000
+ 21076 multiletter control sequences out of 15000+600000
+ 49438 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1060b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (59 pages, 7208439 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (63 pages, 7231359 bytes).
 PDF statistics:
- 1388 PDF objects out of 1440 (max. 8388607)
- 873 compressed objects within 9 object streams
- 283 named destinations out of 1000 (max. 500000)
+ 1454 PDF objects out of 1728 (max. 8388607)
+ 933 compressed objects within 10 object streams
+ 315 named destinations out of 1000 (max. 500000)
  13036 words of extra memory for PDF output out of 14400 (max. 10000000)
 
