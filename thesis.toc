@@ -57,7 +57,9 @@
 \contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{55}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{55}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{55}{section.6.2}
-\contentsline {subsubsection}{Perception of Individual Sub-Features Grouped on the Perception of the Features Themselves}{55}{section*.52}
+\contentsline {subsubsection}{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}{55}{section*.52}
+\contentsline {subsubsection}{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}{59}{section*.60}
+\contentsline {subsubsection}{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}{59}{section*.65}
 \contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{59}{section.6.3}
 \contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{59}{section.6.4}
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{61}{chapter.7}

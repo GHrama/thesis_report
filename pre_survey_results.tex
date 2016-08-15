@@ -21,7 +21,7 @@ All the results presented below were performed on the data by performing the fol
 
 Other than the above, the data was not manipulated. Outliers were not excluded either.
 
-\subsubsection{Perception of Individual Sub-Features Grouped on the Perception of the Features Themselves}
+\subsubsection{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}
 We try to examine here if the perception of intrusion  of Sensors can affect the way a person views the individual sensors themselves. In other
 words, we try to examine if there is a significant difference in perception of each sensor depending on the perception of the Sensors as a whole.
 For this, we grouped the survey data based on the responses to question 10. Since there are 5 possible responses to this question, this makes 5 individual groups from 1 to 5.
@@ -51,7 +51,8 @@ The above tests do not make any assumptions about the distribution of the data a
 \label{fig:s3}
 \end{figure}
 
-Group 1 to 5 have 13, 14, 50, 71 and 42 people respectively. Figures \ref{fig:s1} and \ref{fig:s2} show the mean and variances for each of the groups. We start by performing the non paramteric Kruskal-Wallis test on each Sensor. The value of alpha assumed here is 0.05. The null hypothesis states that all the groups perceive the sensors in the similar way. This means they come from the same distribution. The alternative hypothesis is
+Group 1 to 5 have 13, 14, 50, 71 and 42 people each respectively. For in depth analysis of the composition of each group in terms of employment, education, gender and birth year please refer to tables
+\ref{tab:emp_sensors},\ref{tab:edu_sensors},\ref{tab:gender_sensors},\ref{tab:year_sensors}. Figures \ref{fig:s1} and \ref{fig:s2} depict the mean and variances for each of the individual groups. We start by performing the non paramteric Kruskal-Wallis test on each Sensor. The value of alpha assumed here is 0.05. The null hypothesis states that all the groups perceive the sensors in the similar way. This means they come from the same distribution. The alternative hypothesis is
 that the groups perceive each sensor in a significantly different way. The table \ref{tab:kw_sensors} depicts the p-values obtained from the test.
 
 
@@ -152,9 +153,7 @@ PhD degree&7.14\%&7.14\%&17.86\%&35.71\%&32.14\%\\
   \end{tabular}
 \end{table} 
 
-
-
-On these sensors, we proceed with a post hoc test by performing a pariwise Dunn's test to examine if there is an actual significant difference between the groups and if so between which groups. The sensors with p values with less than 0.05 are examined in more detail and the p-values are presented in table \ref{tab:dunn_sensors}. The table shows the results for each pairwise test done, with the p-values adjusted using the Bonferroni Method. The reason for choosing to adjust the p-values is that repeated experiments can increase the chances of accepting the alternative hypothesis so p-values are adjusted according to the number of experiments performed, which here is 10 for every sensor.
+On these sensors, we proceed with a post hoc test by performing a pariwise Dunn's test to examine if there is an actual significant difference between the groups and if so between which groups. The sensors with p values with less than 0.05 are examined in more detail and the p-values are presented in table \ref{tab:dunn_sensors}. The table shows the results for each pairwise test done, with the p-values adjusted using the Bonferroni Method. The reason for choosing to adjust the p-values is that repeated experiments can increase the chances of accepting the alternative hypothesis so p-values are adjusted according to the number of experiments performed. 10 experiments are performed per sensor.
 
 \begin{table}[h!]
   \centering
@@ -190,6 +189,83 @@ Similar to the location sensor, people with perception of sensors in general wit
 
 For the Bluetooth sensor, there is a significant difference between groups (1,5), (2,5), (3,5) and (4,5). This shows that responses by people who find sensors extremely intrusive is different from the rest of the groups.
 
+\subsubsection{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}
+
+In this section, we try to see if the intrusion level perception by people of Stakeholders in general and the intrusion of the individual stakeholders are related. We try to examine significant differences between groups formed by using question 12 responses of the survey ranging from one to five for every Stakeholder. 
+
+\begin{table}[h!]
+  \centering
+  \caption{Employment Classification of Groups}
+  \label{tab:emp_stak}
+  \begin{tabular}{cccccc}
+    \toprule
+     Occupation&1&2&3&4&5\\
+    \midrule
+Employed full time	&3.92\%	&4.90\%	&16.67\%	&33.33\%	&41.18\%\\
+Employed part time	&16.67\%	&16.67\%	&8.33\%	&50.00\%	&8.33\%\\
+Unemployed, looking for work	&8.33\%	&8.33\%	&16.67\%	&16.67\%	&50.00\%\\
+Unemployed, not looking for work	&0.00\%	&0.00\%	&0.00\%	&33.33\%	&66.67\%\\
+Retired	&0.00\%	&0.00\%	&0.00\%	&100.00\%&	0.00\%\\
+Student	&4.82\%	&7.23\%	&15.66\%	&37.35\%	&34.94\%\\
+Disabled	&0.00\%	&0.00\%	&0.00\%	&0.00\%	&0.00\%\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+  \centering
+  \caption{Gender Classification of Groups}
+  \label{tab:gender_stak}
+  \begin{tabular}{cccccc}
+    \toprule
+     Gender&1&2&3&4&5 \\
+     \midrule
+Female&5.56\%&6.94\%&23.61\%&36.11\%&27.78\% \\
+Male&3.97\%&6.35\%&11.90\%&35.71\%&42.06\%\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+  \centering
+  \caption{Average Birth Year of Groups}
+  \label{tab:year_stak}
+  \begin{tabular}{ccccc}
+    \toprule
+     1&2&3&4&5\\
+    \midrule
+	1986& 1989& 1984& 1985& 1984\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+  \centering
+  \caption{Education Classification of Groups}
+  \label{tab:edu_stak}
+  \begin{tabular}{cccccc}
+    \toprule
+     Education&1&2&3&4&5\\
+    \midrule
+    
+Less than high school	&20.00\%	&20.00\%	&0.00\%	&60.00\%	&0.00\%\\
+High school	& 15.79\%&	5.26\%	&21.05\%	&31.58\%	&26.32\%\\
+Some college	 & 0.00\%&	10.00\%	&20.00\%	&40.00\%&	30.00\%\\
+Bachelors degree 	&1.75\%	&12.28\%&	15.79\%	&35.09\%	&35.09\%\\
+Masters degree	&5.06\%	&1.27\%	&13.92\%	&37.97\%	&41.77\%\\
+PhD degree	&0.00\%	&7.14\%	&21.43\%	&28.57\%	&42.86\%\\
+    \bottomrule
+  \end{tabular}
+\end{table} 
+
+
+
+\subsubsection{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}
 
 \section{Overview of the Experiment Data}
 

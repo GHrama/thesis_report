@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  15 AUG 2016 13:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  15 AUG 2016 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2248,7 +2248,7 @@ Overfull \hbox (36.90225pt too wide) in paragraph at lines 48--50
  []
 
 
-Overfull \hbox (61.34908pt too wide) in paragraph at lines 62--75
+Overfull \hbox (61.34908pt too wide) in paragraph at lines 63--76
  [][] 
  []
 
@@ -2267,27 +2267,40 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[56]
-Overfull \hbox (52.58789pt too wide) in paragraph at lines 163--179
+[56] [57 <./images/sensors_group_meanQ10.png (PNG copy)> <./images/sensors_grou
+p_varianceQ10.png (PNG copy)>]
+Overfull \hbox (52.58789pt too wide) in paragraph at lines 162--178
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57 <./images/sensors_group_meanQ10.png (PNG copy)> <./images/sensors_group_var
-ianceQ10.png (PNG copy)>]
+[58]
+Overfull \hbox (47.83678pt too wide) in paragraph at lines 200--213
+ [][] 
+ []
 
-LaTeX Warning: Text page 58 contains only floats.
 
-[58]) (./conclusion.tex [59] [60
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-]) (./appendix.tex [61] [62
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./conclusion.tex [59] [60]) (./appendix.tex [61
+
+] [62
 
 ]) [63] [64
 
 ]
-<declaration-originality.pdf, id=1385, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1395, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -2298,7 +2311,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 177.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1388, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1398, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2356,10 +2369,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19310 strings out of 493089
- 294508 string characters out of 6134841
- 469628 words of memory out of 5000000
- 21964 multiletter control sequences out of 15000+600000
+ 19320 strings out of 493089
+ 294654 string characters out of 6134841
+ 470021 words of memory out of 5000000
+ 21968 multiletter control sequences out of 15000+600000
  50410 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1060b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2376,10 +2389,10 @@ texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (69 pages, 7419985 bytes).
+Output written on thesis.pdf (69 pages, 7422165 bytes).
 PDF statistics:
- 1551 PDF objects out of 1728 (max. 8388607)
- 1021 compressed objects within 11 object streams
- 356 named destinations out of 1000 (max. 500000)
+ 1563 PDF objects out of 1728 (max. 8388607)
+ 1033 compressed objects within 11 object streams
+ 362 named destinations out of 1000 (max. 500000)
  13046 words of extra memory for PDF output out of 14400 (max. 10000000)
 
