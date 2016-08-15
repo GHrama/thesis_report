@@ -54,6 +54,80 @@ The above tests do not make any assumptions about the distribution of the data a
 Group 1 to 5 have 13, 14, 50, 71 and 42 people respectively. Figures \ref{fig:s1} and \ref{fig:s2} show the mean and variances for each of the groups. We start by performing the non paramteric Kruskal-Wallis test on each Sensor. The value of alpha assumed here is 0.05. The null hypothesis states that all the groups perceive the sensors in the similar way. This means they come from the same distribution. The alternative hypothesis is
 that the groups perceive each sensor in a significantly different way. The table \ref{tab:kw_sensors} depicts the p-values obtained from the test.
 
+
+\begin{table}[h!]
+  \centering
+  \caption{Employment Classification of Groups}
+  \label{tab:emp_sensors}
+  \begin{tabular}{cccccc}
+    \toprule
+     Occupation&1&2&3&4&5\\
+    \midrule
+Employed full time&4.90\%&6.86\%&26.47\%&38.24\%&23.53\%\\
+Employed part time&8.33\%&16.67\%&33.33\%&16.67\%&25.00\%\\
+Unemployed and looking for work&8.33\%&16.67\%&16.67\%&25.00\%&33.33\%\\
+Unemployed and not looking for work&0.00\%&0.00\%&0.00\%&66.67\%&33.33\%\\
+Retired&0.00\%&0.00\%&100.00\%&0.00\%&0.00\%\\
+Student&7.23\%&4.82\%&26.51\%&39.76\%&21.69\%\\
+Disabled&0.00\%&0.00\%&0.00\%&0.00\%&0.00\%\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+  \centering
+  \caption{Gender Classification of Groups}
+  \label{tab:gender_sensors}
+  \begin{tabular}{cccccc}
+    \toprule
+     Gender&1&2&3&4&5 \\
+    \midrule
+Female&5.56\%&4.17\%&33.33\%&30.56\%&26.39\% \\
+Male&7.14\%&9.52\%&22.22\%&39.68\%&21.43\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+  \centering
+  \caption{Average Birth Year of Groups}
+  \label{tab:year_sensors}
+  \begin{tabular}{ccccc}
+    \toprule
+     1&2&3&4&5\\
+    \midrule
+	1989& 1979& 1986& 1986& 1983\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+  \centering
+  \caption{Education Classification of Groups}
+  \label{tab:edu_sensors}
+  \begin{tabular}{cccccc}
+    \toprule
+     Education&1&2&3&4&5\\
+    \midrule
+    
+Less than high school&20.00\%&20.00\%&20.00\%&40.00\%&0.00\%\\
+High school&10.53\%&0.00\%&52.63\%&31.58\%&5.26\%\\
+Some college&10.00\%&20.00\%&30.00\%&20.00\%&20.00\%\\
+Bachelors degree&7.02\%&10.53\%&24.56\%&42.11\%&15.79\%\\
+Masters degree&3.80\%&5.06\%&24.05\%&35.44\%&31.65\%\\
+PhD degree&7.14\%&7.14\%&17.86\%&35.71\%&32.14\%\\
+    \bottomrule
+  \end{tabular}
+\end{table}  
+
+
+
+
 \begin{table}[h!]
   \centering
   \caption{Kuskal-Wallis Test}
