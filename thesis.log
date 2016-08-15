@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  13 AUG 2016 01:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  15 AUG 2016 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2208,16 +2208,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [52 <./images/collection_noise.png> <./images/collection_light.png>] [53 <./im
 ages/collection_users.png> <./images/collection_score.png>]) (./pre_survey_resu
 lts.tex
-[54]) (./conclusion.tex [55
+[54] [55
 
-] [56
+] <./images/sensors_group_meanQ10.png, id=1325, 1124.2pt x 843.15pt>
+File: ./images/sensors_group_meanQ10.png Graphic file (type png)
 
-]) (./appendix.tex [57] [58
+<use ./images/sensors_group_meanQ10.png>
+Package pdftex.def Info: ./images/sensors_group_meanQ10.png used on input line 
+48.
+(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
 
-]) [59] [60
+<./images/sensors_group_varianceQ10.png, id=1326, 1124.2pt x 843.15pt>
+File: ./images/sensors_group_varianceQ10.png Graphic file (type png)
+
+<use ./images/sensors_group_varianceQ10.png>
+Package pdftex.def Info: ./images/sensors_group_varianceQ10.png used on input l
+ine 49.
+(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
+
+Overfull \hbox (36.90225pt too wide) in paragraph at lines 48--50
+[][][][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56]
+Overfull \hbox (52.58789pt too wide) in paragraph at lines 89--105
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[57 <./images/sensors_group_meanQ10.png (PNG copy)> <./images/sensors_group_var
+ianceQ10.png (PNG copy)>]) (./conclusion.tex [58]) (./appendix.tex [59
 
 ]
-<declaration-originality.pdf, id=1342, 597.55246pt x 845.07718pt>
+[60
+
+]) [61] [62
+
+]
+<declaration-originality.pdf, id=1371, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -2228,7 +2261,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 170.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1345, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1374, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2259,7 +2292,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
 170.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [61 <./declaration-originality.pdf>]
+ [63 <./declaration-originality.pdf>]
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
@@ -2286,10 +2319,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18398 strings out of 493089
- 270198 string characters out of 6134841
- 443400 words of memory out of 5000000
- 21092 multiletter control sequences out of 15000+600000
+ 18435 strings out of 493089
+ 270873 string characters out of 6134841
+ 443993 words of memory out of 5000000
+ 21110 multiletter control sequences out of 15000+600000
  50410 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1060b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2306,10 +2339,10 @@ texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (65 pages, 7239370 bytes).
+Output written on thesis.pdf (67 pages, 7418548 bytes).
 PDF statistics:
- 1504 PDF objects out of 1728 (max. 8388607)
- 981 compressed objects within 10 object streams
- 333 named destinations out of 1000 (max. 500000)
- 13036 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 1538 PDF objects out of 1728 (max. 8388607)
+ 1010 compressed objects within 11 object streams
+ 350 named destinations out of 1000 (max. 500000)
+ 13046 words of extra memory for PDF output out of 14400 (max. 10000000)
 

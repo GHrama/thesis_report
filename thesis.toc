@@ -57,7 +57,8 @@
 \contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{55}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{55}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{55}{section.6.2}
-\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{55}{section.6.3}
-\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{55}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{57}{chapter.7}
-\contentsline {appendix}{\chapternumberline {A}Appendix}{59}{appendix.A}
+\contentsline {subsubsection}{Perception of Individual Sub-Features Grouped on the Perception of the Features Themselves}{55}{section*.52}
+\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{58}{section.6.3}
+\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{58}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{59}{chapter.7}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{61}{appendix.A}
