@@ -179,7 +179,7 @@ On these sensors, we proceed with a post hoc test by performing a pariwise Dunn'
 
 For the Accelerometer and Proximity, we can see that none of the pairwise groups have a significant difference from each other. This means that even tough the groups perceive sensors differently in general, they all view Accelerometers and Proximity in a similar way. 
 
-For the location sensor, it can be observed that groups (1,4), (1,5), (2,4), (2,5) have a significant difference. This can be attributed to the fact that since the groups are formed from the perception of people of the Sensors Feature, the difference in perception between group 1 and group 5 will be larger than between group 1, group 2 and group 1, group3 since they are not much apart in the scale.
+For the location sensor, it can be observed that groups (1,4), (1,5), (2,4), (2,5) have a significant difference. This can be attributed to the fact that since the groups are formed from the perception of people of the Sensors Feature, the difference in perception between group 1 and group 5 will be larger than between group 1, group 2 and group 1, group 3 since they are not much apart in the scale.
 
 For the microphone sensor, it can be seen that groups (1,3), (1,4) and (1,5) are significantly different from each other. This goes to show that
 if people rate sensors as even a little intrusive, they all rate the microphone's in a significantly different way than the people who rate sensors as non-intrusive.
@@ -191,7 +191,13 @@ For the Bluetooth sensor, there is a significant difference between groups (1,5)
 
 \subsubsection{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}
 
-In this section, we try to see if the intrusion level perception by people of Stakeholders in general and the intrusion of the individual stakeholders are related. We try to examine significant differences between groups formed by using question 12 responses of the survey ranging from one to five for every Stakeholder. 
+In this section, we try to see if the intrusion level perception by people of Stakeholders in general and the intrusion of the individual stakeholders are related. We try to examine significant differences between groups formed by using question 12's responses on the perception of
+each stakeholder, and since there are 5 different responses this give five independent groups. The groups 1 to 5 have 7, 11, 32, 69 and 70 people in each respectively. More detailed information about the employment, education, gender and age distribution in the groups is given in tables \ref{tab:emp_stak}, \ref{tab:edu_stak}, \ref{tab:gender_stak} and \ref{tab:year_stak}.
+
+The mean and variances of each group formed is depicted in figures \ref{fig:ss1} and \ref{fig:ss2}.
+To start with we examine all the groups simultaneously for all the stakeholder's, we perform the Kruskal-Wallis H test since the data is discrete and not normally distributed. The null hypothesis is that the groups rate the intrusion of a particular stakeholder in a similar way. The alternative hypothesis is that the groups rate the intrusion of a particular stakeholder in a significantly different way.
+
+The resulting p-values of this test is displayed in table \ref{kw_stak}. As it can be seen, the test pronounces that all the groups are significantly different at an alpha with 0.05. 
 
 \begin{table}[h!]
   \centering
@@ -261,11 +267,70 @@ Masters degree	&5.06\%	&1.27\%	&13.92\%	&37.97\%	&41.77\%\\
 PhD degree	&0.00\%	&7.14\%	&21.43\%	&28.57\%	&42.86\%\\
     \bottomrule
   \end{tabular}
-\end{table} 
+\end{table}
 
+\begin{figure}[htp]
+\subtop[Mean of each Group for each Sensor\label{fig:ss1}]{\includegraphics[width=0.55\linewidth]{./images/sensors_group_meanQ10}}
+\subtop[Variance of each Group for each Sensor\label{fig:ss2}]{\includegraphics[width=0.55\linewidth]{./images/sensors_group_varianceQ10}}
+\caption{Table Schemas}
+\label{fig:ss3}
+\end{figure} 
+
+\begin{table}[h!]
+  \centering
+  \caption{Kuskal-Wallis Test}
+  \label{tab:kw_stak}
+  \begin{tabular}{cc}
+    \toprule
+     Stakeholder & p-value \\
+    \midrule
+    Corporation & 2.1432e-05 \\
+    Non-Governmental Organization & 0.0221\\
+    Educational Institution & 0.0396\\
+    Government & 0.0024\\ 
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+This prompts us to take a closer look at which of the groups are significantly different from each other for each stakeholder. For this we continue the experiment with Dunn's Test with p-values adjusted by the Bonferroni Method. The results from the test is shown in table \ref{tab:dunn_stak}.
+
+\begin{table}[h!]
+  \centering
+  \caption{Dunn's Test 1}
+  \label{tab:dunn_stak}
+  \begin{tabular}{ccccccc}
+    \toprule
+     Groups & Corporation & Non-Governmental Organization & Educational Institution & Government \\
+    \midrule
+    (1,2) & 0.9839 & 0.8042 & 0.9565 & 0.6615 \\
+    (1,3) & 0.3282 & 0.2351 & 0.8540 & 0.0986 \\
+    (1,4) & 0.0240 & 0.1962 & 0.6867 & 0.0289 \\
+    (1,5) & 0.0012 & 0.0243 & 0.1254 & 0.0028 \\
+    (2,3) & 0.9467 & 0.9992 & 1.0000 & 0.9958 \\
+    (2,4) & 0.2047 & 0.9991 & 1.0000 & 0.9252  \\
+    (2,5) & 0.0110 & 0.7192 & 0.8415 & 0.3670  \\
+    (3,4) & 0.6893 & 1.0000 & 1.0000 & 0.9999 \\
+    (3,5) & 0.0197 & 0.8906 & 0.4112 & 0.5794  \\
+    (4,5) & 0.4640 & 0.6027 & 0.3427 & 0.7378 \\
+    \bottomrule
+  \end{tabular}
+\end{table}  
+
+The test was done for all stakeholders since the Kruskal-Wallis test denoted that all groups differ significantly for all stakeholders. Looking at the stakeholder corporation, we see that groups (1,4), (1,5) and (2,5). This goes to show that groups with larger difference in their outlook to stakeholders as a whole view corporations in a significantly different way.
+
+For the Non-Governmental Organization, only the groups (1,5) differ significantly. This goes to show that groups that do not find stakeholders intrusive and groups that find stakeholders very intrusive rate the intrusion of Non-Governmental Organization in significantly different ways.
+
+For Educational Institutions, none of pairwise comparisons have p-values below 0.05. This goes to show that the intrusion of Educational Institutions by all groups does not differ significantly.
+
+Lastly, for the stakeholder Government, the groups (1,4) and (1,5) differ significantly. This goes to show that groups that view the intrusion of stakeholders with a larger difference view Government in a significantly different way.
+
+The trend observed above is that there is a significant difference in the outlook of individual stakeholders between groups with larger differences
+in their outlook to stakeholders as a whole, with the exception of Educational Institution where the alternative hypothesis was rejected.
 
 
 \subsubsection{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}
+
+
 
 \section{Overview of the Experiment Data}
 
