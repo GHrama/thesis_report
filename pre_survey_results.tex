@@ -331,7 +331,10 @@ in their outlook to stakeholders as a whole, with the exception of Educational I
 \subsubsection{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}
 
 In this section, we examine the examine the relationship between the intrusion of Contexts in General and the individual contexts in question 13.
-To do this, like the above sections we partition the data into groups based on the answers given questions 14, which asks the user the perception of intrusion of Contexts in general. There are five groups in total. Group one to five have each 12, 11, 42, 74 and 50 people respectively. 
+To do this, like the above sections we partition the data into groups based on the answers given questions 14, which asks the user the perception of intrusion of Contexts in general. There are five groups in total. Group one to five have each 12, 11, 42, 74 and 50 people respectively. Additional
+information about the groups on enployment, education , gender and year of birth is given in tables \ref{tab:emp_c}, \ref{tab:edu_c}, \ref{tab:gender_c} and \ref{tab:year_c}. 
+
+Like in the previous cases, since the data is discrete and not normal, we use the Kruskal-Wallis test to compare the groups perceptions on various contexts. The alpha value is considered to be 0.05. The results are presented in table \ref{tab:kw_c}. As it can be seen, the test says that there is a significant difference between the groups for all sensors.
 
 \begin{table}[h!]
   \centering
@@ -434,7 +437,7 @@ PhD degree	&0.00\%	&7.14\%	&17.86\%	&35.71\%	3&9.29\%\\
     \toprule
      Groups & Education & Entertainment & Environment & Finance & Health  \\
     \midrule
-    (1,2)&0.99796&0.99982&0.97055&1&0.63908\\
+    (1,2)&0.99796&0.99982&0.97055&1.0000&0.63908\\
 (1,3)&1.0000&0.99174&1&0.32963&0.076147\\
 (1,4)&0.94148&0.19262&0.86998&0.22077&0.042547\\
 (1,5)&0.11471&0.0056283&0.21553&0.015364&0.00051115\\
@@ -456,7 +459,7 @@ PhD degree	&0.00\%	&7.14\%	&17.86\%	&35.71\%	3&9.29\%\\
     \toprule
      Groups & Shopping & Social Network & Training & Transportation  \\
     \midrule
-    (1,2) &1.0000&0.99831&1.0000&1.0000\\
+(1,2) &1.0000&0.99831&1.0000&1.0000\\
 (1,3)&0.99992&0.94767&1.0000&0.9722\\
 (1,4)&0.18309&0.089135&0.90197&0.23809\\
 (1,5)&0.015842&0.10636&0.010906&0.016376\\
@@ -468,6 +471,43 @@ PhD degree	&0.00\%	&7.14\%	&17.86\%	&35.71\%	3&9.29\%\\
 (4,5)&0.69535&1.0000&0.0033189&0.55629\\
   \end{tabular}
 \end{table} 
+
+We not perform Dunn's Test as a post hoc test for all the contexts to observe the exact group pairs that might be significantly different. The results are presented in tables \ref{tab:dunn_c} and \ref{tab:dunn_c1}. For the context Education, the groups (2,5) and (3,5) are significantly different from each other. 
+For the context Entertainment, further investigation shows that groups (1,5), (2,5) and (3,5) are significantly different in each others responses.
+For the context Environment, groups (2,5) and (3,5) are significantly different from each other. For the context Finance, the groups (1,5), (3,5) and (4,5) are significantly different from each other. In the context health, except for groups (1,5) all the other groups are not significantly different from each other.
+For the context Shopping, the groups (1,5), (3,4) and (3,5) are significantly different from each other. For the context Social Network, none of the groups are significantly different from each other. In the context Training, the groups (1,5),(3,5) and (4,5) are significantly different from each other.
+Finally for the context Transportation, the groups (1,5), (2,5) and (3,5) are significantly different from each other.
+
+This goes to show that groups that perceive contexts in a more different light tend to have different ways of viewing the individual contexts. We do observe that in some cases (2,5) are significantly different, but (1,5) is not. This can be easily attributed to the low number of responses
+and the noise in the data.
+
+\subsubsection{K- Means to Automatically detect clusters in the Population}
+We attempt to cluster the population that answered the survey based on the following traits :
+
+\begin{itemize}
+\item The way people rate data collectors (question 11)
+\item The way people rate sensors (question 9)
+\item 
+\end{itemize}
+
+For each chosen group of features, we need to discover how many clusters there are
+in this population. Since we do not have any pre-defined labels given to us, we go through the following procedure:
+
+\begin{itemize}
+\item Perform the K-Means clustering using various distances
+\begin{itemize}
+\item Squared Euclidean Distance
+\item City Block Distance
+\item Cosine Distance
+\end{itemize}
+\item We plot the Silhouette score to see which of the distances do better
+\item Visualize the clusters in the highest principal components
+\end{itemize}
+
+
+
+
+
 
 
 \section{Overview of the Experiment Data}

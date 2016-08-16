@@ -6,61 +6,63 @@
 \contentsline {chapter}{\chapternumberline {3}Computational Model}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Model Intricacies}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Categorization of the Features}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Categorization of the Sub-Features}{9}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Weight Matrix Calculation}{10}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Cost Matrix Calculation}{11}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Cost and Privacy Metrics}{11}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Improving the Metrics}{13}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Summarization of Collected Data}{13}{subsection.3.2.7}
-\contentsline {section}{\numberline {3.3}Analysis of the Model}{14}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Setup}{14}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Results}{15}{subsection.3.3.2}
-\contentsline {subsubsection}{Scenario One}{15}{section*.4}
-\contentsline {subsubsection}{Scenario 3}{16}{section*.9}
-\contentsline {subsubsection}{Scenario 4}{17}{section*.12}
-\contentsline {chapter}{\chapternumberline {4}Experiment Methodology}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Preparatory Phase}{21}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Pre-Survey}{21}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Sub-Features}{22}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Privacy Options}{22}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Question Structure}{22}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Budget and Experiment Duration}{23}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Entry Phase}{23}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Collecting General User Information}{23}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Categorization of Features}{23}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Categorization of Sub-Features}{24}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Answering Questions with No Incentives}{26}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Core Phase}{28}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Improve Privacy or Credit}{29}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Answering Questions with Incentives}{30}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Exit Phase}{30}{section.4.4}
-\contentsline {section}{\numberline {4.5}FairDataShare Web Portal}{31}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Data Generator's Portal}{31}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Stakeholder's Portal}{32}{subsection.4.5.2}
-\contentsline {chapter}{\chapternumberline {5}Explanation of the Mobile Application}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}The Building Blocks}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}The Mobile Application}{37}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Local Storage}{37}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Alarms and Notifications}{40}{subsection.5.2.2}
-\contentsline {subsubsection}{Going to the Next Data Sharing Day}{42}{section*.34}
-\contentsline {subsection}{\numberline {5.2.3}Fetching Data Requests}{43}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Recording User Choices}{44}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Sensor Data Collection and Summarization}{44}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Server Synchronization}{45}{subsection.5.2.6}
-\contentsline {section}{\numberline {5.3}The Server}{46}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{46}{subsection.5.3.1}
-\contentsline {subsubsection}{Security}{46}{section*.35}
-\contentsline {subsubsection}{Collection Store}{46}{section*.36}
-\contentsline {subsubsection}{Bussiness Logic}{49}{section*.51}
-\contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{53}{subsection.5.3.2}
-\contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{55}{chapter.6}
-\contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{55}{section.6.1}
-\contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{55}{section.6.2}
-\contentsline {subsubsection}{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}{55}{section*.52}
-\contentsline {subsubsection}{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}{59}{section*.60}
-\contentsline {subsubsection}{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}{62}{section*.68}
-\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{64}{section.6.3}
-\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{64}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{65}{chapter.7}
-\contentsline {appendix}{\chapternumberline {A}Appendix}{67}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.1}Collecting User Information}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Categorization of the Features}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Categorization of the Sub-Features}{10}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Weight Matrix Calculation}{11}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Cost Matrix Calculation}{12}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Cost and Privacy Metrics}{13}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Improving the Metrics}{14}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Summarization of Collected Data}{14}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}Analysis of the Model}{15}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Setup}{15}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Results}{16}{subsection.3.3.2}
+\contentsline {subsubsection}{Scenario One}{16}{section*.5}
+\contentsline {subsubsection}{Scenario 3}{17}{section*.10}
+\contentsline {subsubsection}{Scenario 4}{18}{section*.13}
+\contentsline {chapter}{\chapternumberline {4}Experiment Methodology}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Preparatory Phase}{23}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Pre-Survey}{23}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Sub-Features}{24}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Privacy Options}{24}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Question Structure}{24}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Budget and Experiment Duration}{25}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Entry Phase}{25}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Collecting General User Information}{25}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Categorization of Features}{25}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Categorization of Sub-Features}{26}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Answering Questions with No Incentives}{28}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Core Phase}{30}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Improve Privacy or Credit}{31}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Answering Questions with Incentives}{32}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Exit Phase}{32}{section.4.4}
+\contentsline {section}{\numberline {4.5}FairDataShare Web Portal}{33}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Data Generator's Portal}{33}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Stakeholder's Portal}{34}{subsection.4.5.2}
+\contentsline {chapter}{\chapternumberline {5}Explanation of the Mobile Application}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}The Building Blocks}{39}{section.5.1}
+\contentsline {section}{\numberline {5.2}The Mobile Application}{39}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Local Storage}{39}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Alarms and Notifications}{42}{subsection.5.2.2}
+\contentsline {subsubsection}{Going to the Next Data Sharing Day}{44}{section*.35}
+\contentsline {subsection}{\numberline {5.2.3}Fetching Data Requests}{45}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Recording User Choices}{46}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Sensor Data Collection and Summarization}{46}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Server Synchronization}{47}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}The Server}{48}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{48}{subsection.5.3.1}
+\contentsline {subsubsection}{Security}{48}{section*.36}
+\contentsline {subsubsection}{Collection Store}{48}{section*.37}
+\contentsline {subsubsection}{Bussiness Logic}{51}{section*.52}
+\contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{55}{subsection.5.3.2}
+\contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{57}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{57}{section.6.2}
+\contentsline {subsubsection}{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}{57}{section*.53}
+\contentsline {subsubsection}{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}{61}{section*.61}
+\contentsline {subsubsection}{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}{64}{section*.69}
+\contentsline {subsubsection}{K- Means to Automatically detect clusters in the Population}{67}{section*.77}
+\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{67}{section.6.3}
+\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{67}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{69}{chapter.7}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{71}{appendix.A}
