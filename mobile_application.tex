@@ -187,7 +187,7 @@ The current time of executing the alarm is saved in case the phone is rebooted o
 needs to be summarized, the corresponding method is called and is explained in pseudocode \ref{sum}. Finally we need to check if the experiment is over or not and update the user interface accordingly. This means either we update the various metrics on the improvement and bidding screens, or we 
 show the end of experiment screen.
 
-\subsection{Fetching Data Requests}
+\subsection{Fetching Data Requests} \label{data_req}
 A data request needs to be fetched in two scenarios :
 
 \begin{enumerate}
@@ -204,7 +204,7 @@ For the other bidding days, fetching of the data requests depends on the improve
 	\item Improve Credit - Obtain question from table STOREANSWERS where user has answered with highest privacy
 \end{enumerate}
 
-In addition to sending the data request to the user interface, we need to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, we output $last-possible$, where $last$ stands for the credit obtained the last time the data request was answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer \ref{}.
+In addition to sending the data request to the user interface, we need to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, we output $last-possible$, where $last$ stands for the credit obtained the last time the data request was answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer \ref{options}.
 
 Each option of a data request has an associated percentage of data that is given away as described in \ref{}. According to the percentage of data given away, the total privacy is calculated for each possible option. The difference between the current privacy and each possible total privacy is calculated and indicated under each option. This gives an indication to the user as to what each option will do to the metrics.
 
