@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  17 AUG 2016 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  17 AUG 2016 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1995,236 +1995,235 @@ ull.png> <./images/fds_dc_register.png> <./images/fds_dc_login.png> <./images/f
 ds_dc_welcome.png>] [40
 
 ]
-<./images/blocks_app.png, id=1012, 1284.8pt x 641.39626pt>
+<./images/blocks_app.png, id=1014, 1284.8pt x 641.39626pt>
 File: ./images/blocks_app.png Graphic file (type png)
 
 <use ./images/blocks_app.png>
-Package pdftex.def Info: ./images/blocks_app.png used on input line 13.
+Package pdftex.def Info: ./images/blocks_app.png used on input line 14.
 (pdftex.def)             Requested size: 369.0pt x 184.20914pt.
 
-<./images/db_quest.png, id=1013, 173.64874pt x 165.61874pt>
+Overfull \hbox (1.20795pt too wide) in paragraph at lines 21--23
+\OT1/pplx/m/n/10.95 The mo-bile ap-pli-ca-tion was de-vel-oped for the An-droid
+ plat-form with phones
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[][] [][][][][]$\OT1/cmtt/m/n/9 https : / / developer . android . com / referen
+ce / android / database / sqlite /
+ []
+
+<./images/db_quest.png, id=1026, 173.64874pt x 165.61874pt>
 File: ./images/db_quest.png Graphic file (type png)
 
 <use ./images/db_quest.png>
-Package pdftex.def Info: ./images/db_quest.png used on input line 27.
+Package pdftex.def Info: ./images/db_quest.png used on input line 31.
 (pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
 
-Underfull \hbox (badness 2469) in paragraph at lines 27--27
-[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of QUES-TION-
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of
  []
 
-<./images/db_which_1.png, id=1014, 173.64874pt x 165.61874pt>
+<./images/db_which_1.png, id=1027, 173.64874pt x 165.61874pt>
 File: ./images/db_which_1.png Graphic file (type png)
 
 <use ./images/db_which_1.png>
-Package pdftex.def Info: ./images/db_which_1.png used on input line 28.
+Package pdftex.def Info: ./images/db_which_1.png used on input line 32.
 (pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
 
-Underfull \hbox (badness 2111) in paragraph at lines 28--28
-[]\OT1/pplx/m/n/9 (b) |Ta-ble Schema of WHICHAN-
- []
-
-
-Overfull \hbox (26.53445pt too wide) in paragraph at lines 34--37
-\OT1/pplx/m/n/10.95 each pos-si-ble data re-quest with its sen-sor $\OML/zplm/m
-/it/10.95 SENSOR$\OT1/pplx/m/n/10.95 , stake-holder $\OML/zplm/m/it/10.95 STAKE
-HOLDER$
- []
-
-[41] <./images/db_ans.png, id=1023, 188.705pt x 162.6075pt>
+<./images/db_ans.png, id=1030, 188.705pt x 162.6075pt>
 File: ./images/db_ans.png Graphic file (type png)
 
 <use ./images/db_ans.png>
-Package pdftex.def Info: ./images/db_ans.png used on input line 42.
+Package pdftex.def Info: ./images/db_ans.png used on input line 46.
 (pdftex.def)             Requested size: 147.59775pt x 127.18567pt.
 
-Underfull \hbox (badness 4621) in paragraph at lines 42--42
-[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of STORE-AN-
- []
-
-<./images/db_points.png, id=1024, 388.45125pt x 332.24126pt>
+<./images/db_points.png, id=1031, 388.45125pt x 332.24126pt>
 File: ./images/db_points.png Graphic file (type png)
 
 <use ./images/db_points.png>
-Package pdftex.def Info: ./images/db_points.png used on input line 43.
+Package pdftex.def Info: ./images/db_points.png used on input line 47.
 (pdftex.def)             Requested size: 147.59775pt x 126.24284pt.
- [42 <./images/blocks_app.png> <./images/db_quest.png> <./images/db_which_1.png
->]
-<./images/db_ur.png, id=1037, 305.14pt x 301.125pt>
+ [42 <./images/blocks_app.png>]
+<./images/db_ur.png, id=1044, 305.14pt x 301.125pt>
 File: ./images/db_ur.png Graphic file (type png)
  <use ./images/db_ur.png>
-Package pdftex.def Info: ./images/db_ur.png used on input line 56.
+Package pdftex.def Info: ./images/db_ur.png used on input line 60.
 (pdftex.def)             Requested size: 147.59775pt x 145.65947pt.
 
-[43 <./images/db_ans.png> <./images/db_points.png> <./images/db_ur.png>]
-<./images/db_acc.png, id=1052, 376.40625pt x 331.2375pt>
+[43 <./images/db_quest.png> <./images/db_which_1.png> <./images/db_ans.png> <./
+images/db_points.png>] [44 <./images/db_ur.png>]
+<./images/db_acc.png, id=1084, 376.40625pt x 331.2375pt>
 File: ./images/db_acc.png Graphic file (type png)
 
 <use ./images/db_acc.png>
-Package pdftex.def Info: ./images/db_acc.png used on input line 89.
+Package pdftex.def Info: ./images/db_acc.png used on input line 100.
 (pdftex.def)             Requested size: 147.59775pt x 129.8897pt.
 
-Underfull \hbox (badness 5331) in paragraph at lines 89--89
-[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of STORE-AC-
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\OT1/pplx/m/n/9 (a) |Ta-ble Schema of
  []
 
-<./images/db_noise.png, id=1053, 370.38374pt x 325.215pt>
+<./images/db_noise.png, id=1085, 370.38374pt x 325.215pt>
 File: ./images/db_noise.png Graphic file (type png)
 
 <use ./images/db_noise.png>
-Package pdftex.def Info: ./images/db_noise.png used on input line 90.
+Package pdftex.def Info: ./images/db_noise.png used on input line 101.
 (pdftex.def)             Requested size: 147.59775pt x 129.59738pt.
 
-<./images/db_loc.png, id=1054, 368.37625pt x 317.185pt>
+<./images/db_loc.png, id=1086, 368.37625pt x 317.185pt>
 File: ./images/db_loc.png Graphic file (type png)
 
 <use ./images/db_loc.png>
-Package pdftex.def Info: ./images/db_loc.png used on input line 105.
+Package pdftex.def Info: ./images/db_loc.png used on input line 109.
 (pdftex.def)             Requested size: 147.59775pt x 127.08469pt.
 
-<./images/db_light.png, id=1055, 379.4175pt x 324.21124pt>
+<./images/db_light.png, id=1087, 379.4175pt x 324.21124pt>
 File: ./images/db_light.png Graphic file (type png)
 
 <use ./images/db_light.png>
-Package pdftex.def Info: ./images/db_light.png used on input line 106.
+Package pdftex.def Info: ./images/db_light.png used on input line 110.
 (pdftex.def)             Requested size: 147.59775pt x 126.12526pt.
- [44] [45 <./images/db_acc.png> <./images/db_noise.png> <./images/db_loc.png> <
-./images/db_light.png>]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 133.
- [46] [47] [48]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-<./images/collection_ui_1.png, id=1152, 1024.82875pt x 541.02126pt>
+ [45 <./images/db_acc.png> <./images/db_noise.png> <./images/db_loc.png> <./ima
+ges/db_light.png>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 137.
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+[48] [49] [50]
+<./images/collection_ui_1.png, id=1172, 1024.82875pt x 541.02126pt>
 File: ./images/collection_ui_1.png Graphic file (type png)
 
 <use ./images/collection_ui_1.png>
-Package pdftex.def Info: ./images/collection_ui_1.png used on input line 328.
+Package pdftex.def Info: ./images/collection_ui_1.png used on input line 331.
 (pdftex.def)             Requested size: 369.00061pt x 194.80052pt.
 
-<./images/collection_ui_2.png, id=1153, 1049.9225pt x 564.1075pt>
+<./images/collection_ui_2.png, id=1173, 1049.9225pt x 564.1075pt>
 File: ./images/collection_ui_2.png Graphic file (type png)
 
 <use ./images/collection_ui_2.png>
-Package pdftex.def Info: ./images/collection_ui_2.png used on input line 335.
+Package pdftex.def Info: ./images/collection_ui_2.png used on input line 338.
 (pdftex.def)             Requested size: 369.00032pt x 198.2583pt.
 
-<./images/collection_feature_cat.png, id=1158, 599.23875pt x 544.0325pt>
+<./images/collection_feature_cat.png, id=1178, 599.23875pt x 544.0325pt>
 File: ./images/collection_feature_cat.png Graphic file (type png)
 
 <use ./images/collection_feature_cat.png>
 Package pdftex.def Info: ./images/collection_feature_cat.png used on input line
- 344.
+ 347.
 (pdftex.def)             Requested size: 243.86989pt x 221.40282pt.
- [50]
-<./images/collection_sensors_cat.png, id=1169, 761.84625pt x 544.0325pt>
+
+<./images/collection_sensors_cat.png, id=1179, 761.84625pt x 544.0325pt>
 File: ./images/collection_sensors_cat.png Graphic file (type png)
 
 <use ./images/collection_sensors_cat.png>
 Package pdftex.def Info: ./images/collection_sensors_cat.png used on input line
- 351.
+ 354.
 (pdftex.def)             Requested size: 310.04564pt x 221.40282pt.
 
-<./images/collection_dc_cat.png, id=1170, 721.69624pt x 544.0325pt>
+<./images/collection_dc_cat.png, id=1180, 721.69624pt x 544.0325pt>
 File: ./images/collection_dc_cat.png Graphic file (type png)
 
 <use ./images/collection_dc_cat.png>
-Package pdftex.def Info: ./images/collection_dc_cat.png used on input line 358.
+Package pdftex.def Info: ./images/collection_dc_cat.png used on input line 361.
 
 (pdftex.def)             Requested size: 293.70595pt x 221.40282pt.
 
-<./images/collection_context_cat.png, id=1171, 816.04875pt x 542.025pt>
+<./images/collection_context_cat.png, id=1181, 816.04875pt x 542.025pt>
 File: ./images/collection_context_cat.png Graphic file (type png)
 
 <use ./images/collection_context_cat.png>
 Package pdftex.def Info: ./images/collection_context_cat.png used on input line
- 365.
+ 368.
 (pdftex.def)             Requested size: 333.33696pt x 221.40462pt.
 
-<./images/collection_ur_1.png, id=1175, 1045.9075pt x 546.04pt>
+<./images/collection_ur_1.png, id=1185, 1045.9075pt x 546.04pt>
 File: ./images/collection_ur_1.png Graphic file (type png)
 
 <use ./images/collection_ur_1.png>
-Package pdftex.def Info: ./images/collection_ur_1.png used on input line 376.
+Package pdftex.def Info: ./images/collection_ur_1.png used on input line 379.
 (pdftex.def)             Requested size: 369.00961pt x 192.64993pt.
 
-<./images/collection_ur_2.png, id=1176, 883.3pt x 545.03625pt>
+<./images/collection_ur_2.png, id=1186, 883.3pt x 545.03625pt>
 File: ./images/collection_ur_2.png Graphic file (type png)
 
 <use ./images/collection_ur_2.png>
-Package pdftex.def Info: ./images/collection_ur_2.png used on input line 383.
+Package pdftex.def Info: ./images/collection_ur_2.png used on input line 386.
 (pdftex.def)             Requested size: 358.79932pt x 221.39548pt.
 
-Overfull \hbox (1.12033pt too wide) in paragraph at lines 388--390
+Overfull \hbox (1.12033pt too wide) in paragraph at lines 391--393
 []\OT1/pplx/m/n/10.95 The sen-sor data sent by the Job-Net-work-Ser-vice is sto
 red in col-lec-tions named
  []
 
-<./images/collection_loc.png, id=1181, 882.29625pt x 545.03625pt>
+<./images/collection_loc.png, id=1191, 882.29625pt x 545.03625pt>
 File: ./images/collection_loc.png Graphic file (type png)
 
 <use ./images/collection_loc.png>
-Package pdftex.def Info: ./images/collection_loc.png used on input line 393.
+Package pdftex.def Info: ./images/collection_loc.png used on input line 396.
 (pdftex.def)             Requested size: 358.39159pt x 221.39548pt.
 
-<./images/collection_acc.png, id=1182, 1045.9075pt x 543.02875pt>
+<./images/collection_acc.png, id=1192, 1045.9075pt x 543.02875pt>
 File: ./images/collection_acc.png Graphic file (type png)
 
 <use ./images/collection_acc.png>
-Package pdftex.def Info: ./images/collection_acc.png used on input line 400.
+Package pdftex.def Info: ./images/collection_acc.png used on input line 403.
 (pdftex.def)             Requested size: 369.00961pt x 191.58751pt.
 
-<./images/collection_noise.png, id=1183, 974.64125pt x 543.02875pt>
+<./images/collection_noise.png, id=1193, 974.64125pt x 543.02875pt>
 File: ./images/collection_noise.png Graphic file (type png)
 
 <use ./images/collection_noise.png>
-Package pdftex.def Info: ./images/collection_noise.png used on input line 407.
+Package pdftex.def Info: ./images/collection_noise.png used on input line 410.
 (pdftex.def)             Requested size: 368.99931pt x 205.59074pt.
 
-<./images/collection_light.png, id=1184, 672.5125pt x 517.935pt>
+<./images/collection_light.png, id=1194, 672.5125pt x 517.935pt>
 File: ./images/collection_light.png Graphic file (type png)
 
 <use ./images/collection_light.png>
-Package pdftex.def Info: ./images/collection_light.png used on input line 414.
+Package pdftex.def Info: ./images/collection_light.png used on input line 417.
 (pdftex.def)             Requested size: 287.48155pt x 221.4037pt.
- [51 <./images/collection_ui_1.png> <./images/collection_ui_2.png>]
-<./images/collection_users.png, id=1204, 218.8175pt x 543.02875pt>
+ [51 <./images/collection_ui_1.png>]
+<./images/collection_users.png, id=1217, 218.8175pt x 543.02875pt>
 File: ./images/collection_users.png Graphic file (type png)
 
 <use ./images/collection_users.png>
-Package pdftex.def Info: ./images/collection_users.png used on input line 424.
+Package pdftex.def Info: ./images/collection_users.png used on input line 427.
 (pdftex.def)             Requested size: 89.21492pt x 221.40033pt.
 
-<./images/collection_score.png, id=1206, 853.1875pt x 508.90125pt>
+<./images/collection_score.png, id=1219, 853.1875pt x 508.90125pt>
 File: ./images/collection_score.png Graphic file (type png)
 
 <use ./images/collection_score.png>
-Package pdftex.def Info: ./images/collection_score.png used on input line 433.
+Package pdftex.def Info: ./images/collection_score.png used on input line 436.
 (pdftex.def)             Requested size: 369.01154pt x 220.10452pt.
 
 
-LaTeX Warning: Reference `bl' on page 52 undefined on input line 439.
-
-
-Underfull \vbox (badness 1490) has occurred while \output is active []
-
- [52 <./images/collection_feature_cat.png> <./images/collection_sensors_cat.png
->] [53 <./images/collection_dc_cat.png> <./images/collection_context_cat.png>] 
-[54 <./images/collection_ur_1.png> <./images/collection_ur_2.png>] [55 <./image
-s/collection_loc.png> <./images/collection_acc.png>]
-
-LaTeX Warning: Reference `bl' on page 56 undefined on input line 480.
+LaTeX Warning: Reference `bl' on page 52 undefined on input line 442.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56 <./images/collection_noise.png> <./images/collection_light.png>] [57 <./im
-ages/collection_users.png> <./images/collection_score.png>]) (./pre_survey_resu
-lts.tex
-[58] [59
+ [52 <./images/collection_ui_2.png> <./images/collection_feature_cat.png>] [53 
+<./images/collection_sensors_cat.png> <./images/collection_dc_cat.png>] [54 <./
+images/collection_context_cat.png> <./images/collection_ur_1.png>]
+Underfull \vbox (badness 1490) has occurred while \output is active []
 
-] <./images/sensors_group_meanQ10.png, id=1268, 1124.2pt x 843.15pt>
+ [55 <./images/collection_ur_2.png> <./images/collection_loc.png>]
+
+LaTeX Warning: Reference `bl' on page 56 undefined on input line 483.
+
+[56 <./images/collection_acc.png> <./images/collection_noise.png>])
+(./pre_survey_results.tex [57 <./images/collection_light.png> <./images/collect
+ion_users.png>] [58 <./images/collection_score.png>] [59
+
+]
+<./images/sensors_group_meanQ10.png, id=1282, 1124.2pt x 843.15pt>
 File: ./images/sensors_group_meanQ10.png Graphic file (type png)
 
 <use ./images/sensors_group_meanQ10.png>
@@ -2232,7 +2231,7 @@ Package pdftex.def Info: ./images/sensors_group_meanQ10.png used on input line
 48.
 (pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
 
-<./images/sensors_group_varianceQ10.png, id=1269, 1124.2pt x 843.15pt>
+<./images/sensors_group_varianceQ10.png, id=1283, 1124.2pt x 843.15pt>
 File: ./images/sensors_group_varianceQ10.png Graphic file (type png)
 
 <use ./images/sensors_group_varianceQ10.png>
@@ -2351,7 +2350,7 @@ LaTeX Warning: Text page 68 contains only floats.
 ]) [73] [74
 
 ]
-<declaration-originality.pdf, id=1389, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1403, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -2362,7 +2361,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 177.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1392, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1406, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2420,11 +2419,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19366 strings out of 493089
- 295150 string characters out of 6134841
- 477466 words of memory out of 5000000
- 21989 multiletter control sequences out of 15000+600000
- 50410 words of font info for 146 fonts, out of 8000000 for 9000
+ 19373 strings out of 493089
+ 295236 string characters out of 6134841
+ 477474 words of memory out of 5000000
+ 21991 multiletter control sequences out of 15000+600000
+ 50578 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1010b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2434,16 +2433,17 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (79 pages, 7651663 bytes).
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (79 pages, 7667126 bytes).
 PDF statistics:
- 1563 PDF objects out of 1728 (max. 8388607)
- 1100 compressed objects within 11 object streams
- 388 named destinations out of 1000 (max. 500000)
+ 1582 PDF objects out of 1728 (max. 8388607)
+ 1117 compressed objects within 12 object streams
+ 392 named destinations out of 1000 (max. 500000)
  13049 words of extra memory for PDF output out of 14400 (max. 10000000)
 

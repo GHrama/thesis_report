@@ -1,12 +1,13 @@
 \chapter{Explanation of the Mobile Application}
+This chapter explains the details behind the making of the mobile application environment. First an overview is given, followed by a detailed explanation of the main components of the Android mobile application. This includes the architecture, database schemas and algorithms. Next, the server business logic and storage of the application is presented.
 
 \section{The Building Blocks}
 
-The following sections will explain integral parts of the server and client part of the mobile application. A gist of the architecture is shown
-in figure \ref{fig:bb}. As it can be seen, the mobile app represents the user participating in the experiment. As the experiment goes on,
+The following sections will explain integral parts of the server and client of the mobile application. A gist of the architecture is shown
+in the figure \ref{fig:bb}. As it can be seen, the mobile application represents the user participating in the experiment. As the experiment goes on,
 mobile sensor data and responses to the data requests which are collected are periodically sent to the Kinvey Data Store. 
-The users can choose to login into the FairDataShare Portal from their computer or the mobile app. Once the user is authenticated, the user request
-is sent from the FairDataShare server to the Kinvey Data Store. Kinvey in turn fetches the appropriate data and gives it to the FairDataShare Server. This in turn structures the data so it can be easily readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile app.
+The users can choose to login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
+are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This in turn structures the data so it can be easily readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile application.
 
 \begin{figure}[ht!]
 \centering
@@ -17,93 +18,96 @@ is sent from the FairDataShare server to the Kinvey Data Store. Kinvey in turn f
 
 \section{The Mobile Application}
 
+The mobile application was developed for the Android platform with phones having API above level 17\footnote{\url{https://developer.android.com/guide/topics/manifest/uses-sdk-element.html}}. Phones are assumed to have internet connectivity and sufficient storage space of at least 100 Mb.
+Below is an explanation of some of the tasks that take place in the application.
+
 \subsection{Local Storage} \label{loc}
-The local storage is an integral part of the application. The database used is SQLite and is the default database
-for the Android environment. Small sized unrelated data is stored in preferences files, whereas larger related
-data is stored in the database. The following paragraphs will explain each database present in this application followed with 
-their function. All tables explained here are pertaining to the user using the mobile application.
+The local storage is an integral part of the application. The database used is SQLite\footnote{\url{https://developer.android.com/reference/android/database/sqlite/package-summary.html}} and is the default database
+for the Android environment. Small sized unrelated data pieces are stored in preference files (as key value pairs), whereas larger related
+data is stored in the database. The following paragraphs will explain each table present in this application followed with 
+their function and schema. All tables explained here are pertaining to the user using the mobile application and not the server.
 
 \begin{figure}[htp]
-\subtop[Table Schema of QUESTIONSTORE\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
-\subtop[Table Schema of WHICHANSWERS\label{fig:db_which}]{\includegraphics[width=0.4\linewidth]{./images/db_which_1}}
+\subtop[Table Schema of \texttt{QUESTION\_STORE's}\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
+\subtop[Table Schema of \texttt{WHICH\_ANSWERS}\label{fig:db_which}]{\includegraphics[width=0.4\linewidth]{./images/db_which_1}}
 \caption{Table Schemas}
 \label{fig:ts1}
 \end{figure}
 
 
-Figure \ref{fig:db_quest} shows the QUESTIONSTORE's table schema. This table stores each possible data request with its sensor $SENSOR$, stakeholder  $STAKEHOLDER$ and context $CONTEXT$. Each of these are represented by an integer, for example sensor 0 stands for Accelerometer sensor. Each data request is accompanied by
-an unique question identifier $QID$, weight assigned $WEIGHT$ and the cost $COST$. This data is not sent to 
+Figure \ref{fig:db_quest} shows the \texttt{QUESTION\_STORE's} table schema. This table stores each possible data request with its features such as with its sensor \textit{SENSOR}, stakeholder \textit{STAKEHOLDER} and context \textit{CONTEXT}. Each of these are represented by an integer, for example sensor 0 stands for accelerometer sensor. Each data request is accompanied by
+an unique question identifier \textit{QID}, weight assigned \textit{WEIGHT} and the cost assigned \textit{COST}. This data is not sent to 
 the server.
 
-Figure \ref{fig:db_which} depicts the table WHICHANSWERS's table schema. This stores the questions identifier $QID$ of each data request that has
-been answered by the user for each round. This is helpful while fetching data requests, so as not to fetch the request twice in the same round. This makes sure that all questions are answered before answering them for a second time. This data is not sent to the server.
+Figure \ref{fig:db_which} depicts the table \texttt{WHICH\_ANSWERS}'s table schema. This stores the questions identifier \textit{QID} of each data request that has
+been answered by the user for each round. This is helpful while fetching data requests, so as not to fetch the request twice in the same round. It makes sure that all questions are answered before answering them for a second time. This data is not sent to the server.
 
 \begin{figure}[htp]
-\subtop[Table Schema of STOREANSWERS\label{fig:db_ans}]{\includegraphics[width=0.4\linewidth]{./images/db_ans}} \hspace{1em}
-\subtop[Table Schema of STOREPOINTS\label{fig:db_points}]{\includegraphics[width=0.4\linewidth]{./images/db_points}}
+\subtop[Table Schema of \texttt{STORE\_ANSWERS}\label{fig:db_ans}]{\includegraphics[width=0.4\linewidth]{./images/db_ans}} \hspace{1em}
+\subtop[Table Schema of \texttt{STORE\_POINTS}\label{fig:db_points}]{\includegraphics[width=0.4\linewidth]{./images/db_points}}
 \caption{Table Schemas}
 \label{fig:ts11}
 \end{figure}
 
-Figure \ref{fig:db_ans} explains the schema of STOREANSWERS table. This table is used to store the data request identifier $QID$ with the corresponding
-user responses $LEVEL$, along with the increase or decrease in credit obtained $COST_OBT$. The total cost can be calculated by adding all the costs in this table. Similarly, the total privacy can be calculated by averaging all the user responses in this table. Only the most recent responses are stored in this table. This content is not sent over to the server.
+Figure \ref{fig:db_ans} explains the schema of \texttt{STORE\_ANSWERS} table. This table is used to store the data request identifier \textit{QID} with the corresponding
+user responses \textit{LEVEL}, along with the increase or decrease in credit obtained \textit{COST\_OBT}. The total cost can be calculated by adding all the costs in this table. Similarly, the total privacy can be calculated by averaging of all the user responses stored in this table. Only the most recent responses are stored in this table. The content of the table is not sent over to the server.
 
-Figure \ref{fig:db_points} denotes the schema of STOREPOINTS table. This table is used to store the credit and privacy obtained for each bidding day.
+Figure \ref{fig:db_points} denotes the schema of \texttt{STORE\_POINTS} table. This table is used to store the credit and privacy obtained for each bidding day.
 This information is sent to the server as soon one bidding day is over.
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.4\linewidth]{./images/db_ur}
-\caption{Table USERRESPONSECACHE Schema}
+\caption{Table \texttt{USERRESPONSE\_CACHE} Schema}
 \label{fig:db_ur}
 \end{figure}
 
-Figure \ref{fig:db_ur} depicts the USERRESPONSECACHE tables's schema. This table stores a unique key $KEY$ for each user response, followed by a flag $ISSENT$, which is 1 if the response is not sent to the server, and 0 if it is sent. The user response saved consists of the following entries :
+Figure \ref{fig:db_ur} depicts the \texttt{USERRESPONSE\_CACHE} tables's schema. This table stores a unique key \textit{KEY} for each user response, followed by a flag \textit{ISSENT}, which is 1 if the response is not sent to the server, and 0 if it is sent. The user response saved consists of the following entries :
 
 \begin{enumerate}
-	\item User Id
-	\item Timestamp of response
-    \item Sensor Id
-    \item Stakeholder Id
-    \item Context Id
-    \item Privacy Level answered for this data request
+	\item User Identifier
+	\item Timestamp of the response
+    \item Sensor Identifier
+    \item Stakeholder Identifier
+    \item Context Identifier
+    \item Privacy Level response for this data request
     \item Cost obtained for this data request
-    \item Current Total Privacy of user
-    \item Current Total Credit of user
+    \item Current Total Privacy of the user
+    \item Current Total Credit of the user
     \item Maximum Obtainable Credit for this data request in this round
     \item Metric Chosen to Improve  (Improve Privacy or Improve Credit)
 \end{enumerate}
 
-All of the above fields are packed into the field $ur$ shown in \ref{fig:db_ur}. The data in this table is sent to the server. Once the entry is sent to the server, the $ISSENT$ field is changed to 0 and deleted locally. The unique keys $KEY$ are useful for deleting sent entries.
-
-Figure \ref{fig:ts2} and \ref{fig:ts22} show the table schemas for data storage of the following sensors:
+All of the above fields are packed into the field \textit{ur} shown in \ref{fig:db_ur}. The data in this table is sent to the server. Once the entry is sent to the server, the \textit{ISSENT} field is changed to 0 and deleted locally. The unique keys \textit{KEY} are useful for deleting sent entries. Figure \ref{fig:ts2} and \ref{fig:ts22} show the table schemas for data storage of the following sensors:
 
 \begin{enumerate}
-	\item Accelerometer in the STOREACCELEROMETER table
-	\item Noise in the STORENOISE
-    \item Location in the  STORELOCATION
-    \item Light in the  STORELIGHT
+	\item Accelerometer in the \texttt{STORE\_ACCELEROMETER} table
+	\item Noise in the \texttt{STORE\_NOISE}
+    \item Location in the  \texttt{STORE\_LOCATION}
+    \item Light in the  \texttt{STORE\_LIGHT}
+\end{enumerate}
+
+The general schema for all the sensor tables is the following :
+
+\begin{enumerate}
+	\item \textit{KEY} - Uniquely identifies each sensor entry
+	\item \textit{TIMESTAMP} - The time the sensor value was collected
+    \item \textit{ISSENT} - Denotes whether the sensor entry has been sent to the server or not
+    \item The other columns are specific to each sensor and represent the actual sensor values collected 
 \end{enumerate}
 
 \begin{figure}[htp]
-\subtop[Table Schema of STOREACCELEROMETER\label{fig:db_acc}]{\includegraphics[width=0.4\linewidth]{./images/db_acc}}\hspace{1em}
-\subtop[Table Schema of STORENOISE \label{fig:db_noise}]{\includegraphics[width=0.4\linewidth]{./images/db_noise}}%
+\subtop[Table Schema of \texttt{STORE\_ACCELEROMETER}\label{fig:db_acc}]{\includegraphics[width=0.4\linewidth]{./images/db_acc}}\hspace{1em}
+\subtop[Table Schema of \texttt{STORE\_NOISE} \label{fig:db_noise}]{\includegraphics[width=0.4\linewidth]{./images/db_noise}}%
 \caption{Table Schemas for Sensor Data}
 \label{fig:ts2}
 \end{figure}
 
-The general schema for all the sensors is the following :
 
-\begin{enumerate}
-	\item $KEY$ - Uniquely identifies each sensor entry
-	\item $TIMESTAMP$ - The time the sensor value was collected
-    \item $ISSENT$ - Denotes whether the sensor entry has been sent to the server or not
-    \item The other columns are specific to each sensor and represent the actual sensor values of the user collected
-\end{enumerate}
 
 \begin{figure}[htp]
-\subtop[Table Schema of STORELOCATION\label{fig:db_loc}]{\includegraphics[width=0.4\linewidth]{./images/db_loc}}\hspace{1em}
-\subtop[Table Schema of STORELIGHT \label{fig:db_light}]{\includegraphics[width=0.4\linewidth]{./images/db_light}}%
+\subtop[Table Schema of \texttt{STORE\_LOCATION}\label{fig:db_loc}]{\includegraphics[width=0.4\linewidth]{./images/db_loc}}\hspace{1em}
+\subtop[Table Schema of \texttt{STORE\_LIGHT} \label{fig:db_light}]{\includegraphics[width=0.4\linewidth]{./images/db_light}}%
 \caption{Table Schemas for Sensor Data}
 \label{fig:ts22}
 \end{figure}
@@ -111,13 +115,13 @@ The general schema for all the sensors is the following :
 
 \subsection{Alarms and Notifications}
 
-Every bidding day where the user can answer data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely to perform some application critical functions. The function performed are explained in detail in section \ref{next}. 
+Every bidding day where the user can answer data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely manner to perform some application critical functions. The function performed are explained in detail in section \ref{next}. 
 To inform the system of such an event Android provides the functionality in the form of alarms. 
 
-Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions, in the sense that they are triggered around that time set but not exactly to optimize the battery. Hence, we decided to set the repeating alarms manually. 
+Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions\footnote{\url{https://developer.android.com/training/scheduling/alarms.html}}, in the sense that they are triggered around that time set but not exactly to optimize the battery, and can be delayed upto 24 hours. Hence, it is decided to set the repeating alarms manually. 
 
-The first time the alarm is set to ring in exactly 24 hours, but things change when the phone is switched off.
-One of the conditions of the experiment is not to have the phone switched off at any time. Neverthless, we take into account the scenario where
+The first time the application opens the alarm is set to ring in exactly 24 hours, but things change when the phone is switched off.
+One of the conditions of the experiment is not to have the phone switched off at any time. Nevertheless, it is taken into account the scenario where
 the phone is kept switched off for a period of time. There are various things that can happen:
 
 \begin{enumerate}
@@ -126,8 +130,8 @@ the phone is kept switched off for a period of time. There are various things th
     \item The phone is switched off for a period greater than 24 hours. One or more alarms can be missed.
 \end{enumerate}
 
-Once the phone is switched off, all alarms are erased. Alarms do not execute when the phone is switched off. Hence, when the phone switches on,
-BootReceiver service of the application is triggered with pseudocode \ref{boot}.
+Once the phone is switched off, all alarms are erased from memory. Alarms do not execute when the phone is switched off. Hence, when the phone switches on,
+BootReceiver service of the application is triggered with pseudocode shown in \ref{boot}. This checks whether an alarm has been missed, if it has been missed 200 seconds is given for the phone to stabilize after boot before triggering tasks. Otherwise, a new alarm is set using the pseudocode shown in \ref{setalarm}. To set an alarm we need the time difference between now and when the alarm should ring. After that is calculated, the alarm is set.
 
 \begin{algorithm}
 \caption{BootService Algorithm}\label{boot}
@@ -144,7 +148,6 @@ BootReceiver service of the application is triggered with pseudocode \ref{boot}.
 \end{algorithmic}
 \end{algorithm}
 
-This checks whether an alarm has been missed, if it has 200 seconds is given for the phone to stabilize before triggering it. Otherwise, a new alarm is set using pseudocode \ref{setalarm}. To set an alarm we need the time difference between now and when the alarm should ring. After that is calculated, the alarm is set.
 
 \begin{algorithm}
 \caption{Alarm Algorithm}\label{setalarm}
