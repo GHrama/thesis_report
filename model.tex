@@ -305,26 +305,24 @@ For each data request indicated as a tuple of (sensors, stakeholders, contexts) 
   \end{tabular}
 \end{table}
  
-\begin{figure}[htp]
-  \subtop[Values of the Weight Matrix\label{weight11}]{\includegraphics[width=0.5\linewidth]{./images/weight_1_1}}%
-  \subtop[Values of the Cost Matrix \label{cost11}]{\includegraphics[width=0.5\linewidth]{./images/cost_1_1}}%
-  \caption{Examining Scenario 1}
-  \label{fig:scenatio11}
-\end{figure}
+%\begin{figure}[htp]
+%  \subtop[Values of the Weight Matrix\label{weight11}]{\includegraphics[width=0.5\linewidth]{./images/weight_1_1}}%
+%  \subtop[Values of the Cost Matrix \label{cost11}]{\includegraphics[width=0.5\linewidth]{./images/cost_1_1}}%
+%  \caption{Examining Scenario 1}
+%  \label{fig:scenatio11}
+%\end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/weight_1_1}
-\caption{Computational Model Flow Chart \label{model_blocks}}
+\caption{Values of the Weight Matrix \label{weight11}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/cost_1_1}
-\caption{Computational Model Flow Chart \label{model_blocks}}
+\caption{Values of the Cost Matrix \label{cost11}}
 \end{figure}
-
-
 
 We can conclude that if the users perceive the featur and respective sub-features in an equally intrusive way, then all the
 data requests will have the same weight and costs assigned.
@@ -353,11 +351,24 @@ with Sensors sub-feature 2 will have a higher weightage assigned than Sensor's s
   \end{tabular}
 \end{table}
 
-\begin{figure}[htp]
-  \subtop[Values of the Weight Matrix\label{weight3}]{\includegraphics[width=0.5\linewidth]{./images/weight_3}}%
-  \subtop[Values of the Cost Matrix \label{cost3}]{\includegraphics[width=0.5\linewidth]{./images/cost_3}}%
-  \caption{Examining Scenario 2}
-  \label{fig:scenatio3}
+%\begin{figure}[htp]
+%  \subtop[Values of the Weight Matrix\label{weight3}]{\includegraphics[width=0.5\linewidth]{./images/weight_3}}%
+%  \subtop[Values of the Cost Matrix \label{cost3}]{\includegraphics[width=0.5\linewidth]{./images/cost_3}}%
+%  \caption{Examining Scenario 2}
+%  \label{fig:scenatio3}
+%\end{figure}
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/weight_3}
+\caption{Values of the Weight Matrix \label{weight3}}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/cost_3}
+\caption{Values of the Cost Matrix \label{cost3}}
 \end{figure}
 
 
@@ -387,11 +398,24 @@ The feature and sub-feature categories are both assigned different values in thi
 As it is observed in both figures, the data request with the highest weight is the one with tuple (1,1,1). This tuple indicates that the data request involves all sub-feature 1 of each feature. This happens because all of the sub-feature 1 are assigned a category of 5. The feature sensors and its sub-feature 1 are categorized as 5, so all the data requests
 with tuple (1,*,*), where * is all the other possible sub-features from other features, are all above average as seen in figures \ref{fig:scenatio4}, irrespective of the categories of the other feature's sub-features. This shows that assigning a higher category to a feature can lead to higher data request costs. 
 
-\begin{figure}[htp]
-  \subtop[Values of the Weight Matrix\label{weight4}]{\includegraphics[width=0.5\linewidth]{./images/weight_4}}%
-  \subtop[Values of the Cost Matrix \label{cost4}]{\includegraphics[width=0.5\linewidth]{./images/cost_4}}%
-  \caption{Examining Scenario 3}
-  \label{fig:scenatio4}
+%\begin{figure}[htp]
+%  \subtop[Values of the Weight Matrix\label{weight4}]{\includegraphics[width=0.5\linewidth]{./images/weight_4}}%
+%  \subtop[Values of the Cost Matrix \label{cost4}]{\includegraphics[width=0.5\linewidth]{./images/cost_4}}%
+%  \caption{Examining Scenario 3}
+%  \label{fig:scenatio4}
+%\end{figure}
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/weight_4}
+\caption{Values of the Weight Matrix\label{weight4}}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/cost_4}
+\caption{Values of the Cost Matrix \label{cost4}}
 \end{figure}
 
 The green horizontal line in the graph indicates the mean value of the weights and costs. In general due to sub-features categorized as 5, those data requests receive a higher weight and cost. In some cases, the data requests still receive a lower weight such as tuple (2,2,1),

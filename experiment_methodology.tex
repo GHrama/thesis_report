@@ -192,11 +192,18 @@ Once all the questions have been answered, the user goes to the core phase of th
 
 \section{Core Phase} \label{core}
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/improve}
-\caption{Improvement screen }
-\label{fig:imp}
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[width=\textwidth,keepaspectratio]{./images/improve}
+%\caption{Improvement screen }
+%\label{fig:imp}
+%\end{figure}
+
+\begin{figure}[htp]
+  \subtop[\label{fig:imp_a}]{\includegraphics[width=0.45\linewidth]{./images/improve_layout}}\hspace{1em}
+  \subtop[\label{fig:imp_wa}]{\includegraphics[width=0.45\linewidth]{./images/improve}}%
+  \caption{Improvement screen}
+  \label{fig:imp}
 \end{figure}
 
 Once the entry phase is done, the user is presented with the screen shown in figure \ref{imp}.
@@ -212,12 +219,26 @@ The {\it "i"} button at the bottom right of the screen denoted by the number 9 i
 The unique identifier is located at the bottom of the application screen is an alphanumeric sequence denoted by number 8. If it is long pressed the user can select the identifier, then copy and paste it in the  textbox asking for the unique identifier in the portal. Figure \ref{fig:fds_user_register} shows what the registration page looks like.
 The users can use this website to see all the data collected from them for all the mobile sensors. More details about the FairDataShare portal
 refer to the section \ref{fds}.
+%
+%\begin{figure}[htp]
+%  \subtop[FairDataShare Homepage\label{fig:fds_home}]{\includegraphics[width=0.4\linewidth]{./images/fds}}\hspace{1em}
+%  \subtop[Data Generators Registration Page \label{fig:fds_user_register}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_login}}%
+%  \caption{FairDataShare Portal}
+%  \label{fig:first}
+%\end{figure}
 
-\begin{figure}[htp]
-  \subtop[FairDataShare Homepage\label{fig:fds_home}]{\includegraphics[width=0.4\linewidth]{./images/fds}}\hspace{1em}
-  \subtop[Data Generators Registration Page \label{fig:fds_user_register}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_login}}%
-  \caption{FairDataShare Portal}
-  \label{fig:first}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds}
+\caption{FairDataShare Homepage}
+\label{fig:fds_home}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_register}
+\caption{Data Generators Registration Page}
+\label{fig:first}
 \end{figure}
 
 The user can  login into the portal after a minimum of 24 hours after the start of the core phase to see the data that has been collected and shared with the stakeholders. 
@@ -261,9 +282,7 @@ After choosing a metric to improve, a screen is presented as shown in figure \re
 This screen is called the "bidding screen". This screen is very similar to the screen \ref{fig:imp} presented in the entry phase, except that the user
 is aware of the amount of privacy and credit obtained as indicated by items 14 and 15 respectively. Additionally, the user can see information about how the privacy and credit will increase or decrease for each privacy option of a data request. The items numbered 11 are the privacy options ranging from one to five.
 
-
-The items numbered 12 are the improvement in privacy for each possible option of the current data request shown as item numbered 10. The items numbered 13 are the improvements in credit for each possible options of the current data request. Once the user decides on which options to choose according to how much data wants to be traded, the users can click on the radio option as explained in section \ref{option} and then click again on the green submit button that pops up shown in \ref{fig:bid2} to confirm the answer. Once the green button has been clicked on, answers cannot be changed. The user has the possibility to go back to the improve screen from the bidding screen using the back button. Using the back button in the improve screen leads the user out of the application.
-
+The items numbered 12 are the improvement in privacy for each possible option of the current data request shown as item numbered 10. The items numbered 13 are the improvements in credit for each possible options of the current data request. Once the user decides on which options to choose according to how much data wants to be traded, the users can click on the radio option as explained in section \ref{options} and then click again on the green submit button that pops up shown in \ref{fig:bid2} to confirm the answer. Once the green button has been clicked on, answers cannot be changed. The user has the possibility to go back to the improve screen from the bidding screen using the back button. Using the back button in the improve screen leads the user out of the application.
 
 \begin{figure}[htp]
   \subtop[Example 1\label{fig:orange1}]{\includegraphics[width=0.4\linewidth]{./images/bid_layout_3}}\hspace{1em}
@@ -348,7 +367,7 @@ Users first register as data generators as indicated in the section \ref{quest_w
 \subsection{Stakeholder's Portal}
 
 For a stakeholder to view data, they need to register in the portal shown in figure \ref{fig:fds_home} by clicking register. Once that is done,
-the page in figure \ref{fig:fdsregister} is shown asking for the following details :
+the page in figure \ref{fig:fdsdcregister} is shown asking for the following details :
 
 \begin{enumerate}
     \item Company Name
