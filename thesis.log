@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  19 AUG 2016 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  19 AUG 2016 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2245,23 +2245,20 @@ LaTeX Warning: Reference `bl' on page 60 undefined on input line 483.
 [60 <./images/collection_score.png>]) (./pre_survey_results.tex [61] [62
 
 ]
-
-LaTeX Warning: Reference `fig:pre_q8' on page 63 undefined on input line 16.
-
-[63] <./images/pre_q6.pdf, id=1317, 562.1pt x 421.575pt>
+[63] <./images/pre_q6.pdf, id=1319, 562.1pt x 421.575pt>
 File: ./images/pre_q6.pdf Graphic file (type pdf)
 
 <use ./images/pre_q6.pdf>
 Package pdftex.def Info: ./images/pre_q6.pdf used on input line 24.
 (pdftex.def)             Requested size: 369.0pt x 276.74796pt.
- <./images/pre_q7.pdf, id=1318, 562.1pt x 421.575pt>
+ <./images/pre_q7.pdf, id=1320, 562.1pt x 421.575pt>
 File: ./images/pre_q7.pdf Graphic file (type pdf)
 
 <use ./images/pre_q7.pdf>
 Package pdftex.def Info: ./images/pre_q7.pdf used on input line 31.
 (pdftex.def)             Requested size: 369.0pt x 276.74796pt.
 
-<./images/pre_q8101214.pdf, id=1319, 562.1pt x 421.575pt>
+<./images/pre_q8101214.pdf, id=1321, 562.1pt x 421.575pt>
 File: ./images/pre_q8101214.pdf Graphic file (type pdf)
 
 <use ./images/pre_q8101214.pdf>
@@ -2276,7 +2273,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [64 <./images/pre_q6.pdf>] [65 <./images/pre_q7.pdf>] [66 <./images/pre_q81012
 14.pdf>]
-<./images/sensors_group_meanQ10.png, id=1346, 1124.2pt x 843.15pt>
+<./images/sensors_group_meanQ10.png, id=1347, 1124.2pt x 843.15pt>
 File: ./images/sensors_group_meanQ10.png Graphic file (type png)
 
 <use ./images/sensors_group_meanQ10.png>
@@ -2284,7 +2281,7 @@ Package pdftex.def Info: ./images/sensors_group_meanQ10.png used on input line
 116.
 (pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
 
-<./images/sensors_group_varianceQ10.png, id=1347, 1124.2pt x 843.15pt>
+<./images/sensors_group_varianceQ10.png, id=1348, 1124.2pt x 843.15pt>
 File: ./images/sensors_group_varianceQ10.png Graphic file (type png)
 
 <use ./images/sensors_group_varianceQ10.png>
@@ -2394,7 +2391,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]) [81]
 [82
 
-] <declaration-originality.pdf, id=1475, 597.55246pt x 845.07718pt>
+] <declaration-originality.pdf, id=1470, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -2405,7 +2402,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 177.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1478, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1473, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2463,49 +2460,31 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19430 strings out of 493089
- 296244 string characters out of 6134841
- 474641 words of memory out of 5000000
+ 19424 strings out of 493089
+ 296150 string characters out of 6134841
+ 474920 words of memory out of 5000000
  22020 multiletter control sequences out of 15000+600000
  50578 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1010b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{table.caption.79} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.71} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subfigure.6.3.2} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subfigure.6.3.1} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.64} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.61} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/palatino/uplri8a.pfb>
-Output written on thesis.pdf (87 pages, 8184855 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (87 pages, 8184761 bytes).
 PDF statistics:
- 1656 PDF objects out of 1728 (max. 8388607)
- 1179 compressed objects within 12 object streams
- 411 named destinations out of 1000 (max. 500000)
+ 1650 PDF objects out of 1728 (max. 8388607)
+ 1173 compressed objects within 12 object streams
+ 405 named destinations out of 1000 (max. 500000)
  13089 words of extra memory for PDF output out of 14400 (max. 10000000)
 
