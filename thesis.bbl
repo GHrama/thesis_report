@@ -1,76 +1,130 @@
 \begin{thebibliography}{10}
 
-\bibitem{battintro}
-Battery manager android.
-\newblock
-  \url{http://developer.android.com/reference/android/os/BatteryManager.html}.
-\newblock Last Accessed: 2016-04-9.
+\bibitem{acquisti2005privacy}
+Alessandro Acquisti and Jens Grossklags.
+\newblock Privacy and rationality in individual decision making.
+\newblock {\em IEEE Security \& Privacy}, 2(2005):24--30, 2005.
 
-\bibitem{corporationdict}
-Corporation meaning.
-\newblock \url{http://www.dictionary.com/browse/corporation}.
-\newblock Last Accessed: 2016-04-10.
+\bibitem{balebako2015impact}
+Rebecca Balebako, Florian Schaub, Idris Adjerid, Alessandro Acquisti, and
+  Lorrie Cranor.
+\newblock The impact of timing on the salience of smartphone app privacy
+  notices.
+\newblock In {\em Proceedings of the 5th Annual ACM CCS Workshop on Security
+  and Privacy in Smartphones and Mobile Devices}, pages 63--74. ACM, 2015.
 
-\bibitem{lightintro}
-Did you know how many different kinds of sensors go inside a smartphone?
-\newblock
-  \url{http://www.phonearena.com/news/Did-you-know-how-many-different-kinds-of-sensors-go-inside-a-smartphone_id57885}.
-\newblock Last Accessed: 2016-04-9.
+\bibitem{brush2010exploring}
+AJ~Brush, John Krumm, and James Scott.
+\newblock Exploring end user preferences for location obfuscation,
+  location-based services, and the value of location.
+\newblock In {\em Proceedings of the 12th ACM international conference on
+  Ubiquitous computing}, pages 95--104. ACM, 2010.
 
-\bibitem{employerdict}
-Employer meaning.
-\newblock \url{http://www.dictionary.com/browse/employer}.
-\newblock Last Accessed: 2016-04-10.
+\bibitem{camp2005state}
+L~Jean Camp.
+\newblock State of economics of information security, the.
+\newblock {\em ISJLP}, 2:189, 2005.
 
-\bibitem{gpsintro1}
-How does gps in a mobile phone work exactly?
-\newblock
-  \url{http://stackoverflow.com/questions/33637/how-does-gps-in-a-mobile-phone-work-exactly}.
-\newblock Last Accessed: 2016-04-9.
+\bibitem{choi2011sensorsafe}
+Haksoo Choi, Supriyo Chakraborty, Zainul~M Charbiwala, and Mani~B Srivastava.
+\newblock Sensorsafe: a framework for privacy-preserving management of personal
+  sensory information.
+\newblock In {\em Workshop on Secure Data Management}, pages 85--100. Springer,
+  2011.
 
-\bibitem{gpsintro}
-What is a gps? how does it work?
-\newblock \url{http://www.loc.gov/rr/scitech/mysteries/global.html}.
-\newblock Last Accessed: 2016-04-9.
+\bibitem{christin2016privacy}
+Delphine Christin.
+\newblock Privacy in mobile participatory sensing: current trends and future
+  challenges.
+\newblock {\em Journal of Systems and Software}, 116:57--68, 2016.
 
-\bibitem{wifilocationintro}
-Y.~Chen and H.~Kobayashi.
-\newblock Signal strength based indoor geolocation.
-\newblock {\em Proceedings of the IEEE International Conference on
-  Communications}, 1:436--439, 2002.
+\bibitem{christin2013s}
+Delphine Christin, Christian B{\"u}chner, and Niklas Leibecke.
+\newblock What's the value of your privacy? exploring factors that influence
+  privacy-sensitive contributions to participatory sensing applications.
+\newblock In {\em Local Computer Networks Workshops (LCN Workshops), 2013 IEEE
+  38th Conference on}, pages 918--923. IEEE, 2013.
 
-\bibitem{accintro}
-PNishkam Raviand~Nikhil Dandekar, Preetham Mysore, and Michael~L. Littman.
-\newblock Activity recognition from accelerometer data.
-\newblock {\em IAAI'05 Proceedings of the 17th conference on Innovative
-  applications of artificial intelligence}, 3:1541--1546, 2005.
+\bibitem{cvrcek2006study}
+Dan Cvrcek, Marek Kumpost, Vashek Matyas, and George Danezis.
+\newblock A study on the value of location privacy.
+\newblock In {\em Proceedings of the 5th ACM workshop on Privacy in electronic
+  society}, pages 109--118. ACM, 2006.
 
-\bibitem{triangulationintro}
-Fredrik Gustafsson and Fredrik Gunnarsson.
-\newblock Mobile positioning using wireless networks.
-\newblock {\em IEEE SIGNAL PROCESSING MAGAZINE}, 2005.
+\bibitem{danezis2005much}
+George Danezis, Stephen Lewis, and Ross~J Anderson.
+\newblock How much is location privacy worth?
+\newblock In {\em WEIS}, volume~5. Citeseer, 2005.
 
-\bibitem{magneintro}
-Ming Liu.
-\newblock A study of mobile sensing using smartphones.
-\newblock {\em Hindawi Publishing Corporation International Journal of
-  Distributed Sensor Networks}, 2013(272916), 2013.
+\bibitem{deng2009livecompare}
+Linda Deng and Landon~P Cox.
+\newblock Livecompare: grocery bargain hunting through participatory sensing.
+\newblock In {\em Proceedings of the 10th workshop on Mobile Computing Systems
+  and Applications}, page~4. ACM, 2009.
 
-\bibitem{accappl2}
-Pushpendra Singh, Nikita Juneja, and Shruti Kapoor.
-\newblock Using mobile phone sensors to detect driving behavior.
-\newblock {\em ACM DEV '13 Proceedings of the 3rd ACM Symposium on Computing
-  for Development}, (53), 2011.
+\bibitem{giannotti2012planetary}
+Fosca Giannotti, Dino Pedreschi, Alex Pentland, Paul Lukowicz, Donald Kossmann,
+  James Crowley, and Dirk Helbing.
+\newblock A planetary nervous system for social mining and collective
+  awareness.
+\newblock {\em The European Physical Journal Special Topics}, 214(1):49--75,
+  2012.
 
-\bibitem{ngointro}
-Anna~C. Vakil.
-\newblock Confronting the classification problem: Toward a taxonomy of ngos.
-\newblock {\em World Development}, 25(12):2057–2070, 1997.
+\bibitem{hayashi2012goldilocks}
+Eiji Hayashi, Oriana Riva, Karin Strauss, AJ~Brush, and Stuart Schechter.
+\newblock Goldilocks and the two mobile devices: going beyond all-or-nothing
+  access to a device's applications.
+\newblock In {\em Proceedings of the Eighth Symposium on Usable Privacy and
+  Security}, page~2. ACM, 2012.
 
-\bibitem{accappl1}
-Shuangquan Wang, Canfeng Chen, and Jian Ma.
-\newblock Accelerometer based transportation mode recognition on mobile phones.
-\newblock {\em Wearable Computing Systems, Asia-Pacific Conference on, Wearable
-  Computing Systems, Asia-Pacific Conference}, pages 44--46, 2010.
+\bibitem{lin2012expectation}
+Jialiu Lin, Shahriyar Amini, Jason~I Hong, Norman Sadeh, Janne Lindqvist, and
+  Joy Zhang.
+\newblock Expectation and purpose: understanding users' mental models of mobile
+  app privacy through crowdsourcing.
+\newblock In {\em Proceedings of the 2012 ACM Conference on Ubiquitous
+  Computing}, pages 501--510. ACM, 2012.
+
+\bibitem{miluzzo2007cenceme}
+Emiliano Miluzzo, Nicholas~D Lane, Shane~B Eisenman, and Andrew~T Campbell.
+\newblock Cenceme--injecting sensing presence into social networking
+  applications.
+\newblock In {\em European Conference on Smart Sensing and Context}, pages
+  1--28. Springer, 2007.
+
+\bibitem{mohan2008nericell}
+Prashanth Mohan, Venkata~N Padmanabhan, and Ramachandran Ramjee.
+\newblock Nericell: rich monitoring of road and traffic conditions using mobile
+  smartphones.
+\newblock In {\em Proceedings of the 6th ACM conference on Embedded network
+  sensor systems}, pages 323--336. ACM, 2008.
+
+\bibitem{pournarasethical}
+Evangelos Pournaras.
+\newblock Application form to the research ethics committee of eth zurich.
+
+\bibitem{pournaras2016self}
+Evangelos Pournaras, Jovan Nikolic, Pablo Vel{\'a}squez, Marcello Trovati, Nik
+  Bessis, and Dirk Helbing.
+\newblock Self-regulatory information sharing in participatory social sensing.
+\newblock {\em EPJ Data Science}, 5(1):1, 2016.
+
+\bibitem{rao2015they}
+Ashwini Rao, Florian Schaub, and Norman Sadeh.
+\newblock What do they know about me? contents and concerns of online
+  behavioral profiles.
+\newblock {\em arXiv preprint arXiv:1506.01675}, 2015.
+
+\bibitem{song2014health}
+Lei Song, Yongcai Wang, Ji-Jiang Yang, and Jianqiang Li.
+\newblock Health sensing by wearable sensors and mobile phones: a survey.
+\newblock In {\em e-Health Networking, Applications and Services (Healthcom),
+  2014 IEEE 16th International Conference on}, pages 453--459. IEEE, 2014.
+
+\bibitem{zang2015knows}
+Jinyan Zang, Krysta Dummit, James Graves, Paul Lisker, and Latanya Sweeney.
+\newblock Who knows what about me? a survey of behind the scenes personal data
+  sharing to third parties by mobile apps.
+\newblock {\em Proceeding of Technology Science}, 2015.
 
 \end{thebibliography}
