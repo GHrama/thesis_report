@@ -40,6 +40,13 @@ From the above, it is understood that in general, more than the sensor, the more
 \label{fig:pre_q8}
 \end{figure}
 
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/pre_incentives}
+\caption{Opinions on Incentives}
+\label{fig:pre_q15}
+\end{figure}
+
 \begin{table}[h!]
   \centering
   \caption{Demographics of Population}
@@ -601,34 +608,32 @@ and the noise in the data.
 \label{fig:st3}
 \end{figure}
 
-
-\subsubsection{K- Means to Automatically detect clusters in the Population}
-We attempt to cluster the population that answered the survey based on the following traits :
-
-\begin{itemize}
-\item The way people rate data collectors (question 11)
-\item The way people rate sensors (question 9)
-\item 
-\end{itemize}
-
-For each chosen group of features, we need to discover how many clusters there are
-in this population. Since we do not have any pre-defined labels given to us, we go through the following procedure:
-
-\begin{itemize}
-\item Perform the K-Means clustering using various distances
-\begin{itemize}
-\item Squared Euclidean Distance
-\item City Block Distance
-\item Cosine Distance
-\end{itemize}
-\item We plot the Silhouette score to see which of the distances do better
-\item Visualize the clusters in the highest principal components
-\end{itemize}
-
-
-\section{Overview of the Experiment Data}
-
 \section{Findings from the Experiment Data}
+
+The social experiment described in chapter \ref{exp} is deployed using 10 participants. Out of the total of 3 days for the experiment, 3 of the participants did not answer data requests on day 2 and 3. The mobile application ran successfully on all participants phones even after being switched off. All data was successfully recorded on the server.
+
+\begin{figure}[htp]
+\subtop[all\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/heatmap_all_days_privacyimprovement}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/heatmap_all_days_button}}
+\caption{Table Schemas}
+\label{fig:st3}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/day2_day1_privacy}
+\caption{Applications in the Mobile Phone}
+\label{fig:pre_q6}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/day3_day1_privacy}
+\caption{Applications in the Mobile Phone}
+\label{fig:pre_q6}
+\end{figure}
+
+
 
 
 

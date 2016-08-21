@@ -58,12 +58,10 @@
 \contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{65}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{65}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{67}{section.6.2}
-\contentsline {subsubsection}{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}{67}{section*.63}
-\contentsline {subsubsection}{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}{73}{section*.72}
-\contentsline {subsubsection}{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}{76}{section*.81}
-\contentsline {subsubsection}{K- Means to Automatically detect clusters in the Population}{80}{section*.92}
-\contentsline {section}{\numberline {6.3}Overview of the Experiment Data}{82}{section.6.3}
-\contentsline {section}{\numberline {6.4}Findings from the Experiment Data}{82}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{83}{chapter.7}
-\contentsline {appendix}{\chapternumberline {A}Appendix}{85}{appendix.A}
-\contentsline {chapter}{Bibliography}{87}{section*.94}
+\contentsline {subsubsection}{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}{67}{section*.64}
+\contentsline {subsubsection}{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}{74}{section*.73}
+\contentsline {subsubsection}{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}{78}{section*.82}
+\contentsline {section}{\numberline {6.3}Findings from the Experiment Data}{81}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{87}{chapter.7}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{89}{appendix.A}
+\contentsline {chapter}{Bibliography}{91}{section*.97}
