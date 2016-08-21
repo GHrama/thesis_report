@@ -113,8 +113,8 @@ which only assume the following :
 
 The above tests do not make any assumptions about the distribution of the data and are robust to heteroscedastic data.
 \begin{figure}[htp]
-\subtop[Mean of each Group for each Sensor\label{fig:s1}]{\includegraphics[width=0.55\linewidth]{./images/sensors_group_meanQ10}}
-\subtop[Variance of each Group for each Sensor\label{fig:s2}]{\includegraphics[width=0.55\linewidth]{./images/sensors_group_varianceQ10}}
+\subtop[Mean of each Group for each Sensor\label{fig:s1}]{\includegraphics[width=0.5\linewidth]{./images/sensors_group_meanQ10}}
+\subtop[Variance of each Group for each Sensor\label{fig:s2}]{\includegraphics[width=0.5\linewidth]{./images/sensors_group_varianceQ10}}
 \caption{Table Schemas}
 \label{fig:s3}
 \end{figure}
@@ -245,6 +245,19 @@ On these sensors, we proceed with a post hoc test by performing a pariwise Dunn'
   \end{tabular}
 \end{table} 
 
+\begin{figure}[htp]
+\subtop[Mean of each Group for each Stakeholder\label{fig:st1}]{\includegraphics[width=0.4\linewidth]{./images/acc_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/loc_box}} \newline
+\subtop[Variance of each Group for each Stakeholder\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/prox_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/micro_box}} \newline
+\subtop[Variance of each Group for each Stakeholder\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/camera_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/blue_box}}
+\caption{Table Schemas}
+\label{fig:st3}
+\end{figure}
+
+
+
 For the Accelerometer and Proximity, we can see that none of the pairwise groups have a significant difference from each other. This means that even tough the groups perceive sensors differently in general, they all view Accelerometers and Proximity in a similar way. 
 
 For the location sensor, it can be observed that groups (1,4), (1,5), (2,4), (2,5) have a significant difference. This can be attributed to the fact that since the groups are formed from the perception of people of the Sensors Feature, the difference in perception between group 1 and group 5 will be larger than between group 1, group 2 and group 1, group 3 since they are not much apart in the scale.
@@ -256,6 +269,7 @@ For the camera sensor, it can be observed that groups (1,4), (1,5), (2,4), (2,5)
 Similar to the location sensor, people with perception of sensors in general with a lower intrusion level have significantly different responses to the camera intrusion than the people who rate sensors with more intrusion.
 
 For the Bluetooth sensor, there is a significant difference between groups (1,5), (2,5), (3,5) and (4,5). This shows that responses by people who find sensors extremely intrusive is different from the rest of the groups.
+
 
 \subsubsection{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}
 
@@ -344,12 +358,6 @@ PhD degree	&0.00\%	&7.14\%	&21.43\%	&28.57\%	&42.86\%\\
   \end{tabular}
 \end{table}
 
-\begin{figure}[htp]
-\subtop[Mean of each Group for each Sensor\label{fig:ss1}]{\includegraphics[width=0.55\linewidth]{./images/sensors_group_meanQ10}}
-\subtop[Variance of each Group for each Sensor\label{fig:ss2}]{\includegraphics[width=0.55\linewidth]{./images/sensors_group_varianceQ10}}
-\caption{Table Schemas}
-\label{fig:ss3}
-\end{figure} 
 
 \begin{table}[h!]
   \centering
@@ -390,6 +398,15 @@ This prompts us to take a closer look at which of the groups are significantly d
     \bottomrule
   \end{tabular}
 \end{table}  
+
+\begin{figure}[htp]
+\subtop[Mean of each Group for each Stakeholder\label{fig:st1}]{\includegraphics[width=0.4\linewidth]{./images/corp_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/ngo_box}} \newline
+\subtop[Variance of each Group for each Stakeholder\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/edu_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/gov_box}} 
+\caption{Table Schemas}
+\label{fig:st3}
+\end{figure}
 
 The test was done for all stakeholders since the Kruskal-Wallis test denoted that all groups differ significantly for all stakeholders. Looking at the stakeholder corporation, we see that groups (1,4), (1,5) and (2,5). This goes to show that groups with larger difference in their outlook to stakeholders as a whole view corporations in a significantly different way.
 
@@ -563,6 +580,28 @@ Finally for the context Transportation, the groups (1,5), (2,5) and (3,5) are si
 This goes to show that groups that perceive contexts in a more different light tend to have different ways of viewing the individual contexts. We do observe that in some cases (2,5) are significantly different, but (1,5) is not. This can be easily attributed to the low number of responses
 and the noise in the data.
 
+\begin{figure}[htp]
+
+\subtop[Mean of each Group for each Stakeholder\label{fig:st1}]{\includegraphics[width=0.4\linewidth]{./images/educ_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/ent_box}} \newline
+\subtop[Variance of each Group for each Stakeholder\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/env_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/finance_box}} \newline
+\subtop[Variance of each Group for each Stakeholder\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/health_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/shopping_box}} 
+\caption{Table Schemas}
+\label{fig:st3}
+\end{figure}
+
+\begin{figure}[htp]
+\subtop[Variance of each Group for each Stakeholder\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/social_box}}\hspace{1em}
+\subtop[Variance of each Group for each Stakeholder\label{fig:st2}]{\includegraphics[width=0.4\linewidth]{./images/training_box}}\newline
+\centering
+\subtop[Variance of each Group for each Stakeholder\label{fig:st5}]{\includegraphics[width=0.4\linewidth]{./images/nav_box}}
+\caption{Table Schemas}
+\label{fig:st3}
+\end{figure}
+
+
 \subsubsection{K- Means to Automatically detect clusters in the Population}
 We attempt to cluster the population that answered the survey based on the following traits :
 
@@ -585,11 +624,6 @@ in this population. Since we do not have any pre-defined labels given to us, we 
 \item We plot the Silhouette score to see which of the distances do better
 \item Visualize the clusters in the highest principal components
 \end{itemize}
-
-
-
-
-
 
 
 \section{Overview of the Experiment Data}
