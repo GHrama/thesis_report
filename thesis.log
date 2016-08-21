@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  20 AUG 2016 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  21 AUG 2016 02:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2278,19 +2278,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66 <./images/pre_q6.pdf>] [67 <./images/pre_q7.pdf>] [68 <./images/pre_q81012
 14.pdf>]
-<./images/sensors_group_meanQ10.png, id=1401, 1124.2pt x 843.15pt>
-File: ./images/sensors_group_meanQ10.png Graphic file (type png)
+<./images/sensors_group_meanQ10.pdf, id=1401, 562.1pt x 421.575pt>
+File: ./images/sensors_group_meanQ10.pdf Graphic file (type pdf)
 
-<use ./images/sensors_group_meanQ10.png>
-Package pdftex.def Info: ./images/sensors_group_meanQ10.png used on input line 
+<use ./images/sensors_group_meanQ10.pdf>
+Package pdftex.def Info: ./images/sensors_group_meanQ10.pdf used on input line 
 116.
 (pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
 
-<./images/sensors_group_varianceQ10.png, id=1402, 1124.2pt x 843.15pt>
-File: ./images/sensors_group_varianceQ10.png Graphic file (type png)
+<./images/sensors_group_varianceQ10.pdf, id=1402, 562.1pt x 421.575pt>
+File: ./images/sensors_group_varianceQ10.pdf Graphic file (type pdf)
 
-<use ./images/sensors_group_varianceQ10.png>
-Package pdftex.def Info: ./images/sensors_group_varianceQ10.png used on input l
+<use ./images/sensors_group_varianceQ10.pdf>
+Package pdftex.def Info: ./images/sensors_group_varianceQ10.pdf used on input l
 ine 117.
 (pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
 
@@ -2312,8 +2312,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[70 <./images/sensors_group_meanQ10.png (PNG copy)> <./images/sensors_group_var
-ianceQ10.png (PNG copy)>]
+[70 <./images/sensors_group_meanQ10.pdf> <./images/sensors_group_varianceQ10.pd
+f>]
 Overfull \hbox (52.58789pt too wide) in paragraph at lines 230--246
  [][] 
  []
@@ -2321,31 +2321,60 @@ Overfull \hbox (52.58789pt too wide) in paragraph at lines 230--246
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[71] [72]
+[71] <./images/stakeholders_group_meanQ12.pdf, id=1440, 562.1pt x 421.575pt>
+File: ./images/stakeholders_group_meanQ12.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `kw_stak' on page 73 undefined on input line 268.
+<use ./images/stakeholders_group_meanQ12.pdf>
+Package pdftex.def Info: ./images/stakeholders_group_meanQ12.pdf used on input 
+line 263.
+(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
+
+<./images/stakeholders_group_varianceQ12.pdf, id=1441, 562.1pt x 421.575pt>
+File: ./images/stakeholders_group_varianceQ12.pdf Graphic file (type pdf)
+
+<use ./images/stakeholders_group_varianceQ12.pdf>
+Package pdftex.def Info: ./images/stakeholders_group_varianceQ12.pdf used on in
+put line 264.
+(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
+
+Overfull \hbox (36.90225pt too wide) in paragraph at lines 263--265
+[][][][] 
+ []
+
+[72]
+
+LaTeX Warning: Reference `kw_stak' on page 73 undefined on input line 275.
 
 
-Overfull \hbox (47.83678pt too wide) in paragraph at lines 274--287
+Overfull \hbox (47.83678pt too wide) in paragraph at lines 281--294
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: ./images/sensors_group_meanQ10.png Graphic file (type png)
-<use ./images/sensors_group_meanQ10.png>
-Package pdftex.def Info: ./images/sensors_group_meanQ10.png used on input line 
-341.
-(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
-File: ./images/sensors_group_varianceQ10.png Graphic file (type png)
 
-<use ./images/sensors_group_varianceQ10.png>
-Package pdftex.def Info: ./images/sensors_group_varianceQ10.png used on input l
-ine 342.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./images/sensors_group_meanQ10.pdf Graphic file (type pdf)
+<use ./images/sensors_group_meanQ10.pdf>
+Package pdftex.def Info: ./images/sensors_group_meanQ10.pdf used on input line 
+348.
+(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
+File: ./images/sensors_group_varianceQ10.pdf Graphic file (type pdf)
+
+<use ./images/sensors_group_varianceQ10.pdf>
+Package pdftex.def Info: ./images/sensors_group_varianceQ10.pdf used on input l
+ine 349.
 (pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
 
-Overfull \hbox (36.90225pt too wide) in paragraph at lines 341--343
+Overfull \hbox (36.90225pt too wide) in paragraph at lines 348--350
 [][][][] 
  []
 
@@ -2353,18 +2382,40 @@ Overfull \hbox (36.90225pt too wide) in paragraph at lines 341--343
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [73]
-Overfull \hbox (121.53125pt too wide) in paragraph at lines 369--385
+Overfull \hbox (121.53125pt too wide) in paragraph at lines 376--392
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[74] [75]
-Overfull \hbox (47.83678pt too wide) in paragraph at lines 411--424
+[73 <./images/stakeholders_group_meanQ12.pdf> <./images/stakeholders_group_vari
+anceQ12.pdf>]
+
+LaTeX Warning: Text page 74 contains only floats.
+
+[74] [75] <./images/contexts_group_meanQ14.pdf, id=1484, 562.1pt x 421.575pt>
+File: ./images/contexts_group_meanQ14.pdf Graphic file (type pdf)
+
+<use ./images/contexts_group_meanQ14.pdf>
+Package pdftex.def Info: ./images/contexts_group_meanQ14.pdf used on input line
+ 409.
+(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
+
+<./images/contexts_group_varianceQ14.pdf, id=1485, 562.1pt x 421.575pt>
+File: ./images/contexts_group_varianceQ14.pdf Graphic file (type pdf)
+
+<use ./images/contexts_group_varianceQ14.pdf>
+Package pdftex.def Info: ./images/contexts_group_varianceQ14.pdf used on input 
+line 410.
+(pdftex.def)             Requested size: 202.95113pt x 152.21074pt.
+
+Overfull \hbox (36.90225pt too wide) in paragraph at lines 409--411
+[][][][] 
+ []
+
+
+Overfull \hbox (47.83678pt too wide) in paragraph at lines 425--438
  [][] 
  []
 
@@ -2375,7 +2426,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (15.42487pt too wide) in paragraph at lines 504--520
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (15.42487pt too wide) in paragraph at lines 518--534
  [][] 
  []
 
@@ -2385,22 +2445,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[76 <./images/contexts_group_meanQ14.pdf> <./images/contexts_group_varianceQ14.
+pdf>] [77]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Text page 78 contains only floats.
 
- [76]
-[77]) (./conclusion.tex [78] [79] [80
+[78]) (./conclusion.tex [79] [80
 
 ]) (./appendix.tex [81] [82
 
-]) [83]
-[84
+]) [83] [84
 
-] (./thesis.bbl
+]
+(./thesis.bbl
 bibitemlist
 [85
 
-] [86]) <declaration-originality.pdf, id=1533, 597.55246pt x 845.07718pt>
+] [86]) <declaration-originality.pdf, id=1556, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -2411,7 +2472,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 177.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=1536, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=1559, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2457,7 +2518,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8664D41C18EA64CB999B7592119C2DE8;3941.
+(rerunfilecheck)             Checksum: BAD1856A7B20AC99AA5DB37B4E0A9DEE;3941.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2470,10 +2531,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19482 strings out of 493089
- 297135 string characters out of 6134841
- 475707 words of memory out of 5000000
- 22048 multiletter control sequences out of 15000+600000
+ 19518 strings out of 493089
+ 298155 string characters out of 6134841
+ 478589 words of memory out of 5000000
+ 22074 multiletter control sequences out of 15000+600000
  50578 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1010b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2491,10 +2552,10 @@ exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (92 pages, 8204248 bytes).
+Output written on thesis.pdf (92 pages, 8048818 bytes).
 PDF statistics:
- 1723 PDF objects out of 1728 (max. 8388607)
- 1240 compressed objects within 13 object streams
- 432 named destinations out of 1000 (max. 500000)
- 13097 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 1748 PDF objects out of 2073 (max. 8388607)
+ 1261 compressed objects within 13 object streams
+ 438 named destinations out of 1000 (max. 500000)
+ 13117 words of extra memory for PDF output out of 14400 (max. 10000000)
 
