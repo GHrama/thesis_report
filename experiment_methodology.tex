@@ -1,13 +1,13 @@
 \chapter{Experiment Methodology} \label{exp}
 
-In the previous chapter, the computational model has been explained in detail. This model has been implemented as a mobile application for the Android platform and can be used to collect real data from users. This application will help us collect information that can aid to see the influence of incentives on the data sharing decision. In this chapter we explain some of the work and decisions that are taken before and after the start of the experiment. It is then proceeded to explain how the experiment is carried out along with detailed instruction to the usage of the mobile application created. 
+In the previous chapter, the computational model has been explained in detail. This model has been implemented as a mobile application for the Android platform and is used to collect real data from users. This application will help collect information that will aid to see the influence of incentives on the data sharing decision. In this chapter some of the work and decisions that are taken before and after the start of the experiment are explained. It is then proceeded to explain how the experiment is carried out along with detailed instructions to the usage of the mobile application created. 
 
 \section{Preparatory Phase}
 
 \subsection{Pre-Survey}
 
 The pre-survey \footnote{\url{https://descil.eu.qualtrics.com/SE/?SID=SV_0xGS6kfmr8GtQd7}} is a survey created that runs before the deployment of the social experiment. This
-survey was made in order to study the perception of users on the three features to be studied which are explianed in detail in section \ref{cat_feature}. Figure \ref{all_features}\footnote{Figure made by Athina Voulgari} depicts the features and their sub-features visually.
+survey was made in order to study the perception of users on the three features to be studied which are explained in detail in section \ref{cat_feature}. Figure \ref{fig:all_features}\footnote{Figure made by Athina Voulgari} depicts the features and their sub-features visually.
 
 \begin{figure}[ht!]
 \centering
@@ -16,11 +16,11 @@ survey was made in order to study the perception of users on the three features 
 \label{fig:all_features}
 \end{figure}
 
-As it can be seen in the figure, there were a lot of sub-features to choose from each feature.
+As shown in the figure, there were a lot of sub-features to choose from each feature.
 Increasing the number of sub-features for each feature in the experiment in turn increases the number of data requests posed to the user. Additionally,
 we wanted to gain insight into the perception of users on the three features. Hence the survey
-was prepared to understand all of the above. Additionally, it can help us redesign some of the aspects of the experiment based on the
-ambiguities found and user feedback. The participants pool consist of both people who are aware and unaware of data privacy and sensors. Participants were not paid for filling out the survey. Till now, 199 entries have been recorded.
+was prepared to understand all of the above. Additionally, it can help redesign some of the aspects of the experiment based on the
+ambiguities found and user feedback. The participants pool consists of both people who are aware and unaware of data privacy and sensors. Participants were not paid for filling out the survey. Till now, 199 entries have been recorded.
 
 \subsection{Sub-Features}
 
@@ -49,15 +49,15 @@ Figures \ref{fig:pre_se}, \ref{fig:pre_st} and \ref{fig:pre_co}, each show the a
 the sensors, stakeholders and contexts. For the experiment, it was decided to choose for each feature two non-intrusive and two intrusive sub-features
 each. The minimum privacy intrusion level is one which indicates this sub-feature to not be intrusive, and the maximum is five which means that the sub-feature is very privacy intrusive.
 
-For the sensors feature, it can be observed that the sub-features GPS and microphone are found to be have an intrusion of 4.2 and 3.8, which means users find these sensors on average very intrusive. On the other hand, sub-features light and accelerometer are found to be lower in intrusion with values of 2.2 and 2.3, which means that users find these sensors non-intrusive in general. The average of all sensors intrusion values is 2.8 as indicated by the blue line.
+For the sensors feature, it can be observed that the sub-features GPS and microphone are found to be have an intrusion of 4.2 and 3.8 on a scale of five, which means users find these sensors on average very intrusive. On the other hand, sub-features light and accelerometer are found to be lower in intrusion with values of 2.2 and 2.3 on a scale of five, which means that users find these sensors non-intrusive in general. The average of all sensors intrusion values is 2.8 as indicated by the blue line.
 
-Similarly, looking at the stakeholder feature graph \ref{fig:pre_st}, it is seen that sub-features  corporation and government are found to be intrusive by the users with levels 3.8 and 3.6. On the other hand, sub-features educational institution and non governmental organization are found to be relatively less intrusive by the users with values of 3.2 and 2.95. For intrusion levels of contexts feature in graph \ref{fig:pre_co}, it is observed that sub-features social-networking and health are found to be intrusive by the users with values 3.8 and 3.6. Sub-features environment and
-transportation are regarded as less intrusive by user with values of 2.9 and 3.3.The above mentioned sub-features for every feature have been chosen for the experiment.
+Similarly, looking at the stakeholder feature graph \ref{fig:pre_st}, it is seen that sub-features  corporation and government are found to be intrusive by the users with levels 3.8 and 3.6 on a scale of five. On the other hand, sub-features educational institution and non governmental organization are found to be relatively less intrusive by the users with values of 3.2 and 2.95. For intrusion levels of contexts feature in graph \ref{fig:pre_co}, it is observed that sub-features social-networking and health are found to be intrusive by the users with values 3.8 and 3.6 on a scale of five. Sub-features environment and
+transportation are regarded as less intrusive by user with values of 2.9 and 3.3 on a scale of five. The above mentioned sub-features for every feature have been chosen for the experiment.
 
 
 \subsection{Privacy Options} \label{options}
 
-Each data request is accompanied with privacy options ranging from $1$ to $5$ as explained in section \ref{o}. Option $1$ indicates that the users would like to
+Each data request is accompanied with privacy options ranging from $1$ to $5$ as explained in section \ref{o}. Option one indicates that the users would like to
 share their raw data without any sort of summarization or reduction in information. Option number $5$ indicates that the users would not like to share their data for this data request.
 The options in between have linearly scaled summarization levels assigned to them ranging from least privacy ($1$) to most privacy ($5$). For more information on the summarization levels for each option please refer to section \ref{summa}. 
 
@@ -123,14 +123,14 @@ As the figure \ref{fig:ui} shows, the users are asked to answer some personal no
   \label{fig:ui}
 \end{figure}
 
-The users may go back and re-answer the questions, but once the submit button is pressed on the screen \ref{fig:ui3}, the data is sent to the server
+The users may go back and re-answer the questions, but once the submit button is pressed on the screen \ref{fig:ui1}, the data is sent to the server
 and hence cannot be changed. Users cannot navigate to the next pages without filling out all the questions.
 
 \subsection{Categorization of Features} \label{cat_feature}
 
 As described in chapter \ref{model}, the users are asked to categorize the features sensors, stakeholders and contexts. As shown in figure 
-\ref{fig:cat_f}, each of the features are indicated followed by a drop down list of privacy options ranging from \textit{"very low privacy intrusion"} to \textit{"very privacy high privacy intrusion"}. The option \textit{"very low privacy intrusion"} means that the feature does not affect the users mobile sensor data sharing decision, whereas 
-\textit{"very privacy high privacy intrusion"} refers to a feature that very much affects the sharing of mobile sensor data. 
+\ref{fig:cat_f}, each of the features are indicated followed by a drop down list of privacy options ranging from \textit{"very low privacy intrusion"} to \textit{"very high privacy intrusion"}. The option \textit{"very low privacy intrusion"} means that the feature does not affect the users mobile sensor data sharing decision, whereas 
+\textit{"very high privacy intrusion"} refers to a feature that very much affects the sharing of mobile sensor data. 
 
 Users need to click on the
 drop down menu to choose one of the privacy intrusion options. All the options are compulsory, and no default option is provided. Users cannot navigate to the next page without filling out all of the questions.
@@ -148,7 +148,7 @@ the privacy options range from \textit{"very low privacy intrusion"} to \textit{
 the categorization of Sensors sub-features as shown in figure \ref{fig:cat_se}. 
 
 
-Below each sensor is a drop down menu where the user can choose how much each of the sensors
+Below each sensor is a drop down menu where the user has the possibility to choose how much each of the sensors
 would affect the mobile sensor data sharing. Once all the sensors have been associated with a privacy intrusion level, the user can click the green submit button and is directed to
 the next page where the sub-features of stakeholders need to be in turn categorized in a similar fashion. This is depicted in
 figure \ref{fig:cat_st}.
@@ -169,20 +169,20 @@ figure \ref{fig:cat_st}.
 
 Each stakeholder type has a drop
 down menu each where the user can once again classify how much each of them affect data sharing.
-Once the user has finished entering the privacy intrusion level for stakeholders sub-features, the user can click the green submit button and is directed to the next page.
+Once the user has finished entering the privacy intrusion level for stakeholders sub-features, the user has the possibility to click the green submit button and is directed to the next page.
 
 
 On this page, the users are asked to categorize how much each of the contexts sub-features affect mobile sensor data sharing. This is depicted in figure \ref{fig:cat_co}. Each context has a drop down menu below, where the user can rate each context. Once this has been done the user can click on the green submit button. The user will be redirected to the next page only if all the drop down boxes have been filled out. All questions are compulsory there is no default choice.
 
 \subsection{Answering Questions with No Incentives}  \label{quest_wi}
 After the categorization questions are answered and user answers are recorded, users will be presented with 64 questions. Each of these questions is a mobile sensor data request
-to the users. Users can choose from the available five privacy options mentioned in section \ref{options}. The options are indicated as a measure of how much data users can give, ranging from maximum data to least data. The higher the privacy of the option, the less information about the sensor data is given away for that request and vice versa. Users can change the answers for a data request until the green submit button on top of the options that appears is clicked. The screen with the data request is shown in figure \ref{fig:first_1}. 
+to the users. Users have the possibility to choose from the available five privacy options mentioned in section \ref{options}. The options are indicated as a measure of how much data users can give, ranging from maximum data to least data. The higher the privacy of the option, the less information about the sensor data is given away for that request and vice versa. Users can change the answers for a data request until the green submit button on top of the options that appears is clicked. The screen with the data request is shown in figure \ref{fig:first_1}. 
 
 After the users choose an option for the data request, a green submit button appears which is shown in figure \ref{fig:first_2}. Clicking on the submit button sends the response to the data request to the server and cannot be changed. At this stage, no indications of credit gained or privacy improvements are indicated.
 
 \begin{figure}[htp]
-  \subtop[Question Screen\label{fig:first_1}]{\includegraphics[width=0.5\linewidth]{./images/first_day_1}}\hspace{3em}
-  \subtop[Question Screen with Submit button \label{fig:first_2}]{\includegraphics[width=0.5\linewidth]{./images/first_day_2}}%
+  \subtop[Question Screen\label{fig:first_1}]{\includegraphics[width=0.4\linewidth]{./images/first_day_1}}\hspace{3em}
+  \subtop[Question Screen with Submit button \label{fig:first_2}]{\includegraphics[width=0.4\linewidth]{./images/first_day_2}}%
   \caption{First Day Screen}
   \label{fig:first}
 \end{figure}
@@ -202,12 +202,11 @@ Once all the questions have been answered, the user goes to the core phase of th
 \begin{figure}[htp]
   \subtop[\label{fig:imp_a}]{\includegraphics[width=0.45\linewidth]{./images/improve_layout}}\hspace{1em}
   \subtop[\label{fig:imp_wa}]{\includegraphics[width=0.45\linewidth]{./images/improve}}%
-  \caption{Improvement screen}
-  \label{fig:imp}
+  \caption{Improvement screen\label{fig:imp}}
 \end{figure}
 
-Once the entry phase is done, the user is presented with the screen shown in figure \ref{imp}.
-The {\it "i"} button at the bottom right of the screen denoted by the number 9 is clickable. This takes the users to the FairDataShare portal. Figure \ref{fig:fds_user_register} shows the homepage of the portal. Users can then click on the data generator registration section of the website where they can signup with their:
+Once the entry phase is done, the user is presented with the screen shown in figure \ref{fig:imp}.
+The {\it "i"} button at the bottom right of the screen denoted by the number 9 is clickable. This takes the users to the FairDataShare portal. Figure \ref{fig:fds_home} shows the homepage of the portal. Users can then click on the data generator registration section of the website where they can signup with their:
 
 \begin{enumerate}
     \item Username
@@ -216,7 +215,7 @@ The {\it "i"} button at the bottom right of the screen denoted by the number 9 i
     \item Unique Identifier
 \end{enumerate}
 
-The unique identifier is located at the bottom of the application screen is an alphanumeric sequence denoted by number 8. If it is long pressed the user can select the identifier, then copy and paste it in the  textbox asking for the unique identifier in the portal. Figure \ref{fig:fds_user_register} shows what the registration page looks like.
+The unique identifier is located at the bottom of the application screen is an alphanumeric sequence denoted by number 8. If it is long pressed the user can select the identifier, then copy and paste it in the  textbox asking for the unique identifier in the portal. Figure \ref{fig:fds1} shows what the registration page looks like.
 The users can use this website to see all the data collected from them for all the mobile sensors. More details about the FairDataShare portal
 refer to the section \ref{fds}.
 %
@@ -241,10 +240,10 @@ refer to the section \ref{fds}.
 \label{fig:first}
 \end{figure}
 
-The user can  login into the portal after a minimum of 24 hours after the start of the core phase to see the data that has been collected and shared with the stakeholders. 
+The user have the possibility to login into the portal after a minimum of 24 hours after the start of the core phase to see the data that has been collected and shared with the stakeholders. 
 
-In the task-bar, the user can see the bidding day number and how many questions have been answered from the total available shown by numbers 1 and 2 in the figure \ref{imp}. Day number one
-corresponds to the day where users answer questions with no incentives of any kind and was presented in the previous sub-section. The screen presented after the entry phase is over is what is called the "improvement screen". 
+In the task-bar, the user can see the bidding day number and how many questions have been answered from the total available shown by numbers 1 and 2 in the figure \ref{fig:imp_a}. Day number one
+corresponds to the day where users answer questions with no incentives of any kind and was presented in the previous sub-section. The screen presented after the entry phase is over is what is called the \textit{"improvement screen"}. 
 The button numbered 3
 represents "improve privacy" and the button numbered 4 represents "improve credit" respectively. The items numbered 6 and 5 represent the privacy percentage and credit obtained by the user respectively. Privacy is measured in terms of the percentage of mobile sensor data not traded to the stakeholders. Credit is measured in terms of the currency Swiss Francs obtained for trading data to the stakeholders. 
 
@@ -253,8 +252,8 @@ The item numbered 7 is the round number which indicates the number of times the 
 
 
 \begin{figure}[htp]
-  \subtop[Bidding Screen\label{fig:bid1}]{\includegraphics[width=0.4\linewidth]{./images/bid_layout_1}}\hspace{1em}
-  \subtop[Bidding Screen with Submit Button \label{fig:bid2}]{\includegraphics[width=0.4\linewidth]{./images/bid_layout_2}}%
+  \subtop[Bidding Screen\label{fig:bid1}]{\includegraphics[width=0.35\linewidth]{./images/bid_layout_1}}\hspace{1em}
+  \subtop[Bidding Screen with Submit Button \label{fig:bid2}]{\includegraphics[width=0.35\linewidth]{./images/bid_layout_2}}%
   \caption{FairDataShare Portal}
   \label{fig:bid}
 \end{figure}
@@ -339,26 +338,64 @@ light, accelerometer and noise sensor.
 
 
 
-\begin{figure}[htp]
-  \subtop[Login Page\label{fig:fdslogin}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_login}}\hspace{1em}\hspace{1em}
-  \subtop[ Welcome Page\label{fig:fdsdash}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_welcome}}%
-  \caption{Entering the Portal}
-  \label{fig:fds1}
+%\begin{figure}[htp]
+%  \subtop[Login Page\label{fig:fdslogin}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_login}}\hspace{1em}\hspace{1em}
+%  \subtop[ Welcome Page\label{fig:fdsdash}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_welcome}}%
+%  \caption{Entering the Portal}
+%  \label{fig:fds1}
+  
+%\end{figure}
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_login}
+\caption{Login Page\label{fig:fdslogin}}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_welcome}
+\caption{Welcome Page\label{fig:fdsdash}}
 \end{figure}
 
 Users first register as data generators as indicated in the section \ref{quest_wi}.
-\begin{figure}[htp]
-  \subtop[Location Data\label{fig:fdsgps}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_gps_full}}\hspace{1em}\hspace{1em}
-  \subtop[Light Data \label{fig:fdslight}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_light_full}}%
-  \caption{User Data}
-  \label{fig:fds2}
+%\begin{figure}[htp]
+%  \subtop[Location Data\label{fig:fdsgps}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_gps_full}}\hspace{1em}\hspace{1em}
+%  \subtop[Light Data \label{fig:fdslight}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_light_full}}%
+%  \caption{User Data}
+%  \label{fig:fds2}
+%\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_gps_full}
+\caption{Location Data\label{fig:fdsgps}}
 \end{figure}
 
-\begin{figure}[htp]
-  \subtop[Accelerometer Data\label{fig:fdsacc}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_acc_full}}\hspace{1em}\hspace{1em}
-  \subtop[Noise Data \label{fig:fdsnoise}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_noise_full}}%
-  \caption{User Data}
-  \label{fig:fds3}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_light_full}
+\caption{Light Data \label{fig:fdslight}}
+\end{figure}
+
+%\begin{figure}[htp]
+%  \subtop[Accelerometer Data\label{fig:fdsacc}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_acc_full}}\hspace{1em}\hspace{1em}
+%  \subtop[Noise Data \label{fig:fdsnoise}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_noise_full}}%
+%  \caption{User Data}
+%  \label{fig:fds3}
+%\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_acc_full}
+\caption{Accelerometer Data\label{fig:fdsacc}}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_noise_full}
+\caption{Noise Data \label{fig:fdsnoise}}
 \end{figure}
 
 
@@ -394,14 +431,26 @@ Once these details have been filled in, the stakeholder can click on the registe
     \item A bidding day number
 \end{enumerate}
 
-Once this is entered, the stakeholder can seethe  data for that user with the privacy level decided by the anonymous user. If the stakeholder does not see any data, it means the user did not share data for this particular request. Stakeholders can view the sensor data in a similar fashion to users shown in figures \ref{fig:fds2} and \ref{fig:fds3}. Data is available to the stakeholders 24 hours after the start of the core phase.
+Once this is entered, the stakeholder can see the  data for that user with the privacy level decided by the anonymous user. If the stakeholder does not see any data, it means the user did not share data for this particular request. Stakeholders can view the sensor data in a similar fashion to users shown in figures \ref{fig:fds2} and \ref{fig:fds3}. Data is available to the stakeholders 24 hours after the start of the core phase.
 
 
-\begin{figure}[htp]
-  \subtop[ Registration Page\label{fig:fdsdcregister}]{\includegraphics[width=0.4\linewidth]{./images/fds_dc_register}}\hspace{1em}
-  \subtop[ Login Page\label{fig:fdsdclogin}]{\includegraphics[width=0.4\linewidth]{./images/fds_dc_login}}%
-  \caption{Entering the Portal for Data Collectors}
-  \label{fig:fds4}
+%\begin{figure}[htp]
+%  \subtop[ Registration Page\label{fig:fdsdcregister}]{\includegraphics[width=0.4\linewidth]{./images/fds_dc_register}}\hspace{1em}
+%  \subtop[ Login Page\label{fig:fdsdclogin}]{\includegraphics[width=0.4\linewidth]{./images/fds_dc_login}}%
+%  \caption{Entering the Portal for Data Collectors}
+%  \label{fig:fds4}
+%\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_register}
+\caption{Registration Page\label{fig:fdsdcregister}}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_login}
+\caption{Login Page\label{fig:fdsdclogin}}
 \end{figure}
 
 \begin{figure}[ht!]
