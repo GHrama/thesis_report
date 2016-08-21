@@ -4,10 +4,10 @@ This chapter explains the details behind the making of the mobile application en
 \section{The Building Blocks}
 
 The following sections will explain integral parts of the server and client of the mobile application. A gist of the architecture is shown
-in the figure \ref{fig:bb}. As it can be seen, the mobile application represents the user participating in the experiment. As the experiment goes on,
+in the figure \ref{fig:bb}. It shows the mobile application represents the user participating in the experiment. As the experiment goes on,
 mobile sensor data and responses to the data requests which are collected are periodically sent to the Kinvey Data Store. 
-The users can choose to login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
-are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This in turn structures the data so it can be easily readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile application.
+The users can login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
+are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This in turn structures the data so it can be readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile application.
 
 \begin{figure}[ht!]
 \centering
@@ -28,7 +28,7 @@ data is stored in the database. The following paragraphs will explain each table
 their function and schema. All tables explained here are pertaining to the user using the mobile application and not the server.
 
 \begin{figure}[htp]
-\subtop[Table Schema of \texttt{QUESTION\_STORE's}\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
+\subtop[Table Schema of \texttt{QUESTION\_STORE}\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
 \subtop[Table Schema of \texttt{WHICH\_ANSWERS}\label{fig:db_which}]{\includegraphics[width=0.4\linewidth]{./images/db_which_1}}
 \caption{Table Schemas}
 \label{fig:ts1}
@@ -50,7 +50,7 @@ been answered by the user for each round. This is helpful while fetching data re
 \end{figure}
 
 Figure \ref{fig:db_ans} explains the schema of \texttt{STORE\_ANSWERS} table. This table is used to store the data request identifier \textit{QID} with the corresponding
-user responses \textit{LEVEL}, along with the increase or decrease in credit obtained \textit{COST\_OBT}. The total cost can be calculated by adding all the costs in this table. Similarly, the total privacy can be calculated by averaging of all the user responses stored in this table. Only the most recent responses are stored in this table. The content of the table is not sent over to the server.
+user responses \textit{LEVEL}, along with the increase or decrease in credit obtained \textit{COST\_OBT}. The total cost is calculated by adding all the costs in this table. Similarly, the total privacy is calculated by averaging of all the user responses stored in this table. Only the most recent responses are stored in this table. The content of the table is not sent over to the server.
 
 Figure \ref{fig:db_points} denotes the schema of \texttt{STORE\_POINTS} table. This table is used to store the credit and privacy obtained for each bidding day.
 This information is sent to the server as soon one bidding day is over.
@@ -112,13 +112,12 @@ The general schema for all the sensor tables is the following :
 \label{fig:ts22}
 \end{figure}
 
-
 \subsection{Alarms and Notifications}
 
-Every bidding day where the user can answer data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely manner to perform some application critical functions. The function performed are explained in detail in section \ref{next}. 
+Every bidding day where the user answers data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely manner to perform some application critical functions. The functions performed are explained in detail in section \ref{next}. 
 To inform the system of such an event Android provides the functionality in the form of alarms. 
 
-Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions \footnote{\url{https://developer.android.com/training/scheduling/alarms.html}}, in the sense that they are triggered around that time set but not exactly to optimize the battery, and can be delayed upto 24 hours. Hence, it is decided to set the repeating alarms manually. 
+Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions \footnote{\url{https://developer.android.com/training/scheduling/alarms.html}}, in the sense that they are triggered around that time set but not exactly at that time to optimize the battery, and can be delayed upto 24 hours. Hence, it is decided to set the repeating alarms manually. 
 
 The first time the application opens the alarm is set to ring in exactly 24 hours, but things change when the phone is switched off.
 One of the conditions of the experiment is not to have the phone switched off at any time. Nevertheless, it is taken into account the scenario where
@@ -164,8 +163,7 @@ BootReceiver service of the application is triggered with pseudocode shown in \r
 
 \subsubsection{Going to the Next Data Sharing Day} \label{next}
 Once the alarm rings, it marks the end of a bidding day. Once a bidding day ends a number of tasks need to be executed
-and for this the NextDayService is triggered, which is described in pseudocode shown in \ref{nextday}. To start with the the privacy and credit is sent to
-the sent to the server and stored locally in the \texttt{STORE\_POINTS} table. \textit{Privacy} which is the total privacy obtained, \textit{Credit} is the total credit obtained, \textit{Round} which is the number of time the user answered all the questions and \textit{CurrentQuestion} which is the current question the user is answering is all reset to zero. The \textit{Day} corresponds to the current day number is incremented by one to denote the next bidding day.
+and for this the NextDayService is triggered, which is described in pseudocode shown in \ref{nextday}. To start with the the privacy and credit is sent to the server and stored locally in the \texttt{STORE\_POINTS} table. \textit{Privacy} which is the total privacy obtained, \textit{Credit} is the total credit obtained, \textit{Round} which is the number of times the user answered all the questions and \textit{CurrentQuestion} which is the current question the user is answering is all reset to zero. The \textit{Day} corresponds to the current day number is incremented by one to denote the next bidding day.
 
 \begin{algorithm}
 \caption{NextDayService Algorithm}\label{nextday}
@@ -205,7 +203,7 @@ In the first bidding day, once a data request has been answered the next one is 
 	\item \textbf{Improve Credit} - Obtain data request from table \texttt{STORE\_ANSWERS} where user has answered with highest privacy
 \end{enumerate}
 
-In addition to sending the data request to the user interface, we need to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, we output the computation $last-possible$, where $last$ stands for the credit obtained the last time the data request was answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options \ref{o}). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer \ref{options}.
+In addition to sending the data request to the user interface, it is needed to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, the computation $last-possible$ is output, where $last$ stands for the credit obtained the last time the data request was answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options \ref{o}). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer \ref{options}.
 
 Every option of a data request has an associated percentage of data that is given away as described in \ref{o}. According to the percentage of data given away, the total privacy is calculated for each possible option. The difference between the current privacy and each possible total privacy is calculated and indicated under each option. This gives an indication to the user as to what each option will do to the metrics.
 
@@ -439,12 +437,12 @@ Finally, the collection Score shown in \ref{fig:col_score} stores the total priv
 \end{figure}
 
 
-\subsubsection{Bussiness Logic} \ref{bl}
-Most of the bussiness logic used for the FairDataShare portal is present in Kinvey. There are two main scripts stored in Kinvey:
+\subsubsection{Bussiness Logic} \label{bl}
+Most of the bussiness logic used for the FairDataShare portal is present in Kinvey. There are two main scripts stored in Kinvey are:
 
 \begin{enumerate}
-    \item Script to find the privacy preference
-    \item Script for summarization
+    \item Script to find the privacy preference of the user
+    \item Script to perform data summarization \ref{sum}
 \end{enumerate}
 
 The stakeholders make a request for data on the FairDataShare portal giving the following details:
@@ -459,7 +457,7 @@ The stakeholders make a request for data on the FairDataShare portal giving the 
 Given this input plus the category of the stakeholder (which is known from the registration), we look into the UserResponse Collection trying to find the most recent record that
 fits this criteria and extract the privacy level.
 
-Once we know the privacy level, summarization can be done. Data has been taken from the user with a certain summarization, and if the summarization level is lower than the privacy level extracted, further summarization needs to be done. The pseudocode is shown in \ref{sum1}.
+Once the privacy level is known, summarization on user data is performed. Data has been taken from the user with a certain summarization, and if the summarization level is lower than the privacy level extracted, further summarization needs to be done. The pseudocode is shown in \ref{sum1}.
 
 \begin{algorithm}
 \caption{Server Summarization Algorithm}\label{sum1}
@@ -480,7 +478,7 @@ Once we know the privacy level, summarization can be done. Data has been taken f
 \end{algorithm}
 
 \subsection{FairDataShare Web Portal}
-The FairDataShare portal makes use of a server at ETH Zurich other Kinvey to safely store the usernames, passwords of the users and the stakeholders in a collection. The database technology used is MongoDB. The language used to interact with Kinvey is Express.js, which is based on Node.js. Most of the data portal business logic is on Kinvey as described in section \ref{bl}. The webpage was constructed using simple Html and css. All screenshots of the portal including detailed information is provided in chapter \ref{exp}.
+The FairDataShare portal makes use of a server at ETH Zurich other than the Kinvey Data Store to safely store the usernames, passwords of the users and the stakeholders in a collection. The database technology used is MongoDB. The language used to interact with Kinvey is Express.js, which is based on Node.js. Most of the data portal business logic is on Kinvey as described in section \ref{bl}. The webpage was constructed using simple Html and css. All screenshots of the portal including detailed information is provided in chapter \ref{exp}.
 
 
 
