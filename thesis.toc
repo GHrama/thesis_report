@@ -41,28 +41,28 @@
 \contentsline {subsection}{\numberline {4.5.2}Stakeholder's Portal}{38}{subsection.4.5.2}
 \contentsline {chapter}{\chapternumberline {5}Explanation of the Mobile Application}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}The Building Blocks}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}The Mobile Application}{43}{section.5.2}
+\contentsline {section}{\numberline {5.2}The Mobile Application}{44}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Local Storage}{44}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Alarms and Notifications}{48}{subsection.5.2.2}
-\contentsline {subsubsection}{Going to the Next Data Sharing Day}{48}{section*.40}
+\contentsline {subsection}{\numberline {5.2.2}Alarms and Notifications}{47}{subsection.5.2.2}
+\contentsline {subsubsection}{Going to the Next Data Sharing Day}{49}{section*.41}
 \contentsline {subsection}{\numberline {5.2.3}Fetching Data Requests}{50}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Recording User Choices}{50}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.4}Recording User Choices}{51}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Sensor Data Collection and Summarization}{51}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Server Synchronization}{51}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.6}Server Synchronization}{52}{subsection.5.2.6}
 \contentsline {section}{\numberline {5.3}The Server}{53}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Kinvey Data Storage}{53}{subsection.5.3.1}
-\contentsline {subsubsection}{Security}{53}{section*.41}
-\contentsline {subsubsection}{Collection Store}{53}{section*.42}
-\contentsline {subsubsection}{Bussiness Logic}{54}{section*.43}
+\contentsline {subsubsection}{Security}{53}{section*.42}
+\contentsline {subsubsection}{Collection Store}{53}{section*.43}
+\contentsline {subsubsection}{Bussiness Logic}{54}{section*.44}
 \contentsline {subsection}{\numberline {5.3.2}FairDataShare Web Portal}{54}{subsection.5.3.2}
 \contentsline {chapter}{\chapternumberline {6}Pre-Survey and Experiment Findings}{57}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview of the Pre-Survey Data}{57}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pre-Survey Methodology and Findings}{59}{section.6.2}
-\contentsline {subsubsection}{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}{59}{section*.46}
-\contentsline {subsubsection}{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}{63}{section*.51}
-\contentsline {subsubsection}{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}{66}{section*.56}
+\contentsline {subsubsection}{Perception of Individual Sensor Grouped on the Intrusion of Sensors in General}{59}{section*.47}
+\contentsline {subsubsection}{Perception of Individual Stakeholders Grouped on the Intrusion of Stakeholders in General}{63}{section*.52}
+\contentsline {subsubsection}{Perception of Individual Contexts Grouped on the Intrusion of Contexts in General}{66}{section*.57}
 \contentsline {section}{\numberline {6.3}Findings from the Experiment Data}{72}{section.6.3}
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{77}{chapter.7}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{79}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Appendix B}{87}{appendix.B}
-\contentsline {chapter}{Bibliography}{93}{section*.94}
+\contentsline {chapter}{Bibliography}{93}{section*.95}

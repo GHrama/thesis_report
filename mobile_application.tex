@@ -6,8 +6,6 @@ This chapter explains the details behind the making of the mobile application en
 The following sections will explain integral parts of the server and client of the mobile application. A gist of the architecture is shown
 in the figure \ref{fig:bb}. It shows the mobile application represents the user participating in the experiment. As the experiment goes on,
 mobile sensor data and responses to the data requests which are collected are periodically sent to the Kinvey Data Store. 
-The users can login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
-are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This in turn structures the data so it can be readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile application.
 
 \begin{figure}[ht!]
 \centering
@@ -16,16 +14,27 @@ are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{ht
 \label{fig:bb}
 \end{figure}
 
+The users can login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
+are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This in turn structures the data so it can be readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile application.
+
+
 \section{The Mobile Application}
 
 The mobile application was developed for the Android platform with phones having API above level 17\footnote{\url{https://developer.android.com/guide/topics/manifest/uses-sdk-element.html}}. Phones are assumed to have internet connectivity and sufficient storage space of at least 100 Mb.
-Below is an explanation of some of the tasks that take place in the application.
+Below is an explanation of some of the tasks that take place in the application. A block diagram of the interaction of each of the components in the application is depicted in figure \ref{fig:chap5_app}.
 
 \subsection{Local Storage} \label{loc}
 The local storage is an integral part of the application. The database used is SQLite\footnote{\url{https://developer.android.com/reference/android/database/sqlite/package-summary.html}} and is the default database
 for the Android environment. Small sized unrelated data pieces are stored in preference files (as key value pairs), whereas larger related
 data is stored in the database. The following paragraphs will explain each table present in this application followed with 
 their function and schema. All tables explained here are pertaining to the user using the mobile application and not the server.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textwidth]{./images/chap5_app}
+\caption{Interaction of Components of Mobile Application}
+\label{fig:chap5_app}
+\end{figure}
 
 \begin{figure}[htp]
 \subtop[Table Schema of \texttt{QUESTION\_STORE}\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
