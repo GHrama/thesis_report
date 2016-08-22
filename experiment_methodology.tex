@@ -70,7 +70,7 @@ Each data request is accompanied with privacy options ranging from $1$ to $5$ as
 share their raw data without any sort of summarization or reduction in information. Option number $5$ indicates that the users would not like to share their data for this data request.
 The options in between have linearly scaled summarization levels assigned to them ranging from least privacy ($1$) to most privacy ($5$). For more information on the summarization levels for each option please refer to section \ref{summa}. 
 
-\subsection{Question Structure}
+\subsection{Question Structure} \ref{struct}
 
 A data request is when a stakeholder asks users mobile sensor data for a particular context or purpose. Each data request to the user is posed in the form of a question with the following template :
 
@@ -79,23 +79,23 @@ A data request is when a stakeholder asks users mobile sensor data for a particu
 where Sensors X can be :
 \begin{enumerate}
     \item Accelerometer
+    \item Light
     \item Noise
     \item Location
-    \item Light
 \end{enumerate}
 where Stakeholders Y can be:
 \begin{enumerate}
     \item Corporation
-    \item Educational Institution
     \item Non Governmental Organization
     \item Government
+    \item Educational Institution
 \end{enumerate}
 and where Contexts Z can be:
 \begin{enumerate}
+	\item Social Networking
     \item Environment
-    \item Health/Fitness
     \item Navigation
-    \item Social Networking
+    \item Health/Fitness  
 \end{enumerate}
 
 In total this makes 64 data requests to the user. From now on, we will refer to mobile sensor data as just data.
@@ -237,14 +237,14 @@ refer to the section \ref{fds}.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/fds}
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds1}
 \caption{FairDataShare Homepage}
 \label{fig:fds_home}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_register}
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_register1}
 \caption{Data Generators Registration Page}
 \label{fig:first}
 \end{figure}
@@ -358,7 +358,7 @@ light, accelerometer and noise sensor.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_login}
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_login1}
 \caption{Login Page\label{fig:fdslogin}}
 \end{figure}
 
@@ -407,9 +407,6 @@ Users first register as data generators as indicated in the section \ref{quest_w
 \caption{Noise Data \label{fig:fdsnoise}}
 \end{figure}
 
-
-
-
 \subsection{Stakeholder's Portal}
 
 For a stakeholder to view data, they need to register in the portal shown in figure \ref{fig:fds_home} by clicking register. Once that is done,
@@ -431,8 +428,8 @@ The stakeholder category is the type the stakeholder comes under such as :
     \item Non-Governmental Organization
 \end{enumerate}
 
-
 Once these details have been filled in, the stakeholder can click on the register button. Once registered, the stakeholder can login like shown in figure \ref{fig:fdsdclogin}.When access is granted the stakeholder is redirected to the page shown in figure \ref{fig:fds5}. The stakeholder can choose from each of the available drop down lists :
+
 \begin{enumerate}
     \item A sensor
     \item A context
@@ -440,7 +437,7 @@ Once these details have been filled in, the stakeholder can click on the registe
     \item A bidding day number
 \end{enumerate}
 
-Once this is entered, the stakeholder can see the  data for that user with the privacy level decided by the anonymous user. If the stakeholder does not see any data, it means the user did not share data for this particular request. Stakeholders can view the sensor data in a similar fashion to users shown in figures \ref{fig:fds2} and \ref{fig:fds3}. Data is available to the stakeholders 24 hours after the start of the core phase.
+Once this is entered, the stakeholder can see the  data for that user with the privacy level decided by the anonymous user. If the stakeholder does not see any data, it means the user did not share data for this particular request. Stakeholders can view the sensor data in a similar fashion to users as seen in the previous figures. Data is available to the stakeholders 24 hours after the start of the core phase.
 
 
 %\begin{figure}[htp]
@@ -452,20 +449,20 @@ Once this is entered, the stakeholder can see the  data for that user with the p
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_register}
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_register1}
 \caption{Registration Page\label{fig:fdsdcregister}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_login}
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_login1}
 \caption{Login Page\label{fig:fdsdclogin}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_welcome}
-\caption{Data Collectors Welcome Page \label{fig:fds5}}
+\includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_welcome1}
+\caption{Data Collectors Data Retreiving Page \label{fig:fds5}}
 \end{figure}
 
 

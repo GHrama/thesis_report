@@ -324,124 +324,24 @@ on the server.
 When the user starts the application, general personal information is entered as explained in \ref{loc}. This data is stored in the
 collection UserInformation with the schema shown in the screen shots \ref{fig:col_ui_1} and \ref{fig:col_ui_2}.
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ui_1}
-\caption{Screenshot of Collection UserInformation Part 1}
-\label{fig:col_ui_1}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ui_2}
-\caption{Screenshot of Collection UserInformation Part 2}
-\label{fig:col_ui_2}
-\end{figure}
-
 Once this is done, users have to categorize the various Features, Sensors, Stakeholders and then the various Contexts. This information is sent to the server in collections named Features, Sensors, Stakeholders and Contexts. Schema is shown in \ref{fig:col_f}, \ref{fig:col_s}, \ref{fig:col_ss} and \ref{fig:col_c} respectively.
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_feature_cat}
-\caption{Screenshot of Collection Features}
-\label{fig:col_f}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_sensors_cat}
-\caption{Screenshot of Collection Sensors}
-\label{fig:col_s}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_dc_cat}
-\caption{Screenshot of Collection Stakeholders}
-\label{fig:col_ss}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_context_cat}
-\caption{Screenshot of Collection Contexts}
-\label{fig:col_c}
-\end{figure}
 
 All the data stored locally on the mobile phone which is sent by the JobNetworkService explained in section \ref{job} is received by Kinvey.
 User responses are stored in the collection UserResponse shown in \ref{fig:col_ur_1} and \ref{fig:col_ur_2}.
 
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio, height=0.6\textwidth]{./images/collection_ur_1}
-\caption{Screenshot of Collection UserResponse Part 1}
-\label{fig:col_ur_1}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_ur_2}
-\caption{Screenshot of Collection UserResponse Part 2}
-\label{fig:col_ur_2}
-\end{figure}
-
 The sensor data sent by the JobNetworkService is stored in collections named after the sensors themselves. The schema of the tables
 is shown in figures \ref{fig:col_loc}, \ref{fig:col_acc}, \ref{fig:col_light} and \ref{fig:col_noise}.
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_loc}
-\caption{Screenshot of Collection Location}
-\label{fig:col_loc}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_acc}
-\caption{Screenshot of Collection Accelerometer}
-\label{fig:col_acc}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_noise}
-\caption{Screenshot of Collection Noise}
-\label{fig:col_noise}
-\end{figure}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_light}
-\caption{Screenshot of Collection Light}
-\label{fig:col_light}
-\end{figure}
 
 To keep track of all the existing users in the experiment, the collection Users stores all unique user identification strings of participants.
 The schema is shown in \ref{fig:col_users}.
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_users}
-\caption{Screenshot of Collection Users}
-\label{fig:col_users}
-\end{figure}
-
 Finally, the collection Score shown in \ref{fig:col_score} stores the total privacy, total credit obtained by the user for each bidding day.
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio,height=0.6\textwidth]{./images/collection_score}
-\caption{Screenshot of Collection Score}
-\label{fig:col_score}
-\end{figure}
-
 
 \subsubsection{Bussiness Logic} \label{bl}
 Most of the bussiness logic used for the FairDataShare portal is present in Kinvey. There are two main scripts stored in Kinvey are:
 
 \begin{enumerate}
-    \item Script to find the privacy preference of the user
+    \item Script to find the privacy preferences of the users
     \item Script to perform data summarization \ref{sum}
 \end{enumerate}
 
@@ -454,7 +354,7 @@ The stakeholders make a request for data on the FairDataShare portal giving the 
     \item Context
 \end{enumerate}
 
-Given this input plus the category of the stakeholder (which is known from the registration), we look into the UserResponse Collection trying to find the most recent record that
+Given this input plus the category of the stakeholder (which is known from their registration), we look into the UserResponse Collection trying to find the most recent record that
 fits this criteria and extract the privacy level.
 
 Once the privacy level is known, summarization on user data is performed. Data has been taken from the user with a certain summarization, and if the summarization level is lower than the privacy level extracted, further summarization needs to be done. The pseudocode is shown in \ref{sum1}.
