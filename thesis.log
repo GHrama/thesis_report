@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  22 AUG 2016 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  22 AUG 2016 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1634,7 +1634,12 @@ l.153
 ]) (./related_work.tex
 [3] [4
 
-] [5] [6]
+]
+
+LaTeX Warning: Citation `burke2006participatory' on page 5 undefined on input l
+ine 4.
+
+[5] [6]
 LaTeX Font Info:    Try loading font information for OMS+pplx on input line 25.
 
 LaTeX Font Info:    No file OMSpplx.fd. on input line 25.
@@ -2058,12 +2063,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--27
 ce / android / database / sqlite /
  []
 
-<./images/chap5_app.png, id=1209, 1221.56375pt x 853.1875pt>
+<./images/chap5_app.png, id=1209, 1039.885pt x 765.86125pt>
 File: ./images/chap5_app.png Graphic file (type png)
 
 <use ./images/chap5_app.png>
 Package pdftex.def Info: ./images/chap5_app.png used on input line 34.
-(pdftex.def)             Requested size: 369.00693pt x 221.3939pt.
+(pdftex.def)             Requested size: 368.99515pt x 221.3929pt.
 
 <./images/db_quest.png, id=1210, 173.64874pt x 165.61874pt>
 File: ./images/db_quest.png Graphic file (type png)
@@ -2972,10 +2977,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19731 strings out of 493089
- 304185 string characters out of 6134841
+ 19732 strings out of 493089
+ 304209 string characters out of 6134841
  487613 words of memory out of 5000000
- 22212 multiletter control sequences out of 15000+600000
+ 22213 multiletter control sequences out of 15000+600000
  50578 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,18n,122p,1010b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2993,7 +2998,7 @@ exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (100 pages, 9579126 bytes).
+Output written on thesis.pdf (100 pages, 9588650 bytes).
 PDF statistics:
  2219 PDF objects out of 2487 (max. 8388607)
  1484 compressed objects within 15 object streams
