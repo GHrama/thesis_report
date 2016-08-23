@@ -20,6 +20,12 @@ AJ~Brush, John Krumm, and James Scott.
 \newblock In {\em Proceedings of the 12th ACM international conference on
   Ubiquitous computing}, pages 95--104. ACM, 2010.
 
+\bibitem{burke2006participatory}
+Jeffrey~A Burke, Deborah Estrin, Mark Hansen, Andrew Parker, Nithya Ramanathan,
+  Sasank Reddy, and Mani~B Srivastava.
+\newblock Participatory sensing.
+\newblock {\em Center for Embedded Network Sensing}, 2006.
+
 \bibitem{camp2005state}
 L~Jean Camp.
 \newblock State of economics of information security, the.
@@ -98,6 +104,12 @@ Prashanth Mohan, Venkata~N Padmanabhan, and Ramachandran Ramjee.
   smartphones.
 \newblock In {\em Proceedings of the 6th ACM conference on Embedded network
   sensor systems}, pages 323--336. ACM, 2008.
+
+\bibitem{ohm2010broken}
+Paul Ohm.
+\newblock Broken promises of privacy: Responding to the surprising failure of
+  anonymization.
+\newblock {\em UCLA law review}, 57:1701, 2010.
 
 \bibitem{pournarasethical}
 Evangelos Pournaras.

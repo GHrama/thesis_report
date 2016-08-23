@@ -5,45 +5,45 @@ The style file: plain.bst
 Database file #1: thesis.bib
 Warning--empty journal in pournarasethical
 Warning--empty year in pournarasethical
-You've used 20 entries,
+You've used 22 entries,
             2118 wiz_defined-function locations,
-            610 strings with 8355 characters,
-and the built_in function-call counts, 8176 in all, are:
-= -- 817
-> -- 417
+            620 strings with 8693 characters,
+and the built_in function-call counts, 8823 in all, are:
+= -- 875
+> -- 462
 < -- 12
-+ -- 167
-- -- 144
-* -- 559
-:= -- 1309
-add.period$ -- 71
-call.type$ -- 20
-change.case$ -- 132
++ -- 185
+- -- 160
+* -- 607
+:= -- 1429
+add.period$ -- 77
+call.type$ -- 22
+change.case$ -- 146
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 330
-empty$ -- 614
-format.name$ -- 144
-if$ -- 1771
+cite$ -- 24
+duplicate$ -- 351
+empty$ -- 654
+format.name$ -- 160
+if$ -- 1896
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 20
-newline$ -- 102
-num.names$ -- 40
-pop$ -- 164
+int.to.str$ -- 22
+missing$ -- 22
+newline$ -- 112
+num.names$ -- 44
+pop$ -- 176
 preamble$ -- 1
-purify$ -- 112
+purify$ -- 124
 quote$ -- 0
-skip$ -- 225
+skip$ -- 239
 stack$ -- 0
-substring$ -- 433
-swap$ -- 109
+substring$ -- 455
+swap$ -- 111
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 88
 warning$ -- 2
-while$ -- 77
-width$ -- 22
-write$ -- 228
+while$ -- 82
+width$ -- 24
+write$ -- 249
 (There were 2 warnings)
