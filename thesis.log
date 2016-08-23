@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  23 AUG 2016 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  24 AUG 2016 00:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2498,14 +2498,14 @@ Package epstopdf Info: Source file: <./images/educ_box.eps>
 (epstopdf)                    size: 5913 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/educ_box-eps-conv
 erted-to.pdf ./images/educ_box.eps>
-(epstopdf)             \includegraphics on input line 376.
+(epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
 <./images/educ_box-eps-converted-to.pdf, id=1795, 636.3775pt x 501.875pt>
 File: ./images/educ_box-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/educ_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/educ_box-eps-converted-to.pdf used on input l
-ine 376.
+ine 377.
 (pdftex.def)             Requested size: 184.5pt x 145.50172pt.
 Package epstopdf Info: Source file: <./images/ent_box.eps>
 (epstopdf)                    date: 2016-08-21 14:27:27
@@ -2515,7 +2515,7 @@ Package epstopdf Info: Source file: <./images/ent_box.eps>
 (epstopdf)                    size: 5802 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/ent_box-eps-conve
 rted-to.pdf ./images/ent_box.eps>
-(epstopdf)             \includegraphics on input line 377.
+(epstopdf)             \includegraphics on input line 378.
 Package epstopdf Info: Output file is already uptodate.
 
 <./images/ent_box-eps-converted-to.pdf, id=1796, 636.3775pt x 501.875pt>
@@ -2523,7 +2523,7 @@ File: ./images/ent_box-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/ent_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/ent_box-eps-converted-to.pdf used on input li
-ne 377.
+ne 378.
 (pdftex.def)             Requested size: 184.5pt x 145.50172pt.
 Package epstopdf Info: Source file: <./images/env_box.eps>
 (epstopdf)                    date: 2016-08-21 14:29:48
@@ -2533,7 +2533,7 @@ Package epstopdf Info: Source file: <./images/env_box.eps>
 (epstopdf)                    size: 5900 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/env_box-eps-conve
 rted-to.pdf ./images/env_box.eps>
-(epstopdf)             \includegraphics on input line 378.
+(epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
 
 <./images/env_box-eps-converted-to.pdf, id=1797, 636.3775pt x 700.6175pt>
@@ -2541,7 +2541,7 @@ File: ./images/env_box-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/env_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/env_box-eps-converted-to.pdf used on input li
-ne 378.
+ne 379.
 (pdftex.def)             Requested size: 184.5pt x 203.1204pt.
 Package epstopdf Info: Source file: <./images/finance_box.eps>
 (epstopdf)                    date: 2016-08-21 14:31:32
@@ -2552,7 +2552,7 @@ Package epstopdf Info: Source file: <./images/finance_box.eps>
 (epstopdf)                    size: 5949 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/finance_box-eps-c
 onverted-to.pdf ./images/finance_box.eps>
-(epstopdf)             \includegraphics on input line 379.
+(epstopdf)             \includegraphics on input line 380.
 Package epstopdf Info: Output file is already uptodate.
 
 <./images/finance_box-eps-converted-to.pdf, id=1798, 636.3775pt x 700.6175pt>
@@ -2560,7 +2560,7 @@ File: ./images/finance_box-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/finance_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/finance_box-eps-converted-to.pdf used on inpu
-t line 379.
+t line 380.
 (pdftex.def)             Requested size: 184.5pt x 203.1204pt.
 Package epstopdf Info: Source file: <./images/health_box.eps>
 (epstopdf)                    date: 2016-08-21 15:57:24
@@ -2570,7 +2570,7 @@ Package epstopdf Info: Source file: <./images/health_box.eps>
 (epstopdf)                    size: 5885 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/health_box-eps-co
 nverted-to.pdf ./images/health_box.eps>
-(epstopdf)             \includegraphics on input line 380.
+(epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
 
 <./images/health_box-eps-converted-to.pdf, id=1799, 636.3775pt x 700.6175pt>
@@ -2578,7 +2578,7 @@ File: ./images/health_box-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/health_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/health_box-eps-converted-to.pdf used on input
- line 380.
+ line 381.
 (pdftex.def)             Requested size: 184.5pt x 203.1204pt.
 Package epstopdf Info: Source file: <./images/shopping_box.eps>
 (epstopdf)                    date: 2016-08-21 16:12:15
@@ -2589,32 +2589,32 @@ Package epstopdf Info: Source file: <./images/shopping_box.eps>
 (epstopdf)                    size: 5762 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/shopping_box-eps-
 converted-to.pdf ./images/shopping_box.eps>
-(epstopdf)             \includegraphics on input line 381.
+(epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
 <./images/shopping_box-eps-converted-to.pdf, id=1800, 636.3775pt x 625.33624pt>
 File: ./images/shopping_box-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/shopping_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/shopping_box-eps-converted-to.pdf used on inp
-ut line 381.
+ut line 382.
 (pdftex.def)             Requested size: 184.5pt x 181.29515pt.
 
-Overfull \hbox (13.36995pt too wide) in paragraph at lines 376--382
+Overfull \hbox (13.36995pt too wide) in paragraph at lines 377--383
 [][]  [][] 
  []
 
 
-Overfull \hbox (13.36995pt too wide) in paragraph at lines 376--382
+Overfull \hbox (13.36995pt too wide) in paragraph at lines 377--383
 [][]  [][] 
  []
 
 
-Overfull \hbox (13.36995pt too wide) in paragraph at lines 376--382
+Overfull \hbox (13.36995pt too wide) in paragraph at lines 377--383
 [][]  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 57.54227pt on input line 384.
+LaTeX Warning: Float too large for page by 57.54227pt on input line 385.
 
 Package epstopdf Info: Source file: <./images/social_box.eps>
 (epstopdf)                    date: 2016-08-21 16:13:15
@@ -2624,14 +2624,14 @@ Package epstopdf Info: Source file: <./images/social_box.eps>
 (epstopdf)                    size: 5792 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/social_box-eps-co
 nverted-to.pdf ./images/social_box.eps>
-(epstopdf)             \includegraphics on input line 387.
+(epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
 <./images/social_box-eps-converted-to.pdf, id=1801, 636.3775pt x 651.43375pt>
 File: ./images/social_box-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/social_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/social_box-eps-converted-to.pdf used on input
- line 387.
+ line 388.
 (pdftex.def)             Requested size: 173.43045pt x 177.52957pt.
 Package epstopdf Info: Source file: <./images/training_box.eps>
 (epstopdf)                    date: 2016-08-21 16:14:18
@@ -2642,14 +2642,14 @@ Package epstopdf Info: Source file: <./images/training_box.eps>
 (epstopdf)                    size: 5903 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/training_box-eps-
 converted-to.pdf ./images/training_box.eps>
-(epstopdf)             \includegraphics on input line 388.
+(epstopdf)             \includegraphics on input line 389.
 Package epstopdf Info: Output file is already uptodate.
 
 <./images/training_box-eps-converted-to.pdf, id=1802, 636.3775pt x 651.43375pt>
 File: ./images/training_box-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/training_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/training_box-eps-converted-to.pdf used on inp
-ut line 388.
+ut line 389.
 (pdftex.def)             Requested size: 173.43045pt x 177.52957pt.
 Package epstopdf Info: Source file: <./images/nav_box.eps>
 (epstopdf)                    date: 2016-08-21 16:16:10
@@ -2659,7 +2659,7 @@ Package epstopdf Info: Source file: <./images/nav_box.eps>
 (epstopdf)                    size: 5911 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/nav_box-eps-conve
 rted-to.pdf ./images/nav_box.eps>
-(epstopdf)             \includegraphics on input line 390.
+(epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
 
 <./images/nav_box-eps-converted-to.pdf, id=1803, 636.3775pt x 651.43375pt>
@@ -2667,7 +2667,7 @@ File: ./images/nav_box-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nav_box-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/nav_box-eps-converted-to.pdf used on input li
-ne 390.
+ne 391.
 (pdftex.def)             Requested size: 173.43045pt x 177.52957pt.
  [70] [71 <./images/educ_box-eps-converted-to.pdf> <./images/ent_box-eps-conver
 ted-to.pdf> <./images/env_box-eps-converted-to.pdf> <./images/finance_box-eps-c
@@ -2678,123 +2678,109 @@ ages/training_box-eps-converted-to.pdf> <./images/nav_box-eps-converted-to.pdf>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73]
-Package epstopdf Info: Source file: <./images/heatmap_all_days_privacyimproveme
-nt.eps>
-(epstopdf)                    date: 2016-08-21 17:04:07
-(epstopdf)                    size: 241105 bytes
-(epstopdf)             Output file: <./images/heatmap_all_days_privacyimproveme
-nt-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-21 17:09:25
-(epstopdf)                    size: 285609 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/heatmap_all_days_
-privacyimprovement-eps-converted-to.pdf ./images/heatmap_all_days_privacyimprov
-ement.eps>
-(epstopdf)             \includegraphics on input line 402.
-Package epstopdf Info: Output file is already uptodate.
+<./images/heatmap_all_days_privacyimprovement.png, id=1873, 703.62875pt x 621.3
+2124pt>
+File: ./images/heatmap_all_days_privacyimprovement.png Graphic file (type png)
+ <use ./images/heatmap_all_days_privacyimprovement.png>
+Package pdftex.def Info: ./images/heatmap_all_days_privacyimprovement.png used 
+on input line 403.
+(pdftex.def)             Requested size: 184.5pt x 162.9144pt.
 
-<./images/heatmap_all_days_privacyimprovement-eps-converted-to.pdf, id=1873, 63
-6.3775pt x 700.6175pt>
-File: ./images/heatmap_all_days_privacyimprovement-eps-converted-to.pdf Graphic
- file (type pdf)
+<./images/heatmap_all_days_button.png, id=1874, 726.715pt x 632.3625pt>
+File: ./images/heatmap_all_days_button.png Graphic file (type png)
 
-<use ./images/heatmap_all_days_privacyimprovement-eps-converted-to.pdf>
-Package pdftex.def Info: ./images/heatmap_all_days_privacyimprovement-eps-conve
-rted-to.pdf used on input line 402.
-(pdftex.def)             Requested size: 184.5pt x 203.1204pt.
-Package epstopdf Info: Source file: <./images/heatmap_all_days_button.eps>
-(epstopdf)                    date: 2016-08-21 17:07:10
-(epstopdf)                    size: 178966 bytes
-(epstopdf)             Output file: <./images/heatmap_all_days_button-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2016-08-21 17:09:27
-(epstopdf)                    size: 241440 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/heatmap_all_days_
-button-eps-converted-to.pdf ./images/heatmap_all_days_button.eps>
-(epstopdf)             \includegraphics on input line 403.
-Package epstopdf Info: Output file is already uptodate.
+<use ./images/heatmap_all_days_button.png>
+Package pdftex.def Info: ./images/heatmap_all_days_button.png used on input lin
+e 404.
+(pdftex.def)             Requested size: 184.5pt x 160.54109pt.
 
-<./images/heatmap_all_days_button-eps-converted-to.pdf, id=1874, 636.3775pt x 6
-78.535pt>
-File: ./images/heatmap_all_days_button-eps-converted-to.pdf Graphic file (type 
-pdf)
- <use ./images/heatmap_all_days_button-eps-converted-to.pdf>
-Package pdftex.def Info: ./images/heatmap_all_days_button-eps-converted-to.pdf 
-used on input line 403.
-(pdftex.def)             Requested size: 184.5pt x 196.71834pt.
-
-Overfull \hbox (13.36995pt too wide) in paragraph at lines 402--404
+Overfull \hbox (13.36995pt too wide) in paragraph at lines 403--405
 [][]  [][] 
  []
 
-[74 <./images/heatmap_all_days_privacyimprovement-eps-converted-to.pdf> <./imag
-es/heatmap_all_days_button-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./images/day2_day1_privacy.eps>
-(epstopdf)                    date: 2016-08-21 17:31:06
-(epstopdf)                    size: 50982 bytes
-(epstopdf)             Output file: <./images/day2_day1_privacy-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2016-08-21 17:36:44
-(epstopdf)                    size: 9612 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/day2_day1_privacy
--eps-converted-to.pdf ./images/day2_day1_privacy.eps>
-(epstopdf)             \includegraphics on input line 418.
-Package epstopdf Info: Output file is already uptodate.
 
-<./images/day2_day1_privacy-eps-converted-to.pdf, id=1903, 1284.8pt x 903.375pt
->
-File: ./images/day2_day1_privacy-eps-converted-to.pdf Graphic file (type pdf)
- <use ./images/day2_day1_privacy-eps-converted-to.pdf>
-Package pdftex.def Info: ./images/day2_day1_privacy-eps-converted-to.pdf used o
-n input line 418.
-(pdftex.def)             Requested size: 369.0pt x 259.4495pt.
-Package epstopdf Info: Source file: <./images/day3_day1_privacy.eps>
-(epstopdf)                    date: 2016-08-21 17:34:13
-(epstopdf)                    size: 51045 bytes
-(epstopdf)             Output file: <./images/day3_day1_privacy-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2016-08-21 17:36:45
-(epstopdf)                    size: 9635 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/day3_day1_privacy
--eps-converted-to.pdf ./images/day3_day1_privacy.eps>
-(epstopdf)             \includegraphics on input line 425.
-Package epstopdf Info: Output file is already uptodate.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./images/day3_day1_privacy-eps-converted-to.pdf, id=1904, 1284.8pt x 903.375pt
->
-File: ./images/day3_day1_privacy-eps-converted-to.pdf Graphic file (type pdf)
- <use ./images/day3_day1_privacy-eps-converted-to.pdf>
-Package pdftex.def Info: ./images/day3_day1_privacy-eps-converted-to.pdf used o
-n input line 425.
-(pdftex.def)             Requested size: 369.0pt x 259.4495pt.
+ [74 <./images/heatmap_all_days_privacyimprovement.png> <./images/heatmap_all_d
+ays_button.png>]
+Package epstopdf Info: Source file: <./images/day2_day1.eps>
+(epstopdf)                    date: 2016-08-23 23:55:59
+(epstopdf)                    size: 46804 bytes
+(epstopdf)             Output file: <./images/day2_day1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-08-23 23:38:35
+(epstopdf)                    size: 8624 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/day2_day1-eps-con
+verted-to.pdf ./images/day2_day1.eps>
+(epstopdf)             \includegraphics on input line 419.
+runsystem(repstopdf --outfile=./images/day2_day1-eps-converted-to.pdf ./images/
+day2_day1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./images/day2_day1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-08-24 00:13:06
+(epstopdf)                    size: 8492 bytes.
+
+<./images/day2_day1-eps-converted-to.pdf, id=1891, 1284.8pt x 751.80875pt>
+File: ./images/day2_day1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/day2_day1-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/day2_day1-eps-converted-to.pdf used on input 
+line 419.
+(pdftex.def)             Requested size: 369.0pt x 215.91963pt.
+Package epstopdf Info: Source file: <./images/day3_day1.eps>
+(epstopdf)                    date: 2016-08-23 23:57:01
+(epstopdf)                    size: 46812 bytes
+(epstopdf)             Output file: <./images/day3_day1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-08-23 23:38:35
+(epstopdf)                    size: 8661 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/day3_day1-eps-con
+verted-to.pdf ./images/day3_day1.eps>
+(epstopdf)             \includegraphics on input line 426.
+runsystem(repstopdf --outfile=./images/day3_day1-eps-converted-to.pdf ./images/
+day3_day1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./images/day3_day1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-08-24 00:13:06
+(epstopdf)                    size: 8534 bytes.
+
+<./images/day3_day1-eps-converted-to.pdf, id=1892, 1284.8pt x 751.80875pt>
+File: ./images/day3_day1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/day3_day1-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/day3_day1-eps-converted-to.pdf used on input 
+line 426.
+(pdftex.def)             Requested size: 369.0pt x 215.91963pt.
 
 
-LaTeX Warning: Reference `struct' on page 75 undefined on input line 430.
+LaTeX Warning: Reference `struct' on page 75 undefined on input line 431.
 
+[75 <./images/day2_day1-eps-converted-to.pdf>] [76 <./images/day3_day1-eps-conv
+erted-to.pdf>] [77]
+<./images/all_sub_mean.pdf, id=1921, 734.24312pt x 724.24893pt>
+File: ./images/all_sub_mean.pdf Graphic file (type pdf)
 
-Underfull \vbox (badness 1776) has occurred while \output is active []
+<use ./images/all_sub_mean.pdf>
+Package pdftex.def Info: ./images/all_sub_mean.pdf used on input line 453.
+(pdftex.def)             Requested size: 369.0pt x 363.98018pt.
+) (./conclusion.tex [78] [79 <./images/all_sub_mean.pdf>] [80
 
- [75 <./images/day2_day1_privacy-eps-converted-to.pdf>] [76 <./images/day3_day1
-_privacy-eps-converted-to.pdf>] [77]) (./conclusion.tex [78]) (./appendix.tex [
-79
-
-] [80
+]) (./appendix.tex [81] [82
 
 ]
-<./images/collection_ui_1.png, id=1945, 1024.82875pt x 541.02126pt>
+<./images/collection_ui_1.png, id=2001, 1024.82875pt x 541.02126pt>
 File: ./images/collection_ui_1.png Graphic file (type png)
 
 <use ./images/collection_ui_1.png>
 Package pdftex.def Info: ./images/collection_ui_1.png used on input line 5.
 (pdftex.def)             Requested size: 369.00061pt x 194.80052pt.
 
-<./images/collection_ui_2.png, id=1946, 1049.9225pt x 564.1075pt>
+<./images/collection_ui_2.png, id=2002, 1049.9225pt x 564.1075pt>
 File: ./images/collection_ui_2.png Graphic file (type png)
 
 <use ./images/collection_ui_2.png>
 Package pdftex.def Info: ./images/collection_ui_2.png used on input line 12.
 (pdftex.def)             Requested size: 369.00032pt x 198.2583pt.
 
-<./images/collection_feature_cat.png, id=1947, 599.23875pt x 544.0325pt>
+<./images/collection_feature_cat.png, id=2003, 599.23875pt x 544.0325pt>
 File: ./images/collection_feature_cat.png Graphic file (type png)
 
 <use ./images/collection_feature_cat.png>
@@ -2802,7 +2788,7 @@ Package pdftex.def Info: ./images/collection_feature_cat.png used on input line
  19.
 (pdftex.def)             Requested size: 243.86989pt x 221.40282pt.
 
-<./images/collection_sensors_cat.png, id=1948, 761.84625pt x 544.0325pt>
+<./images/collection_sensors_cat.png, id=2004, 761.84625pt x 544.0325pt>
 File: ./images/collection_sensors_cat.png Graphic file (type png)
 
 <use ./images/collection_sensors_cat.png>
@@ -2810,14 +2796,14 @@ Package pdftex.def Info: ./images/collection_sensors_cat.png used on input line
  26.
 (pdftex.def)             Requested size: 310.04564pt x 221.40282pt.
 
-<./images/collection_dc_cat.png, id=1949, 721.69624pt x 544.0325pt>
+<./images/collection_dc_cat.png, id=2005, 721.69624pt x 544.0325pt>
 File: ./images/collection_dc_cat.png Graphic file (type png)
 
 <use ./images/collection_dc_cat.png>
 Package pdftex.def Info: ./images/collection_dc_cat.png used on input line 33.
 (pdftex.def)             Requested size: 293.70595pt x 221.40282pt.
 
-<./images/collection_context_cat.png, id=1950, 816.04875pt x 542.025pt>
+<./images/collection_context_cat.png, id=2006, 816.04875pt x 542.025pt>
 File: ./images/collection_context_cat.png Graphic file (type png)
 
 <use ./images/collection_context_cat.png>
@@ -2825,68 +2811,68 @@ Package pdftex.def Info: ./images/collection_context_cat.png used on input line
  40.
 (pdftex.def)             Requested size: 333.33696pt x 221.40462pt.
 
-<./images/collection_ur_1.png, id=1951, 1045.9075pt x 546.04pt>
+<./images/collection_ur_1.png, id=2007, 1045.9075pt x 546.04pt>
 File: ./images/collection_ur_1.png Graphic file (type png)
 
 <use ./images/collection_ur_1.png>
 Package pdftex.def Info: ./images/collection_ur_1.png used on input line 47.
 (pdftex.def)             Requested size: 369.00961pt x 192.64993pt.
 
-<./images/collection_ur_2.png, id=1952, 883.3pt x 545.03625pt>
+<./images/collection_ur_2.png, id=2008, 883.3pt x 545.03625pt>
 File: ./images/collection_ur_2.png Graphic file (type png)
 
 <use ./images/collection_ur_2.png>
 Package pdftex.def Info: ./images/collection_ur_2.png used on input line 54.
 (pdftex.def)             Requested size: 358.79932pt x 221.39548pt.
 
-<./images/collection_loc.png, id=1953, 882.29625pt x 545.03625pt>
+<./images/collection_loc.png, id=2009, 882.29625pt x 545.03625pt>
 File: ./images/collection_loc.png Graphic file (type png)
 
 <use ./images/collection_loc.png>
 Package pdftex.def Info: ./images/collection_loc.png used on input line 61.
 (pdftex.def)             Requested size: 358.39159pt x 221.39548pt.
 
-<./images/collection_acc.png, id=1954, 1045.9075pt x 543.02875pt>
+<./images/collection_acc.png, id=2010, 1045.9075pt x 543.02875pt>
 File: ./images/collection_acc.png Graphic file (type png)
 
 <use ./images/collection_acc.png>
 Package pdftex.def Info: ./images/collection_acc.png used on input line 68.
 (pdftex.def)             Requested size: 369.00961pt x 191.58751pt.
 
-<./images/collection_noise.png, id=1955, 974.64125pt x 543.02875pt>
+<./images/collection_noise.png, id=2011, 974.64125pt x 543.02875pt>
 File: ./images/collection_noise.png Graphic file (type png)
 
 <use ./images/collection_noise.png>
 Package pdftex.def Info: ./images/collection_noise.png used on input line 75.
 (pdftex.def)             Requested size: 368.99931pt x 205.59074pt.
 
-<./images/collection_light.png, id=1956, 672.5125pt x 517.935pt>
+<./images/collection_light.png, id=2012, 672.5125pt x 517.935pt>
 File: ./images/collection_light.png Graphic file (type png)
 
 <use ./images/collection_light.png>
 Package pdftex.def Info: ./images/collection_light.png used on input line 82.
 (pdftex.def)             Requested size: 287.48155pt x 221.4037pt.
 
-<./images/collection_users.png, id=1957, 218.8175pt x 543.02875pt>
+<./images/collection_users.png, id=2013, 218.8175pt x 543.02875pt>
 File: ./images/collection_users.png Graphic file (type png)
 
 <use ./images/collection_users.png>
 Package pdftex.def Info: ./images/collection_users.png used on input line 89.
 (pdftex.def)             Requested size: 89.21492pt x 221.40033pt.
 
-<./images/collection_score.png, id=1958, 853.1875pt x 508.90125pt>
+<./images/collection_score.png, id=2014, 853.1875pt x 508.90125pt>
 File: ./images/collection_score.png Graphic file (type png)
 
 <use ./images/collection_score.png>
 Package pdftex.def Info: ./images/collection_score.png used on input line 96.
 (pdftex.def)             Requested size: 369.01154pt x 220.10452pt.
- [81 <./images/collection_ui_1.png>]
-[82 <./images/collection_ui_2.png> <./images/collection_feature_cat.png>]
-[83 <./images/collection_sensors_cat.png> <./images/collection_dc_cat.png>]
-[84 <./images/collection_context_cat.png> <./images/collection_ur_1.png>]
-[85 <./images/collection_ur_2.png> <./images/collection_loc.png>] [86 <./images
-/collection_acc.png> <./images/collection_noise.png>] [87 <./images/collection_
-light.png> <./images/collection_users.png>] [88 <./images/collection_score.png>
+ [83 <./images/collection_ui_1.png>]
+[84 <./images/collection_ui_2.png> <./images/collection_feature_cat.png>]
+[85 <./images/collection_sensors_cat.png> <./images/collection_dc_cat.png>]
+[86 <./images/collection_context_cat.png> <./images/collection_ur_1.png>]
+[87 <./images/collection_ur_2.png> <./images/collection_loc.png>] [88 <./images
+/collection_acc.png> <./images/collection_noise.png>] [89 <./images/collection_
+light.png> <./images/collection_users.png>] [90 <./images/collection_score.png>
 ]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2942,23 +2928,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [89
+) [91
 
 ]
 
-LaTeX Warning: Text page 90 contains only floats.
+LaTeX Warning: Text page 92 contains only floats.
 
 
 Overfull \vbox (4.39938pt too high) has occurred while \output is active []
 
 
-[90] [91] [92] [93] [94
+[92] [93] [94] [95] [96
 
 ] (./thesis.bbl
 bibitemlist
-[95
+[97
 
-] [96]) <declaration-originality.pdf, id=2042, 597.55246pt x 845.07718pt>
+] [98]) <declaration-originality.pdf, id=2097, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -2969,7 +2955,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 178.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<declaration-originality.pdf, id=2045, page=1, 597.55246pt x 845.07718pt>
+<declaration-originality.pdf, id=2100, page=1, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2994,14 +2980,14 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
 178.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [97]
+ [99]
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
 178.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [98 <./declaration-originality.pdf>]
+ [100 <./declaration-originality.pdf>]
 \tf@thm=\write6
 \openout6 = `thesis.thm'.
 
@@ -3010,12 +2996,11 @@ Package pdftex.def Info: declaration-originality.pdf, page1 used on input line
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
-
 (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FEF383D6A228BA44F7550C3CB3BBCC23;3928.
+(rerunfilecheck)             Checksum: 8B62782DD97FD5790BC36C13ED1D8EC3;3928.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3028,13 +3013,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19740 strings out of 493089
- 304319 string characters out of 6134841
- 487694 words of memory out of 5000000
- 22214 multiletter control sequences out of 15000+600000
+ 19749 strings out of 493089
+ 304284 string characters out of 6134841
+ 487812 words of memory out of 5000000
+ 22219 multiletter control sequences out of 15000+600000
  50578 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,18n,122p,1234b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,18n,122p,1240b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -3049,10 +3034,10 @@ exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (102 pages, 9597565 bytes).
+Output written on thesis.pdf (104 pages, 9948036 bytes).
 PDF statistics:
- 2243 PDF objects out of 2487 (max. 8388607)
- 1505 compressed objects within 16 object streams
- 484 named destinations out of 1000 (max. 500000)
- 13242 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 2300 PDF objects out of 2487 (max. 8388607)
+ 1512 compressed objects within 16 object streams
+ 487 named destinations out of 1000 (max. 500000)
+ 13247 words of extra memory for PDF output out of 14400 (max. 10000000)
 

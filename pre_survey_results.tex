@@ -367,6 +367,7 @@ Education and environment are considered 2.83 and 2.92 intrusive on a scale of f
 (3,4)&0.038351&0.21259&0.58123&0.51397\\
 (3,5)&0.00050454&0.29374&2.1697e-05&0.012924\\
 (4,5)&0.69535&1.0000&0.0033189&0.55629\\
+\bottomrule
   \end{tabular}
 \end{table} 
 
@@ -415,14 +416,14 @@ Figures \ref{fig:button_pri} and \ref{fig:actual_pri} are now compared. As obser
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/day2_day1_privacy}
+\includegraphics[width=\textwidth]{./images/day2_day1}
 \caption{Gain in Privacy Between Day 2 and Day 1}
 \label{fig:day2_day1}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,keepaspectratio]{./images/day3_day1_privacy}
+\includegraphics[width=\textwidth]{./images/day3_day1}
 \caption{Gain in Privacy Between Day 3 and Day 1}
 \label{fig:day3_day1}
 \end{figure}
@@ -441,12 +442,16 @@ In day 3 \ref{fig:day3_day1}, more of the users are responding to incentives as 
 
 For the accelerometer, it is seen that the environment context did not provide sufficient incentives for users to share to educational institutions and corporations which were rated high intrusion stakeholders. For the light sensor, the context social networking was categorized as intrusive but still did not incentivize users to share more data than day 1. For the stakeholder educational institution, except for the context transportation users shared less data than on the first day. In the light sensor, for the corporation and educational institutions users did not share more data for the social networking context. 
 
-For the sensor noise, users shared more data than day one for all stakeholders and contexts one except for the educational institution stakeholder for the purpose of social networking. For the location sensor the data requests containing the health context more data was not shared. This can be due to the fact that health context is assigned a lower incentive due to its lower categorization of 2.52. The very intrusive transportation context assigned a 3.65 categorization of intrusion, users did not share more data to the intrusive stakeholders corporation and educational institutions.
-For the context environment, since it is categorized as lowly intrusive with 2.68, enough incentives were not given and did not motivate users to share more of their sensor data. Lastly, for intrusive stakeholder educational institution and corporations users did not share more data for the context social networking because they found the sensor, context and stakeholder intrusive.
+For the sensor noise, users shared more data than day one for all stakeholders and contexts one except for the educational institution stakeholder for the purpose of social networking. For the location sensor the data requests containing the health context more data was not shared. This can be due to the fact that health context is assigned a lower incentive due to its lower categorization of 2.52. The very intrusive transportation context assigned a 3.65 categorization of intrusion, users did not share more data to the intrusive stakeholders corporation and educational institutions. For the context environment, since it is categorized as lowly intrusive with 2.68, enough incentives were not given and did not motivate users to share more of their sensor data. Lastly, for stakeholder educational institution and corporations which considered intrusive intrusive, users did not share more data for the context social networking because they found the sensor, context and stakeholder combination intrusive.
 
-It can be observed for the 
+To summarize, we found that users did give away more data for day 2 and day 3 than on day 1. On day 2, it is seen that some data requests for which features are considered non-intrusive during categorization are being given lesser with incentives than without. This could be due to the fact that users could have been explorative during the first day, with the metrics and the application itself non-intrusive were. On day 3, it is observed that responses to data requests are more consistent with the categorization of features. Small inconsistencies of the responses with the categorizations can be attributed to the fact that the population of the experiment was 6 people for day 2 and day 3, hence even if one person answers dramatically differently it affects the overall mean.
 
-*** (Comparison of privacy intrusion levels of features compared to the pre survey graph yet to be added) ***
+Additionally, it was seen that after stakeholder corporations, educational institutions were the data requests where people did not change their minds about. It can be attributed to the fact that most users were affiliated with the department and did not want the department to see their data.
 
-
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth,keepaspectratio]{./images/all_sub_mean}
+\caption{Mean Intrusion Levels for Sub-Features}
+\label{fig:sum_mean}
+\end{figure}
 
