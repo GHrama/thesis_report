@@ -26,19 +26,19 @@
 \contentsline {subsection}{\numberline {4.1.2}Sub-Features}{24}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Privacy Options}{25}{subsection.4.1.3}
 \contentsline {subsection}{\numberline {4.1.4}Question Structure}{26}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Budget and Experiment Duration}{27}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.5}Budget and Experiment Duration}{26}{subsection.4.1.5}
 \contentsline {section}{\numberline {4.2}Entry Phase}{27}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Collecting General User Information}{27}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Categorization of Features}{27}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Categorization of Sub-Features}{28}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Answering Questions with No Incentives}{30}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Answering Questions with No Incentives}{29}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}Core Phase}{31}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Improve Privacy or Credit}{35}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Answering Questions with Incentives}{36}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Exit Phase}{36}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.2}Answering Questions with Incentives}{35}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Exit Phase}{37}{section.4.4}
 \contentsline {section}{\numberline {4.5}FairDataShare Web Portal}{37}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Data Generator's Portal}{37}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Stakeholder's Portal}{38}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}Stakeholder's Portal}{39}{subsection.4.5.2}
 \contentsline {chapter}{\chapternumberline {5}Explanation of the Mobile Application}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}The Building Blocks}{43}{section.5.1}
 \contentsline {section}{\numberline {5.2}The Mobile Application}{44}{section.5.2}
