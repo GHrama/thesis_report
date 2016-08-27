@@ -1,29 +1,26 @@
 \chapter{Computational Model} \label{model}
 
-\newcommand{\numcategories}[0]{$cat$ }
+\newcommand{\numcategories}[0]{$n_{cat}$ }
 \newcommand{\numsubcategories}[0]{$cat$ }
 \newcommand{\numsensors}[0]{$N_S$ }
 \newcommand{\numstakeholders}[0]{$N_{DC}$ }
 \newcommand{\numcontexts}[0]{$N_C$ }
-\newcommand{\numquestions}[0]{$N_{DR}$ } 
-\newcommand{\numsubfeatures}[0]{$num_{sf}$ } 
+\newcommand{\numquestions}[0]{$n_{dr}$ } 
+\newcommand{\numsubfeatures}[0]{$n_{sf}$ } 
 
 
 
 \section{Introduction}
-The aim is to create a computational model that is able to collect useful information about the influence of monetary incentives on mobile
-data sharing.
-The users are first asked some preliminary questions to form a profile about them. The model proceeds to use the user profiles 
-formed to assign each sensor data request
-with a maximum achievable credit. The model attempts to identify the data requests where users might not be inclined to share mobile sensor data willingly. These data requests are assigned higher maximum obtainable costs. Similarly, the data requests where the users would want to share more mobile sensor data
-is assigned a lower maximum obtainable cost. This permits to see whether incentives do indeed make a difference in mobile sensor
-data sharing. The model aims to identify the amount of data each user would share for a data request and assign maximum obtainable costs accordingly.
+A data request is a request to users to trade their mobile sensor data. The aim is to create a computational model that is able to assign personalized rewards to each data request for every user.
+Each user is associated with a privacy intrusion profile. The model uses the user profiles to assign each data request a maximum achievable reward. The model attempts to identify the data requests where users might not be inclined to share mobile sensor data. These data requests are assigned a higher maximum obtainable reward. Similarly, the data requests where the users would want to share more mobile sensor data
+are assigned a lower maximum obtainable reward. This permits to see whether incentives do indeed make a difference in mobile sensor
+data sharing. The model aims to identify the amount of data each user would share for a data request and assign maximum obtainable rewards accordingly.
 
-\section{Model Intricacies}
+\section{Model}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=\textwidth,height=\textwidth]{./images/model_building_blocks}
+\includegraphics[width=\textwidth,keepaspectratio	]{./images/model_building_blocks}
 \caption{Computational Model Flow Chart \label{model_blocks}}
 \end{figure}
 
@@ -31,7 +28,7 @@ The sections below explain the various building blocks of the computational mode
 provides an overview of the flow of the model.
 
 \subsection{Collecting User Information}
-To begin with the model, each user is asked to enter various non-intrusive personal information. The information collected consists of but is not limited to :
+To begin with the model, user information is collected. The information collected consists of but is not limited to :
 
 \begin{itemize}
 \item Gender
@@ -43,21 +40,17 @@ To begin with the model, each user is asked to enter various non-intrusive perso
 \item List of different mobile applications present on the users phones
 \end{itemize}
 
-Collecting this information is crucial to the data analysis that is conducted in the later stages.
+%Collecting this information is crucial to the data analysis that is conducted in the later stages.
 \subsection{Categorization of the Features} \label{catfeatures}
-After the users personal information is collected, users are asked to place the features in categories according to how privacy intrusive they are to the user. A feature can be one of the following:
 
+Features are the elements that govern the data sharing decision. A feature can be one of the following:
 \begin{itemize}
-\item \textbf{Sensors} : Sensors consist of the sensors in the mobile phone which users
-can trade in a data request
-\item \textbf{Stakeholders} : Stakeholders
-consist of any entity that can request the user for mobile sensor data
-\item \textbf{Contexts} : Contexts consist of the purpose for which a Stakeholder would like to obtain the user's mobile sensor data
+\item \textbf{Sensors} : They consist of the sensors in the mobile phone that users can trade for a data request
+\item \textbf{Stakeholders} : They consist of any entity that requests users for mobile sensor data
+\item \textbf{Contexts} : They consist of the purpose for which a stakeholder would like to obtain the user's mobile sensor data
 \end{itemize}
 
-Features are the three dimensions that form a unique data request. A data request is defined as a Stakeholder asking users to share their mobile Sensor data for a particular Context.
-
-As mentioned before, users are asked to categorize the features into one of the five categories:
+Features are placed in categories according to how privacy intrusive they are. Features are the three dimensions that form a data request. A data request is defined as a stakeholder asking users to share their mobile sensor data for a particular context. Users are asked to categorize the features into one of the five categories:
 
 \begin{enumerate}
 \item Very low privacy intrusion
@@ -67,21 +60,20 @@ As mentioned before, users are asked to categorize the features into one of the 
 \item Very high privacy intrusion
 \end{enumerate}
 
-Categories are linearly scaled and equally spaced. As indicated by the numbers on the left of the categories, these range from one to five and users can place each of the Features in a category according to their perceived intrusion level. Category one represents that the Feature does not contribute a lot to the data sharing decision. Similarly, category five represents that the Feature  contributes a lot to the user's data sharing decision. Similarly, category five represents that users are reluctant to give away their sensor data for this feature. More than one feature can be placed in the same category, which makes it a more powerful tool than the ranking mechanism.
+Categories are linearly scaled and equally spaced. As indicated by the numbers on the left of the categories, these range from 1 to 5 and users can place each of the features in a category according to their perceived intrusion level. Category 1 represents that the feature does not at all contribute to the data sharing decision. Similarly, category 5 represents that the feature contributes to the maximum possible for the user's data sharing decision. It represents that users are reluctant to give away their sensor data for this feature. More than one feature can be placed in the same category.
 
-Let the variable \numcategories represent the number of categories, which here is five. Additionally, let the category assigned to the Sensors be represented by the variable $se$, the category assigned to the Stakeholders be represented by the variable $st$ and the category assigned to the Contexts be represented by the variable $co$.
+Let the variable \numcategories represent the number of categories, which here are five. Additionally, let the category assigned to the sensors be represented by the variable $a$, the category assigned to the stakeholders be represented by the variable $b$ and the category assigned to the contexts be represented by the variable $c$.
 
-Once users have categorized the Sensors, Stakeholders and the Contexts into the respective categories reflecting the importance of each of the features in the data sharing decision, each feature is assigned a weight.
-Let the respective weights of Sensors, Stakeholders and Contexts be represented by the variables, $w_{se}$, $w_{dc}$ and $w_{co}$ they are calculated as follows :
+Once users have categorized the sensors, stakeholders and the contexts into the respective categories reflecting the importance of each of the features in the data sharing decision, each feature is assigned a weight. Let the respective weights of sensors, stakeholders and contexts be represented by the variables, $w_{a}$, $w_{b}$ and $w_{c}$ and calculated as follows:
 
 \begin{equation}
-   w_{se} = \frac{se}{se+st+co} 
+   w_{a} = \frac{a}{a+b+c} 
 \end{equation}
 \begin{equation}
-   w_{st} = \frac{st}{se+st+co}  
+   w_{b} = \frac{b}{a+b+c}   
 \end{equation}
 \begin{equation}
-   w_{co} = \frac{co}{se+st+co}  
+   w_{c} = \frac{c}{a+b+c}   
 \end{equation}
 
 
@@ -117,130 +109,121 @@ is defined as one type of a feature. In other words, sub-features are the differ
 \end{figure}
 
 Each of the above are different kinds or sub-features of the respective features. 
-For each of the available features, the respective sub-features need to be in turn categorized in a similar fashion to section \ref{catfeatures}.
-The categories are the same as mentioned in the previous section. Let \numsubfeatures be the number of sub-features each feature has.
+For each of the available features, the respective sub-features need to be in turn categorized in the same categories mentioned in section \ref{catfeatures}. The categories are the same as mentioned in the previous section. Let \numsubfeatures be the number of sub-features each feature has.
 
+As seen in the conceptual diagram which is shown in the figure \ref{categorize_sub}, users place each of the sub-features available for every feature in the given categories.
 
-The first category indicates that users find the sub-feature would not hinder the data sharing decision. This means that the user would not be worried trading data for a data request involving this sub-feature. The last category indicates that users find this sub-feature would hinder the data sharing decision . This means that users would be reluctant of giving data for a data request involving this sub-feature. As seen in the conceptual diagram which is shown in the figure \ref{categorize_sub}, users place each of the sub-features available for every feature in the given categories.
-
-Let every sub-feature be represented by a unique identifier within its feature. For example, in the list of sub features provided above, accelerometer is the first sub-feature of sensors, corporation is the first sub-feature of stakeholders and education is the first sub-feature of contexts. For each of the sub-features of Sensors, categories they are placed in by users is represented by $se_{i}$ and $i$ is the identifier
-of the sub-feature. Similarly, categories assigned to sub features of features Stakeholders and Contexts respectively are represented by $st_{j}$ and $co_{k}$, where $j$ and $k$ are the identifiers of the sub-features categorized.
+Let every sub-feature be represented by unique indices within its feature. For example, in the list of sub features provided above, accelerometer is the first sub-feature of sensors, corporation is the first sub-feature of stakeholders and education is the first sub-feature of contexts. For each of the sub-features of sensors, categories they are placed in by users is represented by $a_{i}$ and $i$ is the index
+of the sub-feature. Similarly, categories assigned to sub features of features stakeholders and contexts respectively are represented by $b_{j}$ and $c_{k}$, where $j$ and $k$ are the identifiers of the sub-features categorized.
 
 \subsection{Weight Matrix Calculation}
-Each data request to users consists of the three above mentioned features in them. Each of the features each have \numsubfeatures sub-features that can appear in turns in a data request. So the total number of data requests are :
+Each data request to users consists of the three above mentioned features in them. Each of the features each have \numsubfeatures sub-features that can appear in turns in a data request assuming that each feature has the same number of sub-features. The total number of possible data requests are $n_{dr} =  n_{sf}^3$.
 
-\begin{equation}
-num_{dr} =  num_{sf} * num_{sf} * num_{sf}   
-\end{equation}
-
-Let $WM$  be a matrix with three dimensions $num_{sf}$ x $num_{sf}$ x $num_{sf}$. We call this the weight matrix.
-Each cell of $WM$, that is $WM_{i,j,k}$ represents a data request which involves the Sensors sub-feature with identifier $i$, Stakeholders sub-feature with identifier $j$,
-and the Contexts sub-feature with identifier $k$. That is, each cell of $WM$ represents the weight of a data request to the users. The aim of the weight matrix is to use the information collected from the user categorizations, to assign weights to each data requests. Intuitively, the process examines the
+Let $W$  be a matrix with three dimensions $n_{sf}$ x $n_{sf}$ x $n_{sf}$. We call this the weight matrix.
+Each cell of $W$, that is $W_{i,j,k}$ represents a data request which involves the sensors sub-feature with identifier $i$, stakeholders sub-feature with identifier $j$,
+and the contexts sub-feature with identifier $k$. That is, each cell of $W$ represents the weight of a data request to the users. The aim of the weight matrix is to use the information collected from the user categorizations, to assign weights to each data requests. Intuitively, the process examines the
 data requests where the user is least likely to trade data and assigns higher weights to those data requests. This process is seen in
-section \ref{analysis_model} with examples. As mentioned before, each cell of the matrix $WM$ represents the weight of a data request with a unique Sensors sub-feature $i$, Stakeholders sub-feature $j$ and Contexts sub-feature $k$. To calculate the weight of a data request :
+Section \ref{analysis_model} with examples. As mentioned before, each cell of the matrix $W$ represents the weight of a data request with a unique sensor sub-feature $i$, stakeholder sub-feature $j$ and context sub-feature $k$. To calculate the weight of a data request :
 
 \begin{equation}
-WM_{i,j,k} = (se*se_{i}) + (st*st_{j}) + (co*co_{k})
+W_{i,j,k} = (a*a_{i}) + (b*b_{j}) + (c*c_{k})
 \end{equation}
 
-Applying this formula for every possible values of $i$, $j$ and $k$ gives the weight matrix $WM$.
+Applying this formula for every possible values of $i$, $j$ and $k$ gives the weight matrix $W$.
 
 \subsection{Cost Matrix Calculation}
 
-Once $WM$ has been calculated, it can give an idea of the weight each data request receives. The aim is now to assign a maximum obtainable cost to each data request. This cost is the maximum credit users can receive for a particular data request. Let $CM$ be the cost matrix with the three dimensions $num_{sf}$ x $num_{sf}$ x $num_{sf}$.
-Let it be assumed to have a budget of $b$ for a day, where
-$b$ can be in an actual currency or any virtual credits. In this literature the budget will be referred to with the unit credits. Each cell of the cost matrix will represent the amount of credits allocated for a particular data request for one day.
-To begin with, we calculate the sum of all the cells of the weight matrix $WM$:
+The aim is now to assign a maximum obtainable rewards to each data request. This reward is the maximum credit users can receive for a particular data request. Let $C$ be the cost matrix with the three dimensions $n_{sf}$ x $n_{sf}$ x $n_{sf}$.
+Let it be assumed to have a budget of $B$ for a day, where
+$B$ can be in an actual currency or any virtual credits. In this thesis the budget will be referred to with the unit credits. Each cell of the cost matrix will represent the amount of rewards allocated for a particular data request for one day.
+To begin with, we calculate the sum of all the cells of the weight matrix $W$:
 
 \begin{equation}
-sum_{WM} = \sum\limits_{i=1}^{num_{sf}} \sum\limits_{j=1}^{num_{sf}} \sum\limits_{k=1}^{num_{sf}} wm_{i,j,k}
+s_{W} = \sum\limits_{i=1}^{n_{sf}} \sum\limits_{j=1}^{n_{sf}} \sum\limits_{k=1}^{n_{sf}} W_{i,j,k}
 \end{equation}
 
-where the function $sum_{WM}$ gives the sum of a matrix, in this case the weight matrix.
-Let $CM_{i,j,k}$ represent the credit allocated for the data request which involves the Sensor's sub-feature with identifier $i$, Stakeholder's sub-feature with identifier $j$, and the Context's sub-feature with identifier $k$. To calculate one cell of the cost matrix :
+where the function $s_{W}$ gives the sum of a matrix, in this case the weight matrix.
+Let $C_{i,j,k}$ represent the credit allocated for the data request which involves the sensor's sub-feature with identifier $i$, stakeholder's sub-feature with identifier $j$, and the context's sub-feature with identifier $k$. To calculate one cell of the cost matrix :
 
 \begin{equation}
-CM_{i,j,k} = \frac{WM_{i,j,k} * b}{sum_{WM}}
+C_{i,j,k} = \frac{W_{i,j,k} * b}{s_{W}}
 \end{equation}
 
-Repeating the above for every cell of $CM$, the entire cost matrix can be calculated. Now, all the maximum obtainable costs have been allocated per day for every data request.
+Repeating the above for every cell of $C$, the entire cost matrix can be calculated. Now, all the maximum obtainable rewards have been allocated per day for every data request.
 
 \subsection{Cost and Privacy Metrics} \label{o}
-Every data request has been assigned a cost. This is the maximum cost that a user can obtain for that data request.
-The Cost metric is the total amount of credits the user has obtained by trading data for data requests for one day. Similarly, the Privacy metric is the amount of privacy percentage obtained while trading data for requests. It intuitively quantifies the amount of data the user has refused to share hence implying privacy. The Cost and Privacy metrics are inversely proportional to each other, in the sense that when the Cost increases the Privacy decreases and vice versa.
+Every data request has been assigned a reward. This is the maximum reward that a user can obtain for that data request.
+The cost metric is the amount of rewards the user has obtained by trading sensor data for each data requests. Similarly, the privacy metric is the amount of privacy percentage obtained while trading data for requests. It intuitively quantifies the amount of data the user has refused to share hence implying privacy. The cost and privacy metrics are inversely proportional to each other, in the sense that when the cost increases the privacy decreases and vice versa.
 
-Each data request the user chooses how much data is to be shared, from the maximum amount of data to no data at all. The possible responses to a data request are called options. Each option corresponds to a summarization level explained in detail in section \ref{summa}. The cost assignment to each option is linearly scaled according
-to the cost assigned to each data request. Let us assume there are options for a data request ranging from $1$ to $m$ (numeric options), where $1$ corresponds to the option where the users give all their data for a request and $m$ to where the users choose not to give any data for a request. Therefore there are a total of $m$ options for every data request. Each option in a data request has the following:
+In each data request one chooses how much data is to be shared, from the maximum amount of data to no data at all. The possible responses to a data request are called options. Each option corresponds to a summarization level explained in detail in section \ref{summa}. The reward assignment to each option is linearly scaled according
+to the reward assigned to each data request. Let us assume there are options for a data request ranging from $1$ to $m$ (numeric options), where $1$ corresponds to the option where the users give all their data for a request and $m$ to where the users choose not to give any data for a request. Therefore there are a total of $m$ options for every data request. Each option in a data request has the following:
 
 \begin{itemize}
 \item The amount of credit change if this particular option for a data request is chosen
 \item The amount of privacy change if this particular option for a data request is chosen
 \end{itemize}
 
-While assigning costs to data requests there are two scenarios to consider:
+While assigning rewards to data requests there are two scenarios to consider:
 
 \begin{itemize}
-\item Assigning option costs without a participation cost. Users are not rewarded for their participation
-\item Assigning option costs inclusive of a participation cost. Users are rewarded for responding to data requests irrespective of how much data they choose to share
+\item Assigning option rewards without a participation reward. Users are not rewarded for responding to data requests
+\item Assigning option rewards inclusive of a participation reward. Users are rewarded for responding to data requests irrespective of the option chosen
 \end{itemize}
 
-Let us examine the first scenario. Let the option costs be calculated for the data request with Sensors sub-feature $i$, stakeholders sub-feature $j$ and
-contexts sub-feature $k$. The assigned cost for any option numbered $h$ of this data request is calculated as follows:
+Let us examine the first scenario. Let the option rewards be calculated for the data request with sensor sub-feature $i$, stakeholder sub-feature $j$ and
+context sub-feature $k$. The assigned reward for any option numbered $h$ of this data request is calculated as follows:
 
 \begin{equation}
-cost_{h} =  \frac{CM_{i,j,k}*(m-h)}{m-1}
+r_{h} =  \frac{C_{i,j,k}*(m-h)}{m-1}
 \end{equation}
 
-Applying this formula by replacing $h$ by the option numbers from $1$ to $m$ gives the cost the user can receive for each option.
-
-
-Similarly, if a participation cost would like to be assigned to each option, it would mean that even tough the user does not share data, they still
-receive some credit for answering the data request. This concept can be implemented to ensure user participation in the experiment. (Quote some paper with
-participation of users in PSS). Let $x$ be a fraction of the total budget $b$ that is dedicated for user participation. Using a geometric progression with $a=1$ and $r=\sqrt[(m-1)]{x}$ , we can calculate the fraction of the maximum cost obtainable from a data request $frac_{h}$, an option numbered $h$ gets:
+Applying this formula by replacing $h$ by the option numbers from $1$ to $m$ gives the reward the user can receive for each option.
+Similarly, if a participation reward is assigned to each option, it would mean that even tough the user does not share data, they still
+receive rewards for answering the data request. This concept can be implemented to ensure user participation in the experiment. Let $x$ be a fraction of the total budget $B$ that is dedicated for user participation. Using a geometric progression with $a=1$ and $z=\sqrt[(m-1)]{x}$ , we can calculate the fraction of the maximum reward obtainable from a data request $f_{h}$, an option numbered $h$ gets:
 
 \begin{equation}
-frac_{h} = a * r^{h-1}
+f_{h} = a * z^{h-1}
 \end{equation}
 
-The fraction of the cost an option $h$ can be assigned has been calculated, to get the cost $cost_{h}$ of option $h$ for the data request with Sensors sub-feature $i$, stakeholders sub-feature $j$ and
-contexts sub-feature $k$ :
+The fraction of the rewards an option $h$ can be assigned has been calculated, to get the rewards $r_{h}$ of option $h$ for the data request with sensor sub-feature $i$, stakeholder sub-feature $j$ and
+context sub-feature $k$ :
 
 \begin{equation}
-cost_{h} = frac_{h} * CM_{i,j,k}
+r_{h} = f_{h} * C_{i,j,k}
 \end{equation}
-This assigns costs to each option, taking into consideration a participation cost that the user gets even if data is not shared for that data request.
+This assigns rewards to each option, taking into consideration a participation rewards that the user gets even if data is not shared for that data request.
 
-Privacy percentage $pri_{h}$ is linearly scaled between the first to the $mth$ option between $0$\% and $100$\% as follows:
+Privacy percentage $p_{h}$ is linearly scaled between the first to the $m^{th}$ option between $0$ and $1$ as follows:
 \begin{equation}
-pri_{h} = \frac{(h-1) * 100}{m-1}
+p_{h} = \frac{(h-1)}{m-1}
 \end{equation}
 
-The total cost and privacy is the sum and arithmetic average of all the costs and privacy respectively, obtained from every answered data request. If a data request is left unanswered, a maximum privacy of 100\% and minimum cost of 0 credit is assumed.
+The total cost and privacy is the sum and arithmetic average of all the rewards and privacy respectively, obtained from every answered data request. If a data request is left unanswered, a maximum privacy of 1 and minimum cost of 0 credit is assumed.
 
 
 \subsection{Improving the Metrics}
-Before users answer a data request, it is useful to know where the user interest lies in. Would the user like to improve
-the privacy metric, or would the user would like to increase the credit revenue. In addition, if we know what the user is looking to improve, we can retrieve the data request that has the possibility to improve the that particular metric the most.
-For example if the user wishes to improve his privacy further, we look at the questions where the user has given the most amount of data. We then put forth this question to answer, which indicating all the options that can improve the privacy. Similarly, if the user chooses to obtain more credit, the question where the user has given least amount of data is retrieved. Options that can improve the user credit are also indicated.
-
+%(Less like experiment)
+%Before users answer a data request, it is useful to know where the user interest lies in. Would the user like to improve
+%the privacy metric, or would the user would like to increase the credit revenue. In addition, if we know what the user is looking to improve, we can retrieve the data request that has the possibility to improve that particular metric the most.
+%For example if the user wishes to improve his privacy further, we look at the questions where the user has given the most amount of data. We then put forth this question to answer, which indicating all the options that can improve the privacy. Similarly, if the user chooses to obtain more credit, the question where the user has given least amount of data is retrieved. Options that can improve the user credit are also indicated.
+Users can choose to improve the privacy or credit metric. If one chooses to improve their credit, the data request where maximum rewards can be obtained is fetched from the database. Otherwise, if users want to improve their privacy the data request which can maximize the privacy is fetched from the database. Additionally, options that can improve the metrics are indicated.
 
 \subsection{Summarization of Collected Data} \label{summa}
 Each data request has the possibility to have $m$ number of options the user can choose from for every data request. These options range from $1$, which indicates that the user would like to give all his data, to option number $m$, which indicates that the user does not want to give any data to this data request.
 
-Summarization is a privacy algorithms that aggregates data to provide less information than in its original form \cite{pournaras2016self}. A higher summarization level gives less data than than in its original form. A lower the summarization level gives data closer to its original form. In this model, sensor data is collected for a period of 24 hours every $y$ seconds for every data request. If the data is summarized, according to the option chosen, the data is collected either every $y$ seconds or lesser.
+Summarization is a privacy algorithm that modifies the quality of data to provide less information than in its original form \cite{pournaras2016self}. A higher summarization level gives data with a lower quality. A lower summarization level gives data with a higher quality. In this model, sensor data is collected for a period of $d$ hours every $y$ seconds for every data request. If the data is summarized, according to the option chosen, the data is collected either every $y$ seconds or less.
 
-Data is collected for the 24 hour period, and at the end of this period according to the option chosen by the user, it is summarized. Summarization can
+Data is collected for the $d$ hour period, and at the end of this period according to the option chosen by the user, it is summarized. Summarization can
 be linearly assigned to each option.
-The highest privacy option $m$ corresponds to the highest summarization level. The first option corresponds to the lowest summarization level. An example of assigning the summarization level $summ_{h}$ for an option h for a data request has the possibility of the following :
+The highest privacy option $m$ corresponds to the highest summarization level. The first option corresponds to the lowest summarization level. An example of assigning the summarization level $l_{h}$ for an option h for a data request has the possibility of the following :
 \begin{equation}
-summ_{h} = y*h \text{ where } h \neq m
+l_{h} = y*h \text{ where } h \neq m
 \end{equation}
 
 This gives the frequency of sensor data collection for every option of a data request.
 
 \section{Analysis of the Model} \label{analysis_model}
-In this section, three different examples are explained in order to test some of the properties that the model assigns to the 
-weight and cost matrix.
+In this section, three different examples are explained in order witness some properties of the weight and cost matrices.
 
 \subsection{Setup}
 In the following examples, the following features and sub-feature are considered:
@@ -266,32 +249,27 @@ In the following examples, the following features and sub-feature are considered
    \end{enumerate}
  \end{enumerate}
  
-The numbers indicated to the left of the sub-features is the sub-feature unique identifier. This uniquely identifies a sub-feature of a feature. There are in total $num_{sf}=3$ sub-features for each feature.
-Each user will receive a number of $$num_{sf}.num_{sf}.num_{sf}=27$$ data requests in total. The number of categories available to categorize is $cat=5$ as explained in \ref{catfeatures}. Additionally, it is assumed that a budget $b=100$ per day is available. 
+Numbers indicated to the left of the sub-features are the corresponding unique indices. This uniquely identifies a sub-feature of a feature. There are in total $num_{sf}=3$ sub-features for each feature.
+Each user will receive a number of $$num_{sf}^3=27$$ data requests in total. The number of categories available to categorize is $cat=5$ as explained in \ref{catfeatures}. Additionally, it is assumed that a budget $b=100$ Chf per day is available. 
 The input to the model are the user choices during the categorization of the features and sub-features.
 
-\subsection{Results}
+\subsection{Examples}
 
-To begin with, the way the user has categorized the features and sub-features is introduced. This will be followed by an explanation
-of the generated matrices. To make reference easier to the graphs, instead of sub-feature names, numeric identifiers are used. From now on each feature and sub-feature will be referred to by its identifier such as feature 1 for Sensors and sub-feature 2 of feature 1 for the noise sensor. The tuple (a,b,c) represents a data request with:
+To make reference easier to the graphs, instead of sub-feature names, numeric indices are used. From now on each feature and sub-feature will be referred to by its index such as feature 1 for sensors and sub-feature 2 of feature 1 for the noise sensor. The tuple (a,b,c) represents a data request with:
 \begin{enumerate}
     \item a - Sensor's sub-feature a
     \item b - Stakeholder's sub-feature b
     \item c - Context's sub-feature c
    \end{enumerate}
-where a, b and c are all numbers from one to three.
+where a, b and c are all numbers from one to three. 
 
-\subsubsection{Scenario One}
 
-If features and sub-features have all been given the same categories respectively by users, then all data requests should be assigned equal weights and costs.
-In scenario 1, the users choose categories for the Features and sub-features as shown in the table \ref{tab:scenario11}. As the table shows, each feature receives the 
-category 1, and all their sub-features are categorized as 3. In short, all the features have the same categorization and their respective
-sub-features all have the same categorization as well. From this input, the formulation of the weight matrix is shown in figure \ref{weight11}, and the cost matrix is shown in figure \ref{cost11}.
-For each data request indicated as a tuple of (sensors, stakeholders, contexts) in the x-axis of figures \ref{fig:scenatio11}, all have identical weights and costs. This is due to the fact that the users find all the features and sub-features equally intrusive so all the data requests are weighted equally.
+If features and sub-features have all been given the same categories respectively by users, then all data requests should be assigned equal weights and rewards. In example 1, users choose categories for the features and sub-features as shown in the Table \ref{tab:scenario11}. From this input, the formulation of the weight matrix is shown in Figure \ref{weight11}, and the cost matrix is shown in Figure \ref{cost11}.
+For each data request indicated as a tuple of (sensors, stakeholders, contexts) in the x-axis of Figures \ref{weight11} and \ref{cost11}, all have identical weights and rewards. This is due to the fact that the users find all the features and sub-features equally intrusive so all the data requests are weighted equally.
 
 \begin{table}[h!]
   \centering
-  \caption{Categorization for Scenario 1}
+  \caption{Categorization for Example 1}
   \label{tab:scenario11}
   \begin{tabular}{cccc}
     \toprule
@@ -308,9 +286,13 @@ For each data request indicated as a tuple of (sensors, stakeholders, contexts) 
 \end{table}
  
 \begin{figure}[htp]
-  \subtop[Values of the Weight Matrix\label{weight11}]{\includegraphics[width=0.5\linewidth]{./images/weight_1_1}}\hspace{1em}
-  \subtop[Values of the Cost Matrix \label{cost11}]{\includegraphics[width=0.5\linewidth]{./images/cost_1_1}}%
-  \caption{Examining Scenario 1}
+  \subtop[Weight Matrix Example 1\label{weight11}]{\includegraphics[width=0.5\linewidth]{./images/weight_1_1}}\hspace{1em}
+  \subtop[Cost Matrix Example 1 \label{cost11}]{\includegraphics[width=0.5\linewidth]{./images/cost_1_1}}\newline
+   \subtop[Weight Matrix Example 2\label{weight3}]{\includegraphics[width=0.5\linewidth]{./images/weight_3}}\hspace{1em}
+  \subtop[Cost Matrix Example 2\label{cost3}]{\includegraphics[width=0.5\linewidth]{./images/cost_3}}\newline
+  \subtop[Weight Matrix Example 3\label{weight4}]{\includegraphics[width=0.5\linewidth]{./images/weight_4}}\hspace{1em}
+\subtop[Cost Matrix Example 3\label{cost4}]{\includegraphics[width=0.5\linewidth]{./images/cost_4}}
+  \caption{Values Assigned to Matrices}
   \label{fig:scenatio11}
 \end{figure}
 
@@ -326,18 +308,18 @@ For each data request indicated as a tuple of (sensors, stakeholders, contexts) 
 %\caption{Values of the Cost Matrix \label{cost11}}
 %\end{figure}
 
-It is concluded that if the users perceive the feature and respective sub-features in an equally intrusive way, then all the
-data requests will receive the same weights and costs assignments.
+It is concluded that if the users perceive the features and respective sub-features in an equally intrusive way, then all the
+data requests will receive the same weight and reward assignments.
 
-\subsubsection{Scenario 2}
-In this section it is attempted to test if data requests containing sub-features with higher intrusion levels are assigned higher weights and costs.
-Table \ref{tab:scenario3} indicates the user input to scenario 2two. As it can be seen, all features have equal categories, and
-all sub-features have the categories of 3 with an exception the  Sensor's sub-features. The Sensors sub-features with identifiers 1,2 and 3 have respectively categories 1,3 and 5. This means that requests with Sensor's sub-feature 1 will be assigned a lesser weight in comparison to the other Sensors sub-features. Similarly, the data requests
-with Sensors sub-feature 2 will have a higher weightage assigned than Sensor's sub-feature 1 because of its higher category, but lesser than Sensor's sub-feature 3. Lastly, data requests with Sensor's sub-feature 3 will have a highest weight compared to the others, due to its category being 5. The weight and cost matrices can be seen in figures \ref{weight3} and \ref{cost3} respectively.
+In example 2, it is attempted to test if data requests containing sub-features with higher intrusion levels are assigned higher weights and rewards.
+Table \ref{tab:scenario3} indicates the user input. As it can be seen, all features have equal categories, and
+all sub-features have the categories of 3 with an exception the sensor sub-features. The sensor sub-features with indices 1,2 and 3 have respectively categories 1,3 and 5. This means that requests with sensor sub-feature 1 will be assigned a lesser weight in comparison to the other sensor sub-features. 
+
+Similarly, the data requests with sensors sub-feature 2 will have a higher weight assigned than sensor sub-feature 1 because of its higher category, but lower than sensor sub-feature 3. Lastly, data requests with sensor sub-feature 3 will have a highest weight compared to the others, due to the category being 5. The weight and cost matrices can be seen in Figures \ref{weight3} and \ref{cost3} respectively.
 
 \begin{table}[h!]
   \centering
-  \caption{Categorization for Scenario 2}
+  \caption{Categorization for Example 2}
   \label{tab:scenario3}
   \begin{tabular}{cccc}
     \toprule
@@ -353,12 +335,11 @@ with Sensors sub-feature 2 will have a higher weightage assigned than Sensor's s
   \end{tabular}
 \end{table}
 
-\begin{figure}[htp]
-  \subtop[Values of the Weight Matrix\label{weight3}]{\includegraphics[width=0.5\linewidth]{./images/weight_3}}\hspace{1em}
-  \subtop[Values of the Cost Matrix \label{cost3}]{\includegraphics[width=0.5\linewidth]{./images/cost_3}}%
-  \caption{Examining Scenario 2}
-  \label{fig:scenatio3}
-\end{figure}
+%\begin{figure}[htp]
+% 
+%  \caption{Examining Scenario 2}
+%  \label{fig:scenatio3}
+%\end{figure}
 
 
 %\begin{figure}[ht!]
@@ -374,14 +355,13 @@ with Sensors sub-feature 2 will have a higher weightage assigned than Sensor's s
 %\end{figure}
 
 
-From the above inputs and graphs, it is concluded that the model assigns a higher weightage to data requests with sub-features that the user finds more intrusive compared to the others.
+From the above inputs and graphs, it is concluded that the model assigns a higher weigh to data requests with sub-features that users find more intrusive compared to the others.
 
-\subsubsection{Scenario 3}
-The feature and sub-feature categories are both assigned different values in this section, to show how varying their values together affects the assignments of the weight and cost matrix. Table \ref{tab:scenario4} is the user input to the scenario 3. All the features have different categories assigned from 3 to 5. Additionally, the sub-feature 1 of each feature has a category of 5, higher than the other sub-features which are all categorized as 1. The weight and cost matrices generated for this scenario are shown in figures \ref{weight4} and \ref{cost4} respectively. 
+For example 3, the feature and sub-feature categories are both assigned different values, to show how varying their values together affects the assignments of the weight and cost matrix. Table \ref{tab:scenario4} is the user input. All the features have different categories assigned from 3 to 5. Additionally, the sub-feature 1 of each feature has a category of 5, higher than the other sub-features which are all categorized as 1. The weight and cost matrices generated are shown in Figures \ref{weight4} and \ref{cost4} respectively. 
 
 \begin{table}[h!]
   \centering
-  \caption{Categorization for Scenario 3}
+  \caption{Categorization for Example 3}
   \label{tab:scenario4}
   \begin{tabular}{cccc}
     \toprule
@@ -397,8 +377,8 @@ The feature and sub-feature categories are both assigned different values in thi
   \end{tabular}
 \end{table}
 
-As it is observed in both figures, the data request with the highest weight is the one with the tuple (1,1,1). This tuple indicates that the data request involves all sub-feature 1 of each feature. This happens because all of the sub-feature 1 are assigned a category of 5. The feature sensors and its sub-feature 1 are categorized as 5, so all the data requests
-with tuple (1,*,*), where * is all the other possible sub-features from other features, are all above average as seen in figures \ref{weight4}, irrespective of the categories of the other feature's sub-features. This shows that assigning a higher category to a feature can lead to higher data request costs. 
+As it is observed in both figures, the data request with the highest weight is the one with the tuple (1,1,1). This tuple indicates that the data request involves all sub-features 1 of each feature. This happens because all of the sub-features 1 are assigned a category of 5. The feature sensor and its sub-feature 1 are categorized as 5, so all the data requests
+with tuple (1,*,*), where * is all the other possible sub-features from other features, are all above average as seen in Figures \ref{weight4}, irrespective of the categories of the other feature sub-features. This shows that assigning a higher category to a feature can lead to higher data request rewards. 
 
 %\begin{figure}[htp]
 %  \subtop[Values of the Weight Matrix\label{weight4}]{\includegraphics[width=0.5\linewidth]{./images/weight_4}}%
@@ -420,20 +400,19 @@ with tuple (1,*,*), where * is all the other possible sub-features from other fe
 %\caption{Values of the Cost Matrix \label{cost4}}
 %\end{figure}
 
-\begin{figure}[htp]
-\subtop[Values of the Weight Matrix\label{weight4}]{\includegraphics[width=0.5\linewidth]{./images/weight_4}}\hspace{1em}
-\subtop[Values of the Cost Matrix\label{cost4}]{\includegraphics[width=0.5\linewidth]{./images/cost_4}}
-\caption{Table Schemas}
-\label{fig:st3}
-\end{figure}
+%\begin{figure}[htp]
+%
+%\caption{Table Schemas}
+%\label{fig:st3}
+%\end{figure}
 
-The green horizontal line in the graph indicates the mean value of the weights and costs. In general due to sub-features categorized as 5, those data requests receive a higher weight and cost. In some cases, the data requests still receive a lower weight such as tuple (2,2,1),
-(2,3,1),(3,2,1) and (3,3,1) even tough Contexts sub-feature 1 has a category of 5. This is due to the fact that Sensors  and Stakeholders feature have a higher category of 5 and 4 respectively than the contexts feature. Since their sub-features are assigned a lower privacy intrusion category than the context's sub-features, the weight of the data requests is lower. This shows that even tough a sub-feature may be regarded as very intrusive, it's weight increasing changing ability still depends on the category of the feature it belongs to.
+The green horizontal line in the graph indicates the mean value of the weights and rewards. In general due to sub-features categorized as 5, those data requests receive a higher weight and reward. In some cases, the data requests still receive a lower weight such as tuple (2,2,1),
+(2,3,1),(3,2,1) and (3,3,1) tough context sub-feature 1 has a category of 5. This is due to the fact that sensor and stakeholder feature have a higher category of 5 and 4 respectively than the context feature. Since their sub-features are assigned a lower privacy intrusion category than the context sub-features, the weight of the data requests is lower. This shows that even tough a sub-feature may be regarded as very intrusive, it's weight increasing changing ability depends on the category of the feature it belongs to.
 
-Additionally, it can be noted that data requests with at least two sub-features 1 are all above average. We can witness the property of the model, which puts more emphasis on the perception of the features than the sub-features themselves. As seen in the figure, all the features with higher intrusion categorizations have weights and costs that are well above average.
+Additionally, it is noted that data requests with at least two sub-features 1 are all above average. We can witness the property of the model, which puts more emphasis on the perception of the features than the sub-features themselves. As seen in the figure, all the features with higher intrusion categorizations have weights and rewards that are well above average.
 
-It can  be concluded that the model assigns weights to data requests, by putting more emphasis on the feature's weights. A feature with high category
-has the ability to assign higher costs with a highly categorized sub-feature. It also has the ability to lower the weight of a data request with a sub-feature lowly
+It can be concluded that the model assigns weights to data requests, by emphasizing on the feature's weights. A feature with a high category
+has the ability to assign higher rewards with a highly categorized sub-feature. It also has the ability to lower the weight of a data request with a sub-feature lowly
 categorized. Features with lower categories contribute lesser to the weight assignments, irrespective of their sub-feature categories.
 
 
