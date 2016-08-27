@@ -1,27 +1,25 @@
-\chapter{Explanation of the Mobile Application}
-This chapter explains the details behind the making of the mobile application environment. First an overview is given, followed by a detailed explanation of the main components of the Android mobile application. This includes the architecture, database schemas and algorithms. Next, the server business logic and storage of the application is presented.
+\chapter{The Fair Data Share Mobile Application}
+This chapter illustrates he mobile application environment. First an overview is given, followed by a detailed explanation of the main components of the Android mobile application. This includes the architecture, database schemas and algorithms. Next, the server business logic and storage of the application is presented.
 
 \section{The Building Blocks}
 
 The following sections will explain integral parts of the server and client of the mobile application. A gist of the architecture is shown
-in the figure \ref{fig:bb}. It shows the mobile application represents the user participating in the experiment. As the experiment goes on,
-mobile sensor data and responses to the data requests which are collected are periodically sent to the Kinvey Data Store. 
+in Figure \ref{fig:bb}.
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/blocks_app}
-\caption{Conceptual Diagram of Mobile Application Architecture}
+\caption{Conceptual diagram of mobile application architecture}
 \label{fig:bb}
 \end{figure}
 
-The users can login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
-are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This in turn structures the data so it can be readable, and pushes it to the user to see on the portal. The concept is similar for the Stakeholders, except they can only access the portal through the computer and not the mobile application.
-
+Users can login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
+are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This in turn structures the data so it can be readable, and sends the data to the user to see on the portal.
 
 \section{The Mobile Application}
 
 The mobile application was developed for the Android platform with phones having API above level 17\footnote{\url{https://developer.android.com/guide/topics/manifest/uses-sdk-element.html}}. Phones are assumed to have internet connectivity and sufficient storage space of at least 100 Mb.
-Below is an explanation of some of the tasks that take place in the application. A block diagram of the interaction of each of the components in the application is depicted in figure \ref{fig:chap5_app}.
+Below is an explanation of some of the tasks that take place in the application. A block diagram of the interaction of each of the components in the application is depicted in Figure \ref{fig:chap5_app}.
 
 \subsection{Local Storage} \label{loc}
 The local storage is an integral part of the application. The database used is SQLite\footnote{\url{https://developer.android.com/reference/android/database/sqlite/package-summary.html}} and is the default database
@@ -31,20 +29,19 @@ their function and schema. All tables explained here are pertaining to the user 
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.8\textwidth]{./images/chap5_app}
-\caption{Interaction of Components of Mobile Application}
+\includegraphics[width=0.7\textwidth,keepaspectratio]{./images/chap5}
+\caption{Interaction of components of mobile application}
 \label{fig:chap5_app}
 \end{figure}
 
 \begin{figure}[htp]
-\subtop[Table Schema of \texttt{QUESTION\_STORE}\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
-\subtop[Table Schema of \texttt{WHICH\_ANSWERS}\label{fig:db_which}]{\includegraphics[width=0.4\linewidth]{./images/db_which_1}}
-\caption{Table Schemas}
+\subtop[Table schema of \texttt{QUESTION\_STORE}\label{fig:db_quest}]{\includegraphics[width=0.4\linewidth]{./images/db_quest}}\hspace{1em}
+\subtop[Table schema of \texttt{WHICH\_ANSWERS}\label{fig:db_which}]{\includegraphics[width=0.4\linewidth]{./images/db_which_1}}
+\caption{Table schemas}
 \label{fig:ts1}
 \end{figure}
 
-
-Figure \ref{fig:db_quest} shows the \texttt{QUESTION\_STORE's} table schema. This table stores each possible data request with its features such as with its sensor \textit{SENSOR}, stakeholder \textit{STAKEHOLDER} and context \textit{CONTEXT}. Each of these are represented by an integer, for example sensor 0 stands for accelerometer sensor. Each data request is accompanied by
+Figure \ref{fig:db_quest} shows the \texttt{QUESTION\_STORE} table schema. This table stores each possible data request with its features such as with its sensor \textit{SENSOR}, stakeholder \textit{STAKEHOLDER} and context \textit{CONTEXT}. Each of these are represented by an integer, for example sensor 0 stands for accelerometer sensor. Each data request is accompanied by
 an unique question identifier \textit{QID}, weight assigned \textit{WEIGHT} and the cost assigned \textit{COST}. This data is not sent to 
 the server.
 
@@ -52,14 +49,14 @@ Figure \ref{fig:db_which} depicts the table \texttt{WHICH\_ANSWERS}'s table sche
 been answered by the user for each round. This is helpful while fetching data requests, so as not to fetch the request twice in the same round. It makes sure that all questions are answered before answering them for a second time. This data is not sent to the server.
 
 \begin{figure}[htp]
-\subtop[Table Schema of \texttt{STORE\_ANSWERS}\label{fig:db_ans}]{\includegraphics[width=0.4\linewidth]{./images/db_ans}} \hspace{1em}
-\subtop[Table Schema of \texttt{STORE\_POINTS}\label{fig:db_points}]{\includegraphics[width=0.4\linewidth]{./images/db_points}}
-\caption{Table Schemas}
+\subtop[Table schema of \texttt{STORE\_ANSWERS}\label{fig:db_ans}]{\includegraphics[width=0.4\linewidth]{./images/db_ans}} \hspace{1em}
+\subtop[Table schema of \texttt{STORE\_POINTS}\label{fig:db_points}]{\includegraphics[width=0.4\linewidth]{./images/db_points}}
+\caption{Table schemas}
 \label{fig:ts11}
 \end{figure}
 
 Figure \ref{fig:db_ans} explains the schema of \texttt{STORE\_ANSWERS} table. This table is used to store the data request identifier \textit{QID} with the corresponding
-user responses \textit{LEVEL}, along with the increase or decrease in credit obtained \textit{COST\_OBT}. The total cost is calculated by adding all the costs in this table. Similarly, the total privacy is calculated by averaging of all the user responses stored in this table. Only the most recent responses are stored in this table. The content of the table is not sent over to the server.
+user responses \textit{LEVEL}, along with the increase or decrease in credit obtained \textit{COST\_OBT}. The total cost is calculated by adding all the costs in this table. Similarly, the total privacy is calculated by averaging all the user responses stored in this table. Only the most recent responses to a data request are stored in this table, since data requests can be answered more than once. The content of the table is not sent over to the server.
 
 Figure \ref{fig:db_points} denotes the schema of \texttt{STORE\_POINTS} table. This table is used to store the credit and privacy obtained for each bidding day.
 This information is sent to the server as soon one bidding day is over.
@@ -67,7 +64,7 @@ This information is sent to the server as soon one bidding day is over.
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.4\linewidth]{./images/db_ur}
-\caption{Table \texttt{USERRESPONSE\_CACHE} Schema}
+\caption{Table \texttt{USERRESPONSE\_CACHE} schema}
 \label{fig:db_ur}
 \end{figure}
 
@@ -106,25 +103,24 @@ The general schema for all the sensor tables is the following :
 \end{enumerate}
 
 \begin{figure}[htp]
-\subtop[Table Schema of \texttt{STORE\_ACCELEROMETER}\label{fig:db_acc}]{\includegraphics[width=0.4\linewidth]{./images/db_acc}}\hspace{1em}
-\subtop[Table Schema of \texttt{STORE\_NOISE} \label{fig:db_noise}]{\includegraphics[width=0.4\linewidth]{./images/db_noise}}%
-\caption{Table Schemas for Sensor Data}
+\subtop[Table schema of \texttt{STORE\_ACCELEROMETER}\label{fig:db_acc}]{\includegraphics[width=0.4\linewidth]{./images/db_acc}}\hspace{1em}
+\subtop[Table schema of \texttt{STORE\_NOISE} \label{fig:db_noise}]{\includegraphics[width=0.4\linewidth]{./images/db_noise}}%
+\caption{Table schemas for sensor data}
 \label{fig:ts2}
 \end{figure}
 
 
 
 \begin{figure}[htp]
-\subtop[Table Schema of \texttt{STORE\_LOCATION}\label{fig:db_loc}]{\includegraphics[width=0.4\linewidth]{./images/db_loc}}\hspace{1em}
-\subtop[Table Schema of \texttt{STORE\_LIGHT} \label{fig:db_light}]{\includegraphics[width=0.4\linewidth]{./images/db_light}}%
-\caption{Table Schemas for Sensor Data}
+\subtop[Table schema of \texttt{STORE\_LOCATION}\label{fig:db_loc}]{\includegraphics[width=0.4\linewidth]{./images/db_loc}}\hspace{1em}
+\subtop[Table schema of \texttt{STORE\_LIGHT} \label{fig:db_light}]{\includegraphics[width=0.4\linewidth]{./images/db_light}}%
+\caption{Table schemas for sensor data}
 \label{fig:ts22}
 \end{figure}
 
 \subsection{Alarms and Notifications}
 
-Every bidding day where the user answers data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely manner to perform some application critical functions. The functions performed are explained in detail in section \ref{next}. 
-To inform the system of such an event Android provides the functionality in the form of alarms. 
+Every bidding day where the user answers data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely manner to perform some application critical functions. To inform the system of such an event Android provides the functionality in the form of alarms. 
 
 Alarms can be set to go off just once or in a repeated fashion to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions \footnote{\url{https://developer.android.com/training/scheduling/alarms.html}}, in the sense that they are triggered around that time set but not exactly at that time to optimize the battery, and can be delayed upto 24 hours. Hence, it is decided to set the repeating alarms manually. 
 
@@ -139,7 +135,7 @@ the phone is kept switched off for a period of time. There are various things th
 \end{enumerate}
 
 Once the phone is switched off, all alarms are erased from memory \footnote{\url{https://developer.android.com/reference/android/app/AlarmManager.html}}. Alarms do not execute when the phone is switched off. Hence, when the phone switches on,
-BootReceiver service of the application is triggered with pseudocode shown in \ref{boot}. This checks whether an alarm has been missed, if it has been missed 200 seconds is given for the phone to stabilize after boot before triggering tasks. Otherwise, a new alarm is set using the pseudocode shown in \ref{setalarm}. To set an alarm we need the time difference between now and when the alarm should ring. After that is calculated, the alarm is set.
+BootReceiver service of the application is triggered with pseudocode shown in \ref{boot}. This checks whether an alarm has been missed, if an alarm should have rung while the phone was switched off, 200 seconds is given for the phone to stabilize after boot before triggering tasks. Otherwise, a new alarm is set using the pseudocode shown in \ref{setalarm}. To set an alarm we need the time difference between now and when the alarm should ring. After that is calculated, the alarm is set. 86400 are the number of seconds in a 24 hour period.
 
 \begin{algorithm}
 \caption{BootService Algorithm}\label{boot}
@@ -156,6 +152,7 @@ BootReceiver service of the application is triggered with pseudocode shown in \r
 \end{algorithmic}
 \end{algorithm}
 
+The alarm algorithm \ref{setalarm} is used to set the next alarm after the phone boots or when an alarm has just rung. It sets the alarm exactly 24 hours after the last alarm rang.
 
 \begin{algorithm}
 \caption{Alarm Algorithm}\label{setalarm}
@@ -172,7 +169,7 @@ BootReceiver service of the application is triggered with pseudocode shown in \r
 
 \subsubsection{Going to the Next Data Sharing Day} \label{next}
 Once the alarm rings, it marks the end of a bidding day. Once a bidding day ends a number of tasks need to be executed
-and for this the NextDayService is triggered, which is described in pseudocode shown in \ref{nextday}. To start with the the privacy and credit is sent to the server and stored locally in the \texttt{STORE\_POINTS} table. \textit{Privacy} which is the total privacy obtained, \textit{Credit} is the total credit obtained, \textit{Round} which is the number of times the user answered all the questions and \textit{CurrentQuestion} which is the current question the user is answering is all reset to zero. The \textit{Day} corresponds to the current day number is incremented by one to denote the next bidding day.
+and for this the NextDayService is triggered, which is described in pseudocode shown in \ref{nextday}. To start with the privacy and credit is sent to the server and stored locally in the \texttt{STORE\_POINTS} table. \textit{Privacy} which is the total privacy obtained, \textit{Credit} is the total credit obtained, \textit{Round} which is the number of times the user answered all the questions and \textit{CurrentQuestion} which is the current question the user is answering is all reset to zero. The \textit{Day} corresponds to the current bidding day number which is incremented by one to denote the next bidding day.
 
 \begin{algorithm}
 \caption{NextDayService Algorithm}\label{nextday}
@@ -198,7 +195,7 @@ needs to be summarized, the corresponding method is called and is explained in p
 the end of experiment screen is shown.
 
 \subsection{Fetching Data Requests} \label{data_req}
-A data requests need to be fetched from the database in two scenarios :
+A data request needs to be fetched from the mobile phone database in two scenarios :
 
 \begin{enumerate}
 	\item After a question has been answered in the first bidding day (entry phase)
@@ -208,20 +205,19 @@ A data requests need to be fetched from the database in two scenarios :
 In the first bidding day, once a data request has been answered the next one is fetched sequentially from the database. This just requires knowing the current data request number and fetching the next data request from table \texttt{QUESTION\_STORE}. For the other bidding days, fetching of the data requests depends on the improvement button chosen. According to the choice, the following is done:
 
 \begin{enumerate}
-	\item \textbf{Improve Privacy} - Obtain data request from table \texttt{STORE\_ANSWERS} where user has answered with lowest privacy
-	\item \textbf{Improve Credit} - Obtain data request from table \texttt{STORE\_ANSWERS} where user has answered with highest privacy
+	\item \textbf{Improve Privacy} - Obtain the data request from table \texttt{STORE\_ANSWERS} where the user can maximize the privacy metric
+	\item \textbf{Improve Credit} - Obtain the data request from table \texttt{STORE\_ANSWERS} where the user can maximize the cost metric
 \end{enumerate}
 
-In addition to sending the data request to the user interface, it is needed to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, the computation $last-possible$ is output, where $last$ stands for the credit obtained the last time the data request was answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options \ref{o}). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer \ref{options}.
+In addition to sending the data request to the user interface, it is needed to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, the computation $last-possible$ is output, where $last$ stands for the credit obtained the last time the data request was answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options \ref{o}). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer to Section \ref{options}.
 
-Every option of a data request has an associated percentage of data that is given away as described in \ref{o}. According to the percentage of data given away, the total privacy is calculated for each possible option. The difference between the current privacy and each possible total privacy is calculated and indicated under each option. This gives an indication to the user as to what each option will do to the metrics.
+Every option of a data request has an associated percentage of data that is given away as described in \ref{o}. According to the percentage of data given away, the total privacy is calculated for each possible option. The difference between the current privacy and each potential privacy (the privacy if the user chooses to click a particular option) is calculated and indicated under each option. This gives an indication to the user as to how each option will affect the privacy and cost metrics.
 
 \subsection{Recording User Choices}
 
-The figure \ref{fig:db_ur} describes the table \texttt{USERRESPONSE\_CACHE}. Each time a user enters a response to a data request, all the fields mentioned in section
-\ref{loc} are recorded and stored in a class object. This object is transformed into a byte array so as to be stored easily in the table as is without transformation.
-When the JobNetworkService described in \ref{job} is called, the class object is sent as it is to the server after converting it back to an object.
-
+Figure \ref{fig:db_ur} describes the table \texttt{USERRESPONSE\_CACHE}. Each time a user enters a response to a data request, all the fields mentioned in Section
+\ref{loc} are recorded and stored in a class object. This object is transformed into a byte array.
+When the JobNetworkService described in Section \ref{job} is called, the byte array is converted back into a class object and sent to the Kinvey Data Store.
 
 \subsection{Sensor Data Collection and Summarization} 
 
@@ -235,8 +231,8 @@ Sensor data is collected from the following sensors :
 \end{enumerate}
 
 A sensor service is triggered when the application is installed and is stopped when the experiment is over. This collects data from every sensor
-every 30 seconds and stores it in the appropriate tables mentioned in section \ref{loc}.
-At the end of a bidding day, sensor data needs to be summarized according to the wishes of the user. This starts by first finding out the lowest privacy level for each sensor. Privacy levels range from one to five, that is from the lowest to highest privacy levels. Using this level
+every 30 seconds and stores it in the appropriate tables mentioned in Section \ref{loc}.
+At the end of a bidding day, sensor data needs to be summarized according to the wishes of the user. This starts by first finding out the lowest privacy level for each sensor. Privacy levels range from one to five, that is from the lowest to highest privacy levels. Using this level,
 summarization is done as shown in pseudocode \ref{sum}. Every privacy level corresponds to an action:
 
 \begin{enumerate}
