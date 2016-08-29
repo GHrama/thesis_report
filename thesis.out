@@ -20,38 +20,39 @@
 \BOOKMARK [1][-]{section.4.2}{Preparatory Phase}{chapter.4}% 20
 \BOOKMARK [2][-]{subsection.4.2.1}{Pre-Survey}{section.4.2}% 21
 \BOOKMARK [2][-]{subsection.4.2.2}{Sub-Features}{section.4.2}% 22
-\BOOKMARK [2][-]{subsection.4.2.3}{Privacy Options}{section.4.2}% 23
-\BOOKMARK [2][-]{subsection.4.2.4}{Question Structure}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.5}{Budget and Experiment Duration}{section.4.2}% 25
-\BOOKMARK [1][-]{section.4.3}{Entry Phase}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.3.1}{Collecting General User Information}{section.4.3}% 27
-\BOOKMARK [2][-]{subsection.4.3.2}{Categorization of Features}{section.4.3}% 28
-\BOOKMARK [2][-]{subsection.4.3.3}{Categorization of Sub-Features}{section.4.3}% 29
-\BOOKMARK [2][-]{subsection.4.3.4}{Answering Questions with No Incentives}{section.4.3}% 30
-\BOOKMARK [1][-]{section.4.4}{Core Phase}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.4.1}{Improve Privacy or Credit}{section.4.4}% 32
-\BOOKMARK [2][-]{subsection.4.4.2}{Answering Questions with Incentives}{section.4.4}% 33
-\BOOKMARK [1][-]{section.4.5}{Exit Phase}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.6}{FairDataShare Web Portal}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.6.1}{Data Generator's Portal}{section.4.6}% 36
-\BOOKMARK [2][-]{subsection.4.6.2}{Stakeholder's Portal}{section.4.6}% 37
-\BOOKMARK [0][-]{chapter.5}{The Fair Data Share Mobile Application}{}% 38
-\BOOKMARK [1][-]{section.5.1}{The Building Blocks}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.2}{The Mobile Application}{chapter.5}% 40
-\BOOKMARK [2][-]{subsection.5.2.1}{Local Storage}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.2}{Alarms and Notifications}{section.5.2}% 42
-\BOOKMARK [2][-]{subsection.5.2.3}{Fetching Data Requests}{section.5.2}% 43
-\BOOKMARK [2][-]{subsection.5.2.4}{Recording User Choices}{section.5.2}% 44
-\BOOKMARK [2][-]{subsection.5.2.5}{Sensor Data Collection and Summarization}{section.5.2}% 45
-\BOOKMARK [2][-]{subsection.5.2.6}{Server Synchronization}{section.5.2}% 46
-\BOOKMARK [1][-]{section.5.3}{The Server}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.3.1}{Kinvey Data Storage}{section.5.3}% 48
-\BOOKMARK [2][-]{subsection.5.3.2}{FairDataShare Web Portal}{section.5.3}% 49
-\BOOKMARK [0][-]{chapter.6}{Experimental Findings}{}% 50
-\BOOKMARK [1][-]{section.6.1}{Findings from the Pre-Survey Data}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.2}{Findings from the Experiment Data}{chapter.6}% 52
-\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 53
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 54
-\BOOKMARK [0][-]{appendix.B}{Appendix B}{}% 55
-\BOOKMARK [0][-]{appendix.C}{Appendix C}{}% 56
-\BOOKMARK [0][-]{section*.91}{Bibliography}{}% 57
+\BOOKMARK [2][-]{subsection.4.2.3}{Stakeholders}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.4}{Privacy Options}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.5}{Question Structure}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.6}{Budget and Experiment Duration}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{Entry Phase}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.3.1}{Collecting General User Information}{section.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.3.2}{Categorization of Features}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.3}{Categorization of Sub-Features}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.4}{Answering Questions with No Incentives}{section.4.3}% 31
+\BOOKMARK [1][-]{section.4.4}{Core Phase}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.1}{Improve Privacy or Credit}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.2}{Answering Questions with Incentives}{section.4.4}% 34
+\BOOKMARK [1][-]{section.4.5}{Exit Phase}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.6}{FairDataShare Web Portal}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.6.1}{Data Generator's Portal}{section.4.6}% 37
+\BOOKMARK [2][-]{subsection.4.6.2}{Stakeholder's Portal}{section.4.6}% 38
+\BOOKMARK [0][-]{chapter.5}{The Fair Data Share Mobile Application}{}% 39
+\BOOKMARK [1][-]{section.5.1}{The Building Blocks}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.2}{The Mobile Application}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.2.1}{Local Storage}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.2}{Alarms and Notifications}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.3}{Fetching Data Requests}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.4}{Recording User Choices}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.5}{Sensor Data Collection and Summarization}{section.5.2}% 46
+\BOOKMARK [2][-]{subsection.5.2.6}{Server Synchronization}{section.5.2}% 47
+\BOOKMARK [1][-]{section.5.3}{The Server}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.3.1}{Kinvey Data Storage}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.2}{FairDataShare Web Portal}{section.5.3}% 50
+\BOOKMARK [0][-]{chapter.6}{Experimental Findings}{}% 51
+\BOOKMARK [1][-]{section.6.1}{Findings from the Pre-Survey Data}{chapter.6}% 52
+\BOOKMARK [1][-]{section.6.2}{Findings from the Experiment Data}{chapter.6}% 53
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 54
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 55
+\BOOKMARK [0][-]{appendix.B}{Appendix B}{}% 56
+\BOOKMARK [0][-]{appendix.C}{Appendix C}{}% 57
+\BOOKMARK [0][-]{section*.73}{Bibliography}{}% 58

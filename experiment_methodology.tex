@@ -24,7 +24,7 @@ The entry phase will take place at the ETH Decision Science Lab and a pool of us
 \item Should be committed to participate in the next phases to come
 \end{itemize}
 
-Users are briefed about the experiment using oral and written instructions. Figure \ref{app:} shows the consent form that needs to be signed before their participation in the experiment. Users should then download the mobile application\footnote{\url{https://play.google.com/store/apps/details?id=ch.ethz.nervousnet.trialapp04&hl=en}} from the Play Store and are automatically assigned a unique identifier each. Additionally, users will have to answer a survey that permits us to collect user data and configure parameters for the core phase. The questions (data requests) are similar to the ones asked during the core phase except that no incentives are awarded for each data request answered. These questions are used to validate whether users change their attitudes to privacy when incentives are awarded.
+Users are briefed about the experiment using oral and written instructions shown in Appendix \ref{app:inf}. Appendix \ref{app:consent} also shows the consent form that needs to be signed before their participation in the experiment. Users should then download the mobile application\footnote{\url{https://play.google.com/store/apps/details?id=ch.ethz.nervousnet.trialapp04&hl=en}} from the Play Store and are automatically assigned a unique identifier each. Additionally, users will have to answer a survey that permits us to collect user data and configure parameters for the core phase. The questions (data requests) are similar to the ones asked during the core phase except that no incentives are awarded for each data request answered. These questions are used to validate whether users change their attitudes to privacy when incentives are awarded.
 
 During the core phase, users answer data requests to share their sensor data in exchange for monetary rewards for a number of days. Data sharing is performed through questions that are automatically formulated as explained in Section \ref{struct}. In this phase, users can respond to questions by choosing from the five available amounts of sensor data to share for each question. Users are also informed about the amount of privacy and cost they have obtained by responding to questions, which are initially zero. The impact of each decision on the privacy and cost is indicated for every question.
 
@@ -34,7 +34,7 @@ A few days after the end of the core phase, users are invited back to the ETH De
 
 \subsection{Pre-Survey}
 
-The pre-survey \footnote{\url{https://descil.eu.qualtrics.com/SE/?SID=SV_0xGS6kfmr8GtQd7}} \ref{app:pre_survey} is a survey created that runs before the deployment of the social experiment.
+The pre-survey \footnote{\url{https://descil.eu.qualtrics.com/SE/?SID=SV_0xGS6kfmr8GtQd7}} shown in Appendix \ref{app:pre_survey} is a survey created that runs before the deployment of the social experiment.
 survey was made in order to study the perception of users on the three features to be studied which are explained in detail in Section \ref{cat_feature}. Figure \ref{fig:all_features}\footnote{Figure made by Athina Voulgari} depicts the features and their sub-features visually.
 
 \begin{figure}[ht!]
@@ -91,6 +91,18 @@ For the sensors feature, it can be observed that the sub-features GPS and microp
 Similarly, looking at the stakeholder feature graph \ref{fig:pre_st}, it is seen that sub-features  corporation and government are found to be intrusive by the users with levels 3.8 and 3.6 on a scale of five. On the other hand, sub-features educational institution and non governmental organization are found to be relatively less intrusive by the users with values of 3.2 and 2.95. For intrusion levels of contexts feature in graph \ref{fig:pre_co}, it is observed that sub-features social-networking and health are found to be intrusive by the users with values 3.8 and 3.6 on a scale of five. Sub-features environment and
 transportation are regarded as less intrusive by user with values of 2.9 and 3.3 on a scale of five. The above mentioned sub-features for every feature have been chosen for the experiment.
 
+\subsection{Stakeholders} \label{stk}
+
+To make the experiment more realistic and to be transparent as to which stakeholder will be viewing user data, real stakeholders were approached to view shared user data. In this way, user choices to data requests will also be more realistic. In this experiment for each type of data collector a stakeholder was chosen:
+\begin{enumerate}
+    \item Tagesanzeiger as a Corporation
+    \item Swiss Made Software as a Non Governmental Organization
+    \item State Secretariat For Education Research and Innovation as a Government Organization
+    \item ETH Zurich as an Educational Institution
+\end{enumerate}
+
+The letters stating their support to participate in the experiment are in Appendix \ref{app:supp}.
+
 \subsection{Privacy Options} \label{options}
 
 Each data request is accompanied with privacy options ranging from $1$ to $5$ as explained in section \ref{o}. Option one indicates that the users would like to
@@ -101,7 +113,7 @@ The options in between have linearly scaled summarization levels assigned to the
 
 A data request is when a stakeholder asks users mobile sensor data for a particular context or purpose. Each data request to the user is posed in the form of a question with the following template :
 
-\textit{"Please choose the amount of \underline{X} sensor type data shared with \underline{Y} stakeholder for use in a \underline{Z} context app"}
+\textit{"Please choose the amount of \underline{X} data shared with \underline{Y} to be used in the context of \underline{Z}"}
 
 where Sensors X can be :
 \begin{enumerate}
@@ -112,10 +124,10 @@ where Sensors X can be :
 \end{enumerate}
 where Stakeholders Y can be:
 \begin{enumerate}
-    \item Corporation, e.g. Swisscom 
-    \item Non Governmental Organization, e.g. Swiss Made Software
-    \item Government, e.g. ETH Zurich
-    \item Educational Institution, e.g. Swiss National Science Foundation
+    \item Corporation, Tagesanzeiger 
+    \item Non Governmental Organization, Swiss Made Software
+    \item Government, State Secretariat For Education Research and Innovation
+    \item Educational Institution, ETH Zurich
 \end{enumerate}
 and where Contexts Z can be:
 \begin{enumerate}
@@ -129,7 +141,7 @@ In total this makes 64 data requests to the user. From now on, we will refer to 
 
 \subsection{Budget and Experiment Duration}
 
-The experiment is set to run for a total of two days with the help of the ETH Decision Science Lab, excluding the time taken for the entry phase and exit phase. From the total budget available for running the experiment, the budget is spread among the various experiment phases according to the number of participants estimated. The budget set for the core phase of the experiment is $b=35$ Chf and is excluding the cost of participation
+The experiment is set to run for a total of two days with the help of the ETH Decision Science Lab, excluding the time taken for the entry phase and exit phase. From the total budget available for running the experiment, the budget is spread among the various experiment phases according to the number of participants estimated. The budget set for the core phase of the experiment is $B=35$ Chf and is excluding the cost of participation
 in the entry and exit phase. Participants are paid 10 Chf for showing up to the Entry Phase, and 15 Chf for
 participating in it. Similarly for the Exit Phase, participants are given 10 Chf for showing up, and 5 Chf for participating in it. The budget is spread this way among all phases so that users are motivated to participate through out the experiment.
 Out of the budget $B$, $\frac{1}{7}$ is given away for the participation of the users in the core phase to motivate them to respond to data requests even if they do not want to give their data for data requests. 
@@ -332,7 +344,7 @@ It needs to be noted that the orange box does not necessarily provide an improve
 \section{Exit Phase}
 
 After the end of the core phase, the participants are asked to fill up a survey based on their experience in the experiment. Some questions are
-about the rewards received, the privacy and credit metrics, design of the application, and how the experiment was conducted. The survey \footnote{\url{https://descil.eu.qualtrics.com/SE/?SID=SV_3P0ySMqNeOO6v5j}} also shown in Appendix \ref{app:exit-survey} is linked to the user using the unique identifier assigned in the application. Once the survey is filled, the users receive their money for the entry phase, core phase and exit phase together, but only if they did not have their phones switched off throughout the experiment and participated in the core phase. This is done by checking the data collected on the server.
+about the rewards received, the privacy and credit metrics, design of the application, and how the experiment was conducted. The purpose is to obtain feedback from users on their experience of participating in the experiment. Additionally, users are asked questions about the performance of the application and battery drain in order to make improvements to the mobile application. From this, problems faced by participants can be noted and improved upon. The survey \footnote{\url{https://descil.eu.qualtrics.com/SE/?SID=SV_3P0ySMqNeOO6v5j}} also shown in Appendix \ref{app:exit-survey} is linked to the user using the unique identifier assigned in the application. Once the survey is filled, users receive their money for the entry phase, core phase and exit phase together, but only if they did not have their phones switched off throughout the experiment and participated in the core phase. This is done by checking the data collected on the server. 
 
 \section{FairDataShare Web Portal} \label{fds}
 
@@ -340,14 +352,14 @@ The FairDataShare portal \footnote{\url{http://fair-data-share.inn.ac/}} is a we
 
 \subsection{Data Generator's Portal}
 
-Once the users are registered which was explained in section \ref{core}, they can come back to the portal after a 24 hours period or later to view their mobile sensor data collected in the server. The data portal login page is shown in figure \ref{fig:fdslogin}. Since the users are already registered from the mobile phone in the entry phase, they can go to the portal from their computers and this time login instead of register. Users should enter their: 
+Once the users are registered as explained in Section \ref{core}, they can come back to the portal after a 24 hours period or later to view their mobile sensor data collected in the server. The data portal login page is shown in Figure \ref{fig:fdslogin}. Since the users are already registered from the mobile phone in the entry phase, they can go to the portal from their computers and this time login instead of register. Users should enter their: 
 
 \begin{enumerate}
     \item Username
     \item Password
 \end{enumerate}
 
-Once this is done, users will be redirected to the data collection page shown in figure \ref{fig:fdsdash} with the following options in the task-bar  to choose from:
+Once this is done, users will be redirected to the data collection page shown in Figure \ref{fig:fdsdash} with the following options in the task-bar  to choose from:
 
 \begin{enumerate}
     \item Accelerometer
@@ -381,16 +393,16 @@ light, accelerometer and noise sensor.
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_login1}
-\caption{Login Page\label{fig:fdslogin}}
+\caption{Login page\label{fig:fdslogin}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_welcome}
-\caption{Welcome Page\label{fig:fdsdash}}
+\caption{Welcome page\label{fig:fdsdash}}
 \end{figure}
 
-Users first register as data generators as indicated in the section \ref{quest_wi}.
+Users first register as data generators as indicated in the Section \ref{quest_wi}.
 %\begin{figure}[htp]
 %  \subtop[Location Data\label{fig:fdsgps}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_gps_full}}\hspace{1em}\hspace{1em}
 %  \subtop[Light Data \label{fig:fdslight}]{\includegraphics[width=0.4\linewidth]{./images/fds_user_light_full}}%
@@ -401,13 +413,13 @@ Users first register as data generators as indicated in the section \ref{quest_w
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_gps_full}
-\caption{Location Data\label{fig:fdsgps}}
+\caption{Location data\label{fig:fdsgps}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_light_full}
-\caption{Light Data \label{fig:fdslight}}
+\caption{Light data \label{fig:fdslight}}
 \end{figure}
 
 %\begin{figure}[htp]
@@ -420,19 +432,19 @@ Users first register as data generators as indicated in the section \ref{quest_w
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_acc_full}
-\caption{Accelerometer Data\label{fig:fdsacc}}
+\caption{Accelerometer data\label{fig:fdsacc}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_user_noise_full}
-\caption{Noise Data \label{fig:fdsnoise}}
+\caption{Noise data \label{fig:fdsnoise}}
 \end{figure}
 
 \subsection{Stakeholder's Portal}
 
-For a stakeholder to view data, they need to register in the portal shown in figure \ref{fig:fds_home} by clicking register. Once that is done,
-the page in figure \ref{fig:fdsdcregister} is shown asking for the following details :
+For a stakeholder to view data, they need to register in the portal shown in Figure \ref{fig:fds_home} by clicking register. Once that is done,
+the page in Figure \ref{fig:fdsdcregister} is shown asking for the following details :
 
 \begin{enumerate}
     \item Company Name
@@ -450,7 +462,7 @@ The stakeholder category is the type the stakeholder comes under such as :
     \item Non-Governmental Organization
 \end{enumerate}
 
-Once these details have been filled in, the stakeholder can click on the register button. Once registered, the stakeholder can login like shown in figure \ref{fig:fdsdclogin}.When access is granted the stakeholder is redirected to the page shown in figure \ref{fig:fds5}. The stakeholder can choose from each of the available drop down lists :
+Once these details have been filled in, the stakeholder can click on the register button. Once registered, the stakeholder can login like shown in Figure \ref{fig:fdsdclogin}.When access is granted the stakeholder is redirected to the page shown in Figure \ref{fig:fds5}. The stakeholder can choose from each of the available drop down lists :
 
 \begin{enumerate}
     \item A sensor
@@ -472,19 +484,19 @@ Once this is entered, the stakeholder can see the  data for that user with the p
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_register1}
-\caption{Registration Page\label{fig:fdsdcregister}}
+\caption{Registration page\label{fig:fdsdcregister}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_login1}
-\caption{Login Page\label{fig:fdsdclogin}}
+\caption{Login page\label{fig:fdsdclogin}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{./images/fds_dc_welcome1}
-\caption{Data Collectors Data Retreiving Page \label{fig:fds5}}
+\caption{Data collectors data retreiving page \label{fig:fds5}}
 \end{figure}
 
 
