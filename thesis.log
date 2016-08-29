@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  28 AUG 2016 00:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  29 AUG 2016 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,6 +1273,24 @@ LaTeX Warning: Label `app:pre_survey' multiply defined.
 
 LaTeX Warning: Label `app:pre_survey' multiply defined.
 
+
+LaTeX Warning: Label `app:exit_survey' multiply defined.
+
+
+LaTeX Warning: Label `app:exit_survey' multiply defined.
+
+
+LaTeX Warning: Label `app:exit_survey' multiply defined.
+
+
+LaTeX Warning: Label `app:exit_survey' multiply defined.
+
+
+LaTeX Warning: Label `app:exit_survey' multiply defined.
+
+
+LaTeX Warning: Label `app:exit_survey' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -1552,7 +1570,7 @@ LaTeX Info: Redefining \nameref on input line 135.
 \openout5 = `thesis.out'.
 
 LaTeX Info: Redefining \Ref on input line 135.
- <ETHlogo.pdf, id=245, 179.67125pt x 45.16875pt>
+ <ETHlogo.pdf, id=233, 179.67125pt x 45.16875pt>
 File: ETHlogo.pdf Graphic file (type pdf)
 
 <use ETHlogo.pdf>
@@ -1610,7 +1628,7 @@ File: uesvect.fd
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ...ion of Sub-Features}{30}{subsection.4.2.3}
+l.30 ...ization of Features}{33}{subsection.4.3.2}
                                                    [1
 
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) h
@@ -1650,12 +1668,7 @@ Overfull \hbox (57.85008pt too wide) in paragraph at lines 7--7
 ][]| 
  []
 
-[5]) (./related_work.tex [6]
-
-LaTeX Warning: Reference `giannotti2012planetary' on page 7 undefined on input 
-line 4.
-
-[7
+[5]) (./related_work.tex [6] [7
 
 ] [8]
 LaTeX Font Info:    Try loading font information for OMS+pplx on input line 25.
@@ -1667,77 +1680,71 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 25.
 
-[9]
-Overfull \hbox (4.62454pt too wide) in paragraph at lines 44--45
-[]\OT1/pplx/b/n/10.95 Personalized in-cen-tives \OT1/pplx/m/n/10.95 - each data
- re-quest is as-signed in-cen-tives based
- []
+[9] [10]) (./model.tex [11] [12
 
-) (./model.tex [10]
+]
 LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/pplx/b/n' tried instead on input line 13.
 
-<./images/model_building_blocks.png, id=432, 820.06375pt x 604.2575pt>
+<./images/model_building_blocks.png, id=426, 820.06375pt x 604.2575pt>
 File: ./images/model_building_blocks.png Graphic file (type png)
 
 <use ./images/model_building_blocks.png>
 Package pdftex.def Info: ./images/model_building_blocks.png used on input line 
 23.
 (pdftex.def)             Requested size: 369.0pt x 271.90414pt.
- [11
-
-] [12 <./images/model_building_blocks.png>] [13] <./images/categorize_sub.png, 
-id=458, 669.50125pt x 388.45125pt>
+ [13] [14 <./images/model_building_blocks.png>] [15] <./images/categorize_sub.p
+ng, id=453, 669.50125pt x 388.45125pt>
 File: ./images/categorize_sub.png Graphic file (type png)
 
 <use ./images/categorize_sub.png>
 Package pdftex.def Info: ./images/categorize_sub.png used on input line 107.
 (pdftex.def)             Requested size: 369.0pt x 214.10524pt.
- [14 <./images/categorize_sub.png>]
+ [16 <./images/categorize_sub.png>]
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
- [15]
-[16] [17] [18] [19]
+ [17]
+[18] [19] [20] [21]
 Overfull \hbox (38.35649pt too wide) in paragraph at lines 274--286
  [][] 
  []
 
-<./images/weight_1_1.pdf, id=519, 757.21959pt x 567.8198pt>
+<./images/weight_1_1.pdf, id=514, 757.21959pt x 567.8198pt>
 File: ./images/weight_1_1.pdf Graphic file (type pdf)
 
 <use ./images/weight_1_1.pdf>
 Package pdftex.def Info: ./images/weight_1_1.pdf used on input line 289.
 (pdftex.def)             Requested size: 184.5pt x 138.35028pt.
 
-<./images/cost_1_1.pdf, id=520, 757.21959pt x 567.8198pt>
+<./images/cost_1_1.pdf, id=515, 757.21959pt x 567.8198pt>
 File: ./images/cost_1_1.pdf Graphic file (type pdf)
 
 <use ./images/cost_1_1.pdf>
 Package pdftex.def Info: ./images/cost_1_1.pdf used on input line 290.
 (pdftex.def)             Requested size: 184.5pt x 138.35028pt.
 
-<./images/weight_3.pdf, id=521, 757.21959pt x 567.8198pt>
+<./images/weight_3.pdf, id=516, 757.21959pt x 567.8198pt>
 File: ./images/weight_3.pdf Graphic file (type pdf)
 
 <use ./images/weight_3.pdf>
 Package pdftex.def Info: ./images/weight_3.pdf used on input line 291.
 (pdftex.def)             Requested size: 184.5pt x 138.35028pt.
 
-<./images/cost_3.pdf, id=522, 734.24312pt x 567.8198pt>
+<./images/cost_3.pdf, id=517, 734.24312pt x 567.8198pt>
 File: ./images/cost_3.pdf Graphic file (type pdf)
 
 <use ./images/cost_3.pdf>
 Package pdftex.def Info: ./images/cost_3.pdf used on input line 292.
 (pdftex.def)             Requested size: 184.5pt x 142.68239pt.
 
-<./images/weight_4.pdf, id=523, 757.21959pt x 567.8198pt>
+<./images/weight_4.pdf, id=518, 757.21959pt x 567.8198pt>
 File: ./images/weight_4.pdf Graphic file (type pdf)
 
 <use ./images/weight_4.pdf>
 Package pdftex.def Info: ./images/weight_4.pdf used on input line 293.
 (pdftex.def)             Requested size: 184.5pt x 138.35028pt.
 
-<./images/cost_4.pdf, id=524, 734.24312pt x 567.8198pt>
+<./images/cost_4.pdf, id=519, 734.24312pt x 567.8198pt>
 File: ./images/cost_4.pdf Graphic file (type pdf)
 
 <use ./images/cost_4.pdf>
@@ -1758,7 +1765,7 @@ Overfull \hbox (13.36995pt too wide) in paragraph at lines 289--295
 [][]  [][] 
  []
 
-[20] [21 <./images/weight_1_1.pdf> <./images/cost_1_1.pdf
+[22] [23 <./images/weight_1_1.pdf> <./images/cost_1_1.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/cost_1_1.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
@@ -1791,280 +1798,273 @@ Overfull \hbox (38.35649pt too wide) in paragraph at lines 366--378
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22])
-(./experiment_methodology.tex [23] [24
+ [24])
+(./experiment_methodology.tex [25] [26
 
 ]
-<./images/all_features.png, id=844, 379.6584pt x 310.2792pt>
+<./images/exp_phases.png, id=833, 443.256pt x 249.5724pt>
+File: ./images/exp_phases.png Graphic file (type png)
+
+<use ./images/exp_phases.png>
+Package pdftex.def Info: ./images/exp_phases.png used on input line 8.
+(pdftex.def)             Requested size: 369.0pt x 207.76195pt.
+ [27 <./images/exp_phases.png>]
+
+LaTeX Warning: Reference `app:' on page 28 undefined on input line 27.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[][] [][][][][]$\OT1/cmtt/m/n/9 https : / / play . google . com / store / apps 
+/ details ? id = ch . ethz . nervousnet .
+ []
+
+[28] <./images/all_features.png, id=861, 379.6584pt x 310.2792pt>
 File: ./images/all_features.png Graphic file (type png)
 
 <use ./images/all_features.png>
-Package pdftex.def Info: ./images/all_features.png used on input line 14.
+Package pdftex.def Info: ./images/all_features.png used on input line 42.
 (pdftex.def)             Requested size: 369.0pt x 301.567pt.
+ [29 <./images/all_features.png>]
 
-<./images/pre_se.pdf, id=845, 757.21959pt x 680.32018pt>
-File: ./images/pre_se.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `fig:pre_st' on page 30 undefined on input line 91.
 
-<use ./images/pre_se.pdf>
-Package pdftex.def Info: ./images/pre_se.pdf used on input line 49.
-(pdftex.def)             Requested size: 166.04887pt x 149.183pt.
 
-Underfull \hbox (badness 1308) in paragraph at lines 49--49
-[]\OT1/pplx/m/n/9 (a) |Av-er-age In-tru-sion of Sen-sors Sub-
+LaTeX Warning: Reference `fig:pre_co' on page 30 undefined on input line 91.
+
+
+Underfull \vbox (badness 5105) has occurred while \output is active []
+
+ [30]
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[][] [][][][][]$\OT1/cmtt/m/n/9 https : / / play . google . com / store / apps 
+/ details ? id = ch . ethz . nervousnet .
  []
 
-<./images/pre_st.pdf, id=846, 757.21959pt x 679.33278pt>
-File: ./images/pre_st.pdf Graphic file (type pdf)
-
-<use ./images/pre_st.pdf>
-Package pdftex.def Info: ./images/pre_st.pdf used on input line 50.
-(pdftex.def)             Requested size: 166.04887pt x 148.96648pt.
-
-<./images/pre_co.pdf, id=847, 757.21959pt x 718.3878pt>
-File: ./images/pre_co.pdf Graphic file (type pdf)
-
-<use ./images/pre_co.pdf>
-Package pdftex.def Info: ./images/pre_co.pdf used on input line 52.
-(pdftex.def)             Requested size: 166.04887pt x 157.5306pt.
- [25] [26 <./images/all_features.png>] [27 <./images/pre_se.pdf> <./images/pre_
-st.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_st.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
-> <./images/pre_co.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_co.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->] [28] <./images/ui_1_3.jpg, id=1016, 722.7pt x 1612.0225pt>
+<./images/ui_1_3.jpg, id=903, 722.7pt x 1612.0225pt>
 File: ./images/ui_1_3.jpg Graphic file (type jpg)
-
-<use ./images/ui_1_3.jpg>
-Package pdftex.def Info: ./images/ui_1_3.jpg used on input line 129.
+ <use ./images/ui_1_3.jpg>
+Package pdftex.def Info: ./images/ui_1_3.jpg used on input line 154.
 (pdftex.def)             Requested size: 166.04106pt x 295.19402pt.
 
-<./images/ui_2_3.jpg, id=1017, 722.7pt x 1420.30624pt>
+<./images/ui_2_3.jpg, id=904, 722.7pt x 1420.30624pt>
 File: ./images/ui_2_3.jpg Graphic file (type jpg)
 
 <use ./images/ui_2_3.jpg>
-Package pdftex.def Info: ./images/ui_2_3.jpg used on input line 130.
+Package pdftex.def Info: ./images/ui_2_3.jpg used on input line 155.
 (pdftex.def)             Requested size: 166.04106pt x 295.19568pt.
-
-<./images/cat_features.png, id=1021, 722.7pt x 1284.8pt>
+ [32]
+<./images/cat_features.png, id=923, 722.7pt x 1284.8pt>
 File: ./images/cat_features.png Graphic file (type png)
 
 <use ./images/cat_features.png>
-Package pdftex.def Info: ./images/cat_features.png used on input line 148.
+Package pdftex.def Info: ./images/cat_features.png used on input line 173.
 (pdftex.def)             Requested size: 147.59206pt x 284.5193pt.
 
-<./images/ui_checkboxes.png, id=1022, 722.7pt x 1284.8pt>
+<./images/ui_checkboxes.png, id=924, 722.7pt x 1284.8pt>
 File: ./images/ui_checkboxes.png Graphic file (type png)
 
 <use ./images/ui_checkboxes.png>
-Package pdftex.def Info: ./images/ui_checkboxes.png used on input line 149.
+Package pdftex.def Info: ./images/ui_checkboxes.png used on input line 174.
 (pdftex.def)             Requested size: 147.59206pt x 284.5193pt.
- [29]
-<./images/cat_sensors.jpg, id=1040, 722.7pt x 1558.82375pt>
+ [33 <./images/ui_1_3.jpg> <./images/ui_2_3.jpg>] <./images/cat_sensors.jpg, id
+=936, 722.7pt x 1558.82375pt>
 File: ./images/cat_sensors.jpg Graphic file (type jpg)
 
 <use ./images/cat_sensors.jpg>
-Package pdftex.def Info: ./images/cat_sensors.jpg used on input line 166.
+Package pdftex.def Info: ./images/cat_sensors.jpg used on input line 189.
 (pdftex.def)             Requested size: 147.59206pt x 284.5246pt.
 
-<./images/cat_stakeholders.jpg, id=1041, 722.7pt x 1597.97pt>
+<./images/cat_stakeholders.jpg, id=937, 722.7pt x 1597.97pt>
 File: ./images/cat_stakeholders.jpg Graphic file (type jpg)
 
 <use ./images/cat_stakeholders.jpg>
-Package pdftex.def Info: ./images/cat_stakeholders.jpg used on input line 167.
+Package pdftex.def Info: ./images/cat_stakeholders.jpg used on input line 190.
 (pdftex.def)             Requested size: 147.59206pt x 284.52554pt.
 
-<./images/cat_contexts.jpg, id=1042, 722.7pt x 1558.82375pt>
+<./images/cat_contexts.jpg, id=938, 722.7pt x 1558.82375pt>
 File: ./images/cat_contexts.jpg Graphic file (type jpg)
 
 <use ./images/cat_contexts.jpg>
-Package pdftex.def Info: ./images/cat_contexts.jpg used on input line 174.
+Package pdftex.def Info: ./images/cat_contexts.jpg used on input line 197.
 (pdftex.def)             Requested size: 147.59206pt x 284.5246pt.
- [30 <./images/ui_1_3.jpg> <./images/ui_2_3.jpg>]
-Overfull \hbox (9.8803pt too wide) in paragraph at lines 187--189
-\OT1/pplx/m/n/10.95 After the cat-e-go-riza-tion ques-tions are an-swered and u
-ser an-swers are recorded,
- []
-
-[31 <./images/cat_features.png> <./images/ui_checkboxes.png>]
-<./images/first_day_1.png, id=1062, 722.7pt x 1284.8pt>
+ [34 <./images/cat_features.png> <./images/ui_checkboxes.png>] [35 <./images/ca
+t_sensors.jpg> <./images/cat_stakeholders.jpg>]
+<./images/first_day_1.png, id=957, 722.7pt x 1284.8pt>
 File: ./images/first_day_1.png Graphic file (type png)
 
 <use ./images/first_day_1.png>
-Package pdftex.def Info: ./images/first_day_1.png used on input line 193.
+Package pdftex.def Info: ./images/first_day_1.png used on input line 215.
 (pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
 
-<./images/first_day_2.png, id=1063, 722.7pt x 1284.8pt>
+<./images/first_day_2.png, id=958, 722.7pt x 1284.8pt>
 File: ./images/first_day_2.png Graphic file (type png)
 
 <use ./images/first_day_2.png>
-Package pdftex.def Info: ./images/first_day_2.png used on input line 194.
+Package pdftex.def Info: ./images/first_day_2.png used on input line 216.
 (pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
 
-<./images/improve_layout.png, id=1064, 722.7pt x 1284.8pt>
+<./images/improve_layout.png, id=959, 722.7pt x 1284.8pt>
 File: ./images/improve_layout.png Graphic file (type png)
 
 <use ./images/improve_layout.png>
-Package pdftex.def Info: ./images/improve_layout.png used on input line 212.
+Package pdftex.def Info: ./images/improve_layout.png used on input line 234.
 (pdftex.def)             Requested size: 166.04887pt x 295.18411pt.
 
-<./images/improve.png, id=1065, 722.7pt x 1284.8pt>
+<./images/improve.png, id=960, 722.7pt x 1284.8pt>
 File: ./images/improve.png Graphic file (type png)
  <use ./images/improve.png>
-Package pdftex.def Info: ./images/improve.png used on input line 213.
+Package pdftex.def Info: ./images/improve.png used on input line 235.
 (pdftex.def)             Requested size: 166.04887pt x 295.18411pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32 <./images/cat_sensors.jpg> <./images/cat_stakeholders.jpg>]
 
 Class memoir Warning: The \it font command is deprecated. 
 (memoir)              Use \textit{...} or {\itshape... } instead on input line 
-218.
+240.
 
 
-LaTeX Warning: Reference `fig:fds1' on page 33 undefined on input line 227.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./images/fds1.png, id=1076, 1281.78876pt x 205.76875pt>
+ [36 <./images/cat_contexts.jpg>] [37 <./images/first_day_1.png> <./images/firs
+t_day_2.png>] <./images/fds1.png, id=985, 1281.78876pt x 205.76875pt>
 File: ./images/fds1.png Graphic file (type png)
 
 <use ./images/fds1.png>
-Package pdftex.def Info: ./images/fds1.png used on input line 240.
+Package pdftex.def Info: ./images/fds1.png used on input line 262.
 (pdftex.def)             Requested size: 369.0pt x 59.23497pt.
- [33 <./images/cat_contexts.jpg>]
-<./images/fds_user_register1.png, id=1088, 1236.62pt x 518.93875pt>
+
+<./images/fds_user_register1.png, id=986, 1236.62pt x 518.93875pt>
 File: ./images/fds_user_register1.png Graphic file (type png)
 
 <use ./images/fds_user_register1.png>
-Package pdftex.def Info: ./images/fds_user_register1.png used on input line 247
+Package pdftex.def Info: ./images/fds_user_register1.png used on input line 269
 .
 (pdftex.def)             Requested size: 369.0pt x 154.84348pt.
-
-Underfull \vbox (badness 1132) has occurred while \output is active []
-
- [34 <./images/first_day_1.png> <./images/first_day_2.png>]
-<./images/bid_layout_1.png, id=1096, 722.7pt x 1284.8pt>
+ [38 <./images/improve_layout.png> <./images/improve.png> <./images/fds1.png>]
+<./images/bid_layout_1.png, id=995, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_1.png Graphic file (type png)
 
 <use ./images/bid_layout_1.png>
-Package pdftex.def Info: ./images/bid_layout_1.png used on input line 264.
+Package pdftex.def Info: ./images/bid_layout_1.png used on input line 286.
 (pdftex.def)             Requested size: 129.15225pt x 229.60725pt.
 
-<./images/bid_layout_2.png, id=1097, 722.7pt x 1284.8pt>
+<./images/bid_layout_2.png, id=996, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_2.png Graphic file (type png)
 
 <use ./images/bid_layout_2.png>
-Package pdftex.def Info: ./images/bid_layout_2.png used on input line 265.
+Package pdftex.def Info: ./images/bid_layout_2.png used on input line 287.
 (pdftex.def)             Requested size: 129.15225pt x 229.60725pt.
 
-Overfull \hbox (0.70428pt too wide) in paragraph at lines 271--272
+Overfull \hbox (0.70428pt too wide) in paragraph at lines 293--294
 \OT1/pplx/m/n/10.95 swered, the num-ber of ques-tions an-swered is re-set and t
 he num-ber of rounds
  []
 
-[35 <./images/improve_layout.png> <./images/improve.png> <./images/fds1.png>]
-[36 <./images/fds_user_register1.png> <./images/bid_layout_1.png> <./images/bid
-_layout_2.png>] [37] <./images/bid_layout_3.png, id=1126, 722.7pt x 1284.8pt>
+[39 <./images/fds_user_register1.png>] [40 <./images/bid_layout_1.png> <./image
+s/bid_layout_2.png>] <./images/bid_layout_3.png, id=1018, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_3.png Graphic file (type png)
 
 <use ./images/bid_layout_3.png>
-Package pdftex.def Info: ./images/bid_layout_3.png used on input line 296.
+Package pdftex.def Info: ./images/bid_layout_3.png used on input line 318.
 (pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
 
-<./images/bid_layout_5.png, id=1127, 722.7pt x 1284.8pt>
+<./images/bid_layout_5.png, id=1019, 722.7pt x 1284.8pt>
 File: ./images/bid_layout_5.png Graphic file (type png)
 
 <use ./images/bid_layout_5.png>
-Package pdftex.def Info: ./images/bid_layout_5.png used on input line 297.
+Package pdftex.def Info: ./images/bid_layout_5.png used on input line 319.
 (pdftex.def)             Requested size: 147.59775pt x 262.38588pt.
- [38 <./images/bid_layout_3.png> <./images/bid_layout_5.png>] [39]
-<./images/fds_user_login1.png, id=1158, 1206.5075pt x 371.3875pt>
+ [41]
+
+LaTeX Warning: Reference `app:exit-survey' on page 42 undefined on input line 3
+35.
+
+[42 <./images/bid_layout_3.png> <./images/bid_layout_5.png>]
+<./images/fds_user_login1.png, id=1046, 1206.5075pt x 371.3875pt>
 File: ./images/fds_user_login1.png Graphic file (type png)
 
 <use ./images/fds_user_login1.png>
-Package pdftex.def Info: ./images/fds_user_login1.png used on input line 361.
+Package pdftex.def Info: ./images/fds_user_login1.png used on input line 383.
 (pdftex.def)             Requested size: 369.0pt x 113.58186pt.
 
-<./images/fds_user_welcome.png, id=1159, 833.1125pt x 258.9675pt>
+<./images/fds_user_welcome.png, id=1047, 833.1125pt x 258.9675pt>
 File: ./images/fds_user_welcome.png Graphic file (type png)
 
 <use ./images/fds_user_welcome.png>
-Package pdftex.def Info: ./images/fds_user_welcome.png used on input line 367.
+Package pdftex.def Info: ./images/fds_user_welcome.png used on input line 389.
 (pdftex.def)             Requested size: 369.0pt x 114.70078pt.
 
-<./images/fds_user_gps_full.png, id=1161, 1256.695pt x 730.73pt>
+<./images/fds_user_gps_full.png, id=1049, 1256.695pt x 730.73pt>
 File: ./images/fds_user_gps_full.png Graphic file (type png)
 
 <use ./images/fds_user_gps_full.png>
-Package pdftex.def Info: ./images/fds_user_gps_full.png used on input line 381.
+Package pdftex.def Info: ./images/fds_user_gps_full.png used on input line 403.
 
 (pdftex.def)             Requested size: 369.0pt x 214.55997pt.
 
-<./images/fds_user_light_full.png, id=1162, 1246.6575pt x 728.7225pt>
+<./images/fds_user_light_full.png, id=1050, 1246.6575pt x 728.7225pt>
 File: ./images/fds_user_light_full.png Graphic file (type png)
 
 <use ./images/fds_user_light_full.png>
-Package pdftex.def Info: ./images/fds_user_light_full.png used on input line 38
-7.
+Package pdftex.def Info: ./images/fds_user_light_full.png used on input line 40
+9.
 (pdftex.def)             Requested size: 369.0pt x 215.69403pt.
 
-<./images/fds_user_acc_full.png, id=1163, 1264.725pt x 728.7225pt>
+<./images/fds_user_acc_full.png, id=1051, 1264.725pt x 728.7225pt>
 File: ./images/fds_user_acc_full.png Graphic file (type png)
 
 <use ./images/fds_user_acc_full.png>
-Package pdftex.def Info: ./images/fds_user_acc_full.png used on input line 400.
+Package pdftex.def Info: ./images/fds_user_acc_full.png used on input line 422.
 
 (pdftex.def)             Requested size: 369.0pt x 212.61395pt.
 
-<./images/fds_user_noise_full.png, id=1164, 1221.56375pt x 727.71875pt>
+<./images/fds_user_noise_full.png, id=1052, 1221.56375pt x 727.71875pt>
 File: ./images/fds_user_noise_full.png Graphic file (type png)
 
 <use ./images/fds_user_noise_full.png>
-Package pdftex.def Info: ./images/fds_user_noise_full.png used on input line 40
-6.
+Package pdftex.def Info: ./images/fds_user_noise_full.png used on input line 42
+8.
 (pdftex.def)             Requested size: 369.0pt x 219.82745pt.
- [40 <./images/fds_user_login1.png> <./images/fds_user_welcome.png>] [41 <./ima
-ges/fds_user_gps_full.png> <./images/fds_user_light_full.png>] [42 <./images/fd
-s_user_acc_full.png> <./images/fds_user_noise_full.png>]
-<./images/fds_dc_register1.png, id=1206, 1214.5375pt x 490.83376pt>
+ [43] [44 <./images/fds_user_login1.png> <./images/fds_user_welcome.png> <./ima
+ges/fds_user_gps_full.png>] [45 <./images/fds_user_light_full.png> <./images/fd
+s_user_acc_full.png>]
+<./images/fds_dc_register1.png, id=1098, 1214.5375pt x 490.83376pt>
 File: ./images/fds_dc_register1.png Graphic file (type png)
 
 <use ./images/fds_dc_register1.png>
-Package pdftex.def Info: ./images/fds_dc_register1.png used on input line 452.
+Package pdftex.def Info: ./images/fds_dc_register1.png used on input line 474.
 (pdftex.def)             Requested size: 369.0pt x 149.12363pt.
 
-<./images/fds_dc_login1.png, id=1207, 1228.59pt x 377.41pt>
+<./images/fds_dc_login1.png, id=1099, 1228.59pt x 377.41pt>
 File: ./images/fds_dc_login1.png Graphic file (type png)
 
 <use ./images/fds_dc_login1.png>
-Package pdftex.def Info: ./images/fds_dc_login1.png used on input line 458.
+Package pdftex.def Info: ./images/fds_dc_login1.png used on input line 480.
 (pdftex.def)             Requested size: 369.0pt x 113.35056pt.
 
-<./images/fds_dc_welcome1.png, id=1208, 798.985pt x 81.30376pt>
+<./images/fds_dc_welcome1.png, id=1100, 798.985pt x 81.30376pt>
 File: ./images/fds_dc_welcome1.png Graphic file (type png)
 
 <use ./images/fds_dc_welcome1.png>
-Package pdftex.def Info: ./images/fds_dc_welcome1.png used on input line 464.
+Package pdftex.def Info: ./images/fds_dc_welcome1.png used on input line 486.
 (pdftex.def)             Requested size: 369.0pt x 37.54904pt.
-) (./mobile_application.tex [43 <./images/fds_dc_register1.png>] [44 <./images/
-fds_dc_login1.png> <./images/fds_dc_welcome1.png>]
-Overfull \hbox (1.26996pt too wide) in paragraph at lines 2--3
-\OT1/pplx/m/n/10.95 This chap-ter il-lus-trates he mo-bile ap-pli-ca-tion en-vi
--ron-ment. First an overview
+) (./mobile_application.tex [46 <./images/fds_user_noise_full.png>] [47 <./imag
+es/fds_dc_register1.png> <./images/fds_dc_login1.png> <./images/fds_dc_welcome1
+.png>] [48
+
+]
+Overfull \hbox (4.83965pt too wide) in paragraph at lines 2--3
+\OT1/pplx/m/n/10.95 This chap-ter il-lus-trates the mo-bile ap-pli-ca-tion en-v
+i-ron-ment. First an overview
  []
 
-<./images/blocks_app.png, id=1231, 1281.78876pt x 640.3925pt>
+<./images/blocks_app.png, id=1127, 1281.78876pt x 640.3925pt>
 File: ./images/blocks_app.png Graphic file (type png)
 
 <use ./images/blocks_app.png>
 Package pdftex.def Info: ./images/blocks_app.png used on input line 11.
 (pdftex.def)             Requested size: 369.0pt x 184.35081pt.
- [45
-
- <./images/blocks_app.png>]
+ [49 <./images/blocks_app.png>]
 Overfull \hbox (1.20795pt too wide) in paragraph at lines 21--23
 \OT1/pplx/m/n/10.95 The mo-bile ap-pli-ca-tion was de-vel-oped for the An-droid
  plat-form with phones
@@ -2076,49 +2076,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 ce / android / database / sqlite /
  []
 
-<./images/chap5.png, id=1246, 1043.9pt x 716.6775pt>
-File: ./images/chap5.png Graphic file (type png)
- <use ./images/chap5.png>
-Package pdftex.def Info: ./images/chap5.png used on input line 32.
-(pdftex.def)             Requested size: 258.29887pt x 177.33176pt.
+<./images/chap1.png, id=1141, 1032.85875pt x 790.955pt>
+File: ./images/chap1.png Graphic file (type png)
 
-<./images/db_quest.png, id=1247, 173.64874pt x 165.61874pt>
+<use ./images/chap1.png>
+Package pdftex.def Info: ./images/chap1.png used on input line 32.
+(pdftex.def)             Requested size: 369.0pt x 282.57117pt.
+
+<./images/db_quest.png, id=1142, 173.64874pt x 165.61874pt>
 File: ./images/db_quest.png Graphic file (type png)
 
 <use ./images/db_quest.png>
 Package pdftex.def Info: ./images/db_quest.png used on input line 38.
 (pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
 
-<./images/db_which_1.png, id=1248, 173.64874pt x 165.61874pt>
+<./images/db_which_1.png, id=1143, 173.64874pt x 165.61874pt>
 File: ./images/db_which_1.png Graphic file (type png)
 
 <use ./images/db_which_1.png>
 Package pdftex.def Info: ./images/db_which_1.png used on input line 39.
 (pdftex.def)             Requested size: 147.59775pt x 140.77658pt.
 
-<./images/db_ans.png, id=1251, 188.705pt x 162.6075pt>
+<./images/db_ans.png, id=1146, 188.705pt x 162.6075pt>
 File: ./images/db_ans.png Graphic file (type png)
 
 <use ./images/db_ans.png>
 Package pdftex.def Info: ./images/db_ans.png used on input line 52.
 (pdftex.def)             Requested size: 147.59775pt x 127.18567pt.
 
-<./images/db_points.png, id=1252, 388.45125pt x 332.24126pt>
+<./images/db_points.png, id=1147, 388.45125pt x 332.24126pt>
 File: ./images/db_points.png Graphic file (type png)
 
 <use ./images/db_points.png>
 Package pdftex.def Info: ./images/db_points.png used on input line 53.
 (pdftex.def)             Requested size: 147.59775pt x 126.24284pt.
- [46]
-<./images/db_ur.png, id=1267, 305.14pt x 301.125pt>
+ [50]
+<./images/db_ur.png, id=1162, 305.14pt x 301.125pt>
 File: ./images/db_ur.png Graphic file (type png)
  <use ./images/db_ur.png>
 Package pdftex.def Info: ./images/db_ur.png used on input line 66.
 (pdftex.def)             Requested size: 147.59775pt x 145.65947pt.
 
-[47 <./images/chap5.png> <./images/db_quest.png> <./images/db_which_1.png>]
-[48 <./images/db_ans.png> <./images/db_points.png> <./images/db_ur.png>]
-<./images/db_acc.png, id=1300, 376.40625pt x 331.2375pt>
+[51 <./images/chap1.png>]
+
+LaTeX Warning: Text page 52 contains only floats.
+
+[52 <./images/db_quest.png> <./images/db_which_1.png> <./images/db_ans.png> <./
+images/db_points.png> <./images/db_ur.png>]
+<./images/db_acc.png, id=1189, 376.40625pt x 331.2375pt>
 File: ./images/db_acc.png Graphic file (type png)
 
 <use ./images/db_acc.png>
@@ -2129,69 +2134,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--106
 []\OT1/pplx/m/n/9 (a) |Ta-ble schema of
  []
 
-<./images/db_noise.png, id=1301, 370.38374pt x 325.215pt>
+<./images/db_noise.png, id=1190, 370.38374pt x 325.215pt>
 File: ./images/db_noise.png Graphic file (type png)
 
 <use ./images/db_noise.png>
 Package pdftex.def Info: ./images/db_noise.png used on input line 107.
 (pdftex.def)             Requested size: 147.59775pt x 129.59738pt.
 
-<./images/db_loc.png, id=1302, 368.37625pt x 317.185pt>
+<./images/db_loc.png, id=1191, 368.37625pt x 317.185pt>
 File: ./images/db_loc.png Graphic file (type png)
 
 <use ./images/db_loc.png>
 Package pdftex.def Info: ./images/db_loc.png used on input line 115.
 (pdftex.def)             Requested size: 147.59775pt x 127.08469pt.
 
-<./images/db_light.png, id=1303, 379.4175pt x 324.21124pt>
+<./images/db_light.png, id=1192, 379.4175pt x 324.21124pt>
 File: ./images/db_light.png Graphic file (type png)
 
 <use ./images/db_light.png>
 Package pdftex.def Info: ./images/db_light.png used on input line 116.
 (pdftex.def)             Requested size: 147.59775pt x 126.12526pt.
- [49 <./images/db_acc.png> <./images/db_noise.png>]
+ [53] [54 <./images/db_acc.png> <./images/db_noise.png> <./images/db_loc.png> <
+./images/db_light.png>]
 Overfull \hbox (1.37909pt too wide) in paragraph at lines 137--139
 []\OT1/pplx/m/n/10.95 Once the phone is switched off, all alarms are erased fro
 m mem-ory [][][][][]. Alarms
  []
 
-[50 <./images/db_loc.png> <./images/db_light.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 141.
- [51] [52] [53] [54]
-Overfull \hbox (1.12033pt too wide) in paragraph at lines 337--339
+[55] [56] [57] [58] [59]
+<./images/schema_ui.png, id=1304, 242.9075pt x 214.8025pt>
+File: ./images/schema_ui.png Graphic file (type png)
+
+<use ./images/schema_ui.png>
+Package pdftex.def Info: ./images/schema_ui.png used on input line 333.
+(pdftex.def)             Requested size: 147.59775pt x 130.51802pt.
+
+<./images/schema_features.png, id=1313, 177.66376pt x 166.6225pt>
+File: ./images/schema_features.png Graphic file (type png)
+
+<use ./images/schema_features.png>
+Package pdftex.def Info: ./images/schema_features.png used on input line 341.
+(pdftex.def)             Requested size: 147.60184pt x 147.60709pt.
+
+<./images/schema_sensors.png, id=1314, 165.61874pt x 164.615pt>
+File: ./images/schema_sensors.png Graphic file (type png)
+
+<use ./images/schema_sensors.png>
+Package pdftex.def Info: ./images/schema_sensors.png used on input line 342.
+(pdftex.def)             Requested size: 147.59775pt x 146.71034pt.
+
+<./images/schema_stakeholders.png, id=1315, 167.62625pt x 166.6225pt>
+File: ./images/schema_stakeholders.png Graphic file (type png)
+
+<use ./images/schema_stakeholders.png>
+Package pdftex.def Info: ./images/schema_stakeholders.png used on input line 34
+3.
+(pdftex.def)             Requested size: 147.59775pt x 146.71214pt.
+
+<./images/schema_contexts.png, id=1316, 166.6225pt x 165.61874pt>
+File: ./images/schema_contexts.png Graphic file (type png)
+
+<use ./images/schema_contexts.png>
+Package pdftex.def Info: ./images/schema_contexts.png used on input line 344.
+(pdftex.def)             Requested size: 147.59775pt x 146.71788pt.
+
+Overfull \hbox (1.12033pt too wide) in paragraph at lines 349--351
 []\OT1/pplx/m/n/10.95 The sen-sor data sent by the Job-Net-work-Ser-vice is sto
 red in col-lec-tions named
  []
 
-[55]) (./pre_survey_results.tex [56] [57] [58
+[60 <./images/schema_ui.png>] [61 <./images/schema_features.png> <./images/sche
+ma_sensors.png> <./images/schema_stakeholders.png> <./images/schema_contexts.pn
+g>] [62]) (./pre_survey_results.tex [63] [64
 
 ]
-<./images/pre_6.pdf, id=1465, 749.566pt x 715.80872pt>
+<./images/pre_6.pdf, id=1389, 749.566pt x 715.80872pt>
 File: ./images/pre_6.pdf Graphic file (type pdf)
 
 <use ./images/pre_6.pdf>
 Package pdftex.def Info: ./images/pre_6.pdf used on input line 14.
 (pdftex.def)             Requested size: 166.04887pt x 158.57063pt.
 
-<./images/pre_incentives.pdf, id=1466, 749.566pt x 728.66006pt>
+<./images/pre_incentives.pdf, id=1390, 749.566pt x 728.66006pt>
 File: ./images/pre_incentives.pdf Graphic file (type pdf)
 
 <use ./images/pre_incentives.pdf>
 Package pdftex.def Info: ./images/pre_incentives.pdf used on input line 15.
 (pdftex.def)             Requested size: 166.04887pt x 161.41756pt.
 
-<./images/pre_q7.pdf, id=1467, 562.1pt x 421.575pt>
+<./images/pre_q7.pdf, id=1391, 562.1pt x 421.575pt>
 File: ./images/pre_q7.pdf Graphic file (type pdf)
  <use ./images/pre_q7.pdf>
 Package pdftex.def Info: ./images/pre_q7.pdf used on input line 17.
 (pdftex.def)             Requested size: 166.04887pt x 124.53722pt.
 
-[59]
+[65]
 
-LaTeX Warning: Reference `fig:pre_15' on page 60 undefined on input line 25.
+LaTeX Warning: Reference `fig:pre_15' on page 66 undefined on input line 25.
 
-<./images/pre_mobile_concern.pdf, id=1476, 749.566pt x 529.8655pt>
+<./images/pre_mobile_concern.pdf, id=1400, 749.566pt x 529.8655pt>
 File: ./images/pre_mobile_concern.pdf Graphic file (type pdf)
 
 <use ./images/pre_mobile_concern.pdf>
@@ -2199,21 +2242,21 @@ Package pdftex.def Info: ./images/pre_mobile_concern.pdf used on input line 29.
 
 (pdftex.def)             Requested size: 184.5pt x 130.42052pt.
 
-<./images/pre_se_imp.pdf, id=1477, 749.566pt x 529.8655pt>
+<./images/pre_se_imp.pdf, id=1401, 749.566pt x 529.8655pt>
 File: ./images/pre_se_imp.pdf Graphic file (type pdf)
 
 <use ./images/pre_se_imp.pdf>
 Package pdftex.def Info: ./images/pre_se_imp.pdf used on input line 30.
 (pdftex.def)             Requested size: 184.5pt x 130.42052pt.
 
-<./images/pre_st_imp.pdf, id=1478, 749.566pt x 529.8655pt>
+<./images/pre_st_imp.pdf, id=1402, 749.566pt x 529.8655pt>
 File: ./images/pre_st_imp.pdf Graphic file (type pdf)
 
 <use ./images/pre_st_imp.pdf>
 Package pdftex.def Info: ./images/pre_st_imp.pdf used on input line 31.
 (pdftex.def)             Requested size: 184.5pt x 130.42052pt.
 
-<./images/pre_co_imp.pdf, id=1479, 749.566pt x 529.8655pt>
+<./images/pre_co_imp.pdf, id=1403, 749.566pt x 529.8655pt>
 File: ./images/pre_co_imp.pdf Graphic file (type pdf)
 
 <use ./images/pre_co_imp.pdf>
@@ -2229,39 +2272,47 @@ Overfull \hbox (13.36995pt too wide) in paragraph at lines 29--33
 [][]  [][] 
  []
 
-[60 <./images/pre_6.pdf> <./images/pre_incentives.pdf
+[66 <./images/pre_6.pdf> <./images/pre_incentives.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_incentives.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 > <./images/pre_q7.pdf>]
+<./images/pre_se.pdf, id=1508, 757.21959pt x 680.32018pt>
 File: ./images/pre_se.pdf Graphic file (type pdf)
- <use ./images/pre_se.pdf>
+
+<use ./images/pre_se.pdf>
 Package pdftex.def Info: ./images/pre_se.pdf used on input line 42.
 (pdftex.def)             Requested size: 184.5pt x 165.76118pt.
 
-<./images/pre_se_sd.pdf, id=1584, 772.54247pt x 684.35367pt>
+<./images/pre_se_sd.pdf, id=1509, 772.54247pt x 684.35367pt>
 File: ./images/pre_se_sd.pdf Graphic file (type pdf)
 
 <use ./images/pre_se_sd.pdf>
 Package pdftex.def Info: ./images/pre_se_sd.pdf used on input line 43.
 (pdftex.def)             Requested size: 184.5pt x 163.43373pt.
+
+<./images/pre_st.pdf, id=1510, 757.21959pt x 679.33278pt>
 File: ./images/pre_st.pdf Graphic file (type pdf)
- <use ./images/pre_st.pdf>
+
+<use ./images/pre_st.pdf>
 Package pdftex.def Info: ./images/pre_st.pdf used on input line 44.
 (pdftex.def)             Requested size: 184.5pt x 165.52061pt.
 
-<./images/pre_st_sd.pdf, id=1585, 772.54247pt x 683.3188pt>
+<./images/pre_st_sd.pdf, id=1511, 772.54247pt x 683.3188pt>
 File: ./images/pre_st_sd.pdf Graphic file (type pdf)
 
 <use ./images/pre_st_sd.pdf>
 Package pdftex.def Info: ./images/pre_st_sd.pdf used on input line 45.
 (pdftex.def)             Requested size: 184.5pt x 163.18658pt.
+
+<./images/pre_co.pdf, id=1512, 757.21959pt x 718.3878pt>
 File: ./images/pre_co.pdf Graphic file (type pdf)
- <use ./images/pre_co.pdf>
+
+<use ./images/pre_co.pdf>
 Package pdftex.def Info: ./images/pre_co.pdf used on input line 46.
 (pdftex.def)             Requested size: 184.5pt x 175.03644pt.
 
-<./images/pre_co_sd.pdf, id=1586, 772.54247pt x 724.24893pt>
+<./images/pre_co_sd.pdf, id=1513, 772.54247pt x 724.24893pt>
 File: ./images/pre_co_sd.pdf Graphic file (type pdf)
 
 <use ./images/pre_co_sd.pdf>
@@ -2290,7 +2341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--48
 
 LaTeX Warning: Float too large for page by 21.79051pt on input line 50.
 
-[61 <./images/pre_mobile_concern.pdf> <./images/pre_se_imp.pdf
+[67 <./images/pre_mobile_concern.pdf> <./images/pre_se_imp.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_se_imp.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
@@ -2302,16 +2353,28 @@ F inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_co_imp.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] [62 <./images/pre_se_sd.pdf> <./images/pre_st_sd.pdf
+>] [68 <./images/pre_se.pdf> <./images/pre_se_sd.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_se_sd.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+> <./images/pre_st.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_st.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./images/pre_st_sd.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_st_sd.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
+> <./images/pre_co.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_co.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
 > <./images/pre_co_sd.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/pre_co_sd.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] [63]
-<./images/heatmap_all_days_button.png, id=1831, 726.715pt x 632.3625pt>
+>] [69]
+<./images/heatmap_all_days_button.png, id=1878, 726.715pt x 632.3625pt>
 File: ./images/heatmap_all_days_button.png Graphic file (type png)
 
 <use ./images/heatmap_all_days_button.png>
@@ -2319,7 +2382,7 @@ Package pdftex.def Info: ./images/heatmap_all_days_button.png used on input lin
 e 450.
 (pdftex.def)             Requested size: 184.5pt x 160.54109pt.
 
-<./images/heatmap_all_days_privacyimprovement.png, id=1832, 703.62875pt x 621.3
+<./images/heatmap_all_days_privacyimprovement.png, id=1879, 703.62875pt x 621.3
 2124pt>
 File: ./images/heatmap_all_days_privacyimprovement.png Graphic file (type png)
  <use ./images/heatmap_all_days_privacyimprovement.png>
@@ -2334,8 +2397,8 @@ Overfull \hbox (13.36995pt too wide) in paragraph at lines 450--453
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64 <./images/heatmap_all_days_button.png> <./images/heatmap_all_days_privacyi
-mprovement.png>] <./images/all_sub_mean.pdf, id=1848, 734.24312pt x 724.24893pt
+ [70 <./images/heatmap_all_days_button.png> <./images/heatmap_all_days_privacyi
+mprovement.png>] <./images/all_sub_mean.pdf, id=1895, 734.24312pt x 724.24893pt
 >
 File: ./images/all_sub_mean.pdf Graphic file (type pdf)
 
@@ -2345,7 +2408,7 @@ Package pdftex.def Info: ./images/all_sub_mean.pdf used on input line 470.
 
 Underfull \vbox (badness 2205) has occurred while \output is active []
 
- [65 <./images/all_sub_mean.pdf>]
+ [71 <./images/all_sub_mean.pdf>]
 Package epstopdf Info: Source file: <./images/day2_day1.eps>
 (epstopdf)                    date: 2016-08-26 22:32:10
 (epstopdf)                    size: 128142 bytes
@@ -2357,14 +2420,14 @@ verted-to.pdf ./images/day2_day1.eps>
 (epstopdf)             \includegraphics on input line 487.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/day2_day1-eps-converted-to.pdf, id=1914, 1284.8pt x 751.80875pt>
+<./images/day2_day1-eps-converted-to.pdf, id=1961, 1284.8pt x 751.80875pt>
 File: ./images/day2_day1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/day2_day1-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/day2_day1-eps-converted-to.pdf used on input 
 line 487.
 (pdftex.def)             Requested size: 369.0pt x 215.91963pt.
- [66 <./images/day2_day1-eps-converted-to.pdf>]
+ [72 <./images/day2_day1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./images/day3_day1.eps>
 (epstopdf)                    date: 2016-08-26 22:34:15
 (epstopdf)                    size: 128150 bytes
@@ -2376,14 +2439,14 @@ verted-to.pdf ./images/day3_day1.eps>
 (epstopdf)             \includegraphics on input line 500.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/day3_day1-eps-converted-to.pdf, id=1927, 1284.8pt x 751.80875pt>
+<./images/day3_day1-eps-converted-to.pdf, id=1974, 1284.8pt x 751.80875pt>
 File: ./images/day3_day1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/day3_day1-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/day3_day1-eps-converted-to.pdf used on input 
 line 500.
 (pdftex.def)             Requested size: 369.0pt x 215.91963pt.
- [67 <./images/day3_day1-eps-converted-to.pdf>]
+ [73 <./images/day3_day1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./images/day3_day2.eps>
 (epstopdf)                    date: 2016-08-26 22:30:16
 (epstopdf)                    size: 128182 bytes
@@ -2395,34 +2458,31 @@ verted-to.pdf ./images/day3_day2.eps>
 (epstopdf)             \includegraphics on input line 511.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/day3_day2-eps-converted-to.pdf, id=1939, 1284.8pt x 751.80875pt>
+<./images/day3_day2-eps-converted-to.pdf, id=1987, 1284.8pt x 751.80875pt>
 File: ./images/day3_day2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/day3_day2-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/day3_day2-eps-converted-to.pdf used on input 
 line 511.
 (pdftex.def)             Requested size: 369.0pt x 215.91963pt.
-) (./conclusion.tex [68 <./images/day3_day2-eps-converted-to.pdf>]) (./appendix
-.tex [69
+) (./conclusion.tex [74 <./images/day3_day2-eps-converted-to.pdf>] [75
 
-] [70
-
-]
-<./images/collection_ui_1.png, id=1960, 1024.82875pt x 541.02126pt>
+]) (./appendix.tex [76]
+<./images/collection_ui_1.png, id=2008, 1024.82875pt x 541.02126pt>
 File: ./images/collection_ui_1.png Graphic file (type png)
 
 <use ./images/collection_ui_1.png>
 Package pdftex.def Info: ./images/collection_ui_1.png used on input line 5.
 (pdftex.def)             Requested size: 369.00061pt x 194.80052pt.
 
-<./images/collection_ui_2.png, id=1961, 1049.9225pt x 564.1075pt>
+<./images/collection_ui_2.png, id=2009, 1049.9225pt x 564.1075pt>
 File: ./images/collection_ui_2.png Graphic file (type png)
 
 <use ./images/collection_ui_2.png>
 Package pdftex.def Info: ./images/collection_ui_2.png used on input line 12.
 (pdftex.def)             Requested size: 369.00032pt x 198.2583pt.
 
-<./images/collection_feature_cat.png, id=1962, 599.23875pt x 544.0325pt>
+<./images/collection_feature_cat.png, id=2010, 599.23875pt x 544.0325pt>
 File: ./images/collection_feature_cat.png Graphic file (type png)
 
 <use ./images/collection_feature_cat.png>
@@ -2430,7 +2490,7 @@ Package pdftex.def Info: ./images/collection_feature_cat.png used on input line
  19.
 (pdftex.def)             Requested size: 243.86989pt x 221.40282pt.
 
-<./images/collection_sensors_cat.png, id=1963, 761.84625pt x 544.0325pt>
+<./images/collection_sensors_cat.png, id=2011, 761.84625pt x 544.0325pt>
 File: ./images/collection_sensors_cat.png Graphic file (type png)
 
 <use ./images/collection_sensors_cat.png>
@@ -2438,14 +2498,14 @@ Package pdftex.def Info: ./images/collection_sensors_cat.png used on input line
  26.
 (pdftex.def)             Requested size: 310.04564pt x 221.40282pt.
 
-<./images/collection_dc_cat.png, id=1964, 721.69624pt x 544.0325pt>
+<./images/collection_dc_cat.png, id=2012, 721.69624pt x 544.0325pt>
 File: ./images/collection_dc_cat.png Graphic file (type png)
 
 <use ./images/collection_dc_cat.png>
 Package pdftex.def Info: ./images/collection_dc_cat.png used on input line 33.
 (pdftex.def)             Requested size: 293.70595pt x 221.40282pt.
 
-<./images/collection_context_cat.png, id=1965, 816.04875pt x 542.025pt>
+<./images/collection_context_cat.png, id=2013, 816.04875pt x 542.025pt>
 File: ./images/collection_context_cat.png Graphic file (type png)
 
 <use ./images/collection_context_cat.png>
@@ -2453,68 +2513,70 @@ Package pdftex.def Info: ./images/collection_context_cat.png used on input line
  40.
 (pdftex.def)             Requested size: 333.33696pt x 221.40462pt.
 
-<./images/collection_ur_1.png, id=1966, 1045.9075pt x 546.04pt>
+<./images/collection_ur_1.png, id=2014, 1045.9075pt x 546.04pt>
 File: ./images/collection_ur_1.png Graphic file (type png)
 
 <use ./images/collection_ur_1.png>
 Package pdftex.def Info: ./images/collection_ur_1.png used on input line 47.
 (pdftex.def)             Requested size: 369.00961pt x 192.64993pt.
 
-<./images/collection_ur_2.png, id=1967, 883.3pt x 545.03625pt>
+<./images/collection_ur_2.png, id=2015, 883.3pt x 545.03625pt>
 File: ./images/collection_ur_2.png Graphic file (type png)
 
 <use ./images/collection_ur_2.png>
 Package pdftex.def Info: ./images/collection_ur_2.png used on input line 54.
 (pdftex.def)             Requested size: 358.79932pt x 221.39548pt.
 
-<./images/collection_loc.png, id=1968, 882.29625pt x 545.03625pt>
+<./images/collection_loc.png, id=2016, 882.29625pt x 545.03625pt>
 File: ./images/collection_loc.png Graphic file (type png)
 
 <use ./images/collection_loc.png>
 Package pdftex.def Info: ./images/collection_loc.png used on input line 61.
 (pdftex.def)             Requested size: 358.39159pt x 221.39548pt.
 
-<./images/collection_acc.png, id=1969, 1045.9075pt x 543.02875pt>
+<./images/collection_acc.png, id=2017, 1045.9075pt x 543.02875pt>
 File: ./images/collection_acc.png Graphic file (type png)
 
 <use ./images/collection_acc.png>
 Package pdftex.def Info: ./images/collection_acc.png used on input line 68.
 (pdftex.def)             Requested size: 369.00961pt x 191.58751pt.
 
-<./images/collection_noise.png, id=1970, 974.64125pt x 543.02875pt>
+<./images/collection_noise.png, id=2018, 974.64125pt x 543.02875pt>
 File: ./images/collection_noise.png Graphic file (type png)
 
 <use ./images/collection_noise.png>
 Package pdftex.def Info: ./images/collection_noise.png used on input line 75.
 (pdftex.def)             Requested size: 368.99931pt x 205.59074pt.
 
-<./images/collection_light.png, id=1971, 672.5125pt x 517.935pt>
+<./images/collection_light.png, id=2019, 672.5125pt x 517.935pt>
 File: ./images/collection_light.png Graphic file (type png)
 
 <use ./images/collection_light.png>
 Package pdftex.def Info: ./images/collection_light.png used on input line 82.
 (pdftex.def)             Requested size: 287.48155pt x 221.4037pt.
 
-<./images/collection_users.png, id=1972, 218.8175pt x 543.02875pt>
+<./images/collection_users.png, id=2020, 218.8175pt x 543.02875pt>
 File: ./images/collection_users.png Graphic file (type png)
 
 <use ./images/collection_users.png>
 Package pdftex.def Info: ./images/collection_users.png used on input line 89.
 (pdftex.def)             Requested size: 89.21492pt x 221.40033pt.
 
-<./images/collection_score.png, id=1973, 853.1875pt x 508.90125pt>
+<./images/collection_score.png, id=2021, 853.1875pt x 508.90125pt>
 File: ./images/collection_score.png Graphic file (type png)
 
 <use ./images/collection_score.png>
 Package pdftex.def Info: ./images/collection_score.png used on input line 96.
 (pdftex.def)             Requested size: 369.01154pt x 220.10452pt.
- [71 <./images/collection_ui_1.png>]
-[72 <./images/collection_ui_2.png> <./images/collection_feature_cat.png>]
-[73 <./images/collection_sensors_cat.png> <./images/collection_dc_cat.png>]
-[74 <./images/collection_context_cat.png> <./images/collection_ur_1.png>]
-[75 <./images/collection_ur_2.png> <./images/collection_loc.png>] [76 <./images
-/collection_acc.png> <./images/collection_noise.png>] [77 <./images/collection_
-light.png> <./images/collection_users.png>] [78 <./images/collection_score.png>
+ [77
+
+ <./images/collection_ui_1.png>]
+[78 <./images/collection_ui_2.png> <./images/collection_feature_cat.png>]
+[79 <./images/collection_sensors_cat.png> <./images/collection_dc_cat.png>]
+[80 <./images/collection_context_cat.png> <./images/collection_ur_1.png>]
+[81 <./images/collection_ur_2.png> <./images/collection_loc.png>] [82 <./images
+/collection_acc.png> <./images/collection_noise.png>] [83 <./images/collection_
+light.png> <./images/collection_users.png>] [84 <./images/collection_score.png>
 ]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2570,20 +2632,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[79
+[85
 
 ]
 
-LaTeX Warning: Text page 80 contains only floats.
+LaTeX Warning: Text page 86 contains only floats.
 
 
 Overfull \vbox (4.39938pt too high) has occurred while \output is active []
 
 
-[80] [81] [82] [83] [84
+[86] [87] [88] [89] [90
 
 ]
-<pre-survey-pdf.pdf, id=2059, 597.23125pt x 844.15375pt>
+<pre-survey-pdf.pdf, id=2106, 597.23125pt x 844.15375pt>
 File: pre-survey-pdf.pdf Graphic file (type pdf)
 
 <use pre-survey-pdf.pdf>
@@ -2594,7 +2656,7 @@ File: pre-survey-pdf.pdf Graphic file (type pdf)
 Package pdftex.def Info: pre-survey-pdf.pdf used on input line 376.
 (pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
 
-<pre-survey-pdf.pdf, id=2062, page=1, 597.23125pt x 844.15375pt>
+<pre-survey-pdf.pdf, id=2109, page=1, 597.23125pt x 844.15375pt>
 File: pre-survey-pdf.pdf Graphic file (type pdf)
 
 <use pre-survey-pdf.pdf, page 1>
@@ -2613,8 +2675,8 @@ File: pre-survey-pdf.pdf Graphic file (type pdf)
  <use pre-survey-pdf.pdf, page 1>
 Package pdftex.def Info: pre-survey-pdf.pdf, page1 used on input line 376.
 (pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
- [85]
-<pre-survey-pdf.pdf, id=2067, page=2, 597.23125pt x 844.15375pt>
+ [91]
+<pre-survey-pdf.pdf, id=2114, page=2, 597.23125pt x 844.15375pt>
 File: pre-survey-pdf.pdf Graphic file (type pdf)
 
 <use pre-survey-pdf.pdf, page 2>
@@ -2629,12 +2691,12 @@ File: pre-survey-pdf.pdf Graphic file (type pdf)
 <use pre-survey-pdf.pdf, page 1>
 Package pdftex.def Info: pre-survey-pdf.pdf, page1 used on input line 376.
 (pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
- [86 <./pre-survey-pdf.pdf
+ [92 <./pre-survey-pdf.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pre-survey-pdf.pdf): PDF i
 nclusion: invalid other resource which is no dict (key 'ProcSets', type <array>
 ); ignored.
->] <pre-survey-pdf.pdf, id=2392, page=3, 597.23125pt x 844.15375pt>
+>] <pre-survey-pdf.pdf, id=2441, page=3, 597.23125pt x 844.15375pt>
 File: pre-survey-pdf.pdf Graphic file (type pdf)
 
 <use pre-survey-pdf.pdf, page 3>
@@ -2649,12 +2711,12 @@ File: pre-survey-pdf.pdf Graphic file (type pdf)
 <use pre-survey-pdf.pdf, page 2>
 Package pdftex.def Info: pre-survey-pdf.pdf, page2 used on input line 376.
 (pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
- [87 <./pre-survey-pdf.pdf
+ [93 <./pre-survey-pdf.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pre-survey-pdf.pdf): PDF i
 nclusion: invalid other resource which is no dict (key 'ProcSets', type <array>
 ); ignored.
->] <pre-survey-pdf.pdf, id=2453, page=4, 597.23125pt x 844.15375pt>
+>] <pre-survey-pdf.pdf, id=2503, page=4, 597.23125pt x 844.15375pt>
 File: pre-survey-pdf.pdf Graphic file (type pdf)
 
 <use pre-survey-pdf.pdf, page 4>
@@ -2669,7 +2731,7 @@ File: pre-survey-pdf.pdf Graphic file (type pdf)
 <use pre-survey-pdf.pdf, page 3>
 Package pdftex.def Info: pre-survey-pdf.pdf, page3 used on input line 376.
 (pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
- [88 <./pre-survey-pdf.pdf
+ [94 <./pre-survey-pdf.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pre-survey-pdf.pdf): PDF i
 nclusion: invalid other resource which is no dict (key 'ProcSets', type <array>
@@ -2679,18 +2741,178 @@ File: pre-survey-pdf.pdf Graphic file (type pdf)
  <use pre-survey-pdf.pdf, page 4>
 Package pdftex.def Info: pre-survey-pdf.pdf, page4 used on input line 376.
 (pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
- [89 <./pre-survey-pdf.pdf
+ [95 <./pre-survey-pdf.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pre-survey-pdf.pdf): PDF i
 nclusion: invalid other resource which is no dict (key 'ProcSets', type <array>
 ); ignored.
->]) [90
+>] <exit-survey.pdf, id=2817, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf>
+Package pdftex.def Info: exit-survey.pdf used on input line 377.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+File: exit-survey.pdf Graphic file (type pdf)
 
-] (./thesis.bbl
+<use exit-survey.pdf>
+Package pdftex.def Info: exit-survey.pdf used on input line 377.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+
+<exit-survey.pdf, id=2820, page=1, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 1>
+Package pdftex.def Info: exit-survey.pdf, page1 used on input line 377.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 1>
+Package pdftex.def Info: exit-survey.pdf, page1 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 1>
+Package pdftex.def Info: exit-survey.pdf, page1 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 1>
+Package pdftex.def Info: exit-survey.pdf, page1 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+
+<exit-survey.pdf, id=2821, page=2, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 2>
+Package pdftex.def Info: exit-survey.pdf, page2 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 2>
+Package pdftex.def Info: exit-survey.pdf, page2 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 1>
+Package pdftex.def Info: exit-survey.pdf, page1 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+ [96 <./exit-survey.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exit-survey.pdf): PDF incl
+usion: invalid other resource which is no dict (key 'ProcSets', type <array>); 
+ignored.
+>] <exit-survey.pdf, id=2880, page=3, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 3>
+Package pdftex.def Info: exit-survey.pdf, page3 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 3>
+Package pdftex.def Info: exit-survey.pdf, page3 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 2>
+Package pdftex.def Info: exit-survey.pdf, page2 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+ [97 <./exit-survey.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exit-survey.pdf): PDF incl
+usion: invalid other resource which is no dict (key 'ProcSets', type <array>); 
+ignored.
+>] <exit-survey.pdf, id=2968, page=4, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 4>
+Package pdftex.def Info: exit-survey.pdf, page4 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 4>
+Package pdftex.def Info: exit-survey.pdf, page4 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 3>
+Package pdftex.def Info: exit-survey.pdf, page3 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+ [98 <./exit-survey.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exit-survey.pdf): PDF incl
+usion: invalid other resource which is no dict (key 'ProcSets', type <array>); 
+ignored.
+>] <exit-survey.pdf, id=3108, page=5, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 5>
+Package pdftex.def Info: exit-survey.pdf, page5 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 5>
+Package pdftex.def Info: exit-survey.pdf, page5 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 4>
+Package pdftex.def Info: exit-survey.pdf, page4 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+ [99 <./exit-survey.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exit-survey.pdf): PDF incl
+usion: invalid other resource which is no dict (key 'ProcSets', type <array>); 
+ignored.
+>] <exit-survey.pdf, id=3215, page=6, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 6>
+Package pdftex.def Info: exit-survey.pdf, page6 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 6>
+Package pdftex.def Info: exit-survey.pdf, page6 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 5>
+Package pdftex.def Info: exit-survey.pdf, page5 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+ [100 <./exit-survey.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exit-survey.pdf): PDF incl
+usion: invalid other resource which is no dict (key 'ProcSets', type <array>); 
+ignored.
+>] <exit-survey.pdf, id=3319, page=7, 597.23125pt x 844.15375pt>
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 7>
+Package pdftex.def Info: exit-survey.pdf, page7 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 7>
+Package pdftex.def Info: exit-survey.pdf, page7 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+File: exit-survey.pdf Graphic file (type pdf)
+
+<use exit-survey.pdf, page 6>
+Package pdftex.def Info: exit-survey.pdf, page6 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+ [101 <./exit-survey.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exit-survey.pdf): PDF incl
+usion: invalid other resource which is no dict (key 'ProcSets', type <array>); 
+ignored.
+>]
+File: exit-survey.pdf Graphic file (type pdf)
+ <use exit-survey.pdf, page 7>
+Package pdftex.def Info: exit-survey.pdf, page7 used on input line 377.
+(pdftex.def)             Requested size: 358.3415pt x 506.49615pt.
+ [102 <./exit-survey.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exit-survey.pdf): PDF incl
+usion: invalid other resource which is no dict (key 'ProcSets', type <array>); 
+ignored.
+>]) (./thesis.bbl
 bibitemlist
-[91
+[103
 
-] [92]) <declaration-originality.pdf, id=2780, 554.07pt x 783.92876pt>
+
+] [104]) <declaration-originality.pdf, id=3391, 554.07pt x 783.92876pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf>
@@ -2701,7 +2923,7 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf used on input line 180.
 (pdftex.def)             Requested size: 554.06865pt x 783.92685pt.
 
-<declaration-originality.pdf, id=2783, page=1, 554.07pt x 783.92876pt>
+<declaration-originality.pdf, id=3394, page=1, 554.07pt x 783.92876pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
@@ -2726,14 +2948,14 @@ File: declaration-originality.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
 180.
 (pdftex.def)             Requested size: 597.57507pt x 845.48213pt.
- [93]
+ [105]
 File: declaration-originality.pdf Graphic file (type pdf)
 
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf, page1 used on input line 
 180.
 (pdftex.def)             Requested size: 597.57507pt x 845.48213pt.
- [94 <./declaration-originality.pdf>]
+ [106 <./declaration-originality.pdf>]
 \tf@thm=\write6
 \openout6 = `thesis.thm'.
 
@@ -2742,12 +2964,11 @@ Package pdftex.def Info: declaration-originality.pdf, page1 used on input line
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
-
 (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 21E7C029B9E7B9A544FE6F1F1CD0852F;4108.
+(rerunfilecheck)             Checksum: D9341DC51D5CC652C0E745B05823C940;3945.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2760,13 +2981,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19596 strings out of 493089
- 299903 string characters out of 6134841
- 483745 words of memory out of 5000000
- 22129 multiletter control sequences out of 15000+600000
+ 19685 strings out of 493089
+ 301700 string characters out of 6134841
+ 485324 words of memory out of 5000000
+ 22185 multiletter control sequences out of 15000+600000
  50578 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,19n,122p,1349b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,19n,122p,1349b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -2781,10 +3002,10 @@ exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (98 pages, 10661271 bytes).
+Output written on thesis.pdf (110 pages, 11484415 bytes).
 PDF statistics:
- 2941 PDF objects out of 2984 (max. 8388607)
- 1369 compressed objects within 14 object streams
- 438 named destinations out of 1000 (max. 500000)
- 13224 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 3558 PDF objects out of 3580 (max. 8388607)
+ 1454 compressed objects within 15 object streams
+ 464 named destinations out of 1000 (max. 500000)
+ 13280 words of extra memory for PDF output out of 14400 (max. 10000000)
 
