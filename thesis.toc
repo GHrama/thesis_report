@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {3.2.8}Summarization of Collected Data}{20}{subsection.3.2.8}
 \contentsline {section}{\numberline {3.3}Analysis of the Model}{21}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Setup}{21}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Examples}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Examples}{21}{subsection.3.3.2}
 \contentsline {chapter}{\chapternumberline {4}Experiment Methodology}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Overview Of The Experiment}{27}{section.4.1}
 \contentsline {section}{\numberline {4.2}Preparatory Phase}{29}{section.4.2}
@@ -57,8 +57,9 @@
 \contentsline {chapter}{\chapternumberline {6}Experimental Findings}{65}{chapter.6}
 \contentsline {section}{\numberline {6.1}Findings from the Pre-Survey Data}{65}{section.6.1}
 \contentsline {section}{\numberline {6.2}Findings from the Experiment Data}{69}{section.6.2}
-\contentsline {chapter}{\chapternumberline {7}Conclusion and Future Work}{75}{chapter.7}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{77}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{85}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Appendix C}{87}{appendix.C}
-\contentsline {chapter}{Bibliography}{105}{section*.73}
+\contentsline {section}{\numberline {6.3}Findings from the Exit Survey}{75}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Conclusion and Future Work}{79}{chapter.7}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{81}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{89}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Appendix C}{91}{appendix.C}
+\contentsline {chapter}{Bibliography}{109}{section*.76}
