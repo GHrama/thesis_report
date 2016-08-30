@@ -1,19 +1,32 @@
 \chapter{Introduction}
 
-In today's world, almost everybody owns a smartphone. Information collected from a large number of interconnected smartphones equipped with
-multiple number of sensors each can aid to accumulate large volumes of data which is heterogeneous and autonomous in nature. This large amounts of data in any form is called Big Data\footnote{Date:23-08-2016 \url{https://en.wikipedia.org/wiki/Big\_data}} and it
-is the stepping stone to large scale data analytics and Deep learning to understand the complexities in our society. 
+%In today's world, almost everybody owns a smartphone. Information collected from a large number of interconnected smartphones equipped with
+%multiple number of sensors each can aid to accumulate large volumes of data which is heterogeneous and autonomous in nature. This large amounts of data in any form is called Big Data\footnote{Date:23-08-2016 \url{https://en.wikipedia.org/wiki/Big\_data}} and it
+%is the stepping stone to large scale data analytics and Deep learning to understand the complexities in our society. 
+%
+%Currently, a lot of the data collected in mobile applications\footnote{Date:23-08-2016 \url{http://www.theregister.co.uk/2014/02/21/appthority\_app_privacy\_study}} and on the web\footnote{Date:23-08-2016 \url{http://www.techlicious.com/blog/whos-gathering-your-personal-information}}
+%is done in a manner where users are unaware of the collection of their data. This process not only lacks transparency but also does not give users
+%control over their data. Users should be able to make informed decisions about what data to share or not. Additionally, since no privacy algorithms 
+%are implemented on the data collected, user privacies are at risk. Paul Ohm in his paper \cite{ohm2010broken} explains that it can be shown that anonymized data can be de-anonymized surprisingly easily. In this dissertation, focus is not given on the attacks such as hacking and any other methods but concentrated on the threats to the information in the data collected.
+%
+%The aim is to setup a fair way to collect data by setting up a platform over a participatory sensing network where users can trade their data for some incentives to stakeholders who approach them.
+%Incentives can be money, vouchers or anything else. Stakeholders inform users about the date, duration for which data is collected, who will use the data and what will it be used for. Additionally, users have the possibility to share data with some added levels of privacy. 
+%To achieve this goal, it is first essential to understand the relationship between incentives and mobile sensor data sharing. In this dissertation, a survey and social experiment is designed where a platform is created and users can trade and view their data in a transparent manner. Data from user inputs and decisions is collected and later analysed to throw light on user decision of their sensor data.
 
-Currently, a lot of the data collected in mobile applications\footnote{Date:23-08-2016 \url{http://www.theregister.co.uk/2014/02/21/appthority\_app_privacy\_study}} and on the web\footnote{Date:23-08-2016 \url{http://www.techlicious.com/blog/whos-gathering-your-personal-information}}
-is done in a manner where users are unaware of the collection of their data. This process not only lacks transparency but also does not give users
-control over their data. Users should be able to make informed decisions about what data to share or not. Additionally, since no privacy algorithms 
-are implemented on the data collected, user privacies are at risk. Paul Ohm in his paper \cite{ohm2010broken} explains that it can be shown that anonymized data can be de-anonymized surprisingly easily. In this dissertation, focus is not given on the attacks such as hacking and any other methods but concentrated on the threats to the information in the data collected.
 
-The aim is to setup a fair way to collect data by setting up a platform over a participatory sensing network where users can trade their data for some incentives to stakeholders who approach them.
-Incentives can be money, vouchers or anything else. Stakeholders inform users about the date, duration for which data is collected, who will use the data and what will it be used for. Additionally, users have the possibility to share data with some added levels of privacy. 
-To achieve this goal, it is first essential to understand the relationship between incentives and mobile sensor data sharing. In this dissertation, a survey and social experiment is designed where a platform is created and users can trade and view their data in a transparent manner. Data from user inputs and decisions is collected and later analysed to throw light on user decision of their sensor data.
+Big Data systems today often collect data in ways that are unfair, non transparent and privacy intrusive to people. For this reason, new ways of acquiring data need to be designed. People should have control over their data and be given all the necessary information before data collection such as: (i) Information about the data sharing process, (ii) Who will see the data, (iii) What data is collected, (iv) Time and duration of data collection, (v) What purpose is the data collected for. Addtionally to the above mentioned points, users should be given the choice to control the privacy or accuracy of the data they share. In additon to security threats to data, there are also threats to people's privacies due to the information content in the data shared. 
 
+This Thesis builds upon the earlier work on self-regulatory information sharing in participatory social sensing by Pournaras et al \cite{pournaras2016self}. In this concept introduced, citizens who are suppliers are the ones sharing their data and they have the choice to choose how much of their data to share. On the other side, the data aggregators are the consumers who use the sensor data shared by citizens for some data analytics task. Data aggregators require data to be of some accuracy for their task and incentivize users accordingly to motivate them to share data with a certain level of accuracy. For example, if data aggregators would like data with a higher accuracy, they can incentivize citizens with higher incentive for sharing their data. Similarly, if the analysis task does not require data with high accuracy, lower incentives can be awarded to citizens for sharing data. Information content or accuracy of data can be regulated using summarization functions concerning algorithms from simple arithmetic functions to clustering algorithms. A high summarization level filters out most of the information in the data, hence preserving the privacy of the citizen. This can cause higher errors for the data aggregator. Similarly, a lower summarization level shows more information and causes less errors for the data aggregator.
 
+To design a computational market platform where users can share data in a more transparent and fair manner, there is a lack of information on the choices users make in sharing their data. Additionally, there is a need to know the perception of citizens on the privacy of their mobile sensor data and this data will help understand the supply-demand system for data sharing. The findings from the above can help to create a fairer system for data collection. In order to cover this lack of information, a social experiment is designed where citizens are approached with data requests governed by the three following aspects:
+
+\begin{itemize}
+\item The sensor type
+\item The stakeholder or entity requesting for citizen's sensor data
+\item The context or purpose of sensor data collection
+\end{itemize} 
+
+The social experiment is carried out with an Android application and has an inbuilt computational model which assigns rewards to each data requests based on a citizen profile formed. This citizen profile is formed by asking citizens some questions regarding the three aspects mentioned above. Citizen decisions are recorded anonymously for later analysis. A pre survey is launched before the social experiment is carried out to understand the perception of users on the three aspects studied. An exit survey is also launched after the social experiment is finished to obtain feedback from citizens participating. 
 
 
 
