@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  30 AUG 2016 02:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.23)  30 AUG 2016 03:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1263,24 +1263,6 @@ LaTeX Warning: Label `fig:st3' multiply defined.
 
 
 LaTeX Warning: Label `fig:st3' multiply defined.
-
-
-LaTeX Warning: Label `fig:pre_12' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:pre_12' multiply defined.
-
-
-LaTeX Warning: Label `fig:pre_10' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:pre_10' multiply defined.
-
-
-LaTeX Warning: Label `fig:pre_8' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:pre_8' multiply defined.
 
 
 LaTeX Warning: Label `fig:st3' multiply defined.
@@ -3319,10 +3301,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19789 strings out of 493089
- 304118 string characters out of 6134841
- 474220 words of memory out of 5000000
- 22264 multiletter control sequences out of 15000+600000
+ 19795 strings out of 493089
+ 304202 string characters out of 6134841
+ 474613 words of memory out of 5000000
+ 22270 multiletter control sequences out of 15000+600000
  50578 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,19n,122p,1307b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3340,7 +3322,7 @@ exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (116 pages, 13762522 bytes).
+Output written on thesis.pdf (116 pages, 13762299 bytes).
 PDF statistics:
  4065 PDF objects out of 4296 (max. 8388607)
  1596 compressed objects within 16 object streams
