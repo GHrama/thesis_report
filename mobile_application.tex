@@ -3,7 +3,7 @@ This chapter illustrates the mobile application environment. First an overview i
 
 \section{The Building Blocks}
 
-The following sections will explain integral parts of the server and client of the mobile application. A summary of the architecture is shown
+The following sections will explain the integral parts of the server and client of the mobile application. A summary of the architecture is shown
 in Figure \ref{fig:bb}.
 
 \begin{figure}[ht!]
@@ -13,7 +13,7 @@ in Figure \ref{fig:bb}.
 \label{fig:bb}
 \end{figure}
 
-Users can login into the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
+Users can login onto the FairDataShare Portal from their computer or the mobile application. Once the user is authenticated, the user requests
 are sent from the FairDataShare server to the Kinvey Data Store\footnote{\url{https://kinvey.com}}. Kinvey in turn fetches the appropriate data and gives it back to the FairDataShare Server. This structures the data so it is readable, and sends the data to the user to see on the portal.
 
 \section{The Mobile Application}
@@ -70,17 +70,17 @@ This information is sent to the server as soon one bidding day is over.
 Figure \ref{fig:db_ur} depicts the \texttt{USERRESPONSE\_CACHE} table schema. This table stores a unique key \textit{KEY} for each user response, followed by a flag \textit{ISSENT}, which is 1 if the response is not sent to the server, and 0 if it is sent. The user response saved consists of the following entries :
 
 \begin{enumerate}
-	\item User Identifier
+	\item User identifier
 	\item Timestamp of the response
-    \item Sensor Identifier
-    \item Stakeholder Identifier
-    \item Context Identifier
-    \item Privacy Level response for this data request
+    \item Sensor identifier
+    \item Stakeholder identifier
+    \item Context identifier
+    \item Privacy level response for this data request
     \item Cost obtained for this data request
-    \item Current Total Privacy of the user
-    \item Current Total Credit of the user
-    \item Maximum Obtainable Credit for this data request in this round
-    \item Metric Chosen to Improve  (Improve Privacy or Improve Credit)
+    \item Current total privacy of the user
+    \item Current total credit of the user
+    \item Maximum obtainable credit for this data request in this round
+    \item Metric chosen to improve  (Improve privacy or improve credit)
 \end{enumerate}
 
 All of the above fields are packed into the field \textit{ur} shown in \ref{fig:db_ur}. The data in this table is sent to the server. Once the entry is sent to the server, the \textit{ISSENT} field is changed to 0 and deleted locally. The unique keys \textit{KEY} are useful for deleting sent entries. Figure \ref{fig:ts2} and \ref{fig:ts22} show the table schemas for data storage of the following sensors:
@@ -119,11 +119,11 @@ The general schema for all the sensor tables is the following :
 
 \subsection{Alarms and Notifications}
 
-Every bidding day where the user answers data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely manner to perform some application critical functions such as going to the next bidding day. To inform the system of such an event Android provides the functionality in the form of alarms. 
+Every bidding day, where the user answers data requests lasts for a period of 24 hours. After one bidding day is over, the system needs to be informed in a timely manner to perform some application critical functions such as going to the next bidding day. To inform the system of such an event Android provides the functionality in the form of alarms. 
 
 Alarms can be set to go off just once or repeatedly to trigger tasks. Unfortunately, the alarms provided by Android are not exact for some versions \footnote{\url{https://developer.android.com/training/scheduling/alarms.html}}, in the sense that they are triggered around that time set but not exactly at that time to optimize the charge on the battery, and can be delayed upto 24 hours. Hence, the application is programmed to set repeating alarms manually. 
 
-The first time the application opens the alarm is set to ring in exactly 24 hours, but things change when the phone is switched off.
+The first time the application opens, the alarm is set to ring in exactly 24 hours, but the situation changes when the phone is switched off.
 One of the conditions of the experiment is not to have the phone switched off at any time. Nevertheless, it is taken into account the scenario where
 the phone is kept switched off for a period of time. There are various things that can happen:
 
@@ -133,8 +133,8 @@ the phone is kept switched off for a period of time. There are various things th
     \item The phone is switched off for a period greater than 24 hours. One or more alarms can be missed.
 \end{enumerate}
 
-Once the phone is switched off, all alarms are erased from memory \footnote{\url{https://developer.android.com/reference/android/app/AlarmManager.html}}. Alarms do not execute when the phone is switched off. Hence, when the phone switches on,
-BootReceiver service of the application is triggered with pseudocode shown in Algorithm \ref{boot}. This checks whether an alarm has been missed if an alarm should have rung while the phone was switched off, 200 seconds is given for the phone to stabilize after boot before triggering tasks. Otherwise, a new alarm is set using the pseudocode shown in Algorithm \ref{setalarm}. To set an alarm the time needed is the difference between now and when the alarm should be triggered. After that is calculated, the alarm is set. 86400 in the pseudocode indicates the number of seconds in a 24 hour period and is used to check if it has been more than 24 hours since an alarm has been triggered.
+Once the phone is switched off, all alarms are erased from memory\footnote{\url{https://developer.android.com/reference/android/app/AlarmManager.html}}. Alarms do not execute when the phone is switched off. Hence, when the phone switches on,
+BootReceiver service of the application is triggered with pseudocode shown in Algorithm \ref{boot}. This checks whether an alarm has been missed if an alarm should have rung during the time the phone was switched off, 200 seconds are given for the phone to stabilize after booting before triggering tasks. Otherwise, a new alarm is set using the pseudocode shown in Algorithm \ref{setalarm}. To set an alarm the time needed is the difference between the current time and when the alarm should be triggered. After that is calculated, the alarm is set. 86400 in the pseudocode indicates the number of seconds in a 24 hour period and is used to check if it has been more than 24 hours since an alarm has been triggered.
 
 \begin{algorithm}
 \caption{BootService Algorithm}\label{boot}
@@ -306,13 +306,13 @@ Initially all the sensor data has a field \textit{ISSENT} with value of zero. Da
 
 \subsection{Server Synchronization} \label{job}
 
-User responses and sensor data are sent to the server. This is done periodically every 5000 seconds in order to empty the space on the phone whenever the internet is available. It is triggered first when the application is started for the first time. Data is fetched from the tables in the database. Data with fields marked as $\textit{ISSENT}=1$ is data that is ready and that has not been sent yet to the server. Such data is sent, and when an acknowledgement is received from the server, this data is deleted from the table.
+User responses and sensor data are sent to the server. This is done periodically every 5000 seconds in order to empty the space on the phone whenever internet is available. It is triggered first when the application is started for the first time. Data is fetched from the tables in the database. Data with fields marked as $\textit{ISSENT}=1$ is data that is ready and that has not been sent yet to the server. Such data is sent, and when an acknowledgement is received from the server, this data is deleted from the table.
 
 \section{The Server}
 
 \subsection{Kinvey Data Storage}
 
-Kinvey\footnote{\url{http://kinvey.com/}} is a mobile backend as a service which provides a platform for mobile phones to link applications to a backend cloud storage\footnote{\url{https://en.wikipedia.org/wiki/Mobile_backend_as_a_service}}. For the purpose of this application the backend has been used to store data and for some business logic implementations in javascript.
+Kinvey\footnote{\url{http://kinvey.com/}} is a mobile backend as a service which provides a platform for mobile phones to link applications to a backend cloud storage. For the purpose of this application, the backend has been used to store data and for some business logic implementations in javascript.
 
 \subsubsection{Security}
 
@@ -333,7 +333,7 @@ collection USERINFORMATION with the screenshots shown in the Figures \ref{fig:co
 \label{fig:cat_cat_cat}
 \end{figure}
 
-Once this is done, users have to categorize the various Features, Sensors, Stakeholders and then the various Contexts. This information is sent to the server in collections named FEATURES, SENSORS, STAKEHOLDERS and CONTEXTS. Screenshots are shown in Figures \ref{fig:col_f}, \ref{fig:col_s}, \ref{fig:col_ss} and \ref{fig:col_c} respectively and the schemas in Figure \ref{fig:cat_cat}. User responses are stored in the collection UserResponse shown in Figures \ref{fig:col_ur_1} and \ref{fig:col_ur_2} and their schema is shown in Section \ref{loc}.
+Once this is done, users have to categorize the various features, sensors, stakeholders and then the various contexts. This information is sent to the server in collections named FEATURES, SENSORS, STAKEHOLDERS and CONTEXTS. Screenshots are shown in Figures \ref{fig:col_f}, \ref{fig:col_s}, \ref{fig:col_ss} and \ref{fig:col_c} respectively and the schemas in Figure \ref{fig:cat_cat}. User responses are stored in the collection UserResponse shown in Figures \ref{fig:col_ur_1} and \ref{fig:col_ur_2} and their schema is shown in Section \ref{loc}.
 
 \begin{figure}[htp]
 \subtop[Table schema of \texttt{FEATURES}\label{fig:db_f}]{\includegraphics[width=0.4\linewidth,height=0.4\linewidth]{./images/schema_features}}\hspace{1em}
@@ -344,7 +344,7 @@ Once this is done, users have to categorize the various Features, Sensors, Stake
 \label{fig:cat_cat}
 \end{figure}
 
-The sensor data sent by the JobNetworkService is stored in collections named after the sensors themselves. The sreenshots of the tables
+The sensor data sent by the JobNetworkService is stored in collections named after the sensors themselves. The screenshots of the tables
 are shown in Figures \ref{fig:col_loc}, \ref{fig:col_acc}, \ref{fig:col_light} and \ref{fig:col_noise} and their schema is shown in Section \ref{loc}.
 
 To keep track of all the existing users in the experiment, the collection USERS stores all unique user identification strings of participants.

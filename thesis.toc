@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {4.1}Overview Of The Experiment}{25}{section.4.1}
 \contentsline {section}{\numberline {4.2}Preparatory Phase}{27}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Pre-Survey}{27}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Sub-Features}{27}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Sub-Features}{28}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Stakeholders}{29}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Privacy Options}{29}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Question Structure}{29}{subsection.4.2.5}
@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {5.2}The Mobile Application}{48}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Local Storage}{48}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Alarms and Notifications}{51}{subsection.5.2.2}
-\contentsline {subsubsection}{Going to the Next Data Sharing Day}{53}{section*.37}
+\contentsline {subsubsection}{Going to the Next Data Sharing Day}{54}{section*.37}
 \contentsline {subsection}{\numberline {5.2.3}Fetching Data Requests}{54}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Recording User Choices}{55}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Sensor Data Collection and Summarization}{55}{subsection.5.2.5}
