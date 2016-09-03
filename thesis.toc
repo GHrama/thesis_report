@@ -59,6 +59,6 @@
 \contentsline {section}{\numberline {6.2}Findings from the Experiment}{71}{section.6.2}
 \contentsline {section}{\numberline {6.3}Findings from the Exit Survey}{77}{section.6.3}
 \contentsline {chapter}{\chapternumberline {7}Conclusion and Future Work}{83}{chapter.7}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{87}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{91}{appendix.B}
-\contentsline {chapter}{Bibliography}{109}{section*.77}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{85}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{89}{appendix.B}
+\contentsline {chapter}{Bibliography}{107}{section*.77}
