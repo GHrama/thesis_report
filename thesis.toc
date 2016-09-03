@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {3.2.8}Summarization of Collected Data}{20}{subsection.3.2.8}
 \contentsline {section}{\numberline {3.3}Analysis of the Model}{21}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Setup}{21}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Examples}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Examples}{21}{subsection.3.3.2}
 \contentsline {chapter}{\chapternumberline {4}Experiment Methodology}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Overview of The Experiment}{27}{section.4.1}
 \contentsline {section}{\numberline {4.2}Preparatory Phase}{29}{section.4.2}
@@ -29,15 +29,15 @@
 \contentsline {section}{\numberline {4.3}Entry Phase}{32}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Collecting General User Information}{33}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Categorization of Features}{34}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Categorization of Sub-Features}{35}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Answering Questions with No Incentives}{36}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Core Phase}{38}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Improve Privacy or Credit}{41}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.3.3}Categorization of Sub-Features}{34}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Answering Questions with No Incentives}{35}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Core Phase}{36}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Improve Privacy or Credit}{40}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Answering Questions with Incentives}{41}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Exit Phase}{42}{section.4.5}
+\contentsline {section}{\numberline {4.5}Exit Phase}{43}{section.4.5}
 \contentsline {section}{\numberline {4.6}FairDataShare Web Portal}{43}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Data Generator's Portal}{44}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Stakeholder's Portal}{45}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.1}Data Generator's Portal}{43}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Stakeholder's Portal}{44}{subsection.4.6.2}
 \contentsline {chapter}{\chapternumberline {5}The Fair Data Share Mobile Application}{49}{chapter.5}
 \contentsline {section}{\numberline {5.1}The Building Blocks}{49}{section.5.1}
 \contentsline {section}{\numberline {5.2}The Mobile Application}{50}{section.5.2}
@@ -59,5 +59,6 @@
 \contentsline {section}{\numberline {6.2}Findings from the Experiment}{71}{section.6.2}
 \contentsline {section}{\numberline {6.3}Findings from the Exit Survey}{77}{section.6.3}
 \contentsline {chapter}{\chapternumberline {7}Conclusion and Future Work}{83}{chapter.7}
-\contentsline {appendix}{\chapternumberline {A}Appendix}{87}{appendix.A}
-\contentsline {chapter}{Bibliography}{107}{section*.77}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{87}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{91}{appendix.B}
+\contentsline {chapter}{Bibliography}{109}{section*.77}

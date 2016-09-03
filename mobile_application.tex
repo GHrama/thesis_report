@@ -42,7 +42,7 @@ their function and schema. All tables explained here are pertaining to the user 
 \end{figure}
 
 Figure \ref{fig:db_quest} shows the \texttt{QUESTION\_STORE} table schema. This table stores each possible data request with its features such as with the sensor \textit{SENSOR}, stakeholder \textit{STAKEHOLDER} and context \textit{CONTEXT}. Each of these are represented by an integer, for example sensor 0 stands for accelerometer sensor. Each data request is accompanied by
-an unique question identifier \textit{QID}, weight assigned \textit{WEIGHT} and the cost assigned \textit{COST}. This data is not sent to 
+an unique question identifier \textit{QID}, weight assigned \textit{WEIGHT} and the rewards assigned \textit{COST}. This data is not sent to 
 the server.
 
 Figure \ref{fig:db_which} depicts the table \texttt{WHICH\_ANSWERS}'s table schema. This stores the questions identifier \textit{QID} of each data request that is answered by the user for each round. This is helpful while fetching data requests, so as not to fetch the request twice in the same round. This ensures that all questions are answered before answering them for a second time. This data is not sent to the server.
@@ -55,9 +55,9 @@ Figure \ref{fig:db_which} depicts the table \texttt{WHICH\_ANSWERS}'s table sche
 \end{figure}
 
 Figure \ref{fig:db_ans} explains the schema of \texttt{STORE\_ANSWERS} table. This table is used to store the data request identifier \textit{QID} with the corresponding
-user responses \textit{LEVEL}, along with the increase or decrease in credit obtained \textit{COST\_OBT}. The total cost is calculated by adding all the costs in this table. Similarly, the total privacy is calculated by averaging all the user responses stored in \texttt{STORE\_ANSWERS} table. Only the most recent responses to a data request are stored in this table, since data requests can be answered more than once. The content of the table is not sent to the server.
+user responses \textit{LEVEL}, along with the increase or decrease in the total cost metric (obtained rewards) \textit{COST\_OBT}. The total cost metric is calculated by adding all the rewards stored in this table. Similarly, the total privacy is calculated by averaging all the user responses stored in \texttt{STORE\_ANSWERS} table. Only the most recent responses to a data request are stored in this table, since data requests can be answered more than once. The content of the table is not sent to the server.
 
-Figure \ref{fig:db_points} denotes the schema of \texttt{STORE\_POINTS} table. This table is used to store the credit and privacy obtained for each bidding day.
+Figure \ref{fig:db_points} denotes the schema of \texttt{STORE\_POINTS} table. This table is used to store the total rewards (value of the cost metric) and privacy metric obtained for each bidding day.
 This information is sent to the server as soon one bidding day is over.
 
 \begin{figure}[ht!]
@@ -76,10 +76,10 @@ Figure \ref{fig:db_ur} depicts the \texttt{USERRESPONSE\_CACHE} table schema. Th
     \item Stakeholder identifier
     \item Context identifier
     \item Privacy level response for this data request
-    \item Cost obtained for this data request
+    \item Reward obtained for this data request
     \item Current total privacy of the user
-    \item Current total credit of the user
-    \item Maximum obtainable credit for this data request in this round
+    \item Current total obtained rewards of the user
+    \item Maximum obtainable reward for this data request in this round
     \item Metric chosen to improve  (Improve privacy or improve credit)
 \end{enumerate}
 
@@ -135,7 +135,7 @@ the phone is kept switched off for a period of time. There are various things th
 \end{enumerate}
 
 Once the phone is switched off, all alarms are erased from memory\footnote{\url{https://developer.android.com/reference/android/app/AlarmManager.html}} and alarms do not execute when the phone is switched off. Hence, when the phone switches on the
-BootReceiver service of the application is triggered with pseudocode shown in Algorithm \ref{boot}. This checks whether an alarm has been missed, 200 seconds are given for the phone to stabilize after booting before triggering tasks. Otherwise, a new alarm is set using the pseudocode shown in Algorithm \ref{setalarm}. To set an alarm the time needed is the difference between the current time and when the alarm should be triggered. After that is calculated, the alarm is set. 86400 in the pseudocode indicates the number of seconds in a 24 hour period and is used to check if it has been more than 24 hours since an alarm has been triggered.
+BootReceiver service of the application is triggered with pseudocode shown in Algorithm \ref{boot}. This checks whether an alarm is missed, 200 seconds are given for the phone to stabilize after booting before triggering tasks. Otherwise, a new alarm is set using the pseudocode shown in Algorithm \ref{setalarm}. To set an alarm the time needed is the difference between the current time and when the alarm should be triggered. After that is calculated, the alarm is set. 86400 in the pseudocode indicates the number of seconds in a 24 hour period and is used to check if it is more than 24 hours since an alarm was triggered.
 
 \begin{algorithm}
 \caption{BootService Algorithm}\label{boot}
@@ -169,15 +169,15 @@ The alarm Algorithm \ref{setalarm} is used to set the next alarm after the phone
 
 \subsubsection{Going to the Next Data Sharing Day} \label{next}
 Once the alarm rings, it marks the end of a bidding day. Once a bidding day ends, a number of tasks need to be executed
-and for this the NextDayService is triggered, which is described in pseudocode shown in Algorithm \ref{nextday}. Firstly, the privacy and credit is sent to the server and stored locally in the \texttt{STORE\_POINTS} table. \textit{Privacy} which is the total privacy obtained, \textit{Credit} is the total credit obtained, \textit{Round} which is the number of times the user answers all the questions and \textit{CurrentQuestion} which is the current question the user is answering is all reset to zero. The \textit{Day} corresponds to the current bidding day which increments by one to denote the next bidding day.
+and for this the NextDayService is triggered, which is described in pseudocode shown in Algorithm \ref{nextday}. Firstly, the privacy and rewards obtained (cost metric) are sent to the server and stored locally in the \texttt{STORE\_POINTS} table. \textit{Privacy} which is the total privacy obtained, \textit{Credit} is the total rewards obtained, \textit{Round} which is the number of times the user answers all the questions and \textit{CurrentQuestion} which is the current question the user is answering is all reset to zero. The \textit{Day} corresponds to the current bidding day which increments by one to denote the next bidding day.
 
 \begin{algorithm}
 \caption{NextDayService Algorithm}\label{nextday}
 \begin{algorithmic}[1]
 \Procedure{NextDayService}{}
-\State $\text{Store }\textit{Privacy, Credit, Day } \text{in } \textit{STOREPOINTS}$
-\State $\text{Send }\textit{Privacy, Credit, Day } \text{to Server}$
-\State $\textit{Privacy, Credit, Round, CurrentQuestion} \gets \text{0}$
+\State $\text{Store }\textit{Privacy, Rewards, Day } \text{in } \textit{STOREPOINTS}$
+\State $\text{Send }\textit{Privacy, Rewards, Day } \text{to Server}$
+\State $\textit{Privacy, Rewards, Round, CurrentQuestion} \gets \text{0}$
 \State $\textit{Day} \gets \textit{Day}+1$
 \State $\text{Store current time}$
 \State $\text{Call }\textit{Summarization()}$
@@ -209,9 +209,9 @@ In the first bidding day, once a data request is answered the next is fetched se
 	\item \textbf{Improve Credit} - Obtain the data request from table \texttt{STORE\_ANSWERS} where the user can maximize the cost metric
 \end{enumerate}
 
-In addition to sending the data request to the user interface, it is needed to show how choosing each option of the data request will affect the total privacy and total credit metrics. To do this for the total cost, the computation $last-possible$ is output, where $last$ stands for the credit obtained the last time the data request is answered. $possible$ stands for the maximum amount of credit that can be obtained for this option (each data request has five privacy options \ref{o}). The possible total cost changes are shown under the options. For more detail on how credits are split among options in a data request refer to Section \ref{options}.
+In addition to sending the data request to the user interface, it is needed to show how choosing each option of the data request affects the privacy and cost metrics. To do this for the cost metric, the computation $last-possible$ is output, where $last$ stands for the value of the cost metric the last time the data request is answered. $possible$ stands for the maximum amount of rewards that can be obtained for this option (each data request has five privacy options \ref{o}). The possible cost metric changes are shown under the options. For more detail on how rewards are split among options in a data request refer to Section \ref{options}.
 
-Every option of a data request has an associated percentage of data that is shared as described in Section \ref{o}. According to the percentage of data shared, the total privacy is calculated for each possible option. The difference between the current privacy and each potential privacy (the privacy if the user chooses to click a particular option) is calculated and indicated under each option. This gives an indication to the user as to how each option will affect the privacy and cost metrics.
+Every option of a data request has an associated percentage of data that is shared as described in Section \ref{o}. According to the percentage of data shared, the total privacy is calculated for each possible option. The difference between the current privacy and each potential privacy (the privacy if the user chooses to click a particular option) is calculated and indicated under each option. This gives an indication to the user as to how each option affects the privacy and cost metrics.
 
 \subsection{Recording User Choices}
 
@@ -307,7 +307,7 @@ Initially all the sensor data has a field \textit{ISSENT} with value of zero. Da
 
 \subsection{Server Synchronization} \label{job}
 
-User responses and sensor data are sent to the server. This is done periodically every 5000 seconds in order to empty the space on the phone whenever internet is available. It is triggered first when the application is started for the first time. Data is fetched from the tables in the database. Data with fields marked as $\textit{ISSENT}=1$ is data that is ready and that has not been sent to the server. Such data is sent, and when an acknowledgement is received from the server, this data is deleted from the table.
+User responses and sensor data are sent to the server. This is done periodically every 5000 seconds in order to empty the space on the phone whenever internet is available. It is triggered first when the application is started for the first time. Data is fetched from the tables in the database. Data with fields marked as $\textit{ISSENT}=1$ is data that is ready and that is not yet sent to the server. Such data is sent, and when an acknowledgement is received from the server, this data is deleted from the table.
 
 \section{The Server}
 
@@ -351,7 +351,7 @@ are shown in Figures \ref{fig:col_loc}, \ref{fig:col_acc}, \ref{fig:col_light} a
 To keep track of all the existing users in the experiment, the collection USERS stores all unique user identification strings of participants.
 The screenshot is shown in Figure \ref{fig:col_users}.
 
-Finally, the collection SCORE shown in Figure \ref{fig:col_score} and the schema is shown in Figure \ref{fig:db_points} stores the total privacy and total credit obtained by the user for each bidding day.
+Finally, the collection SCORE shown in Figure \ref{fig:col_score} and the schema is shown in Figure \ref{fig:db_points} stores the total privacy and total rewards obtained by the user for each bidding day.
 
 \subsubsection{Bussiness Logic} \label{bl}
 Most of the bussiness logic used for the FairDataShare portal is present in Kinvey. There are two main scripts stored in Kinvey:
