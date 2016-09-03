@@ -34,10 +34,10 @@
 \contentsline {section}{\numberline {4.4}Core Phase}{38}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Improve Privacy or Credit}{41}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Answering Questions with Incentives}{41}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Exit Phase}{43}{section.4.5}
+\contentsline {section}{\numberline {4.5}Exit Phase}{42}{section.4.5}
 \contentsline {section}{\numberline {4.6}FairDataShare Web Portal}{43}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Data Generator's Portal}{43}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Stakeholder's Portal}{44}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.1}Data Generator's Portal}{44}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Stakeholder's Portal}{45}{subsection.4.6.2}
 \contentsline {chapter}{\chapternumberline {5}The Fair Data Share Mobile Application}{49}{chapter.5}
 \contentsline {section}{\numberline {5.1}The Building Blocks}{49}{section.5.1}
 \contentsline {section}{\numberline {5.2}The Mobile Application}{50}{section.5.2}
